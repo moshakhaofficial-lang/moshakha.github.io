@@ -13,10 +13,12 @@ import { mkdir } from 'node:fs/promises';
 const OUT = 'src/assets/images';
 const W = 1200, H = 675;
 
+// Field Manual palette — mirrors src/styles/global.css so diagrams and page
+// share one set of colours.
 const C = {
-  bg: '#f6f8fb', card: '#ffffff', ink: '#10151c', ink2: '#3d4956', ink3: '#667486',
-  line: '#d7dfea', brand: '#0f5ad6', brandLight: '#e8f0fd', accent: '#ff7a18',
-  good: '#17794a', goodBg: '#e8f7ef', bad: '#b4232a', badBg: '#fdeeee',
+  bg: '#f7f6f2', card: '#ffffff', ink: '#16181a', ink2: '#4a5157', ink3: '#6c737a',
+  line: '#dcdad2', brand: '#c4451e', brandLight: '#fbede8', accent: '#a8792f',
+  good: '#1b6e4a', goodBg: '#edf6f1', bad: '#a3302b', badBg: '#fbeeed',
 };
 
 const F = `-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif`;
@@ -136,7 +138,7 @@ const diagrams = {};
       }
     } else {
       // grit pinned against the paint by a flat face
-      grit += `<rect x="${x + 32}" y="286" width="438" height="74" rx="8" fill="#ffd9a8" stroke="${C.accent}" stroke-width="3"/>`;
+      grit += `<rect x="${x + 32}" y="286" width="438" height="74" rx="8" fill="#f0dcbc" stroke="${C.accent}" stroke-width="3"/>`;
       for (let i = 0; i < 7; i++) grit += `<circle cx="${x + 60 + i * 62}" cy="372" r="7" fill="${col}"/>`;
     }
     return `<rect x="${x}" y="150" width="502" height="400" rx="14" fill="${C.card}" stroke="${col}" stroke-width="2.5"/>

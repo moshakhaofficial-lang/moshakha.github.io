@@ -14,9 +14,10 @@ const rounded = Math.round(value * 2) / 2;
 
 <style>
   .rating { display: inline-flex; align-items: center; gap: .45rem; font-size: .92rem; }
+  .rating b { font-family: var(--mono); font-weight: 500; font-size: .82rem; }
   .stars { display: inline-flex; letter-spacing: .05em; }
-  .star { color: var(--line); }
-  .star.full { color: #f5a623; }
-  .star.half { background: linear-gradient(90deg, #f5a623 50%, var(--line) 50%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .star { color: var(--rule); }
+  .star.full { color: var(--signal); }
+  .star.half { background: linear-gradient(90deg, var(--signal) 50%, var(--rule) 50%); -webkit-background-clip: text; background-clip: text; color: transparent; }
   .rating b { color: var(--ink); }
 </style>

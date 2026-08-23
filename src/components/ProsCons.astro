@@ -15,11 +15,11 @@ const { pros, cons } = Astro.props;
 
 <style>
   .proscons { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); margin-block: 1.25rem; }
-  .pc { border: 1px solid var(--line); border-radius: var(--r); padding: 1rem 1.1rem; }
+  .pc { border: 1px solid var(--rule); border-radius: var(--r); padding: 1rem 1.1rem; }
   .pc h4 { font-size: .78rem; text-transform: uppercase; letter-spacing: .07em; margin-bottom: .6rem; }
-  .pc--pro { background: #f2fbf6; border-color: #cbead9; }
+  .pc--pro { background: var(--good-bg); border-color: #c6e2d4; }
   .pc--pro h4 { color: var(--good); }
-  .pc--con { background: #fdf4f4; border-color: #f2d5d6; }
+  .pc--con { background: var(--bad-bg); border-color: #eccdcb; }
   .pc--con h4 { color: var(--bad); }
   .pc ul { list-style: none; padding: 0; margin: 0; font-size: .95rem; }
   .pc li { position: relative; padding-left: 1.4rem; }

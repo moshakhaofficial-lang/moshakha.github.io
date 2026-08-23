@@ -18,8 +18,8 @@ const { items } = Astro.props;
 
 <style>
   .faq { margin-top: 3rem; }
-  .faq-list { margin-top: 1.25rem; border: 1px solid var(--line); border-radius: var(--r-lg); overflow: hidden; }
-  details + details { border-top: 1px solid var(--line); }
+  .faq-list { margin-top: 1.25rem; border: 1px solid var(--rule); border-radius: var(--r); overflow: hidden; }
+  details + details { border-top: 1px solid var(--rule); }
   summary {
     cursor: pointer; padding: 1rem 1.15rem; font-weight: 650; list-style: none;
     display: flex; justify-content: space-between; gap: 1rem; align-items: flex-start;
@@ -27,6 +27,6 @@ const { items } = Astro.props;
   summary::-webkit-details-marker { display: none; }
   summary::after { content: "+"; font-weight: 400; font-size: 1.4rem; line-height: 1; color: var(--ink-3); flex-shrink: 0; }
   details[open] summary::after { content: "\2212"; }
-  summary:hover { background: var(--bg-2); }
+  summary:hover { background: var(--paper-2); }
   .faq-answer { padding: 0 1.15rem 1.15rem; color: var(--ink-2); }
 </style>

@@ -7,78 +7,110 @@ const published = (c) => c.filter((e) => !e.data.draft);
 const guides = published(await getCollection('guides'));
 const howTo = published(await getCollection('how-to'));
 const reviews = published(await getCollection('reviews'));
+const blog = published(await getCollection('blog'));
 
 const featured = [...guides, ...howTo]
   .sort((a, b) => +b.data.publishDate - +a.data.publishDate)
   .slice(0, 3);
+
+const sectionLabel = { guides: 'Buying Guide', 'how-to': 'How-To', reviews: 'Review', blog: 'Blog' };
+
+// The hero panel states the site's central claim as data, not as a promise.
+const gsmRows = [
+  { range: '300–400', use: 'Glass, mirrors, final buff', key: false },
+  { range: '350–500', use: 'Interiors, door shuts', key: false },
+  { range: '500–800', use: 'Wax + sealant removal', key: false },
+  { range: '900–1200', use: 'Drying panels', key: true },
+  { range: '1600+', use: 'Large SUVs and trucks only', key: false },
+];
 ---
 <BaseLayout
-  title="Moshakha — Car Cleaning & Detailing Guides That Skip the Hype"
+  title="Moshakha — Car Cleaning & Detailing, Measured Honestly"
   description={site.description}
   canonical="/"
 >
   <section class="hero">
-    <div class="wrap">
-      <p class="eyebrow">Independent &middot; Reader-supported</p>
-      <h1>Car cleaning gear, tested and explained without the hype</h1>
-      <p class="lede">
-        We break down microfibre towels, waxes, wash mitts and detailing kit in plain
-        English — what the specs actually mean, what's worth buying, and what to skip.
-      </p>
-      <div class="hero-cta">
-        <a href="/guides" class="btn btn--primary">Browse buying guides</a>
-        <a href="/how-to" class="btn btn--ghost">Learn the techniques</a>
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Independent &middot; Reader-supported</p>
+        <h1>The number on the label is not a quality score.</h1>
+        <p class="lede">
+          GSM measures density, not quality. We decode the specs car cleaning brands
+          hide behind &mdash; then tell you what's actually worth buying.
+        </p>
+        <div class="hero-cta">
+          <a href="/guides/microfiber-gsm-explained" class="btn btn--primary">Read the GSM guide</a>
+          <a href="/guides" class="btn btn--ghost">All buying guides</a>
+        </div>
       </div>
+
+      <aside class="spec" aria-label="Microfibre GSM reference">
+        <div class="spec-head">
+          <span>GSM</span><span>Right job</span>
+        </div>
+        {gsmRows.map((row) => (
+          <div class:list={['spec-row', { 'spec-row--key': row.key }]}>
+            <b class="tabular">{row.range}</b>
+            <span>{row.use}</span>
+          </div>
+        ))}
+        <p class="spec-foot">
+          Density, not quality &mdash; <a href="/guides/microfiber-gsm-explained">why that matters</a>
+        </p>
+      </aside>
     </div>
   </section>
 
-  <section class="section--alt trust">
+  <section class="trust">
     <div class="wrap">
       <ul>
-        <li><strong>No sponsored placements.</strong> Brands cannot pay for a spot in our rankings.</li>
-        <li><strong>Specs explained, not parroted.</strong> We tell you when GSM numbers are marketing.</li>
-        <li><strong>Updated, not abandoned.</strong> Guides carry a visible last-updated date.</li>
+        <li><b>No sponsored placements</b>Brands cannot pay for a spot in our rankings.</li>
+        <li><b>Specs explained</b>We tell you when GSM numbers are marketing.</li>
+        <li><b>Dated and revised</b>Every guide carries a visible last-updated date.</li>
       </ul>
     </div>
   </section>
 
   <section class="section">
     <div class="wrap">
-      <h2>Start here</h2>
-      <p class="section-lede">The guides most people land on first.</p>
-      {featured.length > 0 ? (
+      <p class="eyebrow">Start here</p>
+      <h2 style="margin-top:.7rem">The guides most people land on first</h2>
+      {featured.length > 0 && (
         <div class="grid grid--3" style="margin-top:1.5rem">
           {featured.map((entry) => (
             <article class="card card--link">
-              <p class="eyebrow">{entry.collection === 'guides' ? 'Buying Guide' : 'How-To'}</p>
+              <p class="label">{sectionLabel[entry.collection]}</p>
               <h3><a href={`/${entry.collection}/${entry.id}`}>{entry.data.title}</a></h3>
               <p>{entry.data.description}</p>
             </article>
           ))}
         </div>
-      ) : (
-        <p class="empty">Cornerstone articles land here in the next content batch.</p>
       )}
     </div>
   </section>
 
   <section class="section section--alt">
     <div class="wrap">
-      <h2>What we cover</h2>
+      <p class="eyebrow">Sections</p>
+      <h2 style="margin-top:.7rem">What we cover</h2>
       <div class="grid grid--2" style="margin-top:1.5rem">
         <article class="card card--link">
+          <p class="label">{guides.length} articles</p>
           <h3><a href="/guides">Buying guides</a></h3>
-          <p>Ranked best-of roundups with comparison tables, so you can pick in two minutes.</p>
+          <p>Ranked roundups with comparison tables, so you can decide in two minutes.</p>
         </article>
         <article class="card card--link">
+          <p class="label">{howTo.length} articles</p>
           <h3><a href="/how-to">How-to guides</a></h3>
-          <p>Step-by-step technique — washing, drying, interiors, glass — without swirl marks.</p>
+          <p>Technique &mdash; washing, drying, interiors, glass &mdash; without swirl marks.</p>
         </article>
         <article class="card card--link">
+          <p class="label">{reviews.length} articles</p>
           <h3><a href="/reviews">Product reviews</a></h3>
           <p>Single-product deep dives: what it's good at, where it falls down, who it suits.</p>
         </article>
         <article class="card card--link">
+          <p class="label">{blog.length} articles</p>
           <h3><a href="/blog">Blog</a></h3>
           <p>Shorter answers to the specific questions detailers actually search for.</p>
         </article>
@@ -88,23 +120,52 @@ const featured = [...guides, ...howTo]
 </BaseLayout>
 
 <style>
-  .hero { padding-block: clamp(3rem, 8vw, 5.5rem); }
-  .hero h1 { margin-top: .5rem; max-width: 20ch; }
+  .hero { padding-block: clamp(2.5rem, 6vw, 4.25rem); }
+  .hero-grid {
+    display: grid; gap: clamp(1.75rem, 4vw, 3rem);
+    grid-template-columns: 1.15fr .85fr; align-items: start;
+  }
+  .hero h1 { margin-top: .75rem; }
   .lede {
-    margin-top: 1.1rem; font-size: clamp(1.05rem, 1rem + .4vw, 1.25rem);
-    color: var(--ink-2); max-width: 54ch;
+    margin-top: .95rem; font-size: clamp(1.02rem, .98rem + .35vw, 1.16rem);
+    color: var(--ink-2); max-width: 42ch;
   }
-  .hero-cta { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.75rem; }
-  .trust { padding-block: 1.75rem; }
+  .hero-cta { display: flex; flex-wrap: wrap; gap: .7rem; margin-top: 1.6rem; }
+
+  /* The spec panel is the hero's second column — it fills the space that
+     was empty before, and states the thesis as data rather than a claim. */
+  .spec { border: 1px solid var(--rule-hard); border-radius: var(--r); background: var(--surface); }
+  .spec-head {
+    display: flex; justify-content: space-between; gap: 1rem;
+    background: var(--rule-hard); color: var(--paper);
+    font-family: var(--mono); font-weight: 500; font-size: .64rem;
+    letter-spacing: .11em; text-transform: uppercase; padding: .5rem .75rem;
+  }
+  .spec-row {
+    display: flex; justify-content: space-between; align-items: baseline; gap: 1rem;
+    padding: .55rem .75rem; border-bottom: 1px solid var(--rule-2); font-size: .88rem;
+  }
+  .spec-row b { font-family: var(--mono); font-weight: 500; font-size: .82rem; }
+  .spec-row span { color: var(--ink-2); font-size: .84rem; text-align: right; }
+  .spec-row--key { background: var(--signal-tint); }
+  .spec-row--key b, .spec-row--key span { color: var(--signal-dark); font-weight: 600; }
+  .spec-foot {
+    padding: .6rem .75rem; font-family: var(--mono); font-size: .66rem;
+    letter-spacing: .04em; color: var(--ink-3); background: var(--paper-2);
+  }
+
+  .trust { border-block: 1px solid var(--rule); background: var(--paper-2); padding-block: 1.4rem; }
   .trust ul {
-    list-style: none; padding: 0; margin: 0;
-    display: grid; gap: .8rem; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    font-size: .95rem; color: var(--ink-2);
+    list-style: none; padding: 0; margin: 0; display: grid; gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    font-size: .89rem; color: var(--ink-2);
   }
-  .trust strong { color: var(--ink); display: block; }
-  .section-lede { color: var(--ink-2); margin-top: .4rem; }
-  .empty {
-    margin-top: 1.5rem; padding: 2rem; border: 1px dashed var(--line);
-    border-radius: var(--r-lg); color: var(--ink-3); text-align: center;
+  .trust b {
+    display: block; color: var(--ink); font-family: var(--mono); font-weight: 500;
+    font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; margin-bottom: .25rem;
+  }
+
+  @media (max-width: 46rem) {
+    .hero-grid { grid-template-columns: 1fr; }
   }
 </style>
