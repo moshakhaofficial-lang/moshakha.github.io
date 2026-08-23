@@ -15,32 +15,28 @@ export const site = {
   url: 'https://www.moshakha.com',
   locale: 'en',
   author: 'Moshakha',
-  email: 'hello@moshakha.com', // TODO: confirm the contact address you want published
+  email: 'moshakhaofficial@gmail.com',
 } as const;
 
 export const monetization = {
   /**
-   * Amazon Associates store/tracking ID, e.g. 'moshakha-21'.
-   * TODO: set after Amazon Associates approval. While null, affiliate CTAs
-   * render as disabled placeholders instead of broken links.
+   * Amazon Associates store/tracking ID. While null, affiliate CTAs render as
+   * disabled placeholders instead of broken links.
    */
-  amazonTrackingId: null as string | null,
+  amazonTrackingId: 'moshakha20-20' as string | null,
   /** Amazon marketplace host to build links against. */
   amazonMarketplace: 'www.amazon.com',
 } as const;
 
 export const analytics = {
   /**
-   * GA4 measurement ID, e.g. 'G-XXXXXXXXXX'.
-   * TODO: set once you confirm which GA4 property this site should report to.
-   * NOTE: the previous live site already shipped 'G-ZEP5BMKXNS'. Reuse it only
-   * if that property is genuinely yours and you want continuity.
+   * GA4 measurement ID. Carried over from the previous site so the property
+   * keeps its historical data rather than starting from zero.
    */
-  ga4MeasurementId: null as string | null,
+  ga4MeasurementId: 'G-ZEP5BMKXNS' as string | null,
   /**
-   * Google Search Console HTML-tag verification token (the `content` value of
-   * the google-site-verification meta tag). TODO: set if you verify by meta tag
-   * rather than by DNS.
+   * Google Search Console HTML-tag verification token. Stays null: the domain
+   * was verified by DNS, which survives redeploys and needs no markup.
    */
   searchConsoleVerification: null as string | null,
 } as const;
