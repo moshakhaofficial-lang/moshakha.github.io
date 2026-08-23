@@ -5,6 +5,8 @@ targetKeyword: "500 gsm vs 800 gsm microfiber"
 publishDate: 2026-02-04
 updatedDate: 2026-08-24
 author: "Moshakha Editorial"
+image: "../../assets/images/500-vs-800-gsm.webp"
+imageAlt: "Pile depth comparison between 500 GSM and 800 GSM microfibre with the jobs each suits"
 related:
   - "guides/microfiber-gsm-explained"
   - "guides/best-car-drying-towels"

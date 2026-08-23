@@ -4,6 +4,8 @@ description: "Sponges trap grit against your paint; mitts lift it away. Here's w
 targetKeyword: "wash mitt vs sponge"
 publishDate: 2026-08-24
 author: "Moshakha Editorial"
+image: "../../assets/images/mitt-vs-sponge.webp"
+imageAlt: "Diagram contrasting a wash mitt lifting grit into its pile with a sponge trapping grit against paint"
 totalTime: "PT45M"
 supplies:
   - "Microfibre or chenille wash mitt (not a sponge)"

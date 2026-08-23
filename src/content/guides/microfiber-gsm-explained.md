@@ -4,6 +4,8 @@ description: "GSM measures density, not quality. Here's what the number really t
 targetKeyword: "microfiber gsm explained"
 publishDate: 2026-08-24
 author: "Moshakha Editorial"
+image: "../../assets/images/gsm-scale.webp"
+imageAlt: "Chart mapping microfibre GSM ranges to the jobs each is right and wrong for"
 featured: true
 related:
   - "guides/best-car-drying-towels"

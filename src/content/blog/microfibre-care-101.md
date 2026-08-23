@@ -5,6 +5,8 @@ targetKeyword: "how to wash microfiber towels"
 publishDate: 2026-02-07
 updatedDate: 2026-08-24
 author: "Moshakha Editorial"
+image: "../../assets/images/microfibre-laundry.webp"
+imageAlt: "Side-by-side list of microfibre laundry dos and donts"
 featured: true
 related:
   - "guides/microfiber-gsm-explained"

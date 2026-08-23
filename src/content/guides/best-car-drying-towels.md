@@ -4,6 +4,8 @@ description: "Twisted loop or plush, 900 GSM or 1200 — which drying towel actu
 targetKeyword: "best car drying towel"
 publishDate: 2026-08-24
 author: "Moshakha Editorial"
+image: "../../assets/images/weave-types.webp"
+imageAlt: "Cross-sections of twisted loop, plush and waffle weave microfibre, each labelled with the job it suits"
 featured: true
 related:
   - "guides/microfiber-gsm-explained"
