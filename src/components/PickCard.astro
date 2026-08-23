@@ -1,0 +1,65 @@
+---
+import Rating from './Rating.astro';
+import ProsCons from './ProsCons.astro';
+import AffiliateButton from './AffiliateButton.astro';
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+
+export interface Props {
+  pick: {
+    rank: number; name: string; brand: string; award: string; asin: string | null;
+    image?: ImageMetadata; imageAlt?: string; rating: number; gsm?: string; price?: string;
+    bestFor: string; summary: string; pros: string[]; cons: string[];
+  };
+}
+const { pick } = Astro.props;
+---
+<article class="pick" id={`pick-${pick.rank}`}>
+  <div class="pick-head">
+    <div>
+      <p class="eyebrow">{pick.award}</p>
+      <h3><span class="pick-rank">{pick.rank}.</span> {pick.brand} {pick.name}</h3>
+      <div class="pick-meta">
+        <Rating value={pick.rating} />
+        {pick.gsm && <span class="chip">{pick.gsm} GSM</span>}
+        {pick.price && <span class="chip">{pick.price}</span>}
+      </div>
+    </div>
+  </div>
+
+  {pick.image && (
+    <Image
+      src={pick.image}
+      alt={pick.imageAlt ?? `${pick.brand} ${pick.name}`}
+      widths={[400, 640]}
+      sizes="(max-width: 44rem) 100vw, 40rem"
+      format="webp"
+      loading="lazy"
+      decoding="async"
+    />
+  )}
+
+  <p class="best-for"><strong>Best for:</strong> {pick.bestFor}</p>
+  <p>{pick.summary}</p>
+
+  <ProsCons pros={pick.pros} cons={pick.cons} />
+
+  <AffiliateButton asin={pick.asin} productName={`${pick.brand} ${pick.name}`} />
+</article>
+
+<style>
+  .pick {
+    border: 1px solid var(--line); border-radius: var(--r-lg);
+    padding: 1.5rem; margin-block: 2rem; scroll-margin-top: 1.5rem;
+  }
+  .pick h3 { margin: .3rem 0 .6rem; }
+  .pick-rank { color: var(--ink-3); }
+  .pick-meta { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; }
+  .chip {
+    background: var(--bg-3); color: var(--ink-2); font-size: .8rem; font-weight: 650;
+    padding: .2rem .55rem; border-radius: 100px;
+  }
+  .pick img { margin-block: 1.1rem; border-radius: var(--r); background: var(--bg-2); }
+  .best-for { color: var(--ink-2); }
+  .pick :global(.btn--buy) { margin-top: .5rem; }
+</style>

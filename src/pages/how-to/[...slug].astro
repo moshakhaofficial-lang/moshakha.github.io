@@ -1,0 +1,56 @@
+---
+import { getCollection, render } from 'astro:content';
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+import { articleSchema, breadcrumbSchema, faqSchema, howToSchema } from '../../lib/schema';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('how-to');
+  return entries
+    .filter((e) => !e.data.draft || import.meta.env.DEV)
+    .map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const { Content, remarkPluginFrontmatter } = await render(entry);
+const d = entry.data;
+const path = `/how-to/${entry.id}`;
+
+const schema = [
+  articleSchema({ ...d, path, title: d.title, description: d.description, image: d.image?.src }),
+  breadcrumbSchema([{ label: 'How-To Guides', href: '/how-to' }, { label: d.title, href: path }]),
+  howToSchema({ title: d.title, description: d.description, steps: d.steps, supplies: d.supplies, totalTime: d.totalTime, image: d.image?.src }),
+  faqSchema(d.faq),
+].filter(Boolean) as Record<string, unknown>[];
+---
+<ArticleLayout
+  title={d.title}
+  description={d.description}
+  canonical={path}
+  sectionLabel="How-To Guides"
+  sectionHref="/how-to"
+  publishDate={d.publishDate}
+  updatedDate={d.updatedDate}
+  author={d.author}
+  image={d.image}
+  imageAlt={d.imageAlt}
+  readingMinutes={remarkPluginFrontmatter?.minutesRead}
+  schema={schema}
+  faq={d.faq}
+  related={d.related}
+  currentId={`how-to/${entry.id}`}
+>
+  {d.supplies.length > 0 && (
+    <aside class="supplies">
+      <h2>What you'll need</h2>
+      {d.totalTime && <p class="meta">Time: {d.totalTime}</p>}
+      <ul>{d.supplies.map((s) => <li>{s}</li>)}</ul>
+    </aside>
+  )}
+  <Content />
+</ArticleLayout>
+
+<style>
+  .supplies { background: var(--bg-2); border: 1px solid var(--line); border-radius: var(--r-lg); padding: 1.25rem 1.4rem; }
+  .supplies h2 { margin-top: 0; font-size: 1.15rem; }
+  .supplies ul { margin-top: .7rem; }
+</style>

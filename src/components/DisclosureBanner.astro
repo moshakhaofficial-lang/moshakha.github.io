@@ -1,0 +1,15 @@
+---
+import { AFFILIATE_DISCLOSURE } from '../config/site';
+---
+<p class="disclosure">
+  {AFFILIATE_DISCLOSURE} <a href="/affiliate-disclosure">How we make money</a>.
+</p>
+
+<style>
+  .disclosure {
+    background: var(--bg-2); border: 1px solid var(--line); border-left: 3px solid var(--accent);
+    border-radius: var(--r); padding: .75rem 1rem; font-size: .88rem; color: var(--ink-2);
+    margin-block: 1.5rem;
+  }
+  .disclosure a { font-weight: 600; }
+</style>
