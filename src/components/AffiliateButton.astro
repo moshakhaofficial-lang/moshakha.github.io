@@ -1,0 +1,34 @@
+---
+import { monetization } from '../config/site';
+
+export interface Props {
+  asin: string | null;
+  label?: string;
+  productName: string;
+}
+
+const { asin, label = 'Check price on Amazon', productName } = Astro.props;
+
+const tag = monetization.amazonTrackingId;
+// Only build a real link when we have BOTH a product and an approved tracking ID.
+const href =
+  asin && tag
+    ? `https://${monetization.amazonMarketplace}/dp/${asin}?tag=${tag}&linkCode=ll1&language=en_US`
+    : null;
+---
+{href ? (
+  <a
+    class="btn btn--buy"
+    href={href}
+    target="_blank"
+    rel="nofollow sponsored noopener"
+    data-affiliate={asin}
+  >
+    {label}
+    <span aria-hidden="true">&rarr;</span>
+  </a>
+) : (
+  <span class="btn btn--buy" aria-disabled="true" title="Affiliate link pending Amazon Associates approval">
+    Link pending &mdash; {productName}
+  </span>
+)}

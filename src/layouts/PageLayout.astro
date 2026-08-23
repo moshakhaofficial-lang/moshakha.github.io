@@ -1,0 +1,24 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+
+export interface Props {
+  title: string;
+  description: string;
+  canonical: string;
+  updated?: string;
+}
+const { title, description, canonical, updated } = Astro.props;
+---
+<BaseLayout title={title} description={description} canonical={canonical}>
+  <div class="wrap section">
+    <div class="prose-wrap">
+      <Breadcrumbs items={[{ label: title, href: canonical }]} />
+      <h1 style="margin-top:1rem">{title}</h1>
+      {updated && <p class="meta" style="margin-top:.5rem">Last updated: {updated}</p>}
+      <div class="prose" style="margin-top:1.75rem">
+        <slot />
+      </div>
+    </div>
+  </div>
+</BaseLayout>

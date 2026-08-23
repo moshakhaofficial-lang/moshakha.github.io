@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="Page not found" description="That page doesn't exist." canonical="/404" noindex={true}>
+  <div class="wrap section" style="text-align:center">
+    <p class="eyebrow">404</p>
+    <h1>We can't find that page</h1>
+    <p style="color:var(--ink-2);margin-top:1rem">
+      It may have moved, or the link may be wrong.
+    </p>
+    <div style="display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap;margin-top:1.75rem">
+      <a href="/" class="btn btn--primary">Go to homepage</a>
+      <a href="/guides" class="btn btn--ghost">Browse buying guides</a>
+    </div>
+  </div>
+</BaseLayout>

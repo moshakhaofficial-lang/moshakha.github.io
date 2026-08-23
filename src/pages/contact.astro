@@ -1,0 +1,27 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import { site } from '../config/site';
+---
+<PageLayout
+  title="Contact"
+  description="Get in touch with Moshakha about corrections, review requests, or questions about car cleaning and detailing gear."
+  canonical="/contact"
+>
+  <p>
+    Questions, corrections, or a product you think we should look at — we read everything.
+  </p>
+
+  <h2>Email</h2>
+  <p>
+    {/* TODO: replace with the real published address before going live. */}
+    <a href={`mailto:${site.email}`}><strong>{site.email}</strong></a>
+  </p>
+  <p class="meta">We aim to reply within a few working days.</p>
+
+  <h2>What to expect</h2>
+  <ul>
+    <li><strong>Corrections</strong> — send the page and what's wrong. If you're right, we fix it and note the correction on the article.</li>
+    <li><strong>Product suggestions</strong> — welcome. We can't promise coverage, and sending us a product does not buy a favourable review.</li>
+    <li><strong>Brands and PR</strong> — we don't publish sponsored content, guest posts, or paid links. Please don't ask.</li>
+  </ul>
+</PageLayout>

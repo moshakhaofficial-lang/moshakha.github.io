@@ -1,0 +1,110 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { site } from '../config/site';
+
+const published = (c) => c.filter((e) => !e.data.draft);
+const guides = published(await getCollection('guides'));
+const howTo = published(await getCollection('how-to'));
+const reviews = published(await getCollection('reviews'));
+
+const featured = [...guides, ...howTo]
+  .sort((a, b) => +b.data.publishDate - +a.data.publishDate)
+  .slice(0, 3);
+---
+<BaseLayout
+  title="Moshakha — Car Cleaning & Detailing Guides That Skip the Hype"
+  description={site.description}
+  canonical="/"
+>
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Independent &middot; Reader-supported</p>
+      <h1>Car cleaning gear, tested and explained without the hype</h1>
+      <p class="lede">
+        We break down microfibre towels, waxes, wash mitts and detailing kit in plain
+        English — what the specs actually mean, what's worth buying, and what to skip.
+      </p>
+      <div class="hero-cta">
+        <a href="/guides" class="btn btn--primary">Browse buying guides</a>
+        <a href="/how-to" class="btn btn--ghost">Learn the techniques</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section--alt trust">
+    <div class="wrap">
+      <ul>
+        <li><strong>No sponsored placements.</strong> Brands cannot pay for a spot in our rankings.</li>
+        <li><strong>Specs explained, not parroted.</strong> We tell you when GSM numbers are marketing.</li>
+        <li><strong>Updated, not abandoned.</strong> Guides carry a visible last-updated date.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>Start here</h2>
+      <p class="section-lede">The guides most people land on first.</p>
+      {featured.length > 0 ? (
+        <div class="grid grid--3" style="margin-top:1.5rem">
+          {featured.map((entry) => (
+            <article class="card card--link">
+              <p class="eyebrow">{entry.collection === 'guides' ? 'Buying Guide' : 'How-To'}</p>
+              <h3><a href={`/${entry.collection}/${entry.id}`}>{entry.data.title}</a></h3>
+              <p>{entry.data.description}</p>
+            </article>
+          ))}
+        </div>
+      ) : (
+        <p class="empty">Cornerstone articles land here in the next content batch.</p>
+      )}
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="wrap">
+      <h2>What we cover</h2>
+      <div class="grid grid--2" style="margin-top:1.5rem">
+        <article class="card card--link">
+          <h3><a href="/guides">Buying guides</a></h3>
+          <p>Ranked best-of roundups with comparison tables, so you can pick in two minutes.</p>
+        </article>
+        <article class="card card--link">
+          <h3><a href="/how-to">How-to guides</a></h3>
+          <p>Step-by-step technique — washing, drying, interiors, glass — without swirl marks.</p>
+        </article>
+        <article class="card card--link">
+          <h3><a href="/reviews">Product reviews</a></h3>
+          <p>Single-product deep dives: what it's good at, where it falls down, who it suits.</p>
+        </article>
+        <article class="card card--link">
+          <h3><a href="/blog">Blog</a></h3>
+          <p>Shorter answers to the specific questions detailers actually search for.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero { padding-block: clamp(3rem, 8vw, 5.5rem); }
+  .hero h1 { margin-top: .5rem; max-width: 20ch; }
+  .lede {
+    margin-top: 1.1rem; font-size: clamp(1.05rem, 1rem + .4vw, 1.25rem);
+    color: var(--ink-2); max-width: 54ch;
+  }
+  .hero-cta { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.75rem; }
+  .trust { padding-block: 1.75rem; }
+  .trust ul {
+    list-style: none; padding: 0; margin: 0;
+    display: grid; gap: .8rem; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    font-size: .95rem; color: var(--ink-2);
+  }
+  .trust strong { color: var(--ink); display: block; }
+  .section-lede { color: var(--ink-2); margin-top: .4rem; }
+  .empty {
+    margin-top: 1.5rem; padding: 2rem; border: 1px dashed var(--line);
+    border-radius: var(--r-lg); color: var(--ink-3); text-align: center;
+  }
+</style>
