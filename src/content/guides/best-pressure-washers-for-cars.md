@@ -15,6 +15,8 @@ picks:
     brand: "Sun Joe"
     award: "Best overall"
     asin: "B0FHQSSTTQ"
+    image: "../../assets/images/product-sunjoe-washer.jpg"
+    imageAlt: "Sun Joe SPX3000 electric pressure washer with foam cannon and nozzles"
     rating: 4.4
     price: "$150–$220"
     bestFor: "Car washing with enough capability for a patio without being dangerous on paint"

@@ -7,6 +7,8 @@ author: "Moshakha Editorial"
 productName: "Woolly Mammoth Drying Towel (25x36in)"
 brand: "Chemical Guys"
 asin: "B086M83K76"
+image: "../../assets/images/product-woolly-mammoth.jpg"
+imageAlt: "Chemical Guys Woolly Mammoth microfibre drying towel"
 rating: 4.4
 price: "$20–$28"
 verdict: "A genuinely soft, large and forgiving towel that is easy to recommend to nervous beginners — and a slower drying tool than twisted loop alternatives at the same size. Buy it for softness and price, not for one-pass speed."

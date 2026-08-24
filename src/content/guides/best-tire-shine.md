@@ -15,6 +15,8 @@ picks:
     brand: "Meguiar's"
     award: "Best overall"
     asin: "B0009IQXJ0"
+    image: "../../assets/images/product-meguiars-tiregel.jpg"
+    imageAlt: "Meguiar's Endurance Tire Gel, 16oz bottle"
     rating: 4.6
     price: "$10–$16"
     bestFor: "A dark, lasting finish that survives rain and a wash or two"

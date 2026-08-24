@@ -15,6 +15,8 @@ picks:
     brand: "DRIVE"
     award: "Best overall"
     asin: "B071F82CYJ"
+    image: "../../assets/images/product-drive-organizer.jpg"
+    imageAlt: "DRIVE collapsible car trunk organizer with tie-down strap"
     rating: 4.5
     price: "$25–$40"
     bestFor: "One organizer that folds flat when the boot is needed for something else"

@@ -15,6 +15,8 @@ picks:
     brand: "The Rag Company"
     award: "Best overall"
     asin: "B09QD5LQRR"
+    image: "../../assets/images/product-cyclone-mitt.jpg"
+    imageAlt: "The Rag Company Cyclone Ultra microfibre wash mitt"
     rating: 4.7
     price: "$18–$26 (2-piece)"
     bestFor: "Anyone who wants one mitt that handles a normal two-bucket wash properly"

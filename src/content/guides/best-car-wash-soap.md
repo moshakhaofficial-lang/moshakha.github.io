@@ -15,6 +15,8 @@ picks:
     brand: "Chemical Guys"
     award: "Best overall"
     asin: "B071RKWXKV"
+    image: "../../assets/images/product-mrpink-soap.jpg"
+    imageAlt: "Chemical Guys Mr. Pink car wash soap, 64oz bottle"
     rating: 4.6
     price: "$15–$22"
     bestFor: "Regular maintenance washes, in a bucket or a foam cannon"

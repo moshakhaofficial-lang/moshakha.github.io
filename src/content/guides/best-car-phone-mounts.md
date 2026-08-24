@@ -15,6 +15,8 @@ picks:
     brand: "Miracase"
     award: "Best overall"
     asin: "B0GHY6D5B2"
+    image: "../../assets/images/product-miracase-mount.jpg"
+    imageAlt: "Miracase MagSafe magnetic car mount attached to a windshield"
     rating: 4.4
     price: "$20–$30"
     bestFor: "iPhones with MagSafe, or any phone with a magnetic ring fitted"

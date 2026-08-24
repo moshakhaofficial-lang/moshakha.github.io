@@ -15,6 +15,8 @@ picks:
     brand: "NOCO"
     award: "Best overall"
     asin: "B015TKUPIC"
+    image: "../../assets/images/product-noco-boost.jpg"
+    imageAlt: "NOCO Boost GB40 jump starter with jumper clamps"
     rating: 4.6
     price: "$90–$130"
     bestFor: "Petrol engines up to about 6.0L, and anyone who wants the safety engineering"

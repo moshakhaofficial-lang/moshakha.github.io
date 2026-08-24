@@ -15,6 +15,8 @@ picks:
     brand: "AstroAI"
     award: "Best overall"
     asin: "B07QR4Q42L"
+    image: "../../assets/images/product-astroai-inflator.jpg"
+    imageAlt: "AstroAI portable tire inflator with digital pressure gauge"
     rating: 4.5
     price: "$30–$45"
     bestFor: "Topping up four tyres without worrying about battery charge"

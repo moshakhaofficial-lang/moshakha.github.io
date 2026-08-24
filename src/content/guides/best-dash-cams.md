@@ -15,6 +15,8 @@ picks:
     brand: "VIOFO"
     award: "Best overall"
     asin: "B08DV51H2X"
+    image: "../../assets/images/product-viofo-dashcam.jpg"
+    imageAlt: "VIOFO A129 Plus Duo dash cam with front and rear camera units"
     rating: 4.4
     price: "$180–$240"
     bestFor: "Full front and rear coverage, which is where most disputed claims happen"

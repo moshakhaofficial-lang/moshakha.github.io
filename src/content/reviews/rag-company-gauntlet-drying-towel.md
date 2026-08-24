@@ -7,6 +7,8 @@ author: "Moshakha Editorial"
 productName: "The Gauntlet Drying Towel (900 GSM)"
 brand: "The Rag Company"
 asin: "B083KPZR9C"
+image: "../../assets/images/product-gauntlet-towel.jpg"
+imageAlt: "The Rag Company Gauntlet microfibre drying towel"
 rating: 4.7
 price: "$25–$35 (2-pack)"
 verdict: "The best default drying towel for a normal car. Its 15x24in size is the real feature — big enough to dry a panel in one pass, small enough to control one-handed — and the 70/30 blend out-absorbs cheaper 80/20 towels at higher GSM. It is not the right choice for a full-size SUV."
