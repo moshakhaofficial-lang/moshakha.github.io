@@ -5,9 +5,11 @@ export interface Props {
   asin: string | null;
   label?: string;
   productName: string;
+  /** Where on the page this button sits, e.g. 'pick-1', 'review-verdict'. Feeds the affiliate_click GA4 event. */
+  position?: string;
 }
 
-const { asin, label = 'Check price on Amazon', productName } = Astro.props;
+const { asin, label = 'Check price on Amazon', productName, position = 'primary' } = Astro.props;
 
 const tag = monetization.amazonTrackingId;
 // Only build a real link when we have BOTH a product and an approved tracking ID.
@@ -15,6 +17,11 @@ const href =
   asin && tag
     ? `https://${monetization.amazonMarketplace}/dp/${asin}?tag=${tag}&linkCode=ll1&language=en_US`
     : null;
+
+// First path segment (e.g. 'guides', 'reviews') as the click's category —
+// derived from the page this button renders on rather than threaded through
+// every caller.
+const category = Astro.url.pathname.split('/').filter(Boolean)[0] ?? 'other';
 ---
 {href ? (
   <a
@@ -23,6 +30,9 @@ const href =
     target="_blank"
     rel="nofollow sponsored noopener"
     data-affiliate={asin}
+    data-product={productName}
+    data-category={category}
+    data-position={position}
   >
     {label}
     <span aria-hidden="true">&rarr;</span>
@@ -32,3 +42,26 @@ const href =
     Link pending &mdash; {productName}
   </span>
 )}
+
+<script>
+  // One delegated listener handles every affiliate button on the page,
+  // regardless of how many PickCard/AffiliateButton instances rendered —
+  // no per-button script, no duplicate listeners. Astro dedupes this inline
+  // script across repeated component instances on one page automatically,
+  // but the window flag also guards against any future double-invocation.
+  const w = window as unknown as { __moshakhaAffiliateClickBound?: boolean; gtag?: (...args: unknown[]) => void };
+  if (!w.__moshakhaAffiliateClickBound) {
+    w.__moshakhaAffiliateClickBound = true;
+    document.addEventListener('click', (event) => {
+      const link = (event.target as HTMLElement)?.closest('a[data-affiliate]') as HTMLAnchorElement | null;
+      if (!link || typeof w.gtag !== 'function') return; // no-op when GA4 isn't configured (e.g. local dev)
+      w.gtag('event', 'affiliate_click', {
+        page: location.pathname,
+        product: link.dataset.product,
+        category: link.dataset.category,
+        cta_position: link.dataset.position,
+        asin: link.dataset.affiliate,
+      });
+    });
+  }
+</script>

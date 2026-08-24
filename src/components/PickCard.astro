@@ -44,7 +44,7 @@ const { pick } = Astro.props;
 
   <ProsCons pros={pick.pros} cons={pick.cons} />
 
-  <AffiliateButton asin={pick.asin} productName={`${pick.brand} ${pick.name}`} />
+  <AffiliateButton asin={pick.asin} productName={`${pick.brand} ${pick.name}`} position={`pick-${pick.rank}`} />
 </article>
 
 <style>
