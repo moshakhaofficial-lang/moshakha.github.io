@@ -69,6 +69,10 @@ const fullTitle = title.includes(site.name) ? title : `${title} | ${site.name}`;
   <meta name="google-site-verification" content={analytics.searchConsoleVerification} />
 )}
 
+{analytics.pinterestVerification && (
+  <meta name="p:domain_verify" content={analytics.pinterestVerification} />
+)}
+
 {schema.map((s) => (
   <script type="application/ld+json" set:html={JSON.stringify(s)} />
 ))}

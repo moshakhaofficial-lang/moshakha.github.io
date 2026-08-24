@@ -39,6 +39,8 @@ export const analytics = {
    * was verified by DNS, which survives redeploys and needs no markup.
    */
   searchConsoleVerification: null as string | null,
+  /** Pinterest domain-claim verification token (Pinterest Settings → Claim → Add a website). */
+  pinterestVerification: '05fc36326b2f861026871107a56998d9' as string | null,
 } as const;
 
 export const nav = [
