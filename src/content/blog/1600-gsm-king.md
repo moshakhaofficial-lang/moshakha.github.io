@@ -5,6 +5,8 @@ targetKeyword: "1600 gsm drying towel"
 publishDate: 2026-02-04
 updatedDate: 2026-08-24
 author: "Moshakha Editorial"
+image: "../../assets/images/gsm-by-vehicle.webp"
+imageAlt: "Chart matching vehicle size to the right microfibre GSM tier, from hatchback to large SUV"
 related:
   - "guides/microfiber-gsm-explained"
   - "guides/best-car-drying-towels"

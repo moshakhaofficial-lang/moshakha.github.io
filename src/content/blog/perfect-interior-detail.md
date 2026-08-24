@@ -5,6 +5,8 @@ targetKeyword: "how to clean car interior"
 publishDate: 2026-02-09
 updatedDate: 2026-08-24
 author: "Moshakha Editorial"
+image: "../../assets/images/interior-order.webp"
+imageAlt: "The correct order for cleaning a car interior, from emptying it to finishing with glass"
 related:
   - "blog/glass-cleaning-mastery"
   - "guides/best-microfiber-towels-for-cars"

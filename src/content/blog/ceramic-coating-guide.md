@@ -5,6 +5,8 @@ targetKeyword: "ceramic coating guide"
 publishDate: 2026-02-10
 updatedDate: 2026-08-24
 author: "Moshakha Editorial"
+image: "../../assets/images/coating-scope.webp"
+imageAlt: "What a ceramic coating protects against versus what it does not, including swirl marks and stone chips"
 related:
   - "how-to/how-to-avoid-swirl-marks"
   - "how-to/two-bucket-car-wash-method"

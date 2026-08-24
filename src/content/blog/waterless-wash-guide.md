@@ -5,6 +5,8 @@ targetKeyword: "waterless car wash safe"
 publishDate: 2026-02-12
 updatedDate: 2026-08-24
 author: "Moshakha Editorial"
+image: "../../assets/images/waterless-vs-rinseless.webp"
+imageAlt: "Chart matching dirt level to the right wash method, from waterless spray to a full two-bucket wash"
 related:
   - "how-to/two-bucket-car-wash-method"
   - "how-to/how-to-avoid-swirl-marks"

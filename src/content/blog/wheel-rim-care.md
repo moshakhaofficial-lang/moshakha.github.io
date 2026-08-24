@@ -5,6 +5,8 @@ targetKeyword: "how to clean car wheels safely"
 publishDate: 2026-02-11
 updatedDate: 2026-08-24
 author: "Moshakha Editorial"
+image: "../../assets/images/contamination-chain.webp"
+imageAlt: "Diagram showing why brake dust picked up by a wheel tool must never reach painted panels"
 related:
   - "guides/best-car-wash-mitts"
   - "how-to/two-bucket-car-wash-method"

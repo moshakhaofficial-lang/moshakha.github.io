@@ -4,6 +4,8 @@ description: "A realistic count by job, why running out mid-wash causes swirl ma
 targetKeyword: "how many microfiber towels to detail a car"
 publishDate: 2026-08-24
 author: "Moshakha Editorial"
+image: "../../assets/images/towel-count-by-job.webp"
+imageAlt: "Chart showing how many microfibre towels are needed per detailing job"
 related:
   - "guides/best-microfiber-towels-for-cars"
   - "blog/microfibre-care-101"

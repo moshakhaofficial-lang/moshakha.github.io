@@ -4,6 +4,8 @@ description: "The connection order exists for a reason — a discharged battery 
 targetKeyword: "how to jump start a car"
 publishDate: 2026-08-24
 author: "Moshakha Editorial"
+image: "../../assets/images/jump-start-sequence.webp"
+imageAlt: "The four-step jump start connection order, with the spark-risk connection made away from the battery"
 totalTime: "PT15M"
 supplies:
   - "Lithium jump pack, or jumper cables and a second vehicle"

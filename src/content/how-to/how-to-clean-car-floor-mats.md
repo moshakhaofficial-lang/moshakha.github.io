@@ -4,6 +4,8 @@ description: "Rubber and carpet mats need opposite treatment. How to clean each 
 targetKeyword: "how to clean car floor mats"
 publishDate: 2026-08-24
 author: "Moshakha Editorial"
+image: "../../assets/images/mat-material-contrast.webp"
+imageAlt: "Comparison of the opposite cleaning treatments rubber liners and carpet mats need"
 totalTime: "PT45M"
 supplies:
   - "Stiff bristle brush"

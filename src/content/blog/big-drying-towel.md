@@ -5,6 +5,8 @@ targetKeyword: "big car drying towel size"
 publishDate: 2026-02-04
 updatedDate: 2026-08-24
 author: "Moshakha Editorial"
+image: "../../assets/images/saturation-mechanic.webp"
+imageAlt: "Comparison of one large drying towel saturating as a single unit versus two medium towels"
 related:
   - "guides/best-car-drying-towels"
   - "blog/1600-gsm-king"

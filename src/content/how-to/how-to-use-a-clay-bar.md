@@ -4,6 +4,8 @@ description: "Claying removes bonded contamination a wash can't. The lubrication
 targetKeyword: "how to use a clay bar"
 publishDate: 2026-08-24
 author: "Moshakha Editorial"
+image: "../../assets/images/clay-lubrication.webp"
+imageAlt: "Comparison of dry clay marring paint versus properly lubricated clay gliding across it"
 totalTime: "PT90M"
 supplies:
   - "Detailing clay bar, 100g (medium or fine grade)"

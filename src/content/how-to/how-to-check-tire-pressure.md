@@ -4,6 +4,8 @@ description: "The sidewall number is not your target pressure. Where to find the
 targetKeyword: "how to check tire pressure"
 publishDate: 2026-08-24
 author: "Moshakha Editorial"
+image: "../../assets/images/sidewall-vs-placard.webp"
+imageAlt: "Comparison of the tyre sidewall maximum pressure figure and the correct door-jamb placard pressure"
 totalTime: "PT10M"
 supplies:
   - "Tyre pressure gauge (digital or dial — not the pencil type)"

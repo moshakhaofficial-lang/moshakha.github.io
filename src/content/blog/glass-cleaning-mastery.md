@@ -5,6 +5,8 @@ targetKeyword: "how to clean car glass streak free"
 publishDate: 2026-02-08
 updatedDate: 2026-08-24
 author: "Moshakha Editorial"
+image: "../../assets/images/two-towel-glass.webp"
+imageAlt: "The two-towel method for streak-free glass: a damp low-pile towel followed by a dry one"
 related:
   - "how-to/why-microfiber-towels-leave-streaks"
   - "guides/microfiber-gsm-explained"

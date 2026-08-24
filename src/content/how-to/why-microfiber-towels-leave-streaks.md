@@ -4,6 +4,8 @@ description: "Streaking is almost never the towel being faulty. The three real c
 targetKeyword: "why does my microfiber towel leave streaks"
 publishDate: 2026-08-24
 author: "Moshakha Editorial"
+image: "../../assets/images/streak-diagnosis.webp"
+imageAlt: "Diagnostic chart matching streaking symptoms to their likely cause"
 totalTime: "PT20M"
 supplies:
   - "White vinegar"

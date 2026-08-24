@@ -5,6 +5,8 @@ targetKeyword: "1200 gsm twisted loop towel"
 publishDate: 2026-02-04
 updatedDate: 2026-08-24
 author: "Moshakha Editorial"
+image: "../../assets/images/weave-vs-weight.webp"
+imageAlt: "Comparison of twisted loop and plush pile at the same GSM, showing why weave decides how a towel releases water"
 related:
   - "guides/best-car-drying-towels"
   - "guides/microfiber-gsm-explained"
