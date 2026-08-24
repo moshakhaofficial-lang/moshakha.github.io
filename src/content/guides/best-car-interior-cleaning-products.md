@@ -147,7 +147,7 @@ that are effectively uncorrectable without polishing.
 
 It is the same principle as the exterior: dry contact plus grit equals scratches. We
 cover the full sequence in our
-[interior detailing guide](/blog/perfect-interior-detail).
+[interior detailing guide](/blog/perfect-interior-detail/).
 
 ## What we deliberately left out
 
@@ -164,7 +164,7 @@ electronics, and this is not the category to learn on.
 
 ## Where to go next
 
-- The full sequence, in order: [how to clean a car interior properly](/blog/perfect-interior-detail)
-- Mats and liners specifically: [how to clean car floor mats](/how-to/how-to-clean-car-floor-mats)
-- The vacuum in depth: [ThisWorx car vacuum review](/reviews/thisworx-car-vacuum)
-- Interior glass without streaks: [streak-free car glass](/blog/glass-cleaning-mastery)
+- The full sequence, in order: [how to clean a car interior properly](/blog/perfect-interior-detail/)
+- Mats and liners specifically: [how to clean car floor mats](/how-to/how-to-clean-car-floor-mats/)
+- The vacuum in depth: [ThisWorx car vacuum review](/reviews/thisworx-car-vacuum/)
+- Interior glass without streaks: [streak-free car glass](/blog/glass-cleaning-mastery/)

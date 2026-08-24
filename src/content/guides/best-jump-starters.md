@@ -166,4 +166,4 @@ Buying more headroom than you need costs weight and money but does no harm. Buyi
 means it won't crank on the cold morning it's needed.
 
 The procedure itself, in the correct order, is in
-[how to jump start a car](/how-to/how-to-jump-start-a-car).
+[how to jump start a car](/how-to/how-to-jump-start-a-car/).

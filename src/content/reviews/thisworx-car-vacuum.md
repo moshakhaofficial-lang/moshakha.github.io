@@ -98,7 +98,7 @@ before vacuuming turns dust into mud and works it deeper into the pile.
   airflow.
 
 The full sequence is in our
-[interior detailing guide](/blog/perfect-interior-detail).
+[interior detailing guide](/blog/perfect-interior-detail/).
 
 ## Should you buy it?
 
@@ -108,4 +108,4 @@ socket that stays live, and you understand it is a budget tool for loose debris.
 **No, if** you have pets that shed heavily, your car's socket dies with the ignition, or
 you already own a household vacuum with a hose long enough to reach the driveway — in
 which case you have a better tool already and should spend the money on
-[interior chemistry](/guides/best-car-interior-cleaning-products) instead.
+[interior chemistry](/guides/best-car-interior-cleaning-products/) instead.

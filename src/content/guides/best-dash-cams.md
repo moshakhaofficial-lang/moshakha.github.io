@@ -158,5 +158,5 @@ when someone finally needs it.
 
 **A dirty windscreen.** The camera shoots through your glass, and the interior
 plasticiser film scatters light straight into the lens at night. Clean the inside of the
-screen properly — our [streak-free glass guide](/blog/glass-cleaning-mastery) covers it,
+screen properly — our [streak-free glass guide](/blog/glass-cleaning-mastery/) covers it,
 and it's also what makes the adhesive mount actually stick.

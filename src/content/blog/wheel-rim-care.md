@@ -102,6 +102,6 @@ Apply to genuinely clean, decontaminated, dry wheels or it seals contamination i
 ## Where this fits in the wash
 
 Wheels are step one of the
-[two-bucket wash method](/how-to/two-bucket-car-wash-method), and the separation of tools
+[two-bucket wash method](/how-to/two-bucket-car-wash-method/), and the separation of tools
 described here is one of the main defences against
-[swirl marks](/how-to/how-to-avoid-swirl-marks).
+[swirl marks](/how-to/how-to-avoid-swirl-marks/).

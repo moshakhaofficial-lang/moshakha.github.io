@@ -152,9 +152,9 @@ plasticiser film that builds up on interior glass and dashboards. Most "the moun
 stick" complaints are a cleaning problem, not a product problem.
 
 An alcohol-based interior cleaner or a proper glass cleaner, then let it dry fully. Our
-[interior cleaning guide](/guides/best-car-interior-cleaning-products) covers what's
+[interior cleaning guide](/guides/best-car-interior-cleaning-products/) covers what's
 safe on which surface.
 
 If you're also fitting a dash cam, do both at the same time — same preparation, same
-awkward reach behind the mirror. Our [dash cam guide](/guides/best-dash-cams) covers
+awkward reach behind the mirror. Our [dash cam guide](/guides/best-dash-cams/) covers
 that side.

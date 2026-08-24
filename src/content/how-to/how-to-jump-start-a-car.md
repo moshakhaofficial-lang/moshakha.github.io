@@ -115,10 +115,10 @@ jump starting a failed battery just postpones the same morning.
 
 ## Carry the pack, and keep it charged
 
-A [jump pack](/guides/best-jump-starters) means not needing a second car and a stranger,
+A [jump pack](/guides/best-jump-starters/) means not needing a second car and a stranger,
 which is the actual advantage over cables. Its one failure mode is being flat itself —
 recharge every three to six months.
 
 The other common roadside failure is a slow puncture, which a
-[portable inflator](/guides/best-tire-inflators) covers. Those two together handle most
+[portable inflator](/guides/best-tire-inflators/) covers. Those two together handle most
 of what actually strands people.

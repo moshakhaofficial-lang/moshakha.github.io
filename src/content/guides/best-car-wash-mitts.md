@@ -162,8 +162,8 @@ result than the cheapest mitt used well.
 - **You want to split upper and lower panels, or wash two cars:** pick 5.
 
 If you're still deciding whether to move on from a sponge at all, our
-[wash mitt vs sponge comparison](/how-to/wash-mitt-vs-sponge) covers exactly what
+[wash mitt vs sponge comparison](/how-to/wash-mitt-vs-sponge/) covers exactly what
 changes — and it is the single cheapest paint-safety upgrade available.
 
 Once the car is washed, drying is the next place damage happens. Our
-[drying towel guide](/guides/best-car-drying-towels) covers that half.
+[drying towel guide](/guides/best-car-drying-towels/) covers that half.

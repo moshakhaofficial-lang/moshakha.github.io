@@ -117,6 +117,6 @@ window seal, or a blocked sunroof or scuttle drain. Finding that early is worth 
 than clean mats.
 
 The full interior sequence is in our
-[interior detailing guide](/blog/perfect-interior-detail), and the products for each
+[interior detailing guide](/blog/perfect-interior-detail/), and the products for each
 surface are in our
-[interior cleaning guide](/guides/best-car-interior-cleaning-products).
+[interior cleaning guide](/guides/best-car-interior-cleaning-products/).

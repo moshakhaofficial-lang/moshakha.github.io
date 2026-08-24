@@ -77,7 +77,7 @@ coats where you'd rather not press.
 **Drying a car properly.** Both sit below the practical drying range. You want 900–1200
 GSM, and more importantly you want **twisted loop** rather than plush — the weave matters
 more than the weight here. Our
-[drying towel guide](/guides/best-car-drying-towels) covers what to buy instead.
+[drying towel guide](/guides/best-car-drying-towels/) covers what to buy instead.
 
 **Glass.** Both are too plush. Deep pile cannot make consistent contact with a perfectly
 smooth surface, so it smears the last film of moisture into streaks. Glass wants 300–400
@@ -98,8 +98,8 @@ towel** at 300–400 GSM. Those two fill the gaps that neither weight here cover
 
 GSM is only one of four specs that matter, and it's the least informative of them —
 blend ratio, weave and edge construction all affect performance more. Our full
-[breakdown of what microfibre GSM actually means](/guides/microfiber-gsm-explained)
+[breakdown of what microfibre GSM actually means](/guides/microfiber-gsm-explained/)
 covers how to read a listing properly.
 
-And whichever you buy, [how you launder it](/blog/microfibre-care-101) will affect its
+And whichever you buy, [how you launder it](/blog/microfibre-care-101/) will affect its
 performance more than the 300 GSM difference discussed on this page.

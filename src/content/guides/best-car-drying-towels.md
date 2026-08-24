@@ -165,7 +165,7 @@ means more water capacity — and more weight, more drying time, and less contro
 Anyone selling you a 1600 GSM towel as automatically superior is selling, not advising.
 1600 GSM is genuinely useful on a large truck. It is the wrong tool for glass, wrong for
 door shuts, and overkill on a Civic. We go into this properly in our
-[guide to what microfibre GSM actually means](/guides/microfiber-gsm-explained).
+[guide to what microfibre GSM actually means](/guides/microfiber-gsm-explained/).
 
 ## Which one should you buy?
 
@@ -182,6 +182,6 @@ A good drying towel that is laundered badly becomes a bad drying towel in about 
 washes. Fabric softener is the main culprit — it coats the fibres with a waxy residue
 that destroys absorbency and causes exactly the streaking people blame the towel for.
 
-The full routine is in our [microfibre care guide](/blog/microfibre-care-101), but the
+The full routine is in our [microfibre care guide](/blog/microfibre-care-101/), but the
 short version: wash separately from cotton, no softener, no dryer sheets, low heat or
 air dry.

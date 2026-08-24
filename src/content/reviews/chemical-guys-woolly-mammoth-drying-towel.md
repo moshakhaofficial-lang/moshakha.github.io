@@ -82,6 +82,6 @@ matters. It's a lot of towel for the money.
 
 **No, if** you're drying something large or you want the fastest possible drying — in
 which case a twisted loop towel of the same size will finish the job with less wringing.
-Our [drying towel guide](/guides/best-car-drying-towels) compares both directly, and
-[what GSM actually means](/guides/microfiber-gsm-explained) explains why weave beats
+Our [drying towel guide](/guides/best-car-drying-towels/) compares both directly, and
+[what GSM actually means](/guides/microfiber-gsm-explained/) explains why weave beats
 weight here.

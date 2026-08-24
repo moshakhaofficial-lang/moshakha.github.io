@@ -107,6 +107,6 @@ the sidewall is the number you want.
 A decent gauge and something to add air with. Pencil gauges are cheap and imprecise; a
 digital or quality dial gauge is better and still inexpensive.
 
-For adding air, a [portable inflator](/guides/best-tire-inflators) means never depending
+For adding air, a [portable inflator](/guides/best-tire-inflators/) means never depending
 on a forecourt air line that's out of order — and it's the same device that gets you
 home after a slow puncture.

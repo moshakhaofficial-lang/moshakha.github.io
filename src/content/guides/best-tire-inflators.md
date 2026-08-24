@@ -149,12 +149,12 @@ differs front to rear on many vehicles.
 
 Check cold — driving heats the air and raises the reading by several PSI.
 
-[How to check tyre pressure properly](/how-to/how-to-check-tire-pressure) covers the
+[How to check tyre pressure properly](/how-to/how-to-check-tire-pressure/) covers the
 full routine.
 
 ## What to carry alongside it
 
 An inflator handles the slow leak. It doesn't handle a flat battery, which is the other
 common roadside failure — see our
-[jump starter guide](/guides/best-jump-starters). Between the two you cover most of what
+[jump starter guide](/guides/best-jump-starters/). Between the two you cover most of what
 actually strands people.

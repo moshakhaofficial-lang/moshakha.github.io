@@ -93,6 +93,6 @@ Use an ammonia-free automotive formula. It's not a meaningful price difference.
 
 The towel itself may be contaminated — fabric softener residue or product carried over
 from wax towels. Our guide to
-[why microfibre towels leave streaks](/how-to/why-microfiber-towels-leave-streaks)
+[why microfibre towels leave streaks](/how-to/why-microfiber-towels-leave-streaks/)
 covers the strip wash that fixes it, and
-[microfibre care](/blog/microfibre-care-101) covers keeping it from happening again.
+[microfibre care](/blog/microfibre-care-101/) covers keeping it from happening again.

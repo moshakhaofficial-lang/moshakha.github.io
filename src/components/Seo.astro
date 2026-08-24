@@ -27,9 +27,12 @@ const {
   schema = [],
 } = Astro.props;
 
-// Canonical: strip trailing slash (except root) so we never emit two URLs for one page.
+// Canonical: always end in exactly one trailing slash. GitHub Pages serves this
+// directory-format build by 301-redirecting the no-slash form to the slash form,
+// so the slash form is the actual final URL — canonical must match it, not the
+// URL that redirects away from itself.
 const rawPath = canonical ?? Astro.url.pathname;
-const cleanPath = rawPath !== '/' ? rawPath.replace(/\/$/, '') : '/';
+const cleanPath = rawPath === '/' ? '/' : rawPath.replace(/\/+$/, '') + '/';
 const canonicalUrl = new URL(cleanPath, site.url).href;
 const imageUrl = new URL(image, site.url).href;
 

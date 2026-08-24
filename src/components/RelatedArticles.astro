@@ -37,7 +37,7 @@ const items = [...resolved, ...fallback].slice(0, 3);
       {items.map((e) => (
         <article class="card card--link">
           <p class="eyebrow">{e!.collection === 'how-to' ? 'How-To' : e!.collection === 'guides' ? 'Buying Guide' : e!.collection === 'reviews' ? 'Review' : 'Blog'}</p>
-          <h3><a href={`/${e!.ref}`}>{e!.data.title}</a></h3>
+          <h3><a href={`/${e!.ref}/`}>{e!.data.title}</a></h3>
         </article>
       ))}
     </div>

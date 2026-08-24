@@ -12,7 +12,7 @@ const all = (
       const entries = await getCollection(c).catch(() => []);
       return entries
         .filter((e) => !e.data.draft)
-        .map((e) => ({ ...e, ref: `${c}/${e.id}`, href: `/${c}/${e.id}` }));
+        .map((e) => ({ ...e, ref: `${c}/${e.id}`, href: `/${c}/${e.id}/` }));
     }),
   )
 ).flat();
@@ -44,11 +44,11 @@ const counts = Object.fromEntries(
  * predict performance — this table is that argument in one view.
  */
 const specRows = [
-  { cat: 'Microfibre', sold: 'GSM', real: 'Weave + blend', href: '/guides/microfiber-gsm-explained' },
-  { cat: 'Jump starters', sold: 'Peak amps', real: 'Protection circuitry', href: '/guides/best-jump-starters' },
-  { cat: 'Dash cams', sold: '4K', real: 'Sensor + capacitor', href: '/guides/best-dash-cams' },
-  { cat: 'Pressure washers', sold: 'PSI', real: 'Flow rate', href: '/guides/best-pressure-washers-for-cars' },
-  { cat: 'Tyre pressure', sold: 'Sidewall max', real: 'Door placard', href: '/how-to/how-to-check-tire-pressure' },
+  { cat: 'Microfibre', sold: 'GSM', real: 'Weave + blend', href: '/guides/microfiber-gsm-explained/' },
+  { cat: 'Jump starters', sold: 'Peak amps', real: 'Protection circuitry', href: '/guides/best-jump-starters/' },
+  { cat: 'Dash cams', sold: '4K', real: 'Sensor + capacitor', href: '/guides/best-dash-cams/' },
+  { cat: 'Pressure washers', sold: 'PSI', real: 'Flow rate', href: '/guides/best-pressure-washers-for-cars/' },
+  { cat: 'Tyre pressure', sold: 'Sidewall max', real: 'Door placard', href: '/how-to/how-to-check-tire-pressure/' },
 ];
 
 /** Routes people by the job they are doing rather than by our taxonomy. */
@@ -128,7 +128,7 @@ const fmt = (d) => d.toLocaleDateString('en-US', { month: 'short', day: 'numeric
           We decode what those numbers actually predict, then tell you what's worth buying.
         </p>
         <div class="hero-cta">
-          <a href="/guides" class="btn btn--primary">Browse buying guides</a>
+          <a href="/guides/" class="btn btn--primary">Browse buying guides</a>
           <a href="#find" class="btn btn--ghost">Find your answer</a>
         </div>
       </div>
@@ -236,10 +236,10 @@ const fmt = (d) => d.toLocaleDateString('en-US', { month: 'short', day: 'numeric
       </ol>
 
       <p class="latest-more">
-        <a href="/guides">Buying guides</a> &middot;
-        <a href="/how-to">How-to guides</a> &middot;
-        <a href="/reviews">Reviews</a> &middot;
-        <a href="/blog">Blog</a>
+        <a href="/guides/">Buying guides</a> &middot;
+        <a href="/how-to/">How-to guides</a> &middot;
+        <a href="/reviews/">Reviews</a> &middot;
+        <a href="/blog/">Blog</a>
       </p>
     </div>
   </section>

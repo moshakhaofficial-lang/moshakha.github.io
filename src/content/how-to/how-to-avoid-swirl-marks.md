@@ -51,7 +51,7 @@ grit. Touchless washes are fine; anything with spinning bristles is not.
 
 **Washing with a sponge.** A flat face traps grit between the sponge and the paint with
 nowhere else to put it. This is structural, not a technique problem —
-[the comparison is here](/how-to/wash-mitt-vs-sponge).
+[the comparison is here](/how-to/wash-mitt-vs-sponge/).
 
 **One bucket.** Every dunk contaminates your soap. By the fourth panel you're washing
 with gritty water.
@@ -73,7 +73,7 @@ The habits, in order of impact:
 
 1. **Never use a brush-type automatic wash.** Nothing else on this list matters if you
    do this monthly.
-2. **Two buckets with grit guards.** [Full method here](/how-to/two-bucket-car-wash-method).
+2. **Two buckets with grit guards.** [Full method here](/how-to/two-bucket-car-wash-method/).
 3. **A mitt, not a sponge.**
 4. **Top to bottom, straight lines, no pressure.**
 5. **Never touch a dry, dusty car.** Rinse first, always. If you cannot rinse, leave it

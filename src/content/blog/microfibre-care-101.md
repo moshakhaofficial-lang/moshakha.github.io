@@ -160,6 +160,6 @@ paint pile by accident.
 Get this right and a good towel lasts years. Get it wrong and it doesn't matter which
 towel you bought — which is why this page matters more than any of our buying guides.
 
-If you're choosing new towels, our [drying towel guide](/guides/best-car-drying-towels)
-covers what to buy, and [what GSM actually means](/guides/microfiber-gsm-explained)
+If you're choosing new towels, our [drying towel guide](/guides/best-car-drying-towels/)
+covers what to buy, and [what GSM actually means](/guides/microfiber-gsm-explained/)
 explains the spec that most listings lean on hardest.

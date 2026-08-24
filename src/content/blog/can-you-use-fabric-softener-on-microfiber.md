@@ -88,4 +88,4 @@ Dedicated microfibre detergents exist and are good, but they aren't essential. W
 matters is what you leave out.
 
 The full routine — including why sorting towels by job matters as much as what you wash
-them with — is in our [microfibre care guide](/blog/microfibre-care-101).
+them with — is in our [microfibre care guide](/blog/microfibre-care-101/).

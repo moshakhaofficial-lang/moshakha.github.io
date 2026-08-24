@@ -74,7 +74,7 @@ risk on soft paint. A suede or edgeless border removes that risk entirely.
 
 Reported longevity is good past 50 wash cycles, though this depends far more on
 laundering than on the towel. Fabric softener will ruin this towel just as fast as it
-ruins a cheap one — see our [microfibre care guide](/blog/microfibre-care-101).
+ruins a cheap one — see our [microfibre care guide](/blog/microfibre-care-101/).
 
 ## Should you buy it?
 
@@ -83,4 +83,4 @@ you want one towel that does the job properly for years.
 
 **No, if** you drive something large — get the Liquid8r instead — or if you wash your car
 twice a year, in which case a budget twisted loop towel is perfectly adequate and our
-[drying towel guide](/guides/best-car-drying-towels) covers those too.
+[drying towel guide](/guides/best-car-drying-towels/) covers those too.

@@ -79,6 +79,6 @@ In order:
 3. **Edge construction** — suede or edgeless, never a hard stitched border
 4. **GSM** — matched to your vehicle, not maximised
 
-Our [guide to what GSM actually means](/guides/microfiber-gsm-explained) covers this in
-full, and the [drying towel guide](/guides/best-car-drying-towels) applies it to specific
+Our [guide to what GSM actually means](/guides/microfiber-gsm-explained/) covers this in
+full, and the [drying towel guide](/guides/best-car-drying-towels/) applies it to specific
 products.

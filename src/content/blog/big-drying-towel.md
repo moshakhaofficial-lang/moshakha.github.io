@@ -77,6 +77,6 @@ towel to switch to, easier wringing, faster laundering, and a spare if one hits 
 ground.
 
 Buy the single large towel if you're drying something big and want to do it in one
-continuous pass. Our [drying towel guide](/guides/best-car-drying-towels) has picks for
-both, and [what GSM actually means](/guides/microfiber-gsm-explained) covers the other
+continuous pass. Our [drying towel guide](/guides/best-car-drying-towels/) has picks for
+both, and [what GSM actually means](/guides/microfiber-gsm-explained/) covers the other
 half of the specification.

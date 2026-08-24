@@ -125,8 +125,8 @@ Shampoo is genuinely the least important variable in whether your wash damages p
 In order of actual impact:
 
 1. **Not using a brush-type automatic wash**
-2. **[Two buckets with grit guards](/how-to/two-bucket-car-wash-method)**
-3. **[A mitt rather than a sponge](/how-to/wash-mitt-vs-sponge)**
+2. **[Two buckets with grit guards](/how-to/two-bucket-car-wash-method/)**
+3. **[A mitt rather than a sponge](/how-to/wash-mitt-vs-sponge/)**
 4. **Washing top to bottom in straight lines**
 5. **Drying properly and immediately**
 6. Shampoo choice

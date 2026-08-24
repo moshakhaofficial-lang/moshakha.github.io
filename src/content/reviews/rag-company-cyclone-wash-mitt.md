@@ -84,6 +84,6 @@ core and grit release are real engineering differences, not marketing.
 
 **No, if** you wash occasionally — a chenille mitt at half the price is still enormously
 safer than a sponge, and technique matters more than either. Our
-[wash mitt guide](/guides/best-car-wash-mitts) covers the cheaper options, and
-[wash mitt vs sponge](/how-to/wash-mitt-vs-sponge) explains why any mitt is the upgrade
+[wash mitt guide](/guides/best-car-wash-mitts/) covers the cheaper options, and
+[wash mitt vs sponge](/how-to/wash-mitt-vs-sponge/) explains why any mitt is the upgrade
 that matters most.

@@ -144,4 +144,4 @@ to how compounds hold up after several winters. No lab testing. No brand paid fo
 placement.
 
 Cleaning them properly, which is where most of the lifespan comes from, is covered in
-[how to clean car floor mats](/how-to/how-to-clean-car-floor-mats).
+[how to clean car floor mats](/how-to/how-to-clean-car-floor-mats/).

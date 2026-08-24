@@ -116,10 +116,10 @@ Claying strips whatever protection was on the paint. The car is now bare clear c
 which spots easily and re-bonds contamination fast.
 
 **Protect it the same day.** A wax, sealant, or — if you are going further — a
-[ceramic coating](/blog/ceramic-coating-guide), which specifically requires
+[ceramic coating](/blog/ceramic-coating-guide/), which specifically requires
 decontaminated paint to bond properly. Claying is a prerequisite for coating, not an
 alternative to it.
 
 If you are correcting paint as well, the order is: wash → decontaminate → clay →
-[polish](/how-to/how-to-avoid-swirl-marks) → protect. Claying comes before polishing,
+[polish](/how-to/how-to-avoid-swirl-marks/) → protect. Claying comes before polishing,
 never after.

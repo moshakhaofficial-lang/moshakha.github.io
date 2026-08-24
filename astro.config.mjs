@@ -6,7 +6,11 @@ import { remarkReadingTime } from './src/lib/remark-reading-time.mjs';
 
 export default defineConfig({
   site: 'https://www.moshakha.com',
-  trailingSlash: 'ignore',
+  // GitHub Pages serves the directory-format build by 301-redirecting the
+  // no-slash form to the slash form — 'always' keeps every internal URL,
+  // the canonical tag, and the sitemap agreeing with the URL that actually
+  // returns 200, instead of pointing at one that redirects away from itself.
+  trailingSlash: 'always',
   output: 'static',
   integrations: [
     mdx(),
@@ -15,10 +19,10 @@ export default defineConfig({
       filter: (page) => !page.includes('/skincare/'),
       changefreq: 'weekly',
       lastmod: new Date(),
-      // Strip trailing slashes so sitemap URLs match the <link rel="canonical">
-      // we emit. Mismatched forms make Google pick a canonical for us.
+      // Ensure exactly one trailing slash so sitemap URLs match the
+      // <link rel="canonical"> tag emitted by Seo.astro.
       serialize: (item) => {
-        item.url = item.url.replace(/(?<!:\/)\/$/, '');
+        item.url = item.url.replace(/\/*$/, '/');
         return item;
       },
     }),

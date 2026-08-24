@@ -2,6 +2,12 @@ import { site } from '../config/site';
 
 const abs = (path: string) => new URL(path, site.url).href;
 
+// For page routes specifically (not image/asset URLs): GitHub Pages serves this
+// directory-format build by 301-redirecting the no-slash form to the slash form,
+// so structured-data URLs must end in exactly one trailing slash to match the
+// actual final URL, same as the canonical tag in Seo.astro.
+const absPage = (path: string) => abs(path === '/' ? '/' : path.replace(/\/*$/, '/'));
+
 const publisher = {
   '@type': 'Organization',
   name: site.name,
@@ -19,7 +25,7 @@ export function breadcrumbSchema(trail: { label: string; href: string }[]) {
         '@type': 'ListItem',
         position: i + 2,
         name: item.label,
-        item: abs(item.href),
+        item: absPage(item.href),
       })),
     ],
   };
@@ -39,7 +45,7 @@ export function articleSchema(opts: {
     '@type': 'Article',
     headline: opts.title,
     description: opts.description,
-    mainEntityOfPage: { '@type': 'WebPage', '@id': abs(opts.path) },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': absPage(opts.path) },
     datePublished: opts.publishDate.toISOString(),
     dateModified: (opts.updatedDate ?? opts.publishDate).toISOString(),
     author: { '@type': 'Organization', name: opts.author, url: site.url },
@@ -118,7 +124,7 @@ export function itemListSchema(
       '@type': 'ListItem',
       position: p.rank,
       name: `${p.brand} ${p.name}`,
-      url: `${abs(path)}#pick-${p.rank}`,
+      url: `${absPage(path)}#pick-${p.rank}`,
     })),
   };
 }

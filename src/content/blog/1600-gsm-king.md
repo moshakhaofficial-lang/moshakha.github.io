@@ -76,7 +76,7 @@ high-GSM towels has no commercial reason to publish the sentence "400 GSM is the
 choice for your windows".
 
 That's not a conspiracy, just incentives. But it does mean the loudest spec is the least
-informative one. Our [GSM guide](/guides/microfiber-gsm-explained) covers what to look at
+informative one. Our [GSM guide](/guides/microfiber-gsm-explained/) covers what to look at
 instead.
 
 ## The honest recommendation
@@ -86,4 +86,4 @@ time.
 
 **Otherwise buy 900–1200 GSM twisted loop**, and spend the difference on a low-pile glass
 towel — which will improve your results far more than the extra 400 GSM would. The
-[drying towel guide](/guides/best-car-drying-towels) has specific picks for both cases.
+[drying towel guide](/guides/best-car-drying-towels/) has specific picks for both cases.

@@ -123,7 +123,7 @@ deviate. The colour does nothing on its own — the system does.
 
 ## Where to go deeper
 
-- The number on every label, decoded: [what microfibre GSM actually means](/guides/microfiber-gsm-explained)
-- Drying specifically, matched to vehicle size: [best car drying towels](/guides/best-car-drying-towels)
-- The wash step: [best car wash mitts](/guides/best-car-wash-mitts)
-- Making any of them last: [microfibre care](/blog/microfibre-care-101)
+- The number on every label, decoded: [what microfibre GSM actually means](/guides/microfiber-gsm-explained/)
+- Drying specifically, matched to vehicle size: [best car drying towels](/guides/best-car-drying-towels/)
+- The wash step: [best car wash mitts](/guides/best-car-wash-mitts/)
+- Making any of them last: [microfibre care](/blog/microfibre-care-101/)

@@ -144,7 +144,7 @@ panel, removing grit without contact is the single most effective thing you can 
 
 It doesn't replace the contact wash — bonded road film still needs a mitt. It
 substantially reduces how much grit that mitt encounters, which is exactly the goal of
-[the two-bucket method](/how-to/two-bucket-car-wash-method).
+[the two-bucket method](/how-to/two-bucket-car-wash-method/).
 
 ## How we chose
 
