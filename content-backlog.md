@@ -1,19 +1,19 @@
 # Content backlog
 
-Topics queued for the weekly article job. The automation takes the **first entry
-whose status is `queued`**, generates a draft, opens a PR, and marks it `drafted`.
+Topics queued for future articles. **There is no automated publishing** — no scheduled
+job runs against this file. The process is: ask Claude in chat to write the next
+article, review the draft, then say the word to push it live.
 
-**The job fails loudly when fewer than 4 `queued` topics remain.** That's deliberate —
-a silently empty backlog means the weekly cadence stops without anyone noticing.
+`node scripts/next-topic.mjs` still works if you want the next queued topic printed
+without reading the table — it's a convenience picker, not a trigger for anything.
 
 ## How to add a topic
 
 Append a row. Keep the collection to one of `blog`, `how-to`, `guides`, `reviews`.
 
-> ⚠️ **Only `blog` and `how-to` should be automated.** `guides` and `reviews` involve
-> product picks, ASINs and prices — those must be researched by a human against live
-> Amazon listings. The generator is explicitly instructed not to invent product data,
-> and will refuse to write a roundup.
+> ⚠️ **`guides` and `reviews` need real product research.** They involve ASINs and
+> prices that must be checked against live Amazon listings — never invented. `blog`
+> and `how-to` topics don't have this constraint.
 
 ## Queue
 
