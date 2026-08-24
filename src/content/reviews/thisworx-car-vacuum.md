@@ -7,6 +7,8 @@ author: "Moshakha Editorial"
 productName: "Car Vacuum Cleaner 2.0 (110W, dual HEPA)"
 brand: "ThisWorx"
 asin: "B07LH5K2QP"
+image: "../../assets/images/product-thisworx-vacuum.jpg"
+imageAlt: "ThisWorx Car Vacuum 2.0 handheld with its carrying case, hose, and crevice attachments"
 rating: 4.2
 price: "$30–$45"
 verdict: "A cheap corded handheld that does the one job a car vacuum actually needs to do: run for as long as you're working without fading. Suction is modest and the build is budget, but corded consistency beats a cordless unit that dies in the third footwell. Buy it knowing it's a consumable, not an heirloom."

@@ -16,6 +16,8 @@ picks:
     brand: "ThisWorx"
     award: "Start here"
     asin: "B07LH5K2QP"
+    image: "../../assets/images/product-thisworx-vacuum.jpg"
+    imageAlt: "ThisWorx Car Vacuum 2.0 handheld with its carrying case, hose, and crevice attachments"
     rating: 4.2
     price: "$30–$45"
     bestFor: "The dry pass that has to happen before any liquid touches the interior"
