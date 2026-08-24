@@ -1,0 +1,353 @@
+---
+/**
+ * Car Gear Finder — an interactive filter over the site's own real product
+ * picks, not a separate hand-typed catalogue. Every product shown here is
+ * pulled at build time from the same `picks` arrays that power the guide
+ * pages, so it can never drift out of sync or list something that doesn't
+ * exist elsewhere on the site: add a pick to a guide, tag its goal in
+ * GOALS below if needed, and it's automatically available here.
+ *
+ * No price, rating, review count or availability is invented — everything
+ * rendered comes straight from the same content-collection fields the
+ * guide pages already display.
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { monetization } from '../config/site';
+
+const allGuides = await getCollection('guides');
+const bySlug = new Map(allGuides.map((g) => [g.id, g]));
+
+/**
+ * Curated goal -> source guide(s) map. This is the entire maintenance
+ * surface for adding a new goal: point it at an existing guide's picks (or
+ * a how-to guide, for goals with no ranked product guide yet — shown as a
+ * "read the guide" fallback rather than faking picks for a category we
+ * haven't researched).
+ */
+const GOALS = [
+  { id: 'wash', label: 'Wash it', hint: 'Mitts and soap', guides: ['best-car-wash-mitts', 'best-car-wash-soap'] },
+  { id: 'dry', label: 'Dry it', hint: 'Towels, matched to your car', guides: ['best-car-drying-towels'] },
+  { id: 'interior', label: 'Clean the interior', hint: 'Vacuum, dash, leather, glass', guides: ['best-car-interior-cleaning-products'] },
+  { id: 'paint', label: 'Protect the paint', hint: 'No ranked picks yet — technique guides', guides: [], howTo: ['how-to-use-a-clay-bar', 'how-to-avoid-swirl-marks'] },
+  { id: 'wheels', label: 'Clean wheels & tyres', hint: 'Dressing and stripping old build-up', guides: ['best-tire-shine'] },
+  { id: 'emergency', label: 'Prep for a breakdown', hint: 'Jump starters, inflators', guides: ['best-jump-starters', 'best-tire-inflators'] },
+  { id: 'convenience', label: 'Accessorize the car', hint: 'Mounts, organizers, mats', guides: ['best-car-phone-mounts', 'best-trunk-organizers', 'best-car-floor-mats'] },
+  { id: 'tech', label: 'Add tech', hint: 'Dash cams', guides: ['best-dash-cams'] },
+];
+
+const tag = monetization.amazonTrackingId;
+const marketplace = monetization.amazonMarketplace;
+
+const sizeHint = (bestFor: string) => {
+  if (/\b(suv|truck|van|large)\b/i.test(bestFor)) return 'large';
+  if (/\b(sedan|hatchback|small|compact)\b/i.test(bestFor)) return 'small';
+  return 'any';
+};
+const budgetTier = (price?: string) => {
+  // Prices are ranges like "$30–$45 (2-pack)" — match the FIRST $-prefixed
+  // number specifically. Stripping all non-digits first (an earlier version
+  // of this did that) concatenates both ends of the range into one bogus
+  // number ("$30–$45" -> "3045"), miscategorising nearly everything as
+  // premium. Caught by testing the actual filter output, not by inspection.
+  const match = price?.match(/\$(\d+(?:\.\d+)?)/);
+  const n = match ? parseFloat(match[1]) : NaN;
+  if (Number.isNaN(n)) return 'any';
+  if (n < 20) return 'budget';
+  if (n <= 60) return 'mid';
+  return 'premium';
+};
+
+// Flatten every goal's picks into one embeddable dataset, in build-time JS.
+const results = GOALS.map((goal) => ({
+  id: goal.id,
+  label: goal.label,
+  hint: goal.hint,
+  // Populated below — how-to entries live in a separate collection from
+  // `guides`, so they're resolved in a second pass once both are loaded.
+  fallback: [] as { href: string; title: string; description: string }[],
+  picks: goal.guides.flatMap((guideSlug) => {
+    const entry = bySlug.get(guideSlug);
+    if (!entry) return [];
+    return entry.data.picks.map((p) => ({
+      source: guideSlug,
+      sourceTitle: entry.data.title,
+      rank: p.rank,
+      name: p.name,
+      brand: p.brand,
+      award: p.award,
+      asin: p.asin,
+      rating: p.rating,
+      price: p.price ?? null,
+      bestFor: p.bestFor,
+      size: sizeHint(p.bestFor),
+      budget: budgetTier(p.price),
+      href: p.asin && tag ? `https://${marketplace}/dp/${p.asin}?tag=${tag}&linkCode=ll1&language=en_US` : null,
+    }));
+  }),
+}));
+
+// how-to fallback links need the how-to collection, resolved separately since
+// GOALS mixes two collections and getCollection() is type-specific.
+const howToGuides = await getCollection('how-to');
+const howToBySlug = new Map(howToGuides.map((g) => [g.id, g]));
+for (const goal of GOALS) {
+  const r = results.find((x) => x.id === goal.id)!;
+  r.fallback = (goal.howTo ?? [])
+    .map((slug) => howToBySlug.get(slug))
+    .filter(Boolean)
+    .map((e) => ({ href: `/how-to/${e!.id}/`, title: e!.data.title, description: e!.data.description }));
+}
+
+const dataJson = JSON.stringify(results);
+---
+<BaseLayout
+  title="Car Gear Finder"
+  description="Pick your goal, vehicle size and budget — get the real, already-vetted picks from our guides that fit, with nothing invented."
+  canonical="/car-gear-finder"
+>
+  <div class="wrap section">
+    <p class="eyebrow">Interactive</p>
+    <h1 style="margin-top:.7rem">Car Gear Finder</h1>
+    <p class="lede">
+      Pick what you're trying to do. Every product below is a real pick from our own guides —
+      same specs, same pros and cons, same picture we'd give you if you read the whole article.
+      This just narrows it down faster.
+    </p>
+
+    <form id="finder-form" class="finder-form">
+      <fieldset>
+        <legend>What are you trying to do?</legend>
+        <div class="goal-grid" role="radiogroup">
+          {GOALS.map((g, i) => (
+            <label class="goal-btn">
+              <input type="radio" name="goal" value={g.id} checked={i === 0} />
+              <span class="goal-label">{g.label}</span>
+              <span class="goal-hint">{g.hint}</span>
+            </label>
+          ))}
+        </div>
+      </fieldset>
+
+      <div class="finder-filters">
+        <fieldset>
+          <legend>Vehicle size</legend>
+          <label><input type="radio" name="size" value="any" checked /> Any</label>
+          <label><input type="radio" name="size" value="small" /> Sedan / hatchback</label>
+          <label><input type="radio" name="size" value="large" /> SUV / truck / van</label>
+        </fieldset>
+        <fieldset>
+          <legend>Budget</legend>
+          <label><input type="radio" name="budget" value="any" checked /> Any</label>
+          <label><input type="radio" name="budget" value="budget" /> Budget (under $20)</label>
+          <label><input type="radio" name="budget" value="mid" /> Mid-range ($20–$60)</label>
+          <label><input type="radio" name="budget" value="premium" /> Premium ($60+)</label>
+        </fieldset>
+        <fieldset>
+          <legend>Sort by</legend>
+          <label><input type="radio" name="sort" value="editorial" checked /> Our top pick first</label>
+          <label><input type="radio" name="sort" value="cheapest" /> Cheapest first</label>
+        </fieldset>
+      </div>
+    </form>
+
+    <div id="finder-results" class="finder-results" aria-live="polite"></div>
+  </div>
+</BaseLayout>
+
+<script type="application/json" id="finder-data" set:html={dataJson} />
+
+<script>
+  type Pick = {
+    source: string; sourceTitle: string; rank: number; name: string; brand: string;
+    award: string; asin: string | null; rating: number; price: string | null;
+    bestFor: string; size: string; budget: string; href: string | null;
+  };
+  type Goal = {
+    id: string; label: string; hint: string; picks: Pick[];
+    fallback: { href: string; title: string; description: string }[];
+  };
+
+  const dataEl = document.getElementById('finder-data');
+  const goals: Goal[] = JSON.parse(dataEl?.textContent ?? '[]');
+  const form = document.getElementById('finder-form') as HTMLFormElement;
+  const resultsEl = document.getElementById('finder-results') as HTMLElement;
+
+  function starString(rating: number): string {
+    return '★'.repeat(Math.round(rating)) + '☆'.repeat(5 - Math.round(rating));
+  }
+
+  function render() {
+    const fd = new FormData(form);
+    const goalId = fd.get('goal') as string;
+    const size = fd.get('size') as string;
+    const budget = fd.get('budget') as string;
+    const sort = fd.get('sort') as string;
+
+    const goal = goals.find((g) => g.id === goalId);
+    resultsEl.textContent = '';
+    if (!goal) return;
+
+    let picks = goal.picks.filter(
+      (p) => (size === 'any' || p.size === 'any' || p.size === size) &&
+             (budget === 'any' || p.budget === 'any' || p.budget === budget),
+    );
+    // Same fix as budgetTier() at build time: match the first $-prefixed
+    // number specifically rather than stripping all non-digits, which
+    // concatenates both ends of a "$30–$45" range into one bogus figure.
+    const firstPrice = (price: string | null) => {
+      const match = price?.match(/\$(\d+(?:\.\d+)?)/);
+      return match ? parseFloat(match[1]) : 999;
+    };
+    picks = picks.sort((a, b) => (sort === 'cheapest'
+      ? firstPrice(a.price) - firstPrice(b.price)
+      : a.rank - b.rank));
+
+    const heading = document.createElement('h2');
+    heading.className = 'finder-heading';
+    heading.textContent = goal.label;
+    resultsEl.appendChild(heading);
+
+    if (picks.length === 0 && goal.fallback.length === 0) {
+      const p = document.createElement('p');
+      p.className = 'finder-empty';
+      p.textContent = 'No picks match that combination — try widening the budget or vehicle size.';
+      resultsEl.appendChild(p);
+      return;
+    }
+
+    if (goal.fallback.length > 0) {
+      const note = document.createElement('p');
+      note.className = 'finder-note';
+      note.textContent = "We don't have ranked product picks for this goal yet — these guides cover the technique:";
+      resultsEl.appendChild(note);
+      const list = document.createElement('div');
+      list.className = 'grid grid--2';
+      for (const f of goal.fallback) {
+        const card = document.createElement('a');
+        card.className = 'card card--link';
+        card.href = f.href;
+        const h3 = document.createElement('h3');
+        h3.textContent = f.title;
+        const p = document.createElement('p');
+        p.textContent = f.description;
+        card.append(h3, p);
+        list.appendChild(card);
+      }
+      resultsEl.appendChild(list);
+      return;
+    }
+
+    if (picks.length === 0) {
+      const p = document.createElement('p');
+      p.className = 'finder-empty';
+      p.textContent = 'No picks match that combination — try widening the budget or vehicle size.';
+      resultsEl.appendChild(p);
+      return;
+    }
+
+    const grid = document.createElement('div');
+    grid.className = 'finder-grid';
+    for (const pick of picks.slice(0, 6)) {
+      const card = document.createElement('article');
+      card.className = 'finder-card';
+
+      const award = document.createElement('p');
+      award.className = 'finder-award';
+      award.textContent = pick.award;
+
+      const name = document.createElement('h3');
+      name.textContent = `${pick.brand} ${pick.name}`;
+
+      const meta = document.createElement('p');
+      meta.className = 'finder-meta';
+      meta.textContent = `${starString(pick.rating)} ${pick.rating.toFixed(1)}${pick.price ? ' · ' + pick.price : ''}`;
+
+      const bestFor = document.createElement('p');
+      bestFor.className = 'finder-bestfor';
+      bestFor.textContent = pick.bestFor;
+
+      const source = document.createElement('a');
+      source.className = 'finder-source';
+      source.href = `/guides/${pick.source}/#pick-${pick.rank}`;
+      source.textContent = `Full comparison in ${pick.sourceTitle}`;
+
+      card.append(award, name, meta, bestFor, source);
+
+      if (pick.href) {
+        const btn = document.createElement('a');
+        btn.className = 'btn btn--buy';
+        btn.href = pick.href;
+        btn.target = '_blank';
+        btn.rel = 'nofollow sponsored noopener';
+        btn.dataset.affiliate = pick.asin ?? '';
+        btn.dataset.product = `${pick.brand} ${pick.name}`;
+        btn.dataset.category = 'car-gear-finder';
+        btn.dataset.position = `finder-${goal.id}`;
+        btn.textContent = 'Check price on Amazon';
+        card.appendChild(btn);
+      } else {
+        const span = document.createElement('span');
+        span.className = 'btn btn--buy';
+        span.setAttribute('aria-disabled', 'true');
+        span.textContent = 'Link pending';
+        card.appendChild(span);
+      }
+
+      grid.appendChild(card);
+    }
+    resultsEl.appendChild(grid);
+  }
+
+  form.addEventListener('change', render);
+  render();
+</script>
+
+<style>
+  .lede { color: var(--ink-2); font-size: 1.1rem; max-width: 56ch; margin-top: .6rem; }
+  .finder-form { margin-top: 2rem; }
+  fieldset { border: none; padding: 0; margin: 0; }
+  legend {
+    font-family: var(--mono); font-size: .7rem; font-weight: 500; letter-spacing: .1em;
+    text-transform: uppercase; color: var(--ink-3); padding: 0 0 .6rem;
+  }
+  .goal-grid { display: grid; gap: .7rem; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); }
+  .goal-btn {
+    display: flex; flex-direction: column; gap: .2rem; padding: .85rem 1rem;
+    border: 2px solid var(--rule); border-radius: var(--r); cursor: pointer;
+    background: var(--surface); transition: border-color .12s ease;
+  }
+  .goal-btn:has(input:checked) { border-color: var(--signal); background: var(--signal-tint); }
+  .goal-btn input { position: absolute; opacity: 0; pointer-events: none; }
+  .goal-label { font-weight: 700; }
+  .goal-hint { font-size: .82rem; color: var(--ink-3); }
+
+  .finder-filters {
+    display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    margin-top: 1.75rem; padding-top: 1.5rem; border-top: 1px solid var(--rule);
+  }
+  .finder-filters label {
+    display: flex; align-items: center; gap: .5rem; font-size: .92rem; padding-block: .25rem; cursor: pointer;
+  }
+
+  .finder-results { margin-top: 2.5rem; padding-top: 2rem; border-top: 2px solid var(--rule-hard); }
+  .finder-heading { margin-bottom: 1.2rem; }
+  .finder-note { color: var(--ink-2); margin-bottom: 1rem; }
+  .finder-empty { color: var(--ink-3); padding: 2rem 0; }
+
+  .finder-grid { display: grid; gap: 1.2rem; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); }
+  .finder-card {
+    border: 1px solid var(--rule); border-radius: var(--r); padding: 1.25rem;
+    display: flex; flex-direction: column; gap: .5rem; background: var(--surface);
+  }
+  .finder-award {
+    font-family: var(--mono); font-size: .66rem; font-weight: 500; letter-spacing: .06em;
+    text-transform: uppercase; color: var(--signal-dark); background: var(--signal-tint);
+    display: inline-block; padding: .2rem .5rem; border-radius: var(--r); width: fit-content;
+  }
+  .finder-card h3 { font-size: 1.05rem; margin: 0; }
+  .finder-meta { font-family: var(--mono); font-size: .85rem; color: var(--ink-2); }
+  .finder-bestfor { font-size: .9rem; color: var(--ink-2); }
+  .finder-source { font-size: .82rem; }
+  .finder-card .btn--buy { margin-top: .3rem; }
+</style>

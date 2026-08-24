@@ -45,6 +45,7 @@ export const nav = [
   { label: 'Buying Guides', href: '/guides/' },
   { label: 'How-To', href: '/how-to/' },
   { label: 'Reviews', href: '/reviews/' },
+  { label: 'Gear Finder', href: '/car-gear-finder/' },
   { label: 'Blog', href: '/blog/' },
   { label: 'About', href: '/about/' },
 ] as const;
