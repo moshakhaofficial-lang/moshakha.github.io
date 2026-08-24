@@ -35,6 +35,7 @@ const baseSchema = [
 <html lang={site.locale}>
   <head>
     <Seo {...props} schema={[...baseSchema, ...(props.schema ?? [])]} />
+    <slot name="head" />
     {analytics.ga4MeasurementId && (
       <>
         <script async src={`https://www.googletagmanager.com/gtag/js?id=${analytics.ga4MeasurementId}`}></script>
