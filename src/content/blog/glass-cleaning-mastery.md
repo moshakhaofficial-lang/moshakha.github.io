@@ -5,6 +5,8 @@ targetKeyword: "how to clean car glass streak free"
 publishDate: 2026-02-08
 updatedDate: 2026-08-24
 author: "Moshakha Editorial"
+image: "../../assets/images/two-towel-glass.webp"
+imageAlt: "The two-towel method for streak-free glass: a damp low-pile towel followed by a dry one"
 related:
   - "how-to/why-microfiber-towels-leave-streaks"
   - "guides/microfiber-gsm-explained"
@@ -93,6 +95,6 @@ Use an ammonia-free automotive formula. It's not a meaningful price difference.
 
 The towel itself may be contaminated — fabric softener residue or product carried over
 from wax towels. Our guide to
-[why microfibre towels leave streaks](/how-to/why-microfiber-towels-leave-streaks)
+[why microfibre towels leave streaks](/how-to/why-microfiber-towels-leave-streaks/)
 covers the strip wash that fixes it, and
-[microfibre care](/blog/microfibre-care-101) covers keeping it from happening again.
+[microfibre care](/blog/microfibre-care-101/) covers keeping it from happening again.

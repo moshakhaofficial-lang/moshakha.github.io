@@ -5,6 +5,8 @@ targetKeyword: "how to clean car wheels safely"
 publishDate: 2026-02-11
 updatedDate: 2026-08-24
 author: "Moshakha Editorial"
+image: "../../assets/images/contamination-chain.webp"
+imageAlt: "Diagram showing why brake dust picked up by a wheel tool must never reach painted panels"
 related:
   - "guides/best-car-wash-mitts"
   - "how-to/two-bucket-car-wash-method"
@@ -102,6 +104,6 @@ Apply to genuinely clean, decontaminated, dry wheels or it seals contamination i
 ## Where this fits in the wash
 
 Wheels are step one of the
-[two-bucket wash method](/how-to/two-bucket-car-wash-method), and the separation of tools
+[two-bucket wash method](/how-to/two-bucket-car-wash-method/), and the separation of tools
 described here is one of the main defences against
-[swirl marks](/how-to/how-to-avoid-swirl-marks).
+[swirl marks](/how-to/how-to-avoid-swirl-marks/).

@@ -15,6 +15,8 @@ picks:
     brand: "AstroAI"
     award: "Best overall"
     asin: "B07QR4Q42L"
+    image: "../../assets/images/product-astroai-inflator.jpg"
+    imageAlt: "AstroAI portable tire inflator with digital pressure gauge"
     rating: 4.5
     price: "$30–$45"
     bestFor: "Topping up four tyres without worrying about battery charge"
@@ -149,12 +151,12 @@ differs front to rear on many vehicles.
 
 Check cold — driving heats the air and raises the reading by several PSI.
 
-[How to check tyre pressure properly](/how-to/how-to-check-tire-pressure) covers the
+[How to check tyre pressure properly](/how-to/how-to-check-tire-pressure/) covers the
 full routine.
 
 ## What to carry alongside it
 
 An inflator handles the slow leak. It doesn't handle a flat battery, which is the other
 common roadside failure — see our
-[jump starter guide](/guides/best-jump-starters). Between the two you cover most of what
+[jump starter guide](/guides/best-jump-starters/). Between the two you cover most of what
 actually strands people.

@@ -5,6 +5,8 @@ targetKeyword: "how to clean car interior"
 publishDate: 2026-02-09
 updatedDate: 2026-08-24
 author: "Moshakha Editorial"
+image: "../../assets/images/interior-order.webp"
+imageAlt: "The correct order for cleaning a car interior, from emptying it to finishing with glass"
 related:
   - "blog/glass-cleaning-mastery"
   - "guides/best-microfiber-towels-for-cars"
@@ -102,8 +104,8 @@ Keep interior towels separate from paint towels and from glass towels. An interi
 picks up dressings and cleaners that will streak glass immediately, and a towel that has
 been on carpet carries grit you don't want anywhere near piano black.
 
-[Microfibre care](/blog/microfibre-care-101) covers the laundering categories, and
-[our towel guide](/guides/best-microfiber-towels-for-cars) covers which pile depth suits
+[Microfibre care](/blog/microfibre-care-101/) covers the laundering categories, and
+[our towel guide](/guides/best-microfiber-towels-for-cars/) covers which pile depth suits
 which surface.
 
-Finish with the glass — [streak-free method here](/blog/glass-cleaning-mastery).
+Finish with the glass — [streak-free method here](/blog/glass-cleaning-mastery/).

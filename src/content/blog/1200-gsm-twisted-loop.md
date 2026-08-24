@@ -5,6 +5,8 @@ targetKeyword: "1200 gsm twisted loop towel"
 publishDate: 2026-02-04
 updatedDate: 2026-08-24
 author: "Moshakha Editorial"
+image: "../../assets/images/weave-vs-weight.webp"
+imageAlt: "Comparison of twisted loop and plush pile at the same GSM, showing why weave decides how a towel releases water"
 related:
   - "guides/best-car-drying-towels"
   - "guides/microfiber-gsm-explained"
@@ -79,6 +81,6 @@ In order:
 3. **Edge construction** — suede or edgeless, never a hard stitched border
 4. **GSM** — matched to your vehicle, not maximised
 
-Our [guide to what GSM actually means](/guides/microfiber-gsm-explained) covers this in
-full, and the [drying towel guide](/guides/best-car-drying-towels) applies it to specific
+Our [guide to what GSM actually means](/guides/microfiber-gsm-explained/) covers this in
+full, and the [drying towel guide](/guides/best-car-drying-towels/) applies it to specific
 products.

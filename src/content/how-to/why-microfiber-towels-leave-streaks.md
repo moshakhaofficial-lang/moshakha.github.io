@@ -4,6 +4,8 @@ description: "Streaking is almost never the towel being faulty. The three real c
 targetKeyword: "why does my microfiber towel leave streaks"
 publishDate: 2026-08-24
 author: "Moshakha Editorial"
+image: "../../assets/images/streak-diagnosis.webp"
+imageAlt: "Diagnostic chart matching streaking symptoms to their likely cause"
 totalTime: "PT20M"
 supplies:
   - "White vinegar"
@@ -67,7 +69,7 @@ Dryer sheets do exactly the same thing.
 **Fix:** strip wash. Towels alone, no detergent, a cup of white vinegar in the wash, then
 a second full rinse. Repeat once if the improvement is partial. Then never use softener
 on microfibre again — full routine in our
-[microfibre care guide](/blog/microfibre-care-101).
+[microfibre care guide](/blog/microfibre-care-101/).
 
 ## Cause 2: too much pile for the surface
 
@@ -80,7 +82,7 @@ faulty; it's the wrong tool.
 
 **Fix:** a 300-400 GSM low-pile or waffle weave towel for glass. This single purchase
 resolves more streaking complaints than any glass cleaner, and it costs a few dollars.
-See [what GSM actually means](/guides/microfiber-gsm-explained) for why the ranges work
+See [what GSM actually means](/guides/microfiber-gsm-explained/) for why the ranges work
 this way.
 
 ## Cause 3: product contamination

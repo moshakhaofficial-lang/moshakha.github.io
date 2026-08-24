@@ -5,6 +5,8 @@ targetKeyword: "ceramic coating guide"
 publishDate: 2026-02-10
 updatedDate: 2026-08-24
 author: "Moshakha Editorial"
+image: "../../assets/images/coating-scope.webp"
+imageAlt: "What a ceramic coating protects against versus what it does not, including swirl marks and stone chips"
 related:
   - "how-to/how-to-avoid-swirl-marks"
   - "how-to/two-bucket-car-wash-method"
@@ -73,7 +75,7 @@ Proper preparation is:
 2. **Chemical decontamination** — iron fallout remover for bonded metallic particles
 3. **Mechanical decontamination** — clay bar or mitt for anything still embedded
 4. **Machine polishing** to correct defects — see
-   [swirl mark removal](/how-to/how-to-avoid-swirl-marks)
+   [swirl mark removal](/how-to/how-to-avoid-swirl-marks/)
 5. **Panel wipe** with an IPA or dedicated prep solution to strip polishing oils
 
 That last step gets skipped constantly and matters enormously. Polishing oils fill
@@ -104,5 +106,5 @@ looking after your car and want washing to be faster and results to last longer,
 worth the effort.
 
 If you're hoping it means you can stop being careful, it doesn't — and a car that gets
-[washed properly](/how-to/two-bucket-car-wash-method) without a coating will stay in
+[washed properly](/how-to/two-bucket-car-wash-method/) without a coating will stay in
 better condition than a coated car that goes through brush washes.

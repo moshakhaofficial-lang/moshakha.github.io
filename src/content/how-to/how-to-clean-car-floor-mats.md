@@ -4,6 +4,8 @@ description: "Rubber and carpet mats need opposite treatment. How to clean each 
 targetKeyword: "how to clean car floor mats"
 publishDate: 2026-08-24
 author: "Moshakha Editorial"
+image: "../../assets/images/mat-material-contrast.webp"
+imageAlt: "Comparison of the opposite cleaning treatments rubber liners and carpet mats need"
 totalTime: "PT45M"
 supplies:
   - "Stiff bristle brush"
@@ -117,6 +119,6 @@ window seal, or a blocked sunroof or scuttle drain. Finding that early is worth 
 than clean mats.
 
 The full interior sequence is in our
-[interior detailing guide](/blog/perfect-interior-detail), and the products for each
+[interior detailing guide](/blog/perfect-interior-detail/), and the products for each
 surface are in our
-[interior cleaning guide](/guides/best-car-interior-cleaning-products).
+[interior cleaning guide](/guides/best-car-interior-cleaning-products/).

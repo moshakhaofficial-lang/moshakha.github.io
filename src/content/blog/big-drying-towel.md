@@ -5,6 +5,8 @@ targetKeyword: "big car drying towel size"
 publishDate: 2026-02-04
 updatedDate: 2026-08-24
 author: "Moshakha Editorial"
+image: "../../assets/images/saturation-mechanic.webp"
+imageAlt: "Comparison of one large drying towel saturating as a single unit versus two medium towels"
 related:
   - "guides/best-car-drying-towels"
   - "blog/1600-gsm-king"
@@ -77,6 +79,6 @@ towel to switch to, easier wringing, faster laundering, and a spare if one hits 
 ground.
 
 Buy the single large towel if you're drying something big and want to do it in one
-continuous pass. Our [drying towel guide](/guides/best-car-drying-towels) has picks for
-both, and [what GSM actually means](/guides/microfiber-gsm-explained) covers the other
+continuous pass. Our [drying towel guide](/guides/best-car-drying-towels/) has picks for
+both, and [what GSM actually means](/guides/microfiber-gsm-explained/) covers the other
 half of the specification.

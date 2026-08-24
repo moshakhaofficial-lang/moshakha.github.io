@@ -4,6 +4,8 @@ description: "Claying removes bonded contamination a wash can't. The lubrication
 targetKeyword: "how to use a clay bar"
 publishDate: 2026-08-24
 author: "Moshakha Editorial"
+image: "../../assets/images/clay-lubrication.webp"
+imageAlt: "Comparison of dry clay marring paint versus properly lubricated clay gliding across it"
 totalTime: "PT90M"
 supplies:
   - "Detailing clay bar, 100g (medium or fine grade)"
@@ -116,10 +118,10 @@ Claying strips whatever protection was on the paint. The car is now bare clear c
 which spots easily and re-bonds contamination fast.
 
 **Protect it the same day.** A wax, sealant, or — if you are going further — a
-[ceramic coating](/blog/ceramic-coating-guide), which specifically requires
+[ceramic coating](/blog/ceramic-coating-guide/), which specifically requires
 decontaminated paint to bond properly. Claying is a prerequisite for coating, not an
 alternative to it.
 
 If you are correcting paint as well, the order is: wash → decontaminate → clay →
-[polish](/how-to/how-to-avoid-swirl-marks) → protect. Claying comes before polishing,
+[polish](/how-to/how-to-avoid-swirl-marks/) → protect. Claying comes before polishing,
 never after.

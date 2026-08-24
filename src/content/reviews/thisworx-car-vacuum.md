@@ -7,6 +7,8 @@ author: "Moshakha Editorial"
 productName: "Car Vacuum Cleaner 2.0 (110W, dual HEPA)"
 brand: "ThisWorx"
 asin: "B07LH5K2QP"
+image: "../../assets/images/product-thisworx-vacuum.jpg"
+imageAlt: "ThisWorx Car Vacuum 2.0 handheld with its carrying case, hose, and crevice attachments"
 rating: 4.2
 price: "$30–$45"
 verdict: "A cheap corded handheld that does the one job a car vacuum actually needs to do: run for as long as you're working without fading. Suction is modest and the build is budget, but corded consistency beats a cordless unit that dies in the third footwell. Buy it knowing it's a consumable, not an heirloom."
@@ -98,7 +100,7 @@ before vacuuming turns dust into mud and works it deeper into the pile.
   airflow.
 
 The full sequence is in our
-[interior detailing guide](/blog/perfect-interior-detail).
+[interior detailing guide](/blog/perfect-interior-detail/).
 
 ## Should you buy it?
 
@@ -108,4 +110,4 @@ socket that stays live, and you understand it is a budget tool for loose debris.
 **No, if** you have pets that shed heavily, your car's socket dies with the ignition, or
 you already own a household vacuum with a hose long enough to reach the driveway — in
 which case you have a better tool already and should spend the money on
-[interior chemistry](/guides/best-car-interior-cleaning-products) instead.
+[interior chemistry](/guides/best-car-interior-cleaning-products/) instead.

@@ -5,6 +5,8 @@ targetKeyword: "waterless car wash safe"
 publishDate: 2026-02-12
 updatedDate: 2026-08-24
 author: "Moshakha Editorial"
+image: "../../assets/images/waterless-vs-rinseless.webp"
+imageAlt: "Chart matching dirt level to the right wash method, from waterless spray to a full two-bucket wash"
 related:
   - "how-to/two-bucket-car-wash-method"
   - "how-to/how-to-avoid-swirl-marks"
@@ -83,7 +85,7 @@ Running out mid-job is the moment people start reusing contaminated faces — wh
 exactly the thing the technique depends on not doing. Count your towels before you start,
 not halfway through.
 
-Our [towel count guide](/blog/how-many-microfiber-towels-to-detail-a-car) goes into this
+Our [towel count guide](/blog/how-many-microfiber-towels-to-detail-a-car/) goes into this
 properly.
 
 ## The honest summary
@@ -91,6 +93,6 @@ properly.
 Waterless washing is a maintenance tool, not a replacement for washing. Used on a lightly
 dusty car with plenty of product and plenty of towels, it's safe and convenient. Used on
 a genuinely dirty car, it's one of the more reliable ways to install
-[swirl marks](/how-to/how-to-avoid-swirl-marks).
+[swirl marks](/how-to/how-to-avoid-swirl-marks/).
 
-When the car is properly dirty, it needs [a proper wash](/how-to/two-bucket-car-wash-method).
+When the car is properly dirty, it needs [a proper wash](/how-to/two-bucket-car-wash-method/).

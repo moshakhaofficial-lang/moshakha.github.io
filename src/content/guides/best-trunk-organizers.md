@@ -15,6 +15,8 @@ picks:
     brand: "DRIVE"
     award: "Best overall"
     asin: "B071F82CYJ"
+    image: "../../assets/images/product-drive-organizer.jpg"
+    imageAlt: "DRIVE collapsible car trunk organizer with tie-down strap"
     rating: 4.5
     price: "$25–$40"
     bestFor: "One organizer that folds flat when the boot is needed for something else"
@@ -136,7 +138,7 @@ removed and left in the garage, which is what actually happens to rigid boxes.
 Loose items in the passenger compartment are closer to people than anything behind the
 seats. Water bottles rolling into the footwell are a genuine hazard — a bottle under the
 brake pedal is the same failure mode as
-[a sliding floor mat](/guides/best-car-floor-mats).
+[a sliding floor mat](/guides/best-car-floor-mats/).
 
 A seat back organizer addresses this, with one caveat: **check your manual for seat-back
 airbags** before strapping anything over a deployment zone.

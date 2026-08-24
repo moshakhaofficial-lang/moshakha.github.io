@@ -71,6 +71,12 @@ the same wash.
 
 This includes **dryer sheets**, which are fabric softener in sheet form.
 
+**How to tell if this has already happened to your towels:** water beads on the surface
+instead of soaking straight in, glass or paint streaks after every use rather than
+occasionally, drying capacity drops off sharply, or the pile feels slick rather than
+plush. Any of those, alone or together, points at softener contamination rather than a
+worn-out towel — and it's usually fixable. See the strip wash below.
+
 ### 2. Keep the heat down
 
 Wash cold to warm, maximum 40°C. Air-dry where you can; tumble dry on low or no heat
@@ -108,6 +114,10 @@ isn't faulty; it's carrying someone else's product.
 A plain liquid detergent with no softeners, no brighteners and no scent works fine — a
 dedicated microfibre detergent is better but not essential. Avoid powder, which doesn't
 fully dissolve at low temperatures and leaves gritty residue in the pile.
+
+Watch heavily scented and "ultra" detergents specifically — they often contain softening
+agents or optical brighteners even when the label doesn't say "softener," and they leave
+the same residue.
 
 Use **less than the bottle says**. Excess detergent doesn't rinse out and becomes exactly
 the kind of residue that causes streaking.
@@ -160,6 +170,6 @@ paint pile by accident.
 Get this right and a good towel lasts years. Get it wrong and it doesn't matter which
 towel you bought — which is why this page matters more than any of our buying guides.
 
-If you're choosing new towels, our [drying towel guide](/guides/best-car-drying-towels)
-covers what to buy, and [what GSM actually means](/guides/microfiber-gsm-explained)
+If you're choosing new towels, our [drying towel guide](/guides/best-car-drying-towels/)
+covers what to buy, and [what GSM actually means](/guides/microfiber-gsm-explained/)
 explains the spec that most listings lean on hardest.

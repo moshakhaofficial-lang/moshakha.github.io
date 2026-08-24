@@ -113,8 +113,8 @@ never touch paint. Brake dust is metallic and scratches on contact.
 
 Any decent mitt beats any sponge. If you want specific picks — including which mitt
 suits bug-covered front ends and why a wheel-only mitt is non-negotiable — see our
-[best car wash mitts guide](/guides/best-car-wash-mitts).
+[best car wash mitts guide](/guides/best-car-wash-mitts/).
 
 And once the car is clean, the other half of the risk is drying it. A saturated or
 dropped drying towel undoes a careful wash just as efficiently as a sponge does; our
-[drying towel guide](/guides/best-car-drying-towels) covers that.
+[drying towel guide](/guides/best-car-drying-towels/) covers that.

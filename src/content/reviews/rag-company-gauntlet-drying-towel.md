@@ -7,6 +7,8 @@ author: "Moshakha Editorial"
 productName: "The Gauntlet Drying Towel (900 GSM)"
 brand: "The Rag Company"
 asin: "B083KPZR9C"
+image: "../../assets/images/product-gauntlet-towel.jpg"
+imageAlt: "The Rag Company Gauntlet microfibre drying towel"
 rating: 4.7
 price: "$25–$35 (2-pack)"
 verdict: "The best default drying towel for a normal car. Its 15x24in size is the real feature — big enough to dry a panel in one pass, small enough to control one-handed — and the 70/30 blend out-absorbs cheaper 80/20 towels at higher GSM. It is not the right choice for a full-size SUV."
@@ -74,7 +76,7 @@ risk on soft paint. A suede or edgeless border removes that risk entirely.
 
 Reported longevity is good past 50 wash cycles, though this depends far more on
 laundering than on the towel. Fabric softener will ruin this towel just as fast as it
-ruins a cheap one — see our [microfibre care guide](/blog/microfibre-care-101).
+ruins a cheap one — see our [microfibre care guide](/blog/microfibre-care-101/).
 
 ## Should you buy it?
 
@@ -83,4 +85,4 @@ you want one towel that does the job properly for years.
 
 **No, if** you drive something large — get the Liquid8r instead — or if you wash your car
 twice a year, in which case a budget twisted loop towel is perfectly adequate and our
-[drying towel guide](/guides/best-car-drying-towels) covers those too.
+[drying towel guide](/guides/best-car-drying-towels/) covers those too.

@@ -15,6 +15,8 @@ picks:
     brand: "Chemical Guys"
     award: "Best overall"
     asin: "B071RKWXKV"
+    image: "../../assets/images/product-mrpink-soap.jpg"
+    imageAlt: "Chemical Guys Mr. Pink car wash soap, 64oz bottle"
     rating: 4.6
     price: "$15–$22"
     bestFor: "Regular maintenance washes, in a bucket or a foam cannon"
@@ -125,8 +127,8 @@ Shampoo is genuinely the least important variable in whether your wash damages p
 In order of actual impact:
 
 1. **Not using a brush-type automatic wash**
-2. **[Two buckets with grit guards](/how-to/two-bucket-car-wash-method)**
-3. **[A mitt rather than a sponge](/how-to/wash-mitt-vs-sponge)**
+2. **[Two buckets with grit guards](/how-to/two-bucket-car-wash-method/)**
+3. **[A mitt rather than a sponge](/how-to/wash-mitt-vs-sponge/)**
 4. **Washing top to bottom in straight lines**
 5. **Drying properly and immediately**
 6. Shampoo choice

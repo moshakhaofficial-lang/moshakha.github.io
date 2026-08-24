@@ -4,6 +4,8 @@ description: "A realistic count by job, why running out mid-wash causes swirl ma
 targetKeyword: "how many microfiber towels to detail a car"
 publishDate: 2026-08-24
 author: "Moshakha Editorial"
+image: "../../assets/images/towel-count-by-job.webp"
+imageAlt: "Chart showing how many microfibre towels are needed per detailing job"
 related:
   - "guides/best-microfiber-towels-for-cars"
   - "blog/microfibre-care-101"
@@ -62,7 +64,7 @@ through willpower — it should be resisted by having another towel.
 If you're starting from nothing and don't want to spend much:
 
 1. **One good drying towel**, 900+ GSM twisted loop. Worth buying properly — see our
-   [drying towel guide](/guides/best-car-drying-towels).
+   [drying towel guide](/guides/best-car-drying-towels/).
 2. **A six-pack of 300–500 GSM edgeless towels.** These cover glass, interior, door
    shuts and general work. Cheap in multipacks.
 3. **Two towels marked for wheels only.** Can be the cheapest you can find. They will
@@ -89,5 +91,5 @@ When a towel gets retired to dirty duty, snip a corner off it. It's a permanent 
 survives laundering and stops a wheel towel quietly reappearing in the paint pile six
 months later.
 
-Whatever the count, [how you launder them](/blog/microfibre-care-101) affects your
+Whatever the count, [how you launder them](/blog/microfibre-care-101/) affects your
 results more than how many you own.

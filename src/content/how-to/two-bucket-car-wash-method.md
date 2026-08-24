@@ -110,9 +110,9 @@ into the halo pattern people call swirl marks.
 ## What to use
 
 Any decent mitt works — the method matters more than the media. If you're still using a
-sponge, [that comparison](/how-to/wash-mitt-vs-sponge) is worth reading first, because
+sponge, [that comparison](/how-to/wash-mitt-vs-sponge/) is worth reading first, because
 the two-bucket method cannot fully compensate for a tool that traps grit against your
 paint by design.
 
-For specific picks, see our [wash mitt guide](/guides/best-car-wash-mitts) and
-[drying towel guide](/guides/best-car-drying-towels).
+For specific picks, see our [wash mitt guide](/guides/best-car-wash-mitts/) and
+[drying towel guide](/guides/best-car-drying-towels/).

@@ -4,6 +4,8 @@ description: "The sidewall number is not your target pressure. Where to find the
 targetKeyword: "how to check tire pressure"
 publishDate: 2026-08-24
 author: "Moshakha Editorial"
+image: "../../assets/images/sidewall-vs-placard.webp"
+imageAlt: "Comparison of the tyre sidewall maximum pressure figure and the correct door-jamb placard pressure"
 totalTime: "PT10M"
 supplies:
   - "Tyre pressure gauge (digital or dial — not the pencil type)"
@@ -107,6 +109,6 @@ the sidewall is the number you want.
 A decent gauge and something to add air with. Pencil gauges are cheap and imprecise; a
 digital or quality dial gauge is better and still inexpensive.
 
-For adding air, a [portable inflator](/guides/best-tire-inflators) means never depending
+For adding air, a [portable inflator](/guides/best-tire-inflators/) means never depending
 on a forecourt air line that's out of order — and it's the same device that gets you
 home after a slow puncture.

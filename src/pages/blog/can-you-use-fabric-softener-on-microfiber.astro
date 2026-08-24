@@ -1,0 +1,32 @@
+---
+// This article was merged into microfibre-care-101 (2026-08-24) — both pages
+// covered near-identical ground on the fabric-softener question, splitting
+// ranking signal across two pages instead of consolidating it on one. GitHub
+// Pages has no server-side redirect config, so this is the standard static-site
+// soft-redirect: canonical points at the merged target (not this page), and a
+// short meta refresh sends human visitors there automatically. The URL itself
+// keeps resolving rather than 404ing, in case it's bookmarked or indexed.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const target = '/blog/microfibre-care-101/';
+---
+<BaseLayout
+  title="Moved: Can You Use Fabric Softener on Microfibre?"
+  description="This guide is now part of our full microfibre care guide — read the complete version there."
+  canonical={target}
+>
+  <Fragment slot="head">
+    <meta http-equiv="refresh" content={`1; url=${target}`} />
+  </Fragment>
+  <div class="wrap section" style="text-align:center">
+    <p class="eyebrow">Moved</p>
+    <h1 style="margin-top:.75rem">This guide is now part of our full care guide</h1>
+    <p style="color:var(--ink-2);margin-top:1rem;max-width:40ch;margin-inline:auto">
+      We folded the fabric-softener question into our complete microfibre care guide,
+      including the strip-wash fix. Taking you there now.
+    </p>
+    <div style="margin-top:1.75rem">
+      <a href={target} class="btn btn--primary">Go to the microfibre care guide</a>
+    </div>
+  </div>
+</BaseLayout>

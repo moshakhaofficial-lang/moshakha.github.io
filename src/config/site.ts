@@ -42,11 +42,12 @@ export const analytics = {
 } as const;
 
 export const nav = [
-  { label: 'Buying Guides', href: '/guides' },
-  { label: 'How-To', href: '/how-to' },
-  { label: 'Reviews', href: '/reviews' },
-  { label: 'Blog', href: '/blog' },
-  { label: 'About', href: '/about' },
+  { label: 'Buying Guides', href: '/guides/' },
+  { label: 'How-To', href: '/how-to/' },
+  { label: 'Reviews', href: '/reviews/' },
+  { label: 'Gear Finder', href: '/car-gear-finder/' },
+  { label: 'Blog', href: '/blog/' },
+  { label: 'About', href: '/about/' },
 ] as const;
 
 /** Shown wherever affiliate links appear, as Amazon Associates requires. */

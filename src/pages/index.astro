@@ -12,7 +12,7 @@ const all = (
       const entries = await getCollection(c).catch(() => []);
       return entries
         .filter((e) => !e.data.draft)
-        .map((e) => ({ ...e, ref: `${c}/${e.id}`, href: `/${c}/${e.id}` }));
+        .map((e) => ({ ...e, ref: `${c}/${e.id}`, href: `/${c}/${e.id}/` }));
     }),
   )
 ).flat();
@@ -44,11 +44,11 @@ const counts = Object.fromEntries(
  * predict performance — this table is that argument in one view.
  */
 const specRows = [
-  { cat: 'Microfibre', sold: 'GSM', real: 'Weave + blend', href: '/guides/microfiber-gsm-explained' },
-  { cat: 'Jump starters', sold: 'Peak amps', real: 'Protection circuitry', href: '/guides/best-jump-starters' },
-  { cat: 'Dash cams', sold: '4K', real: 'Sensor + capacitor', href: '/guides/best-dash-cams' },
-  { cat: 'Pressure washers', sold: 'PSI', real: 'Flow rate', href: '/guides/best-pressure-washers-for-cars' },
-  { cat: 'Tyre pressure', sold: 'Sidewall max', real: 'Door placard', href: '/how-to/how-to-check-tire-pressure' },
+  { cat: 'Microfibre', sold: 'GSM', real: 'Weave + blend', href: '/guides/microfiber-gsm-explained/' },
+  { cat: 'Jump starters', sold: 'Peak amps', real: 'Protection circuitry', href: '/guides/best-jump-starters/' },
+  { cat: 'Dash cams', sold: '4K', real: 'Sensor + capacitor', href: '/guides/best-dash-cams/' },
+  { cat: 'Pressure washers', sold: 'PSI', real: 'Flow rate', href: '/guides/best-pressure-washers-for-cars/' },
+  { cat: 'Tyre pressure', sold: 'Sidewall max', real: 'Door placard', href: '/how-to/how-to-check-tire-pressure/' },
 ];
 
 /** Routes people by the job they are doing rather than by our taxonomy. */
@@ -61,6 +61,7 @@ const jobs = [
       'how-to/wash-mitt-vs-sponge',
       'guides/best-car-wash-mitts',
       'guides/best-car-wash-soap',
+      'reviews/rag-company-cyclone-wash-mitt',
     ],
   },
   {
@@ -69,8 +70,11 @@ const jobs = [
     links: [
       'guides/best-car-drying-towels',
       'guides/microfiber-gsm-explained',
+      'guides/best-microfiber-towels-for-cars',
       'how-to/why-microfiber-towels-leave-streaks',
       'blog/microfibre-care-101',
+      'reviews/rag-company-gauntlet-drying-towel',
+      'reviews/chemical-guys-woolly-mammoth-drying-towel',
     ],
   },
   {
@@ -110,6 +114,7 @@ const jobs = [
       'guides/best-tire-inflators',
       'guides/best-dash-cams',
       'guides/best-car-phone-mounts',
+      'guides/best-trunk-organizers',
       'how-to/how-to-jump-start-a-car',
     ],
   },
@@ -128,7 +133,7 @@ const fmt = (d) => d.toLocaleDateString('en-US', { month: 'short', day: 'numeric
           We decode what those numbers actually predict, then tell you what's worth buying.
         </p>
         <div class="hero-cta">
-          <a href="/guides" class="btn btn--primary">Browse buying guides</a>
+          <a href="/guides/" class="btn btn--primary">Browse buying guides</a>
           <a href="#find" class="btn btn--ghost">Find your answer</a>
         </div>
       </div>
@@ -164,7 +169,8 @@ const fmt = (d) => d.toLocaleDateString('en-US', { month: 'short', day: 'numeric
       <h2 style="margin-top:.7rem">What are you trying to do?</h2>
       <p class="sec-lede">
         Pick the job. We'll point you at the guides that cover it &mdash; in the order
-        we'd actually do them.
+        we'd actually do them. Already know your budget and vehicle size?
+        <a href="/car-gear-finder/">Try the Gear Finder</a> instead.
       </p>
 
       <div class="router">
@@ -236,10 +242,10 @@ const fmt = (d) => d.toLocaleDateString('en-US', { month: 'short', day: 'numeric
       </ol>
 
       <p class="latest-more">
-        <a href="/guides">Buying guides</a> &middot;
-        <a href="/how-to">How-to guides</a> &middot;
-        <a href="/reviews">Reviews</a> &middot;
-        <a href="/blog">Blog</a>
+        <a href="/guides/">Buying guides</a> &middot;
+        <a href="/how-to/">How-to guides</a> &middot;
+        <a href="/reviews/">Reviews</a> &middot;
+        <a href="/blog/">Blog</a>
       </p>
     </div>
   </section>

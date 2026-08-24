@@ -15,6 +15,8 @@ picks:
     brand: "NOCO"
     award: "Best overall"
     asin: "B015TKUPIC"
+    image: "../../assets/images/product-noco-boost.jpg"
+    imageAlt: "NOCO Boost GB40 jump starter with jumper clamps"
     rating: 4.6
     price: "$90–$130"
     bestFor: "Petrol engines up to about 6.0L, and anyone who wants the safety engineering"
@@ -166,4 +168,4 @@ Buying more headroom than you need costs weight and money but does no harm. Buyi
 means it won't crank on the cold morning it's needed.
 
 The procedure itself, in the correct order, is in
-[how to jump start a car](/how-to/how-to-jump-start-a-car).
+[how to jump start a car](/how-to/how-to-jump-start-a-car/).

@@ -121,9 +121,9 @@ sentence a shop can afford to write.
 
 ## Where to go from here
 
-- Buying a drying towel? Our [best car drying towels guide](/guides/best-car-drying-towels)
+- Buying a drying towel? Our [best car drying towels guide](/guides/best-car-drying-towels/)
   applies this directly, matched to vehicle size.
-- Want a specific head-to-head? [500 GSM vs 800 GSM](/blog/500-gsm-vs-800-gsm) covers the
+- Want a specific head-to-head? [500 GSM vs 800 GSM](/blog/500-gsm-vs-800-gsm/) covers the
   most common decision point.
-- Already own good towels? [Microfibre care](/blog/microfibre-care-101) matters more than
+- Already own good towels? [Microfibre care](/blog/microfibre-care-101/) matters more than
   GSM — bad laundering ruins a premium towel in about three washes.

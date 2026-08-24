@@ -35,6 +35,7 @@ const baseSchema = [
 <html lang={site.locale}>
   <head>
     <Seo {...props} schema={[...baseSchema, ...(props.schema ?? [])]} />
+    <slot name="head" />
     {analytics.ga4MeasurementId && (
       <>
         <script async src={`https://www.googletagmanager.com/gtag/js?id=${analytics.ga4MeasurementId}`}></script>
@@ -54,5 +55,24 @@ const baseSchema = [
       <slot />
     </main>
     <Footer />
+    <script>
+      // Sitewide delegated listener for every affiliate link, however it was
+      // rendered — AffiliateButton.astro's markup, or links built dynamically
+      // (the Car Gear Finder). Any element with data-affiliate qualifies.
+      // Lives here rather than per-component so it covers both cases from one
+      // place. No-ops silently if GA4 isn't configured (e.g. local dev).
+      const w = window as unknown as { gtag?: (...args: unknown[]) => void };
+      document.addEventListener('click', (event) => {
+        const link = (event.target as HTMLElement)?.closest('a[data-affiliate]') as HTMLAnchorElement | null;
+        if (!link || typeof w.gtag !== 'function') return;
+        w.gtag('event', 'affiliate_click', {
+          page: location.pathname,
+          product: link.dataset.product,
+          category: link.dataset.category,
+          cta_position: link.dataset.position,
+          asin: link.dataset.affiliate,
+        });
+      });
+    </script>
   </body>
 </html>

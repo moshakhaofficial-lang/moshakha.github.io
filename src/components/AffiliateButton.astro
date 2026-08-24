@@ -5,9 +5,11 @@ export interface Props {
   asin: string | null;
   label?: string;
   productName: string;
+  /** Where on the page this button sits, e.g. 'pick-1', 'review-verdict'. Feeds the affiliate_click GA4 event. */
+  position?: string;
 }
 
-const { asin, label = 'Check price on Amazon', productName } = Astro.props;
+const { asin, label = 'Check price on Amazon', productName, position = 'primary' } = Astro.props;
 
 const tag = monetization.amazonTrackingId;
 // Only build a real link when we have BOTH a product and an approved tracking ID.
@@ -15,6 +17,11 @@ const href =
   asin && tag
     ? `https://${monetization.amazonMarketplace}/dp/${asin}?tag=${tag}&linkCode=ll1&language=en_US`
     : null;
+
+// First path segment (e.g. 'guides', 'reviews') as the click's category —
+// derived from the page this button renders on rather than threaded through
+// every caller.
+const category = Astro.url.pathname.split('/').filter(Boolean)[0] ?? 'other';
 ---
 {href ? (
   <a
@@ -23,6 +30,9 @@ const href =
     target="_blank"
     rel="nofollow sponsored noopener"
     data-affiliate={asin}
+    data-product={productName}
+    data-category={category}
+    data-position={position}
   >
     {label}
     <span aria-hidden="true">&rarr;</span>

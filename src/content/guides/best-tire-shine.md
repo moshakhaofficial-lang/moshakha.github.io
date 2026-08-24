@@ -15,6 +15,8 @@ picks:
     brand: "Meguiar's"
     award: "Best overall"
     asin: "B0009IQXJ0"
+    image: "../../assets/images/product-meguiars-tiregel.jpg"
+    imageAlt: "Meguiar's Endurance Tire Gel, 16oz bottle"
     rating: 4.6
     price: "$10–$16"
     bestFor: "A dark, lasting finish that survives rain and a wash or two"
@@ -128,12 +130,12 @@ You need a cleaner and one dressing. That's the whole category.
 ## The order that works
 
 1. **Wheels and tyres first**, before touching paint —
-   [why that matters](/blog/wheel-rim-care)
+   [why that matters](/blog/wheel-rim-care/)
 2. Scrub sidewalls with tyre cleaner and a stiff brush
 3. Rinse thoroughly and let the tyre dry
 4. Apply dressing to an applicator pad, work it into the sidewall
 5. **Wipe off the excess**
 6. Let it flash before driving
-7. Then [wash the car](/how-to/two-bucket-car-wash-method)
+7. Then [wash the car](/how-to/two-bucket-car-wash-method/)
 
 Dressing a wet tyre is wasted product — it will not bond, and it will sling.

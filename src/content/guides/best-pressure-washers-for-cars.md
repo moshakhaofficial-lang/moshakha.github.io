@@ -15,6 +15,8 @@ picks:
     brand: "Sun Joe"
     award: "Best overall"
     asin: "B0FHQSSTTQ"
+    image: "../../assets/images/product-sunjoe-washer.jpg"
+    imageAlt: "Sun Joe SPX3000 electric pressure washer with foam cannon and nozzles"
     rating: 4.4
     price: "$150–$220"
     bestFor: "Car washing with enough capability for a patio without being dangerous on paint"
@@ -144,7 +146,7 @@ panel, removing grit without contact is the single most effective thing you can 
 
 It doesn't replace the contact wash — bonded road film still needs a mitt. It
 substantially reduces how much grit that mitt encounters, which is exactly the goal of
-[the two-bucket method](/how-to/two-bucket-car-wash-method).
+[the two-bucket method](/how-to/two-bucket-car-wash-method/).
 
 ## How we chose
 

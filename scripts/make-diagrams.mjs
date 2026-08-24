@@ -274,6 +274,204 @@ const diagrams = {};
   diagrams['towel-task-map'] = frame('One towel per job', 'Matching the towel to the task beats buying a more expensive towel', body);
 }
 
+/* ================= Generic reusable templates (batch 2) =================
+   Three parameterized patterns cover the remaining informational articles
+   without hand-authoring 14 bespoke layouts — same visual grammar as the
+   batch-1 diagrams above, applied per article's actual mechanism. */
+
+/** Two contrasting cards side by side. sides = [{label, color, bg, lines[]}, {...}] */
+function twoColumn(title, sub, sides) {
+  const colW = 502, gap = 84, startX = 56;
+  const panel = (side, x) => {
+    let s = `<rect x="${x}" y="150" width="${colW}" height="400" rx="14" fill="${C.card}" stroke="${side.color}" stroke-width="2.5"/>
+      <rect x="${x}" y="150" width="${colW}" height="56" rx="14" fill="${side.bg}"/>
+      <rect x="${x}" y="192" width="${colW}" height="14" fill="${side.bg}"/>
+      <text x="${x + 26}" y="186" font-family="${F}" font-size="22" font-weight="700" fill="${side.color}">${side.label}</text>`;
+    let y = 240;
+    for (const line of side.lines) {
+      s += `<circle cx="${x + 34}" cy="${y - 5}" r="4" fill="${side.color}"/>`;
+      s += wrap(line, x + 52, y, 44, 17, C.ink2);
+      y += 62;
+    }
+    return s;
+  };
+  const body = panel(sides[0], startX) + panel(sides[1], startX + colW + gap);
+  return frame(title, sub, body);
+}
+
+/** Stacked ranked rows, each with a label, description and optional highlight. */
+function ladder(title, sub, rows) {
+  let body = '';
+  rows.forEach((row, i) => {
+    const y = 150 + i * (400 / rows.length);
+    const rowH = 400 / rows.length - 10;
+    const bg = row.highlight ? C.brandLight : C.card;
+    const labelColor = row.highlight ? C.brand : C.ink;
+    body += `<rect x="56" y="${y}" width="1088" height="${rowH}" rx="10" fill="${bg}" stroke="${row.highlight ? C.brand : C.line}" stroke-width="2"/>
+      <text x="86" y="${y + rowH / 2 - 6}" font-family="${F}" font-size="20" font-weight="700" fill="${labelColor}">${row.label}</text>
+      <text x="86" y="${y + rowH / 2 + 20}" font-family="${F}" font-size="16" fill="${C.ink2}">${row.desc}</text>
+      ${row.note ? `<text x="1058" y="${y + rowH / 2 + 7}" text-anchor="end" font-family="${F}" font-size="15" font-weight="600" fill="${row.highlight ? C.brand : C.ink3}">${row.note}</text>` : ''}`;
+  });
+  return frame(title, sub, body);
+}
+
+/** Vertical numbered sequence — steps = [{label, desc}]. */
+function steps(title, sub, items) {
+  const rowH = 400 / items.length;
+  let body = '';
+  items.forEach((step, i) => {
+    const y = 150 + i * rowH;
+    const cy = y + rowH / 2;
+    body += `<circle cx="100" cy="${cy}" r="22" fill="${C.brand}"/>
+      <text x="100" y="${cy + 7}" text-anchor="middle" font-family="${F}" font-size="20" font-weight="700" fill="#fff">${i + 1}</text>`;
+    if (i < items.length - 1) {
+      body += `<line x1="100" y1="${cy + 22}" x2="100" y2="${y + rowH + rowH / 2 - 22}" stroke="${C.line}" stroke-width="3" stroke-dasharray="2 6"/>`;
+    }
+    body += `<text x="150" y="${cy - 6}" font-family="${F}" font-size="20" font-weight="700" fill="${C.ink}">${step.label}</text>
+      ${wrap(step.desc, 150, cy + 20, 92, 16, C.ink2)}`;
+  });
+  return frame(title, sub, body);
+}
+
+diagrams['weave-vs-weight'] = twoColumn(
+  'Weave vs weight, same GSM',
+  'Twisted loop at 1200 GSM outperforms plush pile at the same weight — the weave decides how it releases water',
+  [
+    { label: 'Twisted loop', color: C.brand, bg: C.brandLight, lines: ['Loops pull water up into the pile', 'Keeps gliding as it saturates', 'The correct weave for drying panels'] },
+    { label: 'Plush, same GSM', color: C.ink3, bg: '#f1f0ec', lines: ['Holds water nearer the surface', 'Saturates sooner at equal weight', 'Better suited to wax removal instead'] },
+  ],
+);
+
+diagrams['gsm-by-vehicle'] = ladder(
+  'Matching GSM to vehicle size',
+  '1600 GSM is correct for one of these and overkill for the other three',
+  [
+    { label: 'Hatchback, small sedan', desc: 'Around 900 GSM — anything heavier fights you around mirrors and badges', highlight: false },
+    { label: 'Mid-size sedan, small SUV', desc: '900–1200 GSM twisted loop is the comfortable range', highlight: false },
+    { label: 'Full-size SUV, truck', desc: '1200–1600 GSM starts to earn its capacity here', highlight: false },
+    { label: 'Large SUV, van, two cars back to back', desc: '1600 GSM+ genuinely pays off — real capacity, real use case', highlight: true, note: 'Right tool' },
+  ],
+);
+
+diagrams['saturation-mechanic'] = twoColumn(
+  'One large towel vs two medium',
+  'A large towel saturates as a single unit — once full, the whole thing is out of service',
+  [
+    { label: 'One large towel', color: C.bad, bg: C.badBg, lines: ['Saturates as one piece', 'No dry section to switch to', 'Hard to wring fully by hand'] },
+    { label: 'Two medium towels', color: C.good, bg: C.goodBg, lines: ['Swap to a dry one mid-job', 'Each wrings out easily', 'A dropped towel still leaves a spare'] },
+  ],
+);
+
+diagrams['coating-scope'] = twoColumn(
+  'What a ceramic coating actually protects',
+  'A layer measured in microns changes how dirt releases — it does not toughen the paint underneath',
+  [
+    { label: 'What it helps with', color: C.good, bg: C.goodBg, lines: ['Contamination bonds less readily', 'Faster, easier washing', 'Water sheets off, fewer spots'] },
+    { label: 'What it does not stop', color: C.bad, bg: C.badBg, lines: ['Swirl marks from bad washing', 'Stone chips and key scratches', 'Automatic car wash brushes'] },
+  ],
+);
+
+diagrams['two-towel-glass'] = steps(
+  'The two-towel method for glass',
+  'Almost all residual streaking disappears at step two',
+  [
+    { label: 'Damp towel, low pile', desc: 'Spray cleaner onto the towel, not the glass, and clean the surface' },
+    { label: 'Dry towel, immediately after', desc: 'Buff before the cleaner evaporates — this removes what the first towel left behind' },
+  ],
+);
+
+diagrams['towel-count-by-job'] = ladder(
+  'How many towels, by job',
+  'Running out mid-wash is when people start reusing towels they should not',
+  [
+    { label: 'Drying panels', desc: '1–2 towels, 900–1200 GSM twisted loop' },
+    { label: 'Glass, inside and out', desc: '2 towels, 300–400 GSM low pile' },
+    { label: 'Interior + door shuts', desc: '2–3 towels, 350–500 GSM' },
+    { label: 'Wheels — dedicated, never reused', desc: '1–2 towels, any spec, marked and separate', highlight: true, note: 'Never touches paint' },
+  ],
+);
+
+diagrams['interior-order'] = steps(
+  'Cleaning a car interior in order',
+  'Doing this out of order means redoing the surfaces you already finished',
+  [
+    { label: 'Empty it', desc: 'Everything out — mats, bottles, door pocket contents' },
+    { label: 'Dry work, top down', desc: 'Dust and vacuum from the headliner downward' },
+    { label: 'Hard surfaces', desc: 'Dashboard, door cards, console, trim' },
+    { label: 'Fabric or leather', desc: 'Seats and carpet, after the hard surfaces are done' },
+    { label: 'Glass, always last', desc: 'Anything done afterwards will mist or splash it' },
+  ],
+);
+
+diagrams['waterless-vs-rinseless'] = ladder(
+  'How dirty is too dirty for waterless',
+  'The honest test: run a finger across a panel — visible dirt means rinse the car instead',
+  [
+    { label: 'Light dust, few dry days', desc: 'Waterless spray + towels is safe here' },
+    { label: 'Light road film', desc: 'Rinseless — a bucket of dilute solution carries grit away' },
+    { label: 'Rain film, visible dirt', desc: 'Needs a full two-bucket wash, not a spray product', highlight: true, note: 'Full wash' },
+    { label: 'Mud, salt, bonded grime', desc: 'Full wash only — no spray product has enough lubrication' },
+  ],
+);
+
+diagrams['contamination-chain'] = steps(
+  'Why wheel tools never touch paint',
+  'Brake dust is metallic — this is not a rinsing problem, it is a permanent separation rule',
+  [
+    { label: 'Brake dust on the wheel', desc: 'Hot metallic particles, sometimes partially bonded on contact' },
+    { label: 'Picked up by a mitt or brush', desc: 'Particles embed in the pile and stay through a normal rinse' },
+    { label: 'That tool touches paint', desc: 'Metal is dragged across the clear coat under hand pressure — scratches' },
+  ],
+);
+
+diagrams['sidewall-vs-placard'] = twoColumn(
+  'Sidewall max vs door placard',
+  'One of these is your target pressure. The other is a warning label.',
+  [
+    { label: 'Tyre sidewall', color: C.ink3, bg: '#f1f0ec', lines: ['The tyre’s maximum safe pressure', 'Not specific to your car', 'Inflating to this over-inflates most cars'] },
+    { label: 'Door jamb placard', color: C.brand, bg: C.brandLight, lines: ['Set by the manufacturer for this car', 'Often differs front to rear', 'This is the number to use, checked cold'] },
+  ],
+);
+
+diagrams['mat-material-contrast'] = twoColumn(
+  'Rubber and carpet need opposite treatment',
+  'Cleaning a rubber liner like carpet leaves it chalky; soaking a carpet mat like rubber saturates it',
+  [
+    { label: 'Rubber / TPE liners', color: C.brand, bg: C.brandLight, lines: ['Rubber-specific cleaner, stiff brush', 'Rinse thoroughly, no residue left in tread', 'Never a gloss dressing — slip hazard'] },
+    { label: 'Carpet mats', color: C.ink3, bg: '#f1f0ec', lines: ['Minimal moisture, extraction not soaking', 'Backing holds water you cannot see', 'Can take a full day to dry properly'] },
+  ],
+);
+
+diagrams['jump-start-sequence'] = steps(
+  'Jump start connection order',
+  'The last connection is the one that can spark — make it away from the battery',
+  [
+    { label: 'Red to dead battery, positive', desc: 'Circuit is not complete yet — nothing to spark' },
+    { label: 'Red to donor or pack, positive', desc: 'Still no complete circuit' },
+    { label: 'Black to donor negative', desc: 'One connection left' },
+    { label: 'Black to chassis earth, away from the battery', desc: 'This is the connection that can spark — keep it clear of the battery, which vents hydrogen' },
+  ],
+);
+
+diagrams['clay-lubrication'] = twoColumn(
+  'The lubrication rule for claying',
+  'Being sparing with lubricant is the single most common cause of clay marring',
+  [
+    { label: 'Dry or under-lubricated', color: C.bad, bg: C.badBg, lines: ['Clay grabs at the paint', 'Extracted grit drags across the surface', 'This is how claying marrs paint'] },
+    { label: 'Properly lubricated', color: C.good, bg: C.goodBg, lines: ['Clay floats on a wet film', 'Glides once the section is clear', 'Visibly wet panel, the whole time'] },
+  ],
+);
+
+diagrams['streak-diagnosis'] = ladder(
+  'Diagnosing a streaking towel',
+  'Three causes account for nearly all of it — check in this order',
+  [
+    { label: 'Water beads instead of soaking in', desc: 'Fabric softener or dryer sheet contamination — strip wash it' },
+    { label: 'Only glass streaks, paint is fine', desc: 'Too much pile for a smooth surface — switch to 300–400 GSM' },
+    { label: 'Streaks everywhere, used for wax before', desc: 'Product carried over from another job — launder categories separately', highlight: true, note: 'Sort by job' },
+  ],
+);
+
 await mkdir(OUT, { recursive: true });
 for (const [name, svg] of Object.entries(diagrams)) {
   await sharp(Buffer.from(svg)).webp({ quality: 90 }).toFile(`${OUT}/${name}.webp`);
