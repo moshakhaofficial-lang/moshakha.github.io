@@ -42,26 +42,3 @@ const category = Astro.url.pathname.split('/').filter(Boolean)[0] ?? 'other';
     Link pending &mdash; {productName}
   </span>
 )}
-
-<script>
-  // One delegated listener handles every affiliate button on the page,
-  // regardless of how many PickCard/AffiliateButton instances rendered —
-  // no per-button script, no duplicate listeners. Astro dedupes this inline
-  // script across repeated component instances on one page automatically,
-  // but the window flag also guards against any future double-invocation.
-  const w = window as unknown as { __moshakhaAffiliateClickBound?: boolean; gtag?: (...args: unknown[]) => void };
-  if (!w.__moshakhaAffiliateClickBound) {
-    w.__moshakhaAffiliateClickBound = true;
-    document.addEventListener('click', (event) => {
-      const link = (event.target as HTMLElement)?.closest('a[data-affiliate]') as HTMLAnchorElement | null;
-      if (!link || typeof w.gtag !== 'function') return; // no-op when GA4 isn't configured (e.g. local dev)
-      w.gtag('event', 'affiliate_click', {
-        page: location.pathname,
-        product: link.dataset.product,
-        category: link.dataset.category,
-        cta_position: link.dataset.position,
-        asin: link.dataset.affiliate,
-      });
-    });
-  }
-</script>
