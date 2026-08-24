@@ -15,8 +15,13 @@ export default defineConfig({
   integrations: [
     mdx(),
     sitemap({
-      // Legacy OraeSkin skincare posts are excluded from the new sitemap.
-      filter: (page) => !page.includes('/skincare/'),
+      filter: (page) =>
+        // Legacy OraeSkin skincare posts are excluded from the new sitemap.
+        !page.includes('/skincare/') &&
+        // Soft-redirect stubs point their own canonical at a different URL —
+        // listing them in the sitemap as well as their own canonical target
+        // sends a conflicting signal about which URL to index.
+        !page.includes('/blog/can-you-use-fabric-softener-on-microfiber'),
       changefreq: 'weekly',
       lastmod: new Date(),
       // Ensure exactly one trailing slash so sitemap URLs match the
