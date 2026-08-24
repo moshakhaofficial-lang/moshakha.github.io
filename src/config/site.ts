@@ -9,9 +9,9 @@
 
 export const site = {
   name: 'Moshakha',
-  tagline: 'Car Cleaning & Detailing, Tested and Explained',
+  tagline: 'Car Gear, Decoded',
   description:
-    'Independent buying guides, how-tos and product reviews for car cleaning and detailing — microfibre, interiors, wheels, tyres and paint care.',
+    'Independent buying guides, how-tos and reviews for car care and accessories — we decode the headline specs and tell you which one actually matters.',
   url: 'https://www.moshakha.com',
   locale: 'en',
   author: 'Moshakha',

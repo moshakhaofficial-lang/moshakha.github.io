@@ -37,6 +37,12 @@ Append a row. Keep the collection to one of `blog`, `how-to`, `guides`, `reviews
 | queued | how-to-clean-car-seats-fabric | how-to | how to clean fabric car seats | Extraction not soaking; why over-wetting causes odour |
 | queued | dashboard-dressing-glare | blog | why dashboard dressing causes glare | The visibility argument against gloss interior products |
 | queued | 12v-socket-accessories-guide | blog | does car 12v socket stay on with ignition off | The compatibility trap behind most corded car accessories |
+| queued | best-windshield-sun-shades | guides | best windshield sun shade | Heat reduction claims vs reality; fit matters more than reflectivity |
+| queued | best-car-seat-covers | guides | best car seat covers | Airbag-compatible seams; why universal covers rarely fit |
+| queued | best-car-detailing-brushes | guides | best car detailing brush set | Boar vs synthetic; where drill brushes are safe and where they are not |
+| queued | how-to-install-a-dash-cam | how-to | how to install a dash cam | Hardwiring vs 12V, cable tucking, parking mode voltage cut-off |
+| queued | best-car-air-purifiers | guides | best car air purifier | Cabin filter first; when a purifier adds anything |
+| queued | dash-cam-memory-cards | blog | best dash cam memory card | High-endurance vs standard; why cards fail silently |
 
 ## Published
 

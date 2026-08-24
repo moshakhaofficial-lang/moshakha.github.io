@@ -15,17 +15,21 @@ const featured = [...guides, ...howTo]
 
 const sectionLabel = { guides: 'Buying Guide', 'how-to': 'How-To', reviews: 'Review', blog: 'Blog' };
 
-// The hero panel states the site's central claim as data, not as a promise.
-const gsmRows = [
-  { range: '300–400', use: 'Glass, mirrors, final buff', key: false },
-  { range: '350–500', use: 'Interiors, door shuts', key: false },
-  { range: '500–800', use: 'Wax + sealant removal', key: false },
-  { range: '900–1200', use: 'Drying panels', key: true },
-  { range: '1600+', use: 'Large SUVs and trucks only', key: false },
+/**
+ * The hero panel states the site's central claim as data. Every buying guide
+ * here attacks a headline spec that buyers are sold on but which does not
+ * predict performance — this table is that argument in one view.
+ */
+const specRows = [
+  { cat: 'Microfibre', sold: 'GSM', real: 'Weave + blend', href: '/guides/microfiber-gsm-explained' },
+  { cat: 'Jump starters', sold: 'Peak amps', real: 'Protection circuitry', href: '/guides/best-jump-starters' },
+  { cat: 'Dash cams', sold: '4K', real: 'Sensor + capacitor', href: '/guides/best-dash-cams' },
+  { cat: 'Pressure washers', sold: 'PSI', real: 'Flow rate', href: '/guides/best-pressure-washers-for-cars' },
+  { cat: 'Tyre pressure', sold: 'Sidewall max', real: 'Door placard', href: '/how-to/how-to-check-tire-pressure' },
 ];
 ---
 <BaseLayout
-  title="Moshakha — Car Cleaning & Detailing, Measured Honestly"
+  title="Moshakha — Car Gear, Decoded"
   description={site.description}
   canonical="/"
 >
@@ -33,30 +37,29 @@ const gsmRows = [
     <div class="wrap hero-grid">
       <div>
         <p class="eyebrow">Independent &middot; Reader-supported</p>
-        <h1>The number on the label is not a quality score.</h1>
+        <h1>The headline spec is usually the wrong one.</h1>
         <p class="lede">
-          GSM measures density, not quality. We decode the specs car cleaning brands
-          hide behind &mdash; then tell you what's actually worth buying.
+          Car gear is sold on a single big number &mdash; GSM, peak amps, 4K, PSI.
+          We decode what those numbers actually predict, then tell you what's worth buying.
         </p>
         <div class="hero-cta">
-          <a href="/guides/microfiber-gsm-explained" class="btn btn--primary">Read the GSM guide</a>
-          <a href="/guides" class="btn btn--ghost">All buying guides</a>
+          <a href="/guides" class="btn btn--primary">Browse buying guides</a>
+          <a href="/how-to" class="btn btn--ghost">Learn the techniques</a>
         </div>
       </div>
 
-      <aside class="spec" aria-label="Microfibre GSM reference">
+      <aside class="spec" aria-label="Headline specs versus the specs that matter">
         <div class="spec-head">
-          <span>GSM</span><span>Right job</span>
+          <span>Sold on</span><span>What matters</span>
         </div>
-        {gsmRows.map((row) => (
-          <div class:list={['spec-row', { 'spec-row--key': row.key }]}>
-            <b class="tabular">{row.range}</b>
-            <span>{row.use}</span>
-          </div>
+        {specRows.map((row) => (
+          <a class="spec-row" href={row.href}>
+            <span class="spec-cat">{row.cat}</span>
+            <b class="spec-sold">{row.sold}</b>
+            <span class="spec-real">{row.real}</span>
+          </a>
         ))}
-        <p class="spec-foot">
-          Density, not quality &mdash; <a href="/guides/microfiber-gsm-explained">why that matters</a>
-        </p>
+        <p class="spec-foot">Five categories, same pattern &mdash; the loud number is rarely the useful one</p>
       </aside>
     </div>
   </section>
@@ -65,7 +68,7 @@ const gsmRows = [
     <div class="wrap">
       <ul>
         <li><b>No sponsored placements</b>Brands cannot pay for a spot in our rankings.</li>
-        <li><b>Specs explained</b>We tell you when GSM numbers are marketing.</li>
+        <li><b>Specs decoded</b>We say when the headline number is marketing.</li>
         <li><b>Dated and revised</b>Every guide carries a visible last-updated date.</li>
       </ul>
     </div>
@@ -142,13 +145,21 @@ const gsmRows = [
     letter-spacing: .11em; text-transform: uppercase; padding: .5rem .75rem;
   }
   .spec-row {
-    display: flex; justify-content: space-between; align-items: baseline; gap: 1rem;
-    padding: .55rem .75rem; border-bottom: 1px solid var(--rule-2); font-size: .88rem;
+    display: grid; grid-template-columns: 1fr auto auto; align-items: baseline;
+    gap: .5rem .7rem; padding: .55rem .75rem; border-bottom: 1px solid var(--rule-2);
+    text-decoration: none; color: inherit;
   }
-  .spec-row b { font-family: var(--mono); font-weight: 500; font-size: .82rem; }
-  .spec-row span { color: var(--ink-2); font-size: .84rem; text-align: right; }
-  .spec-row--key { background: var(--signal-tint); }
-  .spec-row--key b, .spec-row--key span { color: var(--signal-dark); font-weight: 600; }
+  .spec-row:last-of-type { border-bottom: 0; }
+  .spec-row:hover { background: var(--paper-2); }
+  .spec-cat { font-size: .84rem; color: var(--ink-2); }
+  .spec-sold {
+    font-family: var(--mono); font-weight: 500; font-size: .76rem;
+    color: var(--ink-3); text-decoration: line-through;
+  }
+  .spec-real {
+    font-family: var(--mono); font-size: .76rem; font-weight: 500;
+    color: var(--signal-dark); text-align: right; white-space: nowrap;
+  }
   .spec-foot {
     padding: .6rem .75rem; font-family: var(--mono); font-size: .66rem;
     letter-spacing: .04em; color: var(--ink-3); background: var(--paper-2);
