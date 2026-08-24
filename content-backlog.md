@@ -23,7 +23,6 @@ Append a row. Keep the collection to one of `blog`, `how-to`, `guides`, `reviews
 | queued | how-to-remove-water-spots | how-to | how to remove water spots from car | Fresh vs etched spots, why vinegar works, when it needs polishing |
 | queued | microfiber-vs-chamois | blog | microfiber vs chamois for drying | Why chamois fell out of favour; where it still makes sense |
 | queued | how-often-should-you-wash-your-car | blog | how often should you wash your car | Honest answer by climate and storage, not a fixed number |
-| queued | clay-bar-guide | how-to | how to use a clay bar | Decontamination before polishing; the lubrication rule |
 | queued | foam-cannon-guide | how-to | how to use a foam cannon | What pre-foaming does and doesn't replace |
 | queued | iron-fallout-remover-explained | blog | what is iron fallout remover | The colour change explained; when it's needed |
 | queued | leather-seat-care | how-to | how to clean leather car seats | Coated vs uncoated; why most "leather" is vinyl |
@@ -33,6 +32,11 @@ Append a row. Keep the collection to one of `blog`, `how-to`, `guides`, `reviews
 | queued | do-ceramic-coatings-work-on-wheels | blog | ceramic coating for wheels | Higher return than paint coating; why heat matters |
 | queued | interior-detailer-vs-all-purpose-cleaner | blog | interior detailer vs all purpose cleaner | Dilution, UV coatings, what damages dashboards |
 | queued | two-vs-three-bucket-method | blog | three bucket wash method | Whether the third bucket is worth it |
+| queued | how-to-remove-pet-hair-from-car | how-to | how to remove pet hair from car seats | Why vacuums fail at it; rubber brush and squeegee methods |
+| queued | iron-fallout-remover-vs-clay | blog | iron remover vs clay bar | Chemical vs mechanical decontamination — when each is right |
+| queued | how-to-clean-car-seats-fabric | how-to | how to clean fabric car seats | Extraction not soaking; why over-wetting causes odour |
+| queued | dashboard-dressing-glare | blog | why dashboard dressing causes glare | The visibility argument against gloss interior products |
+| queued | 12v-socket-accessories-guide | blog | does car 12v socket stay on with ignition off | The compatibility trap behind most corded car accessories |
 
 ## Published
 
@@ -40,4 +44,4 @@ Moved here automatically once a generated PR is merged.
 
 | Slug | Collection | Published |
 |---|---|---|
-| _(none yet — the 24 launch articles were written by hand)_ | | |
+| how-to-use-a-clay-bar | how-to | 2026-08-24 (written by hand) |

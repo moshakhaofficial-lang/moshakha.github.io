@@ -11,7 +11,7 @@ export const site = {
   name: 'Moshakha',
   tagline: 'Car Cleaning & Detailing, Tested and Explained',
   description:
-    'Independent buying guides, how-tos and product reviews for car cleaning and detailing — microfibre towels, waxes, wash mitts and more.',
+    'Independent buying guides, how-tos and product reviews for car cleaning and detailing — microfibre, interiors, wheels, tyres and paint care.',
   url: 'https://www.moshakha.com',
   locale: 'en',
   author: 'Moshakha',
