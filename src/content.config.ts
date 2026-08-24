@@ -53,6 +53,8 @@ const pick = ({ image }: SchemaContext) =>
     gsm: z.string().optional(),
     price: z.string().optional(),
     bestFor: z.string(),
+    /** Explicit "who should skip this" — optional, renders as a line next to bestFor when set. */
+    skipIf: z.string().optional(),
     summary: z.string(),
     pros: z.array(z.string()),
     cons: z.array(z.string()),

@@ -9,7 +9,7 @@ export interface Props {
   pick: {
     rank: number; name: string; brand: string; award: string; asin: string | null;
     image?: ImageMetadata; imageAlt?: string; rating: number; gsm?: string; price?: string;
-    bestFor: string; summary: string; pros: string[]; cons: string[];
+    bestFor: string; skipIf?: string; summary: string; pros: string[]; cons: string[];
   };
 }
 const { pick } = Astro.props;
@@ -40,6 +40,7 @@ const { pick } = Astro.props;
   )}
 
   <p class="best-for"><strong>Best for:</strong> {pick.bestFor}</p>
+  {pick.skipIf && <p class="skip-if"><strong>Skip if:</strong> {pick.skipIf}</p>}
   <p>{pick.summary}</p>
 
   <ProsCons pros={pick.pros} cons={pick.cons} />
@@ -62,5 +63,6 @@ const { pick } = Astro.props;
   }
   .pick img { margin-block: 1.1rem; border-radius: var(--r); background: var(--paper-2); }
   .best-for { color: var(--ink-2); }
+  .skip-if { color: var(--bad); font-size: .93rem; }
   .pick :global(.btn--buy) { margin-top: .5rem; }
 </style>

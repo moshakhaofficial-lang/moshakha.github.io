@@ -22,6 +22,7 @@ picks:
     gsm: "900"
     price: "$25–$35 (2-pack)"
     bestFor: "Sedans and hatchbacks; anyone buying one towel to do everything"
+    skipIf: "You drive something SUV-sized or larger — you will be wringing this out constantly"
     summary: "A 70/30 Korean microfibre blend at 900 GSM in a 15x24in panel. That size is the point: big enough to dry a door and a quarter panel in one pass, small enough to control one-handed around mirrors and badges. The 70/30 blend is more absorbent than the cheaper 80/20 most budget towels use."
     pros:
       - "Genuinely one-handed — no wrestling a soaking bedsheet"
@@ -40,6 +41,7 @@ picks:
     gsm: "1100"
     price: "$30–$40"
     bestFor: "Full-size SUVs, trucks and vans, or drying two cars back to back"
+    skipIf: "You drive a hatchback — this is more towel and more money than you need"
     summary: "Twisted loop construction at 1100 GSM across a 25x36in sheet. Twisted loop is the right weave for bulk water removal — the loops pull water up into the pile instead of pushing it along the panel. This is the towel for a vehicle where a 15x24in panel means constant wringing."
     pros:
       - "Holds enough water to dry a large vehicle in one go"
@@ -57,6 +59,7 @@ picks:
     rating: 4.4
     price: "$20–$28"
     bestFor: "Drivers who want maximum softness and aren't chasing one-pass speed"
+    skipIf: "You want the fastest possible one-pass dry on a large vehicle — twisted loop beats plush there"
     summary: "A deep, plush high-pile towel at 25x36in. It is very soft, widely stocked and forgiving — a reasonable default if you're nervous about marring. Plush pile holds water well but releases it more slowly than twisted loop, so it saturates sooner on a big vehicle."
     pros:
       - "Very soft pile, forgiving on soft clear coats"
@@ -75,6 +78,7 @@ picks:
     gsm: "1200"
     price: "$18–$25 (2-pack)"
     bestFor: "Getting twisted-loop performance without premium-brand pricing"
+    skipIf: "Consistency matters more to you than price — budget microfibre varies more batch to batch"
     summary: "A double-twist pile edgeless towel at 1200 GSM in a 36x24in size, sold in pairs. It delivers the twisted-loop advantage — genuine bulk water pickup — at a materially lower price than the established brands. The trade-off is consistency: budget microfibre varies more between production runs."
     pros:
       - "Twisted loop weave at a budget price"
@@ -93,6 +97,7 @@ picks:
     gsm: "540"
     price: "$12–$18 (6-pack)"
     bestFor: "Glass, door shuts, badges and final touch-ups — not drying panels"
+    skipIf: "You are looking for a towel to dry the car with — this has no capacity for that job"
     summary: "These are not drying towels and shouldn't be sold as them. They are the low-pile companions every drying towel needs: 540 GSM edgeless squares for glass, door jambs and chasing the drips a big towel leaves behind. Buying a stack of these fixes more streak complaints than upgrading your main towel does."
     pros:
       - "Low pile leaves glass genuinely streak-free"
