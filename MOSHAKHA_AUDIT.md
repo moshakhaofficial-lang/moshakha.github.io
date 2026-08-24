@@ -27,7 +27,7 @@ just by tone. The issues found are specific and fixable, not systemic:
 | Affiliate tagging | Clean. All 48 ASINs correctly tagged, zero rogue tags. |
 | Affiliate disclosure placement | Clean. 17/17 pages with affiliate links carry a top-of-page banner. |
 | **Canonical/sitemap URL form** | **Bug.** Points at a URL that itself 301-redirects. |
-| **Product imagery** | **Gap.** 79% of articles, and 100% of reviews, have zero image. |
+| **Product imagery** | ~~Gap.~~ **Resolved same day** — see §4.3 update. All reviews + 11/14 guide top picks now imaged. |
 | **Homepage link depth** | **Gap.** 13 articles, including 3 of 4 reviews, are 2+ clicks from home. |
 | **Content cluster balance** | **Imbalanced.** Car Care is 74% of content; Car Gear 13%; Car Accessories 5%. |
 | **Keyword cannibalization** | **Two real cases**, detailed below — not the six-page GSM cluster I initially suspected. |
@@ -344,6 +344,14 @@ Full detail in `AFFILIATE_COMPLIANCE.md`.
 
 ### 4.3 🔴 Product imagery — the real monetization gap
 
+> **Update, August 24, 2026 (same day, later): resolved.** The account holder pulled 13
+> image URLs via their own logged-in Amazon session (SiteStripe / right-click → Copy Image
+> Address) — the sanctioned mechanism this section says the gap needed. Each was visually
+> confirmed against its expected product before use, then wired in through Astro's existing
+> image pipeline. **All 4 reviews and 11 of 14 guides now have a real product photo on their
+> top pick.** The findings below are preserved as the original audit record; the gap they
+> describe no longer exists in the current build.
+
 **30 of 38 articles (79%) have no image at all.** More specifically:
 
 - **All 4 product reviews have zero product image.** A review page recommending a specific
@@ -438,7 +446,7 @@ architecture, the design system, or the editorial voice.
 | # | Finding | Section | Severity | Effort |
 |---|---|---|---|---|
 | 1 | Canonical/sitemap trailing-slash mismatch | 2.2 | Real bug, low impact | Trivial |
-| 2 | 79% of articles have no image; 100% of reviews have none | 4.3 | High (conversion) | Medium — needs an image pipeline |
+| 2 | ~~79% of articles have no image; 100% of reviews have none~~ **Resolved same day** | 4.3 | High (conversion) | Done — 13 images sourced via SiteStripe |
 | 3 | 13 articles, incl. 3/4 reviews, not linked from homepage | 3.4 | Medium (link equity) | Low |
 | 4 | No affiliate click tracking in GA4 | 4.5 | Medium (can't measure what works) | Low |
 | 5 | Fabric-softener article duplicates existing FAQ content | 3.5 | Low-medium (dilutes ranking signal) | Low |
