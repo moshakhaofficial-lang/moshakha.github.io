@@ -1,0 +1,13 @@
+---
+/** The Pile mark: a twisted-loop microfibre cross-section on its backing. */
+export interface Props { size?: number; }
+const { size = 26 } = Astro.props;
+---
+<svg width={size} height={size} viewBox="0 0 64 64" role="img" aria-label="Moshakha" focusable="false">
+  <rect width="64" height="64" rx="13" fill="var(--signal, #c4451e)" />
+  <path
+    d="M14 42c0-11 4.5-11 4.5 0s4.5 11 4.5 0 4.5-11 4.5 0 4.5 11 4.5 0 4.5-11 4.5 0 4.5 11 4.5 0"
+    stroke="#fff3ee" stroke-width="3.4" fill="none" stroke-linecap="round"
+  />
+  <rect x="14" y="46" width="36" height="4" rx="2" fill="#fff3ee" />
+</svg>

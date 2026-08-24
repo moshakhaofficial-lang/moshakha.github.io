@@ -1,0 +1,38 @@
+---
+import { site, AFFILIATE_DISCLOSURE } from '../config/site';
+const year = new Date().getFullYear();
+---
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>Moshakha</h4>
+        <p style="font-size:.95rem;color:var(--ink-2);max-width:24rem">
+          Independent car care and accessory guides — no brand sponsorships, no paid placements.
+        </p>
+      </div>
+      <div>
+        <h4>Content</h4>
+        <ul>
+          <li><a href="/guides">Buying Guides</a></li>
+          <li><a href="/how-to">How-To Guides</a></li>
+          <li><a href="/reviews">Product Reviews</a></li>
+          <li><a href="/blog">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/affiliate-disclosure">Affiliate Disclosure</a></li>
+          <li><a href="/privacy-policy">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>{AFFILIATE_DISCLOSURE}</p>
+      <p style="margin-top:.6rem">&copy; {year} Moshakha. All rights reserved.</p>
+    </div>
+  </div>
+</footer>

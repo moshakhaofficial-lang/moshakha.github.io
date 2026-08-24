@@ -1,0 +1,58 @@
+---
+import Rating from './Rating.astro';
+export interface Props {
+  picks: { rank: number; name: string; brand: string; award: string; rating: number; gsm?: string; price?: string; bestFor: string }[];
+  note?: string;
+}
+const { picks, note } = Astro.props;
+const showGsm = picks.some((p) => p.gsm);
+---
+{picks.length > 0 && (
+  <section class="compare breakout" aria-labelledby="compare-heading">
+    <h2 id="compare-heading">At a glance</h2>
+    {note && <p class="compare-note">{note}</p>}
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Product</th>
+            <th scope="col">Award</th>
+            {showGsm && <th scope="col">GSM</th>}
+            <th scope="col">Best for</th>
+            <th scope="col">Rating</th>
+            <th scope="col"><span class="sr-only">Jump to review</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          {picks.map((p) => (
+            <tr>
+              <th scope="row"><span class="brand-cell">{p.brand}</span><br />{p.name}</th>
+              <td><span class="award">{p.award}</span></td>
+              {showGsm && <td>{p.gsm ?? '—'}</td>}
+              <td>{p.bestFor}</td>
+              <td><Rating value={p.rating} /></td>
+              <td><a href={`#pick-${p.rank}`} class="jump">Details</a></td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+)}
+
+<style>
+  .compare { margin-top: 2.5rem; }
+  .compare-note { margin-top: .45rem; color: var(--ink-2); font-size: .93rem; }
+  .table-scroll td { min-width: 7rem; }
+  .table-scroll td:nth-child(4) { min-width: 11rem; }
+  .brand-cell { color: var(--ink-3); font-size: .82rem; font-weight: 600; text-transform: uppercase; letter-spacing: .04em; }
+  .table-scroll th[scope="row"] { font-weight: 650; min-width: 11rem; }
+  .award {
+    display: inline-block; background: var(--signal-tint); color: var(--signal-dark);
+    font-family: var(--mono); font-size: .66rem; font-weight: 500;
+    letter-spacing: .06em; text-transform: uppercase;
+    padding: .24rem .5rem; border-radius: var(--r); white-space: nowrap;
+  }
+  .jump { font-weight: 600; font-size: .9rem; white-space: nowrap; }
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+</style>

@@ -1,0 +1,24 @@
+---
+import Logo from './Logo.astro';
+import { nav } from '../config/site';
+const path = Astro.url.pathname.replace(/\/$/, '') || '/';
+---
+<header class="site-header">
+  <div class="wrap">
+    <a href="/" class="brand">
+      <Logo size={26} />
+      <span>Moshakha</span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <ul>
+        {nav.map((item) => (
+          <li>
+            <a href={item.href} aria-current={path === item.href || path.startsWith(item.href + '/') ? 'page' : undefined}>
+              {item.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  </div>
+</header>

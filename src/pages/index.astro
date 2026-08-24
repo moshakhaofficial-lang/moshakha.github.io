@@ -1,0 +1,374 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { site } from '../config/site';
+
+const COLLECTIONS = ['guides', 'how-to', 'reviews', 'blog'] as const;
+const LABEL = { guides: 'Buying Guide', 'how-to': 'How-To', reviews: 'Review', blog: 'Blog' };
+
+const all = (
+  await Promise.all(
+    COLLECTIONS.map(async (c) => {
+      const entries = await getCollection(c).catch(() => []);
+      return entries
+        .filter((e) => !e.data.draft)
+        .map((e) => ({ ...e, ref: `${c}/${e.id}`, href: `/${c}/${e.id}` }));
+    }),
+  )
+).flat();
+
+const byRef = new Map(all.map((e) => [e.ref, e]));
+
+/**
+ * Curated rather than sorted by date. These are the three best entry points to
+ * the site, not simply the three most recent things written.
+ */
+const FEATURED = [
+  'guides/microfiber-gsm-explained',
+  'guides/best-car-drying-towels',
+  'guides/best-dash-cams',
+];
+const featured = FEATURED.map((r) => byRef.get(r)).filter(Boolean);
+
+const latest = [...all]
+  .sort((a, b) => +(b.data.updatedDate ?? b.data.publishDate) - +(a.data.updatedDate ?? a.data.publishDate))
+  .slice(0, 8);
+
+const counts = Object.fromEntries(
+  COLLECTIONS.map((c) => [c, all.filter((e) => e.collection === c).length]),
+);
+
+/**
+ * The hero panel states the site's central claim as data. Every buying guide
+ * here attacks a headline spec that buyers are sold on but which does not
+ * predict performance — this table is that argument in one view.
+ */
+const specRows = [
+  { cat: 'Microfibre', sold: 'GSM', real: 'Weave + blend', href: '/guides/microfiber-gsm-explained' },
+  { cat: 'Jump starters', sold: 'Peak amps', real: 'Protection circuitry', href: '/guides/best-jump-starters' },
+  { cat: 'Dash cams', sold: '4K', real: 'Sensor + capacitor', href: '/guides/best-dash-cams' },
+  { cat: 'Pressure washers', sold: 'PSI', real: 'Flow rate', href: '/guides/best-pressure-washers-for-cars' },
+  { cat: 'Tyre pressure', sold: 'Sidewall max', real: 'Door placard', href: '/how-to/how-to-check-tire-pressure' },
+];
+
+/** Routes people by the job they are doing rather than by our taxonomy. */
+const jobs = [
+  {
+    q: 'Wash it without adding swirl marks',
+    hint: 'The wash does more paint damage than anything else',
+    links: [
+      'how-to/two-bucket-car-wash-method',
+      'how-to/wash-mitt-vs-sponge',
+      'guides/best-car-wash-mitts',
+      'guides/best-car-wash-soap',
+    ],
+  },
+  {
+    q: 'Dry it without water spots or streaks',
+    hint: 'Second-highest risk step, and the one people improvise',
+    links: [
+      'guides/best-car-drying-towels',
+      'guides/microfiber-gsm-explained',
+      'how-to/why-microfiber-towels-leave-streaks',
+      'blog/microfibre-care-101',
+    ],
+  },
+  {
+    q: 'Clean the interior properly',
+    hint: 'Where the wrong chemistry does permanent damage',
+    links: [
+      'blog/perfect-interior-detail',
+      'guides/best-car-interior-cleaning-products',
+      'how-to/how-to-clean-car-floor-mats',
+      'reviews/thisworx-car-vacuum',
+    ],
+  },
+  {
+    q: 'Fix paint that is already swirled',
+    hint: 'Correction is finite — the method has to change first',
+    links: [
+      'how-to/how-to-avoid-swirl-marks',
+      'how-to/how-to-use-a-clay-bar',
+      'blog/ceramic-coating-guide',
+    ],
+  },
+  {
+    q: 'Sort out the wheels and tyres',
+    hint: 'Always first, always with separate tools',
+    links: [
+      'blog/wheel-rim-care',
+      'guides/best-tire-shine',
+      'how-to/how-to-check-tire-pressure',
+      'guides/best-car-floor-mats',
+    ],
+  },
+  {
+    q: 'Kit the car out, or cover a breakdown',
+    hint: 'Where the headline spec misleads hardest',
+    links: [
+      'guides/best-jump-starters',
+      'guides/best-tire-inflators',
+      'guides/best-dash-cams',
+      'guides/best-car-phone-mounts',
+      'how-to/how-to-jump-start-a-car',
+    ],
+  },
+].map((j) => ({ ...j, items: j.links.map((r) => byRef.get(r)).filter(Boolean) }));
+
+const fmt = (d) => d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+---
+<BaseLayout title="Moshakha — Car Gear, Decoded" description={site.description} canonical="/">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Independent &middot; Reader-supported</p>
+        <h1>The headline spec is usually the wrong one.</h1>
+        <p class="lede">
+          Car gear is sold on a single big number &mdash; GSM, peak amps, 4K, PSI.
+          We decode what those numbers actually predict, then tell you what's worth buying.
+        </p>
+        <div class="hero-cta">
+          <a href="/guides" class="btn btn--primary">Browse buying guides</a>
+          <a href="#find" class="btn btn--ghost">Find your answer</a>
+        </div>
+      </div>
+
+      <aside class="spec" aria-label="Headline specs versus the specs that matter">
+        <div class="spec-head"><span>Sold on</span><span>What matters</span></div>
+        {specRows.map((row) => (
+          <a class="spec-row" href={row.href}>
+            <span class="spec-cat">{row.cat}</span>
+            <b class="spec-sold">{row.sold}</b>
+            <span class="spec-real">{row.real}</span>
+          </a>
+        ))}
+        <p class="spec-foot">Five categories, same pattern &mdash; the loud number is rarely the useful one</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="trust">
+    <div class="wrap">
+      <ul>
+        <li><b>No sponsored placements</b>Brands cannot pay for a spot in our rankings.</li>
+        <li><b>Specs decoded</b>We say when the headline number is marketing.</li>
+        <li><b>Dated and revised</b>Every guide carries a visible last-updated date.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Routes by the job someone is doing, not by our own taxonomy. -->
+  <section class="section" id="find">
+    <div class="wrap">
+      <p class="eyebrow">Start here</p>
+      <h2 style="margin-top:.7rem">What are you trying to do?</h2>
+      <p class="sec-lede">
+        Pick the job. We'll point you at the guides that cover it &mdash; in the order
+        we'd actually do them.
+      </p>
+
+      <div class="router">
+        {jobs.map((job, i) => (
+          <details class="job" open={i === 0}>
+            <summary>
+              <span class="job-n">{String(i + 1).padStart(2, '0')}</span>
+              <span class="job-text">
+                <span class="job-q">{job.q}</span>
+                <span class="job-hint">{job.hint}</span>
+              </span>
+            </summary>
+            <ul class="job-links">
+              {job.items.map((e) => (
+                <li>
+                  <a href={e.href}>
+                    <span class="job-label">{LABEL[e.collection]}</span>
+                    <span class="job-title">{e.data.title}</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="wrap">
+      <p class="eyebrow">If you only read three</p>
+      <h2 style="margin-top:.7rem">Where to start</h2>
+      <div class="grid grid--3" style="margin-top:1.5rem">
+        {featured.map((entry) => (
+          <article class="card card--link">
+            <p class="label">{LABEL[entry.collection]}</p>
+            <h3><a href={entry.href}>{entry.data.title}</a></h3>
+            <p>{entry.data.description}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="latest-head">
+        <div>
+          <p class="eyebrow">Recently published</p>
+          <h2 style="margin-top:.7rem">Latest</h2>
+        </div>
+        <p class="latest-count tabular">
+          {`${all.length} articles · ${counts.guides} guides · ${counts['how-to']} how-tos · ${counts.reviews} reviews · ${counts.blog} posts`}
+        </p>
+      </div>
+
+      <ol class="latest">
+        {latest.map((e) => (
+          <li>
+            <a href={e.href}>
+              <span class="latest-label">{LABEL[e.collection]}</span>
+              <span class="latest-title">{e.data.title}</span>
+              <time class="latest-date tabular" datetime={(e.data.updatedDate ?? e.data.publishDate).toISOString()}>
+                {fmt(e.data.updatedDate ?? e.data.publishDate)}
+              </time>
+            </a>
+          </li>
+        ))}
+      </ol>
+
+      <p class="latest-more">
+        <a href="/guides">Buying guides</a> &middot;
+        <a href="/how-to">How-to guides</a> &middot;
+        <a href="/reviews">Reviews</a> &middot;
+        <a href="/blog">Blog</a>
+      </p>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero { padding-block: clamp(2.5rem, 6vw, 4.25rem); }
+  .hero-grid {
+    display: grid; gap: clamp(1.75rem, 4vw, 3rem);
+    grid-template-columns: 1.15fr .85fr; align-items: start;
+  }
+  .hero h1 { margin-top: .75rem; }
+  .lede {
+    margin-top: .95rem; font-size: clamp(1.02rem, .98rem + .35vw, 1.16rem);
+    color: var(--ink-2); max-width: 42ch;
+  }
+  .hero-cta { display: flex; flex-wrap: wrap; gap: .7rem; margin-top: 1.6rem; }
+  .sec-lede { color: var(--ink-2); margin-top: .5rem; max-width: 52ch; }
+
+  /* ---- hero spec panel ---- */
+  .spec { border: 1px solid var(--rule-hard); border-radius: var(--r); background: var(--surface); }
+  .spec-head {
+    display: flex; justify-content: space-between; gap: 1rem;
+    background: var(--rule-hard); color: var(--paper);
+    font-family: var(--mono); font-weight: 500; font-size: .64rem;
+    letter-spacing: .11em; text-transform: uppercase; padding: .5rem .75rem;
+  }
+  .spec-row {
+    display: grid; grid-template-columns: 1fr auto auto; align-items: baseline;
+    gap: .5rem .7rem; padding: .55rem .75rem; border-bottom: 1px solid var(--rule-2);
+    text-decoration: none; color: inherit;
+  }
+  .spec-row:last-of-type { border-bottom: 0; }
+  .spec-row:hover { background: var(--paper-2); }
+  .spec-cat { font-size: .84rem; color: var(--ink-2); }
+  .spec-sold {
+    font-family: var(--mono); font-weight: 500; font-size: .76rem;
+    color: var(--ink-3); text-decoration: line-through;
+  }
+  .spec-real {
+    font-family: var(--mono); font-size: .76rem; font-weight: 500;
+    color: var(--signal-dark); text-align: right; white-space: nowrap;
+  }
+  .spec-foot {
+    padding: .6rem .75rem; font-family: var(--mono); font-size: .66rem;
+    letter-spacing: .04em; color: var(--ink-3); background: var(--paper-2);
+  }
+
+  /* ---- trust bar ---- */
+  .trust { border-block: 1px solid var(--rule); background: var(--paper-2); padding-block: 1.4rem; }
+  .trust ul {
+    list-style: none; padding: 0; margin: 0; display: grid; gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    font-size: .89rem; color: var(--ink-2);
+  }
+  .trust b {
+    display: block; color: var(--ink); font-family: var(--mono); font-weight: 500;
+    font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; margin-bottom: .25rem;
+  }
+
+  /* ---- job router: CSS-only, no JavaScript ---- */
+  .router {
+    margin-top: 1.6rem; border: 1px solid var(--rule-hard);
+    border-radius: var(--r); background: var(--surface); overflow: hidden;
+  }
+  .job + .job { border-top: 1px solid var(--rule); }
+  .job summary {
+    display: flex; align-items: flex-start; gap: .85rem;
+    padding: .95rem 1.1rem; cursor: pointer; list-style: none;
+  }
+  .job summary::-webkit-details-marker { display: none; }
+  .job summary:hover { background: var(--paper-2); }
+  .job-n {
+    font-family: var(--mono); font-size: .7rem; font-weight: 500;
+    color: var(--ink-3); padding-top: .22rem; flex: none;
+  }
+  .job-text { display: flex; flex-direction: column; gap: .12rem; flex: 1; }
+  .job-q { font-weight: 650; font-size: 1.02rem; letter-spacing: -.012em; }
+  .job-hint { font-size: .85rem; color: var(--ink-3); }
+  .job summary::after {
+    content: "+"; font-family: var(--mono); font-size: 1.15rem; line-height: 1;
+    color: var(--ink-3); flex: none; padding-top: .28rem;
+  }
+  .job[open] summary::after { content: "\2212"; }
+  .job[open] summary { background: var(--paper-2); }
+  .job-links { list-style: none; margin: 0; padding: .2rem 1.1rem 1rem 3.05rem; }
+  .job-links li + li { margin-top: .1rem; }
+  .job-links a {
+    display: grid; grid-template-columns: 7.5rem 1fr; gap: .8rem; align-items: baseline;
+    padding: .42rem 0; text-decoration: none; color: var(--ink);
+    border-bottom: 1px solid var(--rule-2);
+  }
+  .job-links li:last-child a { border-bottom: 0; }
+  .job-label {
+    font-family: var(--mono); font-size: .64rem; font-weight: 500;
+    letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3);
+  }
+  .job-title { font-size: .95rem; }
+  .job-links a:hover .job-title { color: var(--signal); text-decoration: underline; }
+
+  /* ---- latest ---- */
+  .latest-head {
+    display: flex; flex-wrap: wrap; gap: .5rem 1.5rem;
+    align-items: baseline; justify-content: space-between;
+  }
+  .latest-count { font-family: var(--mono); font-size: .7rem; color: var(--ink-3); letter-spacing: .04em; }
+  .latest {
+    list-style: none; margin: 1.4rem 0 0; padding: 0;
+    border-top: 2px solid var(--rule-hard);
+  }
+  .latest a {
+    display: grid; grid-template-columns: 7.5rem 1fr auto; gap: .9rem; align-items: baseline;
+    padding: .7rem .2rem; border-bottom: 1px solid var(--rule);
+    text-decoration: none; color: var(--ink);
+  }
+  .latest a:hover { background: var(--paper-2); }
+  .latest a:hover .latest-title { color: var(--signal); }
+  .latest-label {
+    font-family: var(--mono); font-size: .64rem; font-weight: 500;
+    letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3);
+  }
+  .latest-title { font-size: .97rem; font-weight: 500; }
+  .latest-date { font-family: var(--mono); font-size: .7rem; color: var(--ink-3); white-space: nowrap; }
+  .latest-more { margin-top: 1.1rem; font-size: .9rem; color: var(--ink-3); }
+
+  @media (max-width: 46rem) {
+    .hero-grid { grid-template-columns: 1fr; }
+    .job-links { padding-left: 1.1rem; }
+    .job-links a, .latest a { grid-template-columns: 1fr; gap: .15rem; }
+    .latest-date { grid-column: 1; }
+  }
+</style>

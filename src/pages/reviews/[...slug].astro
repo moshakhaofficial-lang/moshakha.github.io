@@ -1,0 +1,72 @@
+---
+import { getCollection, render } from 'astro:content';
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+import ProsCons from '../../components/ProsCons.astro';
+import Rating from '../../components/Rating.astro';
+import AffiliateButton from '../../components/AffiliateButton.astro';
+import { articleSchema, breadcrumbSchema, faqSchema, reviewSchema } from '../../lib/schema';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('reviews');
+  return entries
+    .filter((e) => !e.data.draft || import.meta.env.DEV)
+    .map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const { Content, remarkPluginFrontmatter } = await render(entry);
+const d = entry.data;
+const path = `/reviews/${entry.id}`;
+
+const schema = [
+  articleSchema({ ...d, path, title: d.title, description: d.description, image: d.image?.src }),
+  breadcrumbSchema([{ label: 'Reviews', href: '/reviews' }, { label: d.title, href: path }]),
+  reviewSchema({
+    productName: d.productName, brand: d.brand, description: d.verdict,
+    rating: d.rating, author: d.author, publishDate: d.publishDate, image: d.image?.src,
+  }),
+  faqSchema(d.faq),
+].filter(Boolean) as Record<string, unknown>[];
+---
+<ArticleLayout
+  title={d.title}
+  description={d.description}
+  canonical={path}
+  sectionLabel="Reviews"
+  sectionHref="/reviews"
+  publishDate={d.publishDate}
+  updatedDate={d.updatedDate}
+  author={d.author}
+  image={d.image}
+  imageAlt={d.imageAlt}
+  readingMinutes={remarkPluginFrontmatter?.minutesRead}
+  schema={schema}
+  faq={d.faq}
+  related={d.related}
+  currentId={`reviews/${entry.id}`}
+  hasAffiliateLinks={true}
+>
+  <aside class="verdict-box">
+    <div class="verdict-head">
+      <div>
+        <p class="eyebrow">Our verdict</p>
+        <h2>{d.brand} {d.productName}</h2>
+      </div>
+      <Rating value={d.rating} />
+    </div>
+    <p>{d.verdict}</p>
+    {d.price && <p class="meta">Typical price: {d.price}</p>}
+    <AffiliateButton asin={d.asin} productName={`${d.brand} ${d.productName}`} />
+  </aside>
+
+  {(d.pros.length > 0 || d.cons.length > 0) && <ProsCons pros={d.pros} cons={d.cons} />}
+
+  <Content />
+</ArticleLayout>
+
+<style>
+  .verdict-box { border: 2px solid var(--signal); border-radius: var(--r); padding: 1.4rem; background: var(--signal-tint); }
+  .verdict-head { display: flex; flex-wrap: wrap; gap: .75rem; justify-content: space-between; align-items: flex-start; }
+  .verdict-box h2 { margin: .25rem 0 0; font-size: 1.35rem; }
+  .verdict-box p { margin-top: .85rem; }
+</style>

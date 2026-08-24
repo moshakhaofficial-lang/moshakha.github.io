@@ -1,0 +1,71 @@
+---
+import { site, analytics } from '../config/site';
+
+export interface Props {
+  title: string;
+  description: string;
+  /** Path-only canonical override, e.g. '/guides'. Defaults to the current URL. */
+  canonical?: string;
+  image?: string;
+  type?: 'website' | 'article';
+  publishedTime?: Date;
+  modifiedTime?: Date;
+  noindex?: boolean;
+  /** Any number of JSON-LD objects to embed. */
+  schema?: Record<string, unknown>[];
+}
+
+const {
+  title,
+  description,
+  canonical,
+  image = '/og-default.png',
+  type = 'website',
+  publishedTime,
+  modifiedTime,
+  noindex = false,
+  schema = [],
+} = Astro.props;
+
+// Canonical: strip trailing slash (except root) so we never emit two URLs for one page.
+const rawPath = canonical ?? Astro.url.pathname;
+const cleanPath = rawPath !== '/' ? rawPath.replace(/\/$/, '') : '/';
+const canonicalUrl = new URL(cleanPath, site.url).href;
+const imageUrl = new URL(image, site.url).href;
+
+const fullTitle = title.includes(site.name) ? title : `${title} | ${site.name}`;
+---
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>{fullTitle}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonicalUrl} />
+{noindex && <meta name="robots" content="noindex, nofollow" />}
+
+<!-- Open Graph -->
+<meta property="og:type" content={type} />
+<meta property="og:site_name" content={site.name} />
+<meta property="og:title" content={fullTitle} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonicalUrl} />
+<meta property="og:image" content={imageUrl} />
+<meta property="og:locale" content="en_US" />
+{publishedTime && <meta property="article:published_time" content={publishedTime.toISOString()} />}
+{modifiedTime && <meta property="article:modified_time" content={modifiedTime.toISOString()} />}
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={fullTitle} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={imageUrl} />
+
+<link rel="sitemap" href="/sitemap-index.xml" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+{analytics.searchConsoleVerification && (
+  <meta name="google-site-verification" content={analytics.searchConsoleVerification} />
+)}
+
+{schema.map((s) => (
+  <script type="application/ld+json" set:html={JSON.stringify(s)} />
+))}

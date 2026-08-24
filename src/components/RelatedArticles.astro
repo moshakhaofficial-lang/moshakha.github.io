@@ -1,0 +1,49 @@
+---
+import { getCollection } from 'astro:content';
+
+export interface Props {
+  /** "collection/slug" references, e.g. 'guides/best-microfiber-towels'. */
+  related: string[];
+  currentId: string;
+}
+const { related, currentId } = Astro.props;
+
+const all = (
+  await Promise.all(
+    (['guides', 'how-to', 'reviews', 'blog'] as const).map(async (c) => {
+      const entries = await getCollection(c).catch(() => []);
+      return entries.map((e) => ({ ...e, ref: `${c}/${e.id}` }));
+    }),
+  )
+).flat();
+
+// Resolve explicit refs; silently skip ones that don't exist yet so a typo
+// in frontmatter never breaks the build.
+const resolved = related
+  .map((ref) => all.find((e) => e.ref === ref))
+  .filter((e) => e && !e.data.draft && e.ref !== currentId);
+
+// Backfill with recent articles so every page has outbound internal links.
+const fallback = all
+  .filter((e) => !e.data.draft && e.ref !== currentId && !resolved.some((r) => r!.ref === e.ref))
+  .sort((a, b) => +b.data.publishDate - +a.data.publishDate);
+
+const items = [...resolved, ...fallback].slice(0, 3);
+---
+{items.length > 0 && (
+  <aside class="related" aria-labelledby="related-heading">
+    <h2 id="related-heading">Keep reading</h2>
+    <div class="grid grid--3" style="margin-top:1.25rem">
+      {items.map((e) => (
+        <article class="card card--link">
+          <p class="eyebrow">{e!.collection === 'how-to' ? 'How-To' : e!.collection === 'guides' ? 'Buying Guide' : e!.collection === 'reviews' ? 'Review' : 'Blog'}</p>
+          <h3><a href={`/${e!.ref}`}>{e!.data.title}</a></h3>
+        </article>
+      ))}
+    </div>
+  </aside>
+)}
+
+<style>
+  .related { margin-top: 3.5rem; padding-top: 2rem; border-top: 1px solid var(--rule); }
+</style>

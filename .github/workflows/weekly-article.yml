@@ -1,0 +1,120 @@
+name: Weekly article draft
+
+# Opens a PR with a generated draft. It NEVER pushes to main and never merges —
+# publishing still requires you to review and merge the PR yourself.
+on:
+  schedule:
+    # 08:00 UTC every Monday.
+    - cron: '0 8 * * 1'
+  # "Write next week's article now" — run from the Actions tab any time.
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: 'Optional: specific backlog slug to write (defaults to next queued)'
+        required: false
+        type: string
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: weekly-article
+  cancel-in-progress: false
+
+jobs:
+  draft:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Pick the next backlog topic
+        id: topic
+        run: |
+          set -o pipefail
+          if ! TOPIC=$(node scripts/next-topic.mjs 2>backlog-warning.txt); then
+            echo "::error::$(cat backlog-warning.txt)"
+            exit 1
+          fi
+          # Surface the low-backlog warning without failing the run.
+          if [ -s backlog-warning.txt ]; then
+            echo "::warning::$(tr '\n' ' ' < backlog-warning.txt)"
+          fi
+          echo "json<<TOPIC_EOF" >> "$GITHUB_OUTPUT"
+          echo "$TOPIC" >> "$GITHUB_OUTPUT"
+          echo "TOPIC_EOF" >> "$GITHUB_OUTPUT"
+          echo "slug=$(echo "$TOPIC" | node -pe 'JSON.parse(require("fs").readFileSync(0,"utf8")).slug')" >> "$GITHUB_OUTPUT"
+          echo "remaining=$(echo "$TOPIC" | node -pe 'JSON.parse(require("fs").readFileSync(0,"utf8")).remaining')" >> "$GITHUB_OUTPUT"
+
+      - name: Generate the draft
+        id: generate
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ -z "$ANTHROPIC_API_KEY" ]; then
+            echo "::error::ANTHROPIC_API_KEY secret is not set. Add it under Settings → Secrets and variables → Actions."
+            exit 1
+          fi
+          FILE=$(node scripts/generate-article.mjs '${{ steps.topic.outputs.json }}')
+          echo "file=$FILE" >> "$GITHUB_OUTPUT"
+
+      - name: Mark the topic as drafted in the backlog
+        run: |
+          node -e '
+            const fs = require("fs");
+            const slug = process.argv[1];
+            const md = fs.readFileSync("content-backlog.md", "utf8");
+            const out = md.split("\n").map((l) =>
+              l.includes(`| ${slug} |`) ? l.replace(/^\|\s*queued\s*\|/i, "| drafted |") : l
+            ).join("\n");
+            fs.writeFileSync("content-backlog.md", out);
+          ' "${{ steps.topic.outputs.slug }}"
+
+      - name: Verify the site still builds with the new article
+        # A draft that breaks the build (bad frontmatter, over-long meta description)
+        # should fail here rather than in your review.
+        run: npm run build
+
+      - name: Open a pull request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: article/${{ steps.topic.outputs.slug }}
+          base: main
+          commit-message: "Add draft article: ${{ steps.topic.outputs.slug }}"
+          title: "Draft: ${{ steps.topic.outputs.slug }}"
+          labels: ai-draft, needs-review
+          delete-branch: true
+          body: |
+            ## AI-generated draft — review before merging
+
+            **File:** `${{ steps.generate.outputs.file }}`
+            **Backlog topics remaining:** ${{ steps.topic.outputs.remaining }}
+
+            Merging this PR to `main` **publishes it to the live site**. Please review first.
+
+            ### Review checklist
+            - [ ] Factually correct — no invented specifications or fabricated claims
+            - [ ] No product names, ASINs or prices (this job writes informational content only)
+            - [ ] Internal links point at pages that exist
+            - [ ] Doesn't duplicate an existing article (cannibalisation check)
+            - [ ] Title under 70 chars, meta description reads well
+            - [ ] Voice matches the rest of the site — takes positions, no filler
+
+            ### Automated checks already passed
+            - Site builds successfully with this article included
+            - No affiliate links, ASIN-shaped strings, or `$`-prices in the body
+            - No "we tested" claims
+
+            To preview locally:
+            ```bash
+            git fetch origin article/${{ steps.topic.outputs.slug }}
+            git checkout article/${{ steps.topic.outputs.slug }}
+            npm run dev
+            ```

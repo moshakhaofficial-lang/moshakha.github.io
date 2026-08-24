@@ -1,0 +1,42 @@
+---
+import { getCollection, render } from 'astro:content';
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+import { articleSchema, breadcrumbSchema, faqSchema } from '../../lib/schema';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('blog');
+  return entries
+    .filter((e) => !e.data.draft || import.meta.env.DEV)
+    .map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const { Content, remarkPluginFrontmatter } = await render(entry);
+const d = entry.data;
+const path = `/blog/${entry.id}`;
+
+const schema = [
+  articleSchema({ ...d, path, title: d.title, description: d.description, image: d.image?.src }),
+  breadcrumbSchema([{ label: 'Blog', href: '/blog' }, { label: d.title, href: path }]),
+  faqSchema(d.faq),
+].filter(Boolean) as Record<string, unknown>[];
+---
+<ArticleLayout
+  title={d.title}
+  description={d.description}
+  canonical={path}
+  sectionLabel="Blog"
+  sectionHref="/blog"
+  publishDate={d.publishDate}
+  updatedDate={d.updatedDate}
+  author={d.author}
+  image={d.image}
+  imageAlt={d.imageAlt}
+  readingMinutes={remarkPluginFrontmatter?.minutesRead}
+  schema={schema}
+  faq={d.faq}
+  related={d.related}
+  currentId={`blog/${entry.id}`}
+>
+  <Content />
+</ArticleLayout>

@@ -1,0 +1,53 @@
+---
+import { getCollection, render } from 'astro:content';
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+import ComparisonTable from '../../components/ComparisonTable.astro';
+import PickCard from '../../components/PickCard.astro';
+import { articleSchema, breadcrumbSchema, faqSchema, itemListSchema, readingTime } from '../../lib/schema';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('guides');
+  return entries
+    .filter((e) => !e.data.draft || import.meta.env.DEV)
+    .map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const { Content, remarkPluginFrontmatter } = await render(entry);
+const d = entry.data;
+const path = `/guides/${entry.id}`;
+
+const schema = [
+  articleSchema({ ...d, path, title: d.title, description: d.description, image: d.image?.src }),
+  breadcrumbSchema([{ label: 'Buying Guides', href: '/guides' }, { label: d.title, href: path }]),
+  itemListSchema(d.picks, path),
+  faqSchema(d.faq),
+].filter(Boolean) as Record<string, unknown>[];
+---
+<ArticleLayout
+  title={d.title}
+  description={d.description}
+  canonical={path}
+  sectionLabel="Buying Guides"
+  sectionHref="/guides"
+  publishDate={d.publishDate}
+  updatedDate={d.updatedDate}
+  author={d.author}
+  image={d.image}
+  imageAlt={d.imageAlt}
+  readingMinutes={remarkPluginFrontmatter?.minutesRead}
+  schema={schema}
+  faq={d.faq}
+  related={d.related}
+  currentId={`guides/${entry.id}`}
+  hasAffiliateLinks={d.picks.length > 0}
+>
+  <ComparisonTable picks={d.picks} note={d.comparisonNote} />
+  <Content />
+  {d.picks.length > 0 && (
+    <section>
+      <h2>The picks in detail</h2>
+      {d.picks.map((pick) => <PickCard pick={pick} />)}
+    </section>
+  )}
+</ArticleLayout>
