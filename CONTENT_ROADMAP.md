@@ -74,10 +74,10 @@ cannibalization before inclusion (none found).
 | Status | Slug | Type | Cluster | Target query | Search intent | Commercial intent | Suggested title | Content type | Internal links | Monetization |
 |---|---|---|---|---|---|---|---|---|---|---|
 | queued | best-portable-power-stations | new-article | B | best portable power station for car | Commercial | High | "Portable Power Stations for Cars: Watt-Hours vs Real Runtime" | guides | jump-starters, tire-inflators | Amazon picks |
-| queued | how-to-install-a-dash-cam | new-article | B | how to install a dash cam | Informational, high commercial adjacency | Medium | "How to Install a Dash Cam (Hardwire vs 12V)" | how-to | best-dash-cams | Links to dash cam guide, no direct ASINs |
+| drafted (2026-08-25) | how-to-install-a-dash-cam | new-article | B | how to install a dash cam | Informational, high commercial adjacency | Medium | "How to Install a Dash Cam (Hardwire vs 12V)" | how-to | best-dash-cams | Amazon pick added inline (VIOFO A129, reused from best-dash-cams) |
 | queued | dash-cam-memory-cards | new-article | B | best dash cam memory card | Commercial | Medium | "Dash Cam Memory Cards: Why Standard Cards Fail Silently" | guides | best-dash-cams | Amazon picks |
-| queued | 12v-socket-accessories-guide | new-article | B | does car 12v socket stay on with ignition off | Informational | Low-medium | "Does Your Car's 12V Socket Stay On With the Ignition Off?" | blog | jump-starters, tire-inflators, phone-mounts | Links only — the "decoded" mechanism piece tying Cluster B together |
-| queued | best-car-emergency-kit | new-article | B | best car emergency kit | Commercial | High | "Car Emergency Kits: What's Actually Worth Carrying" | guides | jump-starters, tire-inflators | Amazon picks |
+| drafted (2026-08-25) | 12v-socket-accessories-guide | new-article | B | does car 12v socket stay on with ignition off | Informational | Low-medium | "Does Your Car's 12V Socket Stay On With the Ignition Off?" | blog | jump-starters, tire-inflators, phone-mounts | Amazon pick added inline (AstroAI inflator, reused from best-tire-inflators) |
+| drafted (2026-08-25) | best-car-emergency-kit | new-article | B | best car emergency kit | Commercial | High | "Car Emergency Kits: What's Actually Worth Carrying" | guides | jump-starters, tire-inflators | Amazon picks — all 3 reused from existing verified guide picks (NOCO GB40, AstroAI inflator, DRIVE organizer) |
 
 ---
 

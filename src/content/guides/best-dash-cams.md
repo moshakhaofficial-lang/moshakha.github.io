@@ -8,6 +8,7 @@ related:
   - "guides/best-car-phone-mounts"
   - "guides/best-jump-starters"
   - "blog/glass-cleaning-mastery"
+  - "how-to/how-to-install-a-dash-cam"
 comparisonNote: "Every pick here uses a supercapacitor rather than a lithium battery — see why below."
 picks:
   - rank: 1

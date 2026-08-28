@@ -8,6 +8,8 @@ related:
   - "how-to/how-to-check-tire-pressure"
   - "guides/best-jump-starters"
   - "guides/best-tire-shine"
+  - "blog/does-12v-socket-stay-on-with-ignition-off"
+  - "guides/best-car-emergency-kit"
 comparisonNote: "Check whether your car's 12V socket stays live with the ignition off before buying anything corded."
 picks:
   - rank: 1

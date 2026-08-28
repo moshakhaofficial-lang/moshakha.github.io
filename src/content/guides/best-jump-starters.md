@@ -8,6 +8,8 @@ related:
   - "how-to/how-to-jump-start-a-car"
   - "guides/best-tire-inflators"
   - "guides/best-car-interior-cleaning-products"
+  - "reviews/noco-boost-gb40-jump-starter"
+  - "guides/best-car-emergency-kit"
 comparisonNote: "Rated by real-world usability rather than the peak-amp number on the box."
 picks:
   - rank: 1

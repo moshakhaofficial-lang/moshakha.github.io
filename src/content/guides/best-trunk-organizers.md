@@ -8,6 +8,7 @@ related:
   - "guides/best-car-floor-mats"
   - "blog/perfect-interior-detail"
   - "guides/best-car-interior-cleaning-products"
+  - "guides/best-car-emergency-kit"
 comparisonNote: "Judged on whether they stay put when the car moves — the feature most listings ignore."
 picks:
   - rank: 1
