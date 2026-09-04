@@ -40,6 +40,7 @@ related:
   - "how-to/wash-mitt-vs-sponge"
   - "guides/best-car-wash-mitts"
   - "how-to/how-to-avoid-swirl-marks"
+  - "blog/how-often-should-you-wash-your-car"
 faq:
   - q: "Why two buckets instead of one?"
     a: "With one bucket, every time you dunk a dirty mitt you contaminate your soap. Within a few panels you are washing the car with gritty water. The second bucket gives the dirt somewhere else to go, so the soap bucket stays clean for the whole wash."

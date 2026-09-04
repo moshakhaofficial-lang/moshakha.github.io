@@ -8,6 +8,7 @@ related:
   - "blog/wheel-rim-care"
   - "how-to/two-bucket-car-wash-method"
   - "guides/best-car-wash-soap"
+  - "reviews/meguiars-endurance-tire-gel"
 comparisonNote: "Three picks, because these are the three worth recommending — a longer list would be padding."
 picks:
   - rank: 1

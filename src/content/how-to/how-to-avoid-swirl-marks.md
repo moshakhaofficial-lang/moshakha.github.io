@@ -10,6 +10,7 @@ related:
   - "how-to/two-bucket-car-wash-method"
   - "how-to/wash-mitt-vs-sponge"
   - "guides/best-car-drying-towels"
+  - "how-to/how-to-remove-water-spots"
 faq:
   - q: "What causes swirl marks?"
     a: "Grit dragged across paint under pressure. Every trapped particle cuts a shallow scratch in the clear coat. The usual sources are washing with a sponge, using one bucket, drying with a contaminated towel, automatic car washes with brushes, and wiping dust off a dry car."

@@ -12,6 +12,7 @@ related:
   - "guides/microfiber-gsm-explained"
   - "guides/best-car-drying-towels"
   - "guides/best-car-wash-mitts"
+  - "blog/how-to-restore-microfiber-absorbency"
 faq:
   - q: "Can you use fabric softener on microfibre towels?"
     a: "No. This is the single most damaging thing you can do to microfibre. Softener works by depositing a waxy coating on fibres, which fills the microscopic gaps that make microfibre absorbent. A softened towel repels water instead of drinking it, and smears product instead of lifting it. The damage is cumulative and often permanent."

@@ -11,6 +11,7 @@ related:
   - "guides/microfiber-gsm-explained"
   - "blog/microfibre-care-101"
   - "guides/best-car-wash-mitts"
+  - "blog/microfiber-vs-chamois"
 comparisonNote: "Prices move constantly — we link out for live pricing rather than quoting figures that go stale."
 picks:
   - rank: 1

@@ -8,6 +8,8 @@ related:
   - "how-to/two-bucket-car-wash-method"
   - "guides/best-car-wash-soap"
   - "how-to/how-to-avoid-swirl-marks"
+  - "reviews/sun-joe-spx3000-pressure-washer"
+  - "how-to/foam-cannon-guide"
 comparisonNote: "Chosen for car use specifically — the highest-PSI machine is the wrong machine here."
 picks:
   - rank: 1

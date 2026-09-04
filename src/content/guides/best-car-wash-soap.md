@@ -8,6 +8,8 @@ related:
   - "how-to/two-bucket-car-wash-method"
   - "guides/best-car-wash-mitts"
   - "how-to/how-to-avoid-swirl-marks"
+  - "reviews/chemical-guys-mr-pink-soap"
+  - "how-to/foam-cannon-guide"
 comparisonNote: "All picks here are pH-neutral and safe over wax, sealant and ceramic coatings."
 picks:
   - rank: 1
