@@ -4,6 +4,8 @@ description: "A microfiber towel that stopped absorbing water isn't worn out —
 targetKeyword: "how to restore microfiber towel absorbency"
 publishDate: 2026-08-28
 author: "Moshakha Editorial"
+image: "../../assets/images/absorbency-recovery.webp"
+imageAlt: "Four-step sequence for strip washing a microfiber towel back to full absorbency"
 related:
   - "blog/microfibre-care-101"
   - "guides/best-microfiber-towels-for-cars"

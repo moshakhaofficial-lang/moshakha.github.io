@@ -10,6 +10,8 @@ related:
   - "how-to/how-to-avoid-swirl-marks"
   - "reviews/chemical-guys-mr-pink-soap"
   - "how-to/foam-cannon-guide"
+  - "blog/car-wash-soap-vs-dish-soap"
+  - "blog/snow-foam-vs-car-shampoo"
 comparisonNote: "All picks here are pH-neutral and safe over wax, sealant and ceramic coatings."
 picks:
   - rank: 1

@@ -11,6 +11,9 @@ related:
   - "guides/best-car-wash-mitts"
   - "how-to/two-bucket-car-wash-method"
   - "how-to/how-to-avoid-swirl-marks"
+  - "blog/wheel-cleaner-ph-explained"
+  - "blog/iron-fallout-remover-explained"
+  - "how-to/how-to-clean-wheel-wells"
 faq:
   - q: "Why do wheels need separate cleaning tools?"
     a: "Brake dust contains hard metallic particles from the pads and rotors. Embedded in a mitt or brush, they scratch paint on contact — this is not a matter of rinsing carefully. Any tool used on wheels must be permanently retired from paint use."

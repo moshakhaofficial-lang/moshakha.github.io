@@ -472,6 +472,279 @@ diagrams['streak-diagnosis'] = ladder(
   ],
 );
 
+// ---------------------------------------------------------------------------
+// Batch 3 — diagrams for the September expansion, plus backfill for the six
+// August articles that shipped without a hero image.
+// ---------------------------------------------------------------------------
+
+diagrams['leather-vs-vinyl-test'] = twoColumn(
+  'Most "leather" seats are coated vinyl',
+  'The water-drop test tells you which product you actually need',
+  [
+    { label: 'Coated / vinyl surface', color: C.ink2, bg: C.bg, lines: ['A water drop sits on top and beads', 'Uniform grain — repeats panel to panel', 'Needs a pH-neutral interior cleaner', 'Conditioner cannot soak in anyway'] },
+    { label: 'Uncoated / aniline leather', color: C.brand, bg: C.brandLight, lines: ['A water drop darkens and soaks in', 'Grain varies naturally across the hide', 'Rare in mass-market cars', 'This is the surface that needs feeding'] },
+  ],
+);
+
+diagrams['winter-paint-priorities'] = ladder(
+  'Winter paint protection, in order of return',
+  'Rinsing frequency beats every product decision you can make',
+  [
+    { label: 'Rinse salt off regularly', desc: 'Removes the corrosive agent — nothing else matters as much', highlight: true, note: 'Do this first' },
+    { label: 'Cover the underbody and arches', desc: 'Where salt collects and sits unseen for months' },
+    { label: 'Then worry about wax or sealant', desc: 'Helps grime release — it does not stop salt already sitting there' },
+  ],
+);
+
+diagrams['cold-weather-drying'] = ladder(
+  'Why cars refreeze after a winter wash',
+  'The water that causes trouble is not on the paint',
+  [
+    { label: 'Door and boot seals hold water', desc: 'It refreezes overnight and glues the door shut by morning', highlight: true, note: 'The real problem' },
+    { label: 'Locks, handles and mirror housings', desc: 'Small trapped volumes freeze first and fastest' },
+    { label: 'Paint dries fine on its own', desc: 'Flat panels shed and evaporate — they are not the failure point' },
+  ],
+);
+
+diagrams['quick-detailer-limits'] = twoColumn(
+  'Quick detailer: the dry-panel warning',
+  'The same spray is safe or abrasive depending on what is under it',
+  [
+    { label: 'Safe use', color: C.good, bg: C.goodBg, lines: ['Panel already washed and clean', 'Light dust or fresh fingerprints', 'Plenty of product, clean plush towel', 'Wiping a lubricated surface'] },
+    { label: 'Causes marring', color: C.bad, bg: C.badBg, lines: ['Spraying onto a visibly dirty panel', 'Grit still sitting on the paint', 'Too little product to lubricate', 'You are sanding, not cleaning'] },
+  ],
+);
+
+diagrams['wheel-coating-payoff'] = twoColumn(
+  'Coating wheels returns more than coating paint',
+  'Same product, very different amount of work saved',
+  [
+    { label: 'Coated paint', color: C.ink2, bg: C.bg, lines: ['Contamination is mostly dust and rain', 'Washing was already straightforward', 'Gain is gloss and easier drying'] },
+    { label: 'Coated wheels', color: C.brand, bg: C.brandLight, lines: ['Hot brake dust bonds to bare finish', 'Was the hardest part of every wash', 'Grime releases instead of etching in', 'Biggest labour saving on the car'] },
+  ],
+);
+
+diagrams['interior-cleaner-strength'] = ladder(
+  'Match cleaner strength to the surface',
+  'All-purpose cleaner is the usual cause of a ruined dashboard',
+  [
+    { label: 'Dashboard, door cards, screens', desc: 'Interior detailer only — diluted APC still hazes and dries plastics' },
+    { label: 'Fabric seats and carpet', desc: 'APC at fabric dilution, agitated and extracted' },
+    { label: 'Rubber mats, sills, engine bay', desc: 'Full-strength APC is fine here — nothing delicate to damage', highlight: true, note: 'Safe zone' },
+  ],
+);
+
+diagrams['third-bucket-value'] = ladder(
+  'Is a third wash bucket worth it?',
+  'What each bucket you add actually removes from the paint',
+  [
+    { label: 'One bucket', desc: 'Grit goes straight back onto the mitt and the paint' },
+    { label: 'Two buckets, both with grit guards', desc: 'Rinse bucket captures nearly all of it — the big win', highlight: true, note: 'The real jump' },
+    { label: 'Third bucket for wheels', desc: 'Keeps brake dust out of the paint water — worth it' },
+    { label: 'Third bucket for paint only', desc: 'Marginal once bucket two has a grit guard' },
+  ],
+);
+
+diagrams['pet-hair-sequence'] = steps(
+  'Removing pet hair, in the order that works',
+  'Vacuuming first fails — hair is woven into the pile, not sitting on it',
+  [
+    { label: 'Agitate the hair loose first', desc: 'A rubber brush, pumice block or gloved hand rolls woven hair up out of the pile. Suction alone cannot lift what is wrapped around the fibres.' },
+    { label: 'Work in one direction', desc: 'Sweeping back and forth re-embeds what you just lifted. Pull consistently toward one edge so the hair gathers into a removable clump.' },
+    { label: 'Collect the clumps by hand', desc: 'Lift the gathered piles out before vacuuming — they will otherwise clog a small handheld vacuum immediately.' },
+    { label: 'Then vacuum the remainder', desc: 'Now the vacuum is picking up loose hair and grit rather than fighting the carpet, which is what it is actually good at.' },
+  ],
+);
+
+diagrams['iron-fallout-mechanism'] = steps(
+  'What iron fallout remover actually does',
+  'The purple bleed is a chemical reaction, not a marketing effect',
+  [
+    { label: 'Hot metal particles land on the surface', desc: 'Brake dust and rail dust embed into paint and wheel finishes while still hot enough to bond.' },
+    { label: 'They rust in place', desc: 'Embedded iron oxidises, expands slightly and locks itself into the clear coat — washing cannot lift it.' },
+    { label: 'The remover dissolves the iron', desc: 'A chelating agent reacts with the iron and turns visibly purple as it does. The colour is the reaction, not a dye for show.' },
+    { label: 'Rinse before it dries', desc: 'Left to dry, the dissolved iron simply redeposits. This is the step people skip.' },
+  ],
+);
+
+diagrams['fabric-seat-sequence'] = steps(
+  'Cleaning fabric seats without a wet seat for days',
+  'Over-wetting is the mistake — foam pads underneath hold water for a week',
+  [
+    { label: 'Vacuum thoroughly first', desc: 'Any liquid applied before vacuuming turns loose grit into mud and works it deeper into the weave.' },
+    { label: 'Mist the cleaner onto the brush, not the seat', desc: 'This is the whole trick. It puts cleaner where the agitation happens without soaking the foam beneath the fabric.' },
+    { label: 'Agitate, then extract immediately', desc: 'A dry microfibre towel pressed firmly pulls the suspended dirt back out. Waiting lets it dry back into the fibres.' },
+    { label: 'Ventilate until fully dry', desc: 'Doors open, or a fan. Fabric that stays damp inside a closed car is exactly how interiors start to smell.' },
+  ],
+);
+
+diagrams['dashboard-glare-finish'] = twoColumn(
+  'Why dressed dashboards cause windscreen glare',
+  'Finish matters more than the product category',
+  [
+    { label: 'Glossy dressing', color: C.bad, bg: C.badBg, lines: ['Reflects sunlight up into the glass', 'Worst in low winter sun', 'Also attracts and shows dust faster', 'Looks wet rather than new'] },
+    { label: 'Matte / satin protectant', color: C.good, bg: C.goodBg, lines: ['Scatters light instead of reflecting it', 'Same UV protection as a gloss finish', 'Closer to the factory appearance', 'Buff off any excess either way'] },
+  ],
+);
+
+diagrams['dish-soap-damage'] = twoColumn(
+  'Dish soap vs car shampoo',
+  'Both clean. Only one is designed to be safe on paint',
+  [
+    { label: 'Dish soap', color: C.bad, bg: C.badBg, lines: ['Degreaser — strips wax and sealant', 'Little lubrication, so grit drags', 'Alkaline, not pH-neutral', 'Fine for a bare-paint strip wash only'] },
+    { label: 'Car shampoo', color: C.good, bg: C.goodBg, lines: ['pH-neutral, leaves protection intact', 'Thick suds lubricate the wash mitt', 'Formulated to rinse without residue', 'The lubrication is the actual product'] },
+  ],
+);
+
+diagrams['bug-tar-sequence'] = steps(
+  'Bugs and tar: soften, never scrub',
+  'Both are bonded deposits — pressure is what causes the damage',
+  [
+    { label: 'Soak, do not attack', desc: 'A soaked microfibre laid over the area for several minutes softens bug residue far more safely than any amount of rubbing.' },
+    { label: 'Use a dedicated solvent for tar', desc: 'Tar is petroleum-based and needs a solvent to release. Shampoo will not touch it and scrubbing just grinds it in.' },
+    { label: 'Let dwell time do the work', desc: 'Apply, wait, then wipe with almost no pressure. If it needs force, it has not dwelled long enough.' },
+    { label: 'Rewash and reprotect the area', desc: 'Solvents strip wax and sealant locally. That patch is now bare and needs protection back on it.' },
+  ],
+);
+
+diagrams['tree-sap-timing'] = ladder(
+  'Tree sap: how long it has been there decides the fix',
+  'Sap hardens and then etches — the window matters',
+  [
+    { label: 'Fresh, still soft', desc: 'Warm soapy water and a soaked towel will lift it — no solvent needed', highlight: true, note: 'Easiest' },
+    { label: 'Hardened but sitting on top', desc: 'Isopropyl alcohol or a dedicated remover, then reprotect the area' },
+    { label: 'Etched into the clear coat', desc: 'A dull ring remains after removal — that is damage, and needs polishing' },
+  ],
+);
+
+diagrams['wheel-cleaner-ph'] = ladder(
+  'Wheel cleaner pH, and what it is safe on',
+  'Acidic cleaners work fastest and ruin finishes fastest',
+  [
+    { label: 'pH-neutral', desc: 'Safe on every wheel finish including coated, polished and anodised', highlight: true, note: 'Default choice' },
+    { label: 'Alkaline', desc: 'Stronger on brake dust and road film; fine on most painted wheels' },
+    { label: 'Acidic', desc: 'Fast on heavy iron, but attacks polished, anodised and bare metal finishes' },
+  ],
+);
+
+diagrams['tire-dressing-types'] = twoColumn(
+  'Do tyre dressings damage tyres?',
+  'The carrier matters — the dressing category does not',
+  [
+    { label: 'Solvent-based', color: C.bad, bg: C.badBg, lines: ['Can strip the tyre\'s own antiozonants', 'Those additives resist cracking', 'Repeated use may accelerate browning', 'The high-gloss "wet look" tier'] },
+    { label: 'Water-based', color: C.good, bg: C.goodBg, lines: ['Leaves the rubber\'s own protection intact', 'Satin finish rather than wet gloss', 'Safe to use as often as you like', 'What most reputable brands now sell'] },
+  ],
+);
+
+diagrams['snow-foam-vs-shampoo'] = twoColumn(
+  'Snow foam and car shampoo are different jobs',
+  'One removes grit before contact, the other lubricates contact',
+  [
+    { label: 'Snow foam (pre-wash)', color: C.ink2, bg: C.bg, lines: ['Sprayed on, dwells, rinsed off', 'Removes grit before the mitt touches', 'No contact washing involved', 'Cannot finish the job alone'] },
+    { label: 'Car shampoo (contact wash)', color: C.brand, bg: C.brandLight, lines: ['Goes in the bucket with the mitt', 'Lubricates the mitt against the paint', 'Removes what foam left behind', 'Still required after foaming'] },
+  ],
+);
+
+diagrams['wheel-well-sequence'] = steps(
+  'Cleaning wheel arches without spreading the mess',
+  'Arches are the dirtiest part of the car — order prevents rework',
+  [
+    { label: 'Do arches before the paint, always', desc: 'Cleaning them afterwards throws grit and dirty water back over panels you have already finished.' },
+    { label: 'Rinse the loose material out first', desc: 'A pressure rinse clears packed mud and grit so the cleaner reaches the liner rather than the debris on it.' },
+    { label: 'Use a dedicated mitt or brush', desc: 'Never the paint mitt. Arch grit is coarse enough to scratch paint permanently if it transfers.' },
+    { label: 'Dress the liner if you want, sparingly', desc: 'A satin trim dressing tidies faded plastic liners. Skip the gloss — it slings onto the paint on the first drive.' },
+  ],
+);
+
+diagrams['mitt-replacement-signs'] = ladder(
+  'When to retire a wash mitt',
+  'A mitt that has picked up grit is no longer a paint-safe tool',
+  [
+    { label: 'It was dropped on the ground', desc: 'Retire it immediately — embedded grit will not rinse out reliably', highlight: true, note: 'Non-negotiable' },
+    { label: 'The pile is matted or flattened', desc: 'It can no longer hold grit away from the paint surface' },
+    { label: 'It feels rough or grabby when wet', desc: 'Trapped contamination you can feel is contamination the paint will feel too' },
+  ],
+);
+
+diagrams['drying-aid-mechanism'] = twoColumn(
+  'Why professionals spray before drying',
+  'A drying aid is lubrication for the highest-risk step of the wash',
+  [
+    { label: 'Drying a bare wet panel', color: C.bad, bg: C.badBg, lines: ['Towel drags on any remaining grit', 'Final step, so marring shows most', 'Water spots form as it evaporates'] },
+    { label: 'Drying with an aid sprayed on', color: C.good, bg: C.goodBg, lines: ['Towel glides on a lubricated film', 'Grit slides rather than scratching', 'Adds a little gloss and protection', 'Costs seconds, prevents the worst marring'] },
+  ],
+);
+
+// --- Backfill for the August articles that shipped without a hero image ---
+
+diagrams['socket-power-test'] = twoColumn(
+  'Does your 12V socket stay live?',
+  'Test it before buying anything corded — it varies by car and by socket',
+  [
+    { label: 'Stays live with ignition off', color: C.good, bg: C.goodBg, lines: ['Corded inflators and vacuums work', 'Test: plug in a charger, key out', 'Indicator light stays on'] },
+    { label: 'Cuts with the ignition', color: C.bad, bg: C.badBg, lines: ['Corded accessories are dead weight', 'Front and rear sockets can differ', 'Cordless or dual-power is the fix', 'Do not run the engine in a garage'] },
+  ],
+);
+
+diagrams['wash-frequency-drivers'] = ladder(
+  'What actually sets your wash interval',
+  'Contamination urgency, not a calendar number',
+  [
+    { label: 'Bird droppings and tree sap', desc: 'Acidic — remove within hours, not at the next scheduled wash', highlight: true, note: 'Hours' },
+    { label: 'Winter road salt', desc: 'Corrosive and recurring — rinse weekly while roads are being salted' },
+    { label: 'Dust, pollen and general film', desc: 'Cosmetic — a two to three week interval is fine' },
+  ],
+);
+
+diagrams['absorbency-recovery'] = steps(
+  'Restoring a towel that stopped absorbing',
+  'Almost always residue on the fibres, not worn-out fibres',
+  [
+    { label: 'Confirm it is residue, not wear', desc: 'Water beading or sliding off a towel that used to soak it up points at a coating, not damaged fibres.' },
+    { label: 'Wash hot with no detergent at all', desc: 'No softener, no dryer sheet, no additives. You are removing a coating, not adding a different one.' },
+    { label: 'Check absorbency once dry', desc: 'A towel that was simply coated will noticeably recover. If it does not, the pile is genuinely worn out.' },
+    { label: 'Keep softener away from it permanently', desc: 'Fabric softener is designed to coat fibres — that is the exact mechanism that caused the problem.' },
+  ],
+);
+
+diagrams['chamois-vs-microfiber'] = twoColumn(
+  'Microfibre vs chamois for drying',
+  'Chamois holds more water. Microfibre fails more gently',
+  [
+    { label: 'Chamois', color: C.ink2, bg: C.bg, lines: ['Holds a large volume of water', 'Smooth sheet — no pile', 'Trapped grit is pressed into the paint', 'Still good on glass and flat surfaces'] },
+    { label: 'Microfibre', color: C.brand, bg: C.brandLight, lines: ['Raised pile lifts grit off the surface', 'More forgiving when something goes wrong', 'Safer on contours and edges', 'The reason it became the default'] },
+  ],
+);
+
+diagrams['foam-cannon-sequence'] = steps(
+  'Foam cannon: what it replaces and what it does not',
+  'Pre-foaming reduces contact risk — it is not a touchless wash',
+  [
+    { label: 'Foam the car bottom-up', desc: 'Starting low avoids streaking foam through panels you have not covered yet. Cover arches and lower panels properly.' },
+    { label: 'Let it dwell one to two minutes', desc: 'Dwell time is where the grit-lifting happens. Watch it in sun or heat — dried foam is its own cleanup problem.' },
+    { label: 'Rinse thoroughly before any contact', desc: 'This rinse carries away the grit the foam lifted. Skipping it wastes most of the benefit.' },
+    { label: 'Then wash normally with two buckets', desc: 'Bonded contamination and panel gaps still need a contact wash. Foam reduces the risk of that step, it does not remove it.' },
+  ],
+);
+
+diagrams['water-spot-types'] = twoColumn(
+  'Fresh deposit or etched? Check before you start',
+  'The fingernail test decides which fix you actually need',
+  [
+    { label: 'Fresh mineral deposit', color: C.good, bg: C.goodBg, lines: ['Smooth to a fingernail', 'Sitting on top of the clear coat', 'A dedicated remover dissolves it', 'Clay afterwards if any remains'] },
+    { label: 'Etched into the clear coat', color: C.bad, bg: C.badBg, lines: ['You can feel a ring or texture', 'The damage has already happened', 'No chemical undoes it', 'Only polishing levels it out'] },
+  ],
+);
+
+diagrams['dashcam-power-paths'] = twoColumn(
+  'Dash cam power: 12V socket or hardwire',
+  'This choice decides whether parking mode is possible at all',
+  [
+    { label: '12V socket plug', color: C.ink2, bg: C.bg, lines: ['Five-minute install, no trim removal', 'Records only while driving', 'No parking mode, ever', 'Zero risk of battery drain'] },
+    { label: 'Hardwired to the fuse box', color: C.brand, bg: C.brandLight, lines: ['Enables parking mode recording', 'Needs a voltage-cutoff hardwire kit', 'An always-on fuse without one flattens the battery', 'Budget an afternoon and a trim tool'] },
+  ],
+);
+
 await mkdir(OUT, { recursive: true });
 for (const [name, svg] of Object.entries(diagrams)) {
   await sharp(Buffer.from(svg)).webp({ quality: 90 }).toFile(`${OUT}/${name}.webp`);

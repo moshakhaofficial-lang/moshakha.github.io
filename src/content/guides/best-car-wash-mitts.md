@@ -8,6 +8,8 @@ related:
   - "how-to/wash-mitt-vs-sponge"
   - "guides/best-car-drying-towels"
   - "guides/microfiber-gsm-explained"
+  - "blog/how-often-to-replace-wash-mitt"
+  - "blog/two-vs-three-bucket-method"
 comparisonNote: "Every mitt here is a genuine paint-safe option — the differences are about which job each one suits."
 picks:
   - rank: 1

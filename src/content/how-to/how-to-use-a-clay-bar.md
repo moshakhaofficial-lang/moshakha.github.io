@@ -36,6 +36,8 @@ related:
   - "blog/ceramic-coating-guide"
   - "how-to/how-to-avoid-swirl-marks"
   - "how-to/two-bucket-car-wash-method"
+  - "how-to/how-to-remove-bugs-and-tar"
+  - "how-to/how-to-remove-tree-sap"
 faq:
   - q: "How often should I clay bar my car?"
     a: "Once or twice a year for most cars, and only when the paint actually needs it. Use the plastic bag test rather than a schedule — if the paint feels smooth through the bag, claying achieves nothing and only adds unnecessary abrasion. Cars parked outdoors or near industry need it more often."

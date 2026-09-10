@@ -4,6 +4,8 @@ description: "Chamois used to be the default drying tool. Here's what it actuall
 targetKeyword: "microfiber vs chamois for drying"
 publishDate: 2026-08-28
 author: "Moshakha Editorial"
+image: "../../assets/images/chamois-vs-microfiber.webp"
+imageAlt: "Comparison of chamois water capacity against microfiber pile lifting grit away from paint"
 related:
   - "guides/best-car-drying-towels"
   - "how-to/why-microfiber-towels-leave-streaks"

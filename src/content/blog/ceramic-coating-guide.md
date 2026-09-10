@@ -11,6 +11,7 @@ related:
   - "how-to/how-to-avoid-swirl-marks"
   - "how-to/two-bucket-car-wash-method"
   - "guides/best-car-wash-soap"
+  - "blog/do-ceramic-coatings-work-on-wheels"
 faq:
   - q: "Does a ceramic coating prevent scratches?"
     a: "No, and this is the most oversold claim in detailing. A coating adds a thin, hard layer that resists very light marring, but it will not stop swirl marks from bad washing technique, stone chips, or key scratches. It changes how easily dirt releases, not how tough your paint is."

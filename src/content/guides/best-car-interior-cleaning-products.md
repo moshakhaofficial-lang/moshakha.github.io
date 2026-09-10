@@ -9,6 +9,9 @@ related:
   - "blog/perfect-interior-detail"
   - "reviews/thisworx-car-vacuum"
   - "how-to/how-to-clean-car-floor-mats"
+  - "how-to/leather-seat-care"
+  - "how-to/how-to-clean-car-seats-fabric"
+  - "blog/interior-detailer-vs-all-purpose-cleaner"
 comparisonNote: "Organised by surface, because the wrong chemistry on a dashboard is permanent."
 picks:
   - rank: 1

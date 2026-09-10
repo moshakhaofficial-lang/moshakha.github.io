@@ -11,6 +11,7 @@ related:
   - "how-to/two-bucket-car-wash-method"
   - "how-to/how-to-avoid-swirl-marks"
   - "guides/best-microfiber-towels-for-cars"
+  - "blog/quick-detailer-when-to-use"
 faq:
   - q: "Is waterless car wash safe for paint?"
     a: "On a lightly dusty car, yes, if you use plenty of product and a fresh towel face for every panel. On a genuinely dirty car it is not — there is not enough lubrication to carry that much grit safely, and you will be dragging it across the paint."

@@ -4,6 +4,8 @@ description: "Fresh mineral deposits wipe off with the right product. Etched wat
 targetKeyword: "how to remove water spots from car"
 publishDate: 2026-08-28
 author: "Moshakha Editorial"
+image: "../../assets/images/water-spot-types.webp"
+imageAlt: "Comparison of fresh mineral water spots against spots etched into the clear coat"
 totalTime: "PT30M"
 supplies:
   - "Water spot remover (mineral deposit dissolver, not a general cleaner)"
@@ -27,6 +29,7 @@ related:
   - "how-to/how-to-avoid-swirl-marks"
   - "guides/best-car-drying-towels"
   - "how-to/how-to-use-a-clay-bar"
+  - "blog/drying-aid-explained"
 faq:
   - q: "How do I know if a water spot is fresh or etched?"
     a: "Run a fingernail lightly across the dry spot. Smooth with only a visible mark means it's likely a fresh mineral deposit sitting on the surface. Any textured feel or a slight ring you can detect by touch means the clear coat has likely already been etched — a fundamentally different, harder-to-fix problem than surface residue."

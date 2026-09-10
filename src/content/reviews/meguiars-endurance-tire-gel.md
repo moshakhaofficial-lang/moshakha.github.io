@@ -21,6 +21,7 @@ related:
   - "guides/best-tire-shine"
   - "blog/wheel-rim-care"
   - "how-to/two-bucket-car-wash-method"
+  - "blog/do-tire-dressings-damage-tires"
 faq:
   - q: "Is tire gel better than tire spray?"
     a: "For control, yes. A spray is faster but a share of it inevitably lands on the wheel face and brake disc rather than the tire — brake dust mixed with dressing overspray is a specific, avoidable mess. A gel applied with a foam applicator pad goes only where you put it, at the cost of taking longer to apply."

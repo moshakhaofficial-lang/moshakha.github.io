@@ -4,6 +4,8 @@ description: "Every-other-week is generic advice. What actually determines the r
 targetKeyword: "how often should you wash your car"
 publishDate: 2026-08-28
 author: "Moshakha Editorial"
+image: "../../assets/images/wash-frequency-drivers.webp"
+imageAlt: "Ranked list of contamination types and how urgently each needs washing off"
 related:
   - "how-to/two-bucket-car-wash-method"
   - "guides/best-car-wash-soap"
