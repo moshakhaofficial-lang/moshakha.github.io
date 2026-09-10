@@ -10,6 +10,7 @@ related:
   - "guides/best-car-interior-cleaning-products"
   - "reviews/noco-boost-gb40-jump-starter"
   - "guides/best-car-emergency-kit"
+  - "guides/best-portable-power-stations"
 comparisonNote: "Rated by real-world usability rather than the peak-amp number on the box."
 picks:
   - rank: 1

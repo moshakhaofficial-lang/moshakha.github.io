@@ -745,6 +745,17 @@ diagrams['dashcam-power-paths'] = twoColumn(
   ],
 );
 
+diagrams['cabin-air-order'] = ladder(
+  'Car air quality, in order of what actually works',
+  'The cheap step almost nobody does comes first',
+  [
+    { label: 'Replace the cabin air filter', desc: 'Often years overdue, cheap, and usually behind the glovebox', highlight: true, note: 'Start here' },
+    { label: 'Find what is actually rotting', desc: 'Spilled food, damp carpet, or mould on the AC evaporator' },
+    { label: 'Vacuum and dry the interior properly', desc: 'A musty cabin is usually contamination, not airborne particles' },
+    { label: 'Only then consider a purifier', desc: 'Small unit, constantly exchanging air with outside — limited effect' },
+  ],
+);
+
 await mkdir(OUT, { recursive: true });
 for (const [name, svg] of Object.entries(diagrams)) {
   await sharp(Buffer.from(svg)).webp({ quality: 90 }).toFile(`${OUT}/${name}.webp`);

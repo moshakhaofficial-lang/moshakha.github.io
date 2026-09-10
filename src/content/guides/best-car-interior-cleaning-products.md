@@ -12,6 +12,8 @@ related:
   - "how-to/leather-seat-care"
   - "how-to/how-to-clean-car-seats-fabric"
   - "blog/interior-detailer-vs-all-purpose-cleaner"
+  - "blog/car-air-purifiers-cabin-filter-first"
+  - "guides/best-car-detailing-brushes"
 comparisonNote: "Organised by surface, because the wrong chemistry on a dashboard is permanent."
 picks:
   - rank: 1

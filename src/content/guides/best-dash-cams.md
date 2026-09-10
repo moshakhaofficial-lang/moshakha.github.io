@@ -9,6 +9,7 @@ related:
   - "guides/best-jump-starters"
   - "blog/glass-cleaning-mastery"
   - "how-to/how-to-install-a-dash-cam"
+  - "guides/dash-cam-memory-cards"
 comparisonNote: "Every pick here uses a supercapacitor rather than a lithium battery — see why below."
 picks:
   - rank: 1

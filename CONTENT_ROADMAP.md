@@ -73,9 +73,9 @@ cannibalization before inclusion (none found).
 
 | Status | Slug | Type | Cluster | Target query | Search intent | Commercial intent | Suggested title | Content type | Internal links | Monetization |
 |---|---|---|---|---|---|---|---|---|---|---|
-| queued | best-portable-power-stations | new-article | B | best portable power station for car | Commercial | High | "Portable Power Stations for Cars: Watt-Hours vs Real Runtime" | guides | jump-starters, tire-inflators | Amazon picks |
+| drafted (2026-09-11) | best-portable-power-stations | new-article | B | best portable power station for car | Commercial | High | "Portable Power Stations for Cars: Watt-Hours vs Real Runtime" | guides | jump-starters, tire-inflators | Amazon picks — 5 verified ASINs, images sourced via SiteStripe |
 | drafted (2026-08-25) | how-to-install-a-dash-cam | new-article | B | how to install a dash cam | Informational, high commercial adjacency | Medium | "How to Install a Dash Cam (Hardwire vs 12V)" | how-to | best-dash-cams | Amazon pick added inline (VIOFO A129, reused from best-dash-cams) |
-| queued | dash-cam-memory-cards | new-article | B | best dash cam memory card | Commercial | Medium | "Dash Cam Memory Cards: Why Standard Cards Fail Silently" | guides | best-dash-cams | Amazon picks |
+| drafted (2026-09-11) | dash-cam-memory-cards | new-article | B | best dash cam memory card | Commercial | Medium | "Dash Cam Memory Cards: Why Standard Cards Fail Silently" | guides | best-dash-cams | Amazon picks — 5 verified; dropped a 32GB MAX Endurance as undersized |
 | drafted (2026-08-25) | 12v-socket-accessories-guide | new-article | B | does car 12v socket stay on with ignition off | Informational | Low-medium | "Does Your Car's 12V Socket Stay On With the Ignition Off?" | blog | jump-starters, tire-inflators, phone-mounts | Amazon pick added inline (AstroAI inflator, reused from best-tire-inflators) |
 | drafted (2026-08-25) | best-car-emergency-kit | new-article | B | best car emergency kit | Commercial | High | "Car Emergency Kits: What's Actually Worth Carrying" | guides | jump-starters, tire-inflators | Amazon picks — all 3 reused from existing verified guide picks (NOCO GB40, AstroAI inflator, DRIVE organizer) |
 
@@ -89,10 +89,10 @@ writing, per the standing rule.
 
 | Status | Slug | Type | Cluster | Target query | Search intent | Commercial intent | Suggested title | Content type | Internal links | Monetization |
 |---|---|---|---|---|---|---|---|---|---|---|
-| queued | best-windshield-sun-shades | new-article | C | best windshield sun shade | Commercial | Medium | "Best Windshield Sun Shades: Heat Reduction Claims vs. Reality" | guides | floor-mats, trunk-organizers | Amazon picks |
-| queued | best-car-seat-covers | new-article | C | best car seat covers | Commercial | Medium | "Best Car Seat Covers: Why Universal Rarely Fits" | guides | floor-mats | Amazon picks |
-| queued | best-car-detailing-brushes | new-article | C | best car detailing brush set | Commercial | Medium | "Best Detailing Brush Sets: Boar vs Synthetic, and Where Drill Brushes Are Safe" | guides | clay-bar, wheel-rim-care | Amazon picks |
-| queued | best-car-air-purifiers | new-article | C | best car air purifier | Commercial | Low-medium | "Car Air Purifiers: Check the Cabin Filter First" | guides | interior-cleaning-products | Amazon picks |
+| drafted (2026-09-11) | best-windshield-sun-shades | new-article | C | best windshield sun shade | Commercial | Medium | "Best Windshield Sun Shades: Heat Reduction Claims vs. Reality" | guides | floor-mats, trunk-organizers | Amazon picks — 3 verified; 2 candidates were dead listings |
+| drafted (2026-09-11) | best-car-seat-covers | new-article | C | best car seat covers | Commercial | Medium | "Best Car Seat Covers: Why Universal Rarely Fits" | guides | floor-mats | Amazon picks — 5 verified ASINs |
+| drafted (2026-09-11) | best-car-detailing-brushes | new-article | C | best car detailing brush set | Commercial | Medium | "Best Detailing Brush Sets: Boar vs Synthetic, and Where Drill Brushes Are Safe" | guides | clay-bar, wheel-rim-care | Amazon picks — 5 verified ASINs |
+| drafted (2026-09-11) | best-car-air-purifiers | new-article | C | best car air purifier | Commercial | Low-medium | "Car Air Purifiers: Check the Cabin Filter First" | guides | interior-cleaning-products | Links only — written as a blog post; all 3 purifier ASINs were dead or mislabelled filters |
 
 ---
 

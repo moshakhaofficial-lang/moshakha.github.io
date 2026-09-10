@@ -13,6 +13,7 @@ related:
   - "blog/microfibre-care-101"
   - "how-to/how-to-remove-pet-hair-from-car"
   - "blog/dashboard-dressing-glare"
+  - "blog/car-air-purifiers-cabin-filter-first"
 faq:
   - q: "What order should I clean a car interior in?"
     a: "Top down and dry before wet: remove everything loose, then dust and vacuum from the headliner downward, then clean hard surfaces, then fabric or leather, then interior glass last. Cleaning glass first guarantees you will have to do it twice."

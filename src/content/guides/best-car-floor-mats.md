@@ -9,6 +9,8 @@ related:
   - "guides/best-car-interior-cleaning-products"
   - "blog/perfect-interior-detail"
   - "reviews/weathertech-trim-to-fit-mats"
+  - "guides/best-car-seat-covers"
+  - "guides/best-windshield-sun-shades"
 comparisonNote: "Fit matters more than material. A mat that slides under the pedals is a hazard regardless of what it is made of."
 picks:
   - rank: 1

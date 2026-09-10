@@ -10,6 +10,7 @@ related:
   - "guides/best-trunk-organizers"
   - "reviews/noco-boost-gb40-jump-starter"
   - "how-to/how-to-jump-start-a-car"
+  - "guides/best-portable-power-stations"
 comparisonNote: "Judged by which failure each item actually solves, not by how many pieces come in the box."
 picks:
   - rank: 1
