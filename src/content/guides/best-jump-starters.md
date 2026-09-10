@@ -37,6 +37,8 @@ picks:
     brand: "GOOLOO"
     award: "Best for large engines"
     asin: "B0D2HH3BDN"
+    image: "../../assets/images/product-gooloo-gp4000.jpg"
+    imageAlt: "GOOLOO GP4000 jump starter in red with clamps and carry case"
     rating: 4.5
     price: "$90–$140"
     bestFor: "Big petrol engines and diesels up to around 10L"
@@ -54,6 +56,8 @@ picks:
     brand: "GOOLOO"
     award: "Best dual-purpose"
     asin: "B09M9HQG73"
+    image: "../../assets/images/product-gooloo-gt4000s.jpg"
+    imageAlt: "GOOLOO GT4000S jump starter and power bank with LCD display"
     rating: 4.5
     price: "$110–$160"
     bestFor: "Doubling as a serious power bank for laptops and camping"
@@ -70,6 +74,8 @@ picks:
     brand: "GOOLOO"
     award: "Budget pick"
     asin: "B09HJH1S41"
+    image: "../../assets/images/product-gooloo-gp4000-alt.jpg"
+    imageAlt: "GOOLOO GP4000 jump starter in yellow with clamps and carry case"
     rating: 4.5
     price: "$80–$120"
     bestFor: "Covering the failure mode without spending premium money"

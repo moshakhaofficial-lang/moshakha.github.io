@@ -38,6 +38,8 @@ picks:
     brand: "Meguiar's"
     award: "Best for older or unprotected paint"
     asin: "B0009IQXFO"
+    image: "../../assets/images/product-meguiars-gold-class.jpg"
+    imageAlt: "Meguiar's Gold Class car wash shampoo and conditioner, 64oz bottle"
     rating: 4.5
     price: "$12–$18"
     bestFor: "Paint without much protection, or older finishes that look tired"
@@ -54,6 +56,8 @@ picks:
     brand: "Chemical Guys"
     award: "Best value in bulk"
     asin: "B00BJCAPEE"
+    image: "../../assets/images/product-mrpink-128.jpg"
+    imageAlt: "Chemical Guys Mr. Pink Super Suds car wash soap, 128oz gallon jug"
     rating: 4.6
     price: "$25–$35"
     bestFor: "Washing frequently, or more than one vehicle"
@@ -70,6 +74,8 @@ picks:
     brand: "Chemical Guys"
     award: "Best wash-and-protect in one"
     asin: "B073PNNVPX"
+    image: "../../assets/images/product-cg-bodywash-wax.jpg"
+    imageAlt: "Chemical Guys Extreme Body Wash and Wax, 64oz jug"
     rating: 4.3
     price: "$15–$22"
     bestFor: "Adding a little gloss and protection without a separate waxing step"

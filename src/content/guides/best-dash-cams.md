@@ -36,6 +36,8 @@ picks:
     brand: "VIOFO"
     award: "Best single camera"
     asin: "B0C5MVB7NX"
+    image: "../../assets/images/product-viofo-a119mini2.jpg"
+    imageAlt: "VIOFO A119 Mini 2 dash cam with STARVIS 2 sensor and phone app view"
     rating: 4.5
     price: "$120–$160"
     bestFor: "A discreet front camera with genuinely good night performance"
@@ -53,6 +55,8 @@ picks:
     brand: "VIOFO"
     award: "Best value 2K"
     asin: "B08GG4S2QW"
+    image: "../../assets/images/product-viofo-a129plus.jpg"
+    imageAlt: "VIOFO A129 Plus 2K dash cam with companion phone app"
     rating: 4.4
     price: "$120–$170"
     bestFor: "2K front coverage with the option to add a rear channel later"
@@ -69,6 +73,8 @@ picks:
     brand: "VIOFO"
     award: "Budget pick"
     asin: "B07SG586H5"
+    image: "../../assets/images/product-viofo-a129.jpg"
+    imageAlt: "VIOFO A129 1080p dash cam with GPS"
     rating: 4.3
     price: "$80–$120"
     bestFor: "Getting a reliable camera fitted rather than waiting for the perfect one"

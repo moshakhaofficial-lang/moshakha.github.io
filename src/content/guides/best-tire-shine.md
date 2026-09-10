@@ -37,6 +37,8 @@ picks:
     brand: "Chemical Guys"
     award: "Best spray"
     asin: "B01N51MWNZ"
+    image: "../../assets/images/product-cg-tire-kicker.jpg"
+    imageAlt: "Chemical Guys Tire Kicker extra glossy tire shine spray bottle"
     rating: 4.4
     price: "$12–$18"
     bestFor: "Fast application, and trim or bumpers as well as tyres"
@@ -54,6 +56,8 @@ picks:
     brand: "Armor All"
     award: "The step people skip"
     asin: "B0009PCPHW"
+    image: "../../assets/images/product-armorall-wheel.jpg"
+    imageAlt: "Armor All Extreme wheel and tire cleaner spray bottle"
     rating: 4.3
     price: "$8–$14"
     bestFor: "Stripping old dressing before you apply new — the reason your tyres go brown"

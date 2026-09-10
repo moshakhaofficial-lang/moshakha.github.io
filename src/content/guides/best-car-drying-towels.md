@@ -21,6 +21,8 @@ picks:
     brand: "The Rag Company"
     award: "Best overall"
     asin: "B083KPZR9C"
+    image: "../../assets/images/product-gauntlet-towel.jpg"
+    imageAlt: "The Rag Company Gauntlet 900 GSM drying towel"
     rating: 4.7
     gsm: "900"
     price: "$25–$35 (2-pack)"
@@ -40,6 +42,8 @@ picks:
     brand: "The Rag Company"
     award: "Best for SUVs and trucks"
     asin: "B088P7GHCM"
+    image: "../../assets/images/product-liquid8r-1100.jpg"
+    imageAlt: "The Rag Company Liquid8r 1100 GSM twisted loop drying towel in teal"
     rating: 4.6
     gsm: "1100"
     price: "$30–$40"
@@ -59,6 +63,8 @@ picks:
     brand: "Chemical Guys"
     award: "Best plush option"
     asin: "B086M83K76"
+    image: "../../assets/images/product-woolly-mammoth.jpg"
+    imageAlt: "Chemical Guys Woolly Mammoth plush drying towel"
     rating: 4.4
     price: "$20–$28"
     bestFor: "Drivers who want maximum softness and aren't chasing one-pass speed"
@@ -77,6 +83,8 @@ picks:
     brand: "SMINDER"
     award: "Best budget twisted loop"
     asin: "B0DPZTLVHL"
+    image: "../../assets/images/product-sminder-1200gsm.jpg"
+    imageAlt: "SMINDER 1200 GSM twisted loop drying towels, two-pack in grey"
     rating: 4.2
     gsm: "1200"
     price: "$18–$25 (2-pack)"
@@ -96,6 +104,8 @@ picks:
     brand: "Generic"
     award: "Best for glass and final wipe"
     asin: "B07DXCGCHF"
+    image: "../../assets/images/product-edgeless-540.jpg"
+    imageAlt: "Six-pack of edgeless 540 GSM microfiber towels in yellow and grey"
     rating: 4.3
     gsm: "540"
     price: "$12–$18 (6-pack)"

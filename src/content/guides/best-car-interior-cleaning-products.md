@@ -39,6 +39,8 @@ picks:
     brand: "Chemical Guys"
     award: "Best all-surface"
     asin: "B071ZTPRJL"
+    image: "../../assets/images/product-cg-total-interior.jpg"
+    imageAlt: "Chemical Guys Total Interior Cleaner and Protectant spray bottle"
     rating: 4.5
     price: "$12–$18"
     bestFor: "Dashboards, door cards, console and trim in a single pass"
@@ -56,6 +58,8 @@ picks:
     brand: "Chemical Guys"
     award: "Best for leather"
     asin: "B001TJ3HUG"
+    image: "../../assets/images/product-cg-leather-kit.jpg"
+    imageAlt: "Chemical Guys leather cleaner and leather conditioner bottle pair"
     rating: 4.5
     price: "$22–$32 (2 × 16oz)"
     bestFor: "Coated leather seats that have gone shiny and grey at the bolsters"
@@ -72,6 +76,8 @@ picks:
     brand: "Invisible Glass"
     award: "Best for interior glass"
     asin: "B07B4QDZHQ"
+    image: "../../assets/images/product-invisible-glass.jpg"
+    imageAlt: "Invisible Glass premium aerosol glass cleaner, two 19oz cans"
     rating: 4.7
     price: "$14–$20 (2 × 19oz)"
     bestFor: "The oily film on the inside of the windscreen that normal cleaner smears"
@@ -88,6 +94,8 @@ picks:
     brand: "WeatherTech"
     award: "Best for rubber mats"
     asin: "B07KCN435L"
+    image: "../../assets/images/product-weathertech-techcare.jpg"
+    imageAlt: "WeatherTech TechCare FloorLiner cleaner and protector spray bottles"
     rating: 4.6
     price: "$18–$26"
     bestFor: "Rubber and TPE floor liners that have gone chalky and grey"

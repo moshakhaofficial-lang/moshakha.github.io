@@ -36,6 +36,8 @@ picks:
     brand: "WeatherTech"
     award: "Best for full coverage"
     asin: "B07KM1FHXR"
+    image: "../../assets/images/product-weathertech-universal-mats.jpg"
+    imageAlt: "WeatherTech semi-universal all-weather floor mats, four-piece black set"
     rating: 4.3
     price: "$70–$110"
     bestFor: "Covering front and rear footwells properly in a family car"
@@ -52,6 +54,8 @@ picks:
     brand: "WeatherTech"
     award: "Keep them looking new"
     asin: "B07KCN435L"
+    image: "../../assets/images/product-weathertech-techcare.jpg"
+    imageAlt: "WeatherTech TechCare FloorLiner cleaner and protector spray bottles"
     rating: 4.6
     price: "$18–$26"
     bestFor: "Stopping TPE and rubber liners going chalky grey"

@@ -36,6 +36,8 @@ picks:
     brand: "Miracase"
     award: "Most adaptable"
     asin: "B08D39B6TB"
+    image: "../../assets/images/product-miracase-3in1.jpg"
+    imageAlt: "Miracase 3-in-1 car phone holder mounted on a dashboard"
     rating: 4.4
     price: "$15–$25"
     bestFor: "Not knowing which mounting point works in your car until you try"
@@ -53,6 +55,8 @@ picks:
     brand: "Miracase"
     award: "Best vent mount"
     asin: "B082SDVTWB"
+    image: "../../assets/images/product-miracase-vent.jpg"
+    imageAlt: "Miracase air vent phone mount with metal hook clip holding a phone"
     rating: 4.3
     price: "$12–$20"
     bestFor: "Cars with sturdy horizontal vent slats and no usable dash surface"
@@ -70,6 +74,8 @@ picks:
     brand: "Miracase"
     award: "Best long-arm"
     asin: "B07N3Y7T83"
+    image: "../../assets/images/product-miracase-dash.jpg"
+    imageAlt: "Miracase dashboard and windshield phone mount fitted in a car"
     rating: 4.2
     price: "$14–$22"
     bestFor: "Deep dashboards where the screen is too far to reach"

@@ -36,6 +36,8 @@ picks:
     brand: "FH Group"
     award: "Best budget"
     asin: "B076FV3ZYC"
+    image: "../../assets/images/product-fhgroup-ez-travel.jpg"
+    imageAlt: "FH Group E-Z Travel multi-pocket trunk organizer hung behind the rear seats"
     rating: 4.3
     price: "$18–$28"
     bestFor: "Keeping shopping upright without spending much"
@@ -53,6 +55,8 @@ picks:
     brand: "FH Group"
     award: "Best for larger boots"
     asin: "B08JQNT1SF"
+    image: "../../assets/images/product-fhgroup-collapsible.jpg"
+    imageAlt: "FH Group collapsible multi-compartment trunk organizer holding cargo"
     rating: 4.3
     price: "$25–$38"
     bestFor: "SUVs and estates where a small bin just slides across a wide floor"
@@ -69,6 +73,8 @@ picks:
     brand: "FH Group"
     award: "Best for the cabin"
     asin: "B07886TLBK"
+    image: "../../assets/images/product-fhgroup-seatback.jpg"
+    imageAlt: "FH Group multi-pocket seat back organizer with adjustable straps"
     rating: 4.2
     price: "$15–$25"
     bestFor: "Rear passengers, kids' items, and keeping the footwell clear"

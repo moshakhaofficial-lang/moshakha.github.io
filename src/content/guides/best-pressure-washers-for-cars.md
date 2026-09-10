@@ -37,6 +37,8 @@ picks:
     brand: "Sun Joe"
     award: "Best bundle"
     asin: "B09NCCCNRV"
+    image: "../../assets/images/product-sunjoe-spx4003.jpg"
+    imageAlt: "Sun Joe SPX4003-ULT electric pressure washer on a wheeled frame"
     rating: 4.3
     price: "$180–$260"
     bestFor: "Starting from nothing and wanting the brushes included"
@@ -54,6 +56,8 @@ picks:
     brand: "Sun Joe"
     award: "For wheels only"
     asin: "B01E0DPZN4"
+    image: "../../assets/images/product-sunjoe-rotary-brush.jpg"
+    imageAlt: "Sun Joe SPX-RB1 rotary wash brush kit attachment"
     rating: 4.1
     price: "$25–$40"
     bestFor: "Wheel barrels and arches — never paint"
@@ -71,6 +75,8 @@ picks:
     brand: "Sun Joe"
     award: "Gentler option"
     asin: "B01E0DQ0GK"
+    image: "../../assets/images/product-sunjoe-utility-brush.jpg"
+    imageAlt: "Sun Joe SPX-UB1 feather bristle utility brush attachment"
     rating: 4.2
     price: "$18–$30"
     bestFor: "Sills, arches, and lower panels that need agitation without a mitt"

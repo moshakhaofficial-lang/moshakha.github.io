@@ -18,6 +18,8 @@ picks:
     brand: "The Rag Company"
     award: "For drying panels"
     asin: "B083KPZR9C"
+    image: "../../assets/images/product-gauntlet-towel.jpg"
+    imageAlt: "The Rag Company Gauntlet 900 GSM drying towel"
     rating: 4.7
     gsm: "900"
     price: "$25–$35 (2-pack)"
@@ -30,6 +32,8 @@ picks:
     brand: "Generic"
     award: "For glass"
     asin: "B07DXCGCHF"
+    image: "../../assets/images/product-edgeless-540.jpg"
+    imageAlt: "Six-pack of edgeless 540 GSM microfiber towels in yellow and grey"
     rating: 4.3
     gsm: "540"
     price: "$12–$18 (6-pack)"
@@ -42,6 +46,8 @@ picks:
     brand: "Chemical Guys"
     award: "For wax and sealant removal"
     asin: "B086M83K76"
+    image: "../../assets/images/product-woolly-mammoth.jpg"
+    imageAlt: "Chemical Guys Woolly Mammoth plush drying towel"
     rating: 4.4
     price: "$20–$28"
     bestFor: "Buffing off cured wax, sealant and spray products"
@@ -53,6 +59,8 @@ picks:
     brand: "The Rag Company"
     award: "For washing"
     asin: "B09QD5LQRR"
+    image: "../../assets/images/product-cyclone-mitt.jpg"
+    imageAlt: "The Rag Company Cyclone Ultra wash mitt and wash pad"
     rating: 4.7
     price: "$18–$26 (2-piece)"
     bestFor: "The wash itself — the step that decides whether you add swirls"
@@ -64,6 +72,8 @@ picks:
     brand: "The Rag Company"
     award: "For wheels only"
     asin: "B0BTK98JJ4"
+    image: "../../assets/images/product-cyclone-wheel-mitt.jpg"
+    imageAlt: "The Rag Company Cyclone Ultra wheel mitt in grey chenille"
     rating: 4.5
     price: "$12–$18 (2-pack)"
     bestFor: "Wheels, grilles and tight areas — and nothing else, ever"

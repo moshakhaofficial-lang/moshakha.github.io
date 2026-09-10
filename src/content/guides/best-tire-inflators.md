@@ -37,6 +37,8 @@ picks:
     brand: "AstroAI"
     award: "Best cordless"
     asin: "B0948WY5YX"
+    image: "../../assets/images/product-astroai-cordless.jpg"
+    imageAlt: "AstroAI cordless tire inflator with 20V battery and accessories"
     rating: 4.4
     price: "$50–$70"
     bestFor: "Bikes, trailers and anywhere you can't reach a 12V socket"
@@ -54,6 +56,8 @@ picks:
     brand: "AstroAI"
     award: "Best for home and car"
     asin: "B0C1GL5T7G"
+    image: "../../assets/images/product-astroai-dual-power.jpg"
+    imageAlt: "AstroAI tire inflator with both 12V DC and 120V AC power plugs"
     rating: 4.4
     price: "$45–$65"
     bestFor: "One unit that lives in the garage and travels in the boot"
@@ -70,6 +74,8 @@ picks:
     brand: "AstroAI"
     award: "Best for the boot"
     asin: "B097B6X669"
+    image: "../../assets/images/product-astroai-storage.jpg"
+    imageAlt: "AstroAI tire inflator with integrated storage compartment and nozzles"
     rating: 4.4
     price: "$28–$40"
     bestFor: "Living permanently in the boot without a tangle of cable"

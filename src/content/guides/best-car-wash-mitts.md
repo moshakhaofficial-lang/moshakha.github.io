@@ -36,6 +36,8 @@ picks:
     brand: "Chemical Guys"
     award: "Best budget"
     asin: "B003TTL0TE"
+    image: "../../assets/images/product-cg-chenille-mitt.jpg"
+    imageAlt: "Chemical Guys chenille microfiber wash mitt in green with packaging"
     rating: 4.4
     price: "$8–$14"
     bestFor: "First proper mitt, or a cheap spare to keep in the boot"
@@ -53,6 +55,8 @@ picks:
     brand: "Adam's Polishes"
     award: "Best for bugs and tar"
     asin: "B07BH439BF"
+    image: "../../assets/images/product-adams-dual-mitt.jpg"
+    imageAlt: "Adam's Polishes microfiber dual wash mitt in red chenille"
     rating: 4.3
     price: "$12–$18"
     bestFor: "Front bumpers, bug splatter and sap, without reaching for a separate tool"
@@ -69,6 +73,8 @@ picks:
     brand: "The Rag Company"
     award: "Best for wheels"
     asin: "B0BTK98JJ4"
+    image: "../../assets/images/product-cyclone-wheel-mitt.jpg"
+    imageAlt: "The Rag Company Cyclone Ultra wheel mitt in grey chenille"
     rating: 4.5
     price: "$12–$18 (2-pack)"
     bestFor: "Wheels, grilles and tight areas — and keeping brake dust away from paint"
@@ -85,6 +91,8 @@ picks:
     brand: "The Rag Company"
     award: "Best value multipack"
     asin: "B08TJ3Q99P"
+    image: "../../assets/images/product-knobby-mitt.jpg"
+    imageAlt: "The Rag Company premium chenille knobby wash mitts in blue and green"
     rating: 4.4
     price: "$14–$20 (2-pack)"
     bestFor: "Running several clean mitts per wash, or washing more than one car"
