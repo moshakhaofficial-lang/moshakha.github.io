@@ -10,6 +10,8 @@ related:
   - "how-to/two-bucket-car-wash-method"
   - "guides/best-car-wash-soap"
   - "how-to/how-to-avoid-swirl-marks"
+  - "blog/bird-droppings-and-paint-etching"
+  - "blog/pollen-season-car-care"
 faq:
   - q: "Is every two weeks the right interval for everyone?"
     a: "No — it's a reasonable default for a garage-kept car in a mild climate with average road conditions, and a poor fit for almost anyone outside that description. Coastal salt air, winter road salt, tree sap, and bird activity can each independently justify washing more often than a fixed calendar interval assumes."

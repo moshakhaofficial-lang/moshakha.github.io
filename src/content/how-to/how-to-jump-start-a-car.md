@@ -36,6 +36,7 @@ related:
   - "guides/best-jump-starters"
   - "guides/best-tire-inflators"
   - "how-to/how-to-check-tire-pressure"
+  - "blog/car-battery-when-to-replace"
 faq:
   - q: "Why connect the negative clamp to the chassis instead of the battery?"
     a: "Because the final connection is the one that sparks, and a discharged lead-acid battery vents hydrogen gas. Making that spark on a chassis earth point several inches away keeps the ignition source away from the gas. It is the entire reason the connection order exists."

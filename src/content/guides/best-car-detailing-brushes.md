@@ -9,6 +9,8 @@ related:
   - "blog/wheel-rim-care"
   - "how-to/how-to-clean-wheel-wells"
   - "guides/best-car-interior-cleaning-products"
+  - "how-to/how-to-clean-engine-bay"
+  - "how-to/how-to-clean-car-air-vents"
 comparisonNote: "Grouped by what each brush is safe to touch, which matters more than the piece count in the box. Prices move constantly, so we link out for live pricing rather than quoting figures that go stale."
 picks:
   - rank: 1

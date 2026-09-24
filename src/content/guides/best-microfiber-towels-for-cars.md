@@ -11,6 +11,7 @@ related:
   - "guides/microfiber-gsm-explained"
   - "guides/best-car-drying-towels"
   - "blog/microfibre-care-101"
+  - "how-to/how-to-clean-door-jambs"
 comparisonNote: "Organised by job rather than by ranking, because these towels are not competing with each other."
 picks:
   - rank: 1

@@ -35,6 +35,7 @@ related:
   - "blog/perfect-interior-detail"
   - "guides/best-car-interior-cleaning-products"
   - "reviews/thisworx-car-vacuum"
+  - "how-to/how-to-remove-salt-stains-from-carpet"
 faq:
   - q: "Can I put car floor mats in the washing machine?"
     a: "Carpet mats, generally no — the rubber backing can crack, and the weight when soaked is hard on a domestic machine. Rubber and TPE liners should never go in. Hand cleaning takes about the same time and avoids damaging either the mat or the machine."

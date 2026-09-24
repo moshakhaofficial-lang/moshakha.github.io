@@ -8,6 +8,7 @@ related:
   - "guides/best-dash-cams"
   - "how-to/how-to-install-a-dash-cam"
   - "blog/does-12v-socket-stay-on-with-ignition-off"
+  - "blog/dash-cam-footage-after-an-incident"
 comparisonNote: "Rated on sustained write endurance rather than headline read speed. Prices move constantly, so we link out for live pricing rather than quoting figures that go stale."
 picks:
   - rank: 1

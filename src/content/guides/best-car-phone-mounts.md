@@ -9,6 +9,7 @@ related:
   - "guides/best-car-interior-cleaning-products"
   - "blog/perfect-interior-detail"
   - "reviews/miracase-magsafe-car-mount"
+  - "blog/phone-mount-placement-and-sightlines"
 comparisonNote: "Sorted by mounting method, because that is the decision — brand is secondary."
 picks:
   - rank: 1

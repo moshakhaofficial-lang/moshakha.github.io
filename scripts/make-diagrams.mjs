@@ -756,6 +756,259 @@ diagrams['cabin-air-order'] = ladder(
   ],
 );
 
+// ---------------------------------------------------------------------------
+// Batch 4 — September expansion into the gaps left after the roadmap emptied.
+// ---------------------------------------------------------------------------
+
+diagrams['cabin-filter-steps'] = steps(
+  'Replacing a cabin air filter',
+  'A ten-minute job on most cars, and usually years overdue',
+  [
+    { label: 'Find the housing, usually behind the glovebox', desc: 'Most cars put it there. Some use the dash or the cowl below the windscreen. The manual says which, and it is worth checking before dismantling anything.' },
+    { label: 'Empty and release the glovebox', desc: 'Damper arm off, side stops squeezed in, and the box swings down far enough to reach the cover. No tools on most vehicles.' },
+    { label: 'Note the airflow arrow before removing the old one', desc: 'The filter is directional. Photograph it in place — fitting a new one backwards reduces airflow and shortens its life.' },
+    { label: 'Slide the new one in, arrow matching', desc: 'Expect the old one to be far dirtier than you assumed. Leaves and grit in the housing come out by hand before the new filter goes in.' },
+  ],
+);
+
+diagrams['engine-bay-protect'] = twoColumn(
+  'Engine bay: cover before you spray',
+  'Modern bays tolerate water badly in a few specific places',
+  [
+    { label: 'Cover these first', color: C.bad, bg: C.badBg, lines: ['Alternator and its air openings', 'Exposed electrical connectors', 'Air intake and filter housing', 'Fuse box lids and battery terminals'] },
+    { label: 'Safe to wet and wipe', color: C.good, bg: C.goodBg, lines: ['Painted metal and plastic covers', 'Inner wing panels and slam panel', 'Hoses and coolant reservoirs', 'Underside of the bonnet'] },
+  ],
+);
+
+diagrams['vent-cleaning-order'] = steps(
+  'Getting dust out of air vents, not deeper in',
+  'Blowing first sends it into the cabin you are about to clean',
+  [
+    { label: 'Vacuum with the crevice tool held at the vent', desc: 'Suction first captures the loose dust instead of relocating it onto the dash and screen you already cleaned.' },
+    { label: 'Agitate the slats with a soft detail brush', desc: 'A boar-bristle brush reaches between vanes without snapping them. Vent slats are thin plastic and break at the pivot.' },
+    { label: 'Vacuum again as you brush', desc: 'Brush with one hand, hold the crevice tool just below with the other, so what you dislodge is caught rather than blown deeper.' },
+    { label: 'Finish with a barely damp swab, not a spray', desc: 'Spraying cleaner into a vent puts liquid into ductwork you cannot dry. Damp the swab instead and wipe the visible faces.' },
+  ],
+);
+
+diagrams['wheel-grip-wear'] = ladder(
+  'Why steering wheels get shiny and sticky',
+  'It is skin oil and hand cream, not dirt in the usual sense',
+  [
+    { label: 'Oils transfer from hands every drive', desc: 'Sunscreen and hand cream accelerate it dramatically in summer', highlight: true, note: 'The cause' },
+    { label: 'The build-up turns glossy and slick', desc: 'A shiny wheel is a grip problem before it is a cosmetic one' },
+    { label: 'Dressings make it worse, not better', desc: 'Never use a protectant with gloss on the rim you hold' },
+  ],
+);
+
+diagrams['trim-restore-tiers'] = ladder(
+  'Faded black trim: three different fixes',
+  'Match the fix to how far gone the plastic actually is',
+  [
+    { label: 'Grey and dusty, colour returns when wet', desc: 'Surface oxidation — a dressing genuinely restores this' },
+    { label: 'Chalky, wiping leaves grey on the cloth', desc: 'Needs cleaning back to sound plastic before any dressing' },
+    { label: 'Faded through, no change when wet', desc: 'Pigment is gone — only a dye or trim restorer brings it back', highlight: true, note: 'Dye, not dressing' },
+  ],
+);
+
+diagrams['exhaust-tip-material'] = twoColumn(
+  'Exhaust tips: know the material first',
+  'The same pad that polishes one finish ruins the other',
+  [
+    { label: 'Polished stainless or chrome', color: C.good, bg: C.goodBg, lines: ['Takes metal polish and fine wool', 'Soot comes off with effort and patience', 'Can be brought back to a mirror finish'] },
+    { label: 'Black or ceramic coated', color: C.bad, bg: C.badBg, lines: ['No metal polish, no abrasive pads', 'Polishing strips the coating permanently', 'Wash, degrease and leave it matte'] },
+  ],
+);
+
+diagrams['door-jamb-order'] = ladder(
+  'Door jambs: the bit that gives the car away',
+  'Clean paint with dirty shuts still reads as a dirty car',
+  [
+    { label: 'Do them after the wash, before drying', desc: 'The jambs are already wet and the grime is still soft', highlight: true, note: 'Right moment' },
+    { label: 'Separate low-pile towel, not the paint towel', desc: 'Jamb grime is greasy and carries over to panels' },
+    { label: 'Hinges and striker last', desc: 'Oily areas contaminate whatever touches them afterwards' },
+  ],
+);
+
+diagrams['salt-stain-steps'] = steps(
+  'Lifting winter salt stains out of carpet',
+  'Salt is dissolved and extracted, never brushed away dry',
+  [
+    { label: 'Vacuum every loose crystal first', desc: 'Dry salt dragged across carpet fibres is abrasive, and wetting it before vacuuming turns it into a paste that sinks deeper.' },
+    { label: 'Dissolve with warm water, applied to the brush', desc: 'Salt is water-soluble, so it needs very little chemistry. What it needs is enough moisture to dissolve and somewhere to go.' },
+    { label: 'Extract immediately by pressing a dry towel', desc: 'This is the step that removes the salt. Left to dry in place it recrystallises and the white ring returns within a day.' },
+    { label: 'Repeat rather than soaking once', desc: 'Two light passes with extraction beat one heavy soak, which drives salt into the foam backing where you cannot reach it.' },
+  ],
+);
+
+diagrams['deice-dos-donts'] = twoColumn(
+  'De-icing without wrecking the glass',
+  'Most windscreen damage in winter is self-inflicted',
+  [
+    { label: 'Never do this', color: C.bad, bg: C.badBg, lines: ['Hot or boiling water on cold glass', 'Metal scrapers or kitchen implements', 'Running wipers over a frozen screen', 'Scraping a chip you already had'] },
+    { label: 'Do this instead', color: C.good, bg: C.goodBg, lines: ['Engine on, demist to windscreen, wait', 'Plastic scraper with firm even strokes', 'De-icer fluid on stubborn edges', 'Clear the whole screen, not a porthole'] },
+  ],
+);
+
+diagrams['storage-checklist'] = ladder(
+  'Laying a car up for months',
+  'Ordered by what actually fails while a car sits still',
+  [
+    { label: 'Battery on a maintainer, or disconnected', desc: 'A flat battery is the single most common storage failure', highlight: true, note: 'First' },
+    { label: 'Tyres up to pressure, car moved if possible', desc: 'Standing on one spot for months risks flat-spotting' },
+    { label: 'Interior dry and food removed', desc: 'Damp and crumbs are how a stored car ends up smelling' },
+    { label: 'Washed and protected before it sits', desc: 'Contamination left on paint has months to etch in' },
+  ],
+);
+
+diagrams['protection-tiers'] = ladder(
+  'Wax, sealant, coating: what actually differs',
+  'Durability and effort, not how shiny the result is',
+  [
+    { label: 'Carnauba wax', desc: 'Warmest look, easiest to apply, measured in weeks not months' },
+    { label: 'Synthetic sealant', desc: 'Months of durability, simple application, slightly cooler look' },
+    { label: 'Ceramic coating', desc: 'Longest lasting by far, but prep is most of the job', highlight: true, note: 'Prep decides it' },
+  ],
+);
+
+diagrams['dropping-timeline'] = ladder(
+  'Bird droppings: why hours matter',
+  'The damage is acid etching, and heat accelerates it',
+  [
+    { label: 'Removed same day', desc: 'Wipes off with a damp towel, no trace left behind', highlight: true, note: 'No damage' },
+    { label: 'Left a few days in warm weather', desc: 'Dulled outline where the clear coat has begun to etch' },
+    { label: 'Left through hot sun for a week', desc: 'Permanent etched ring that only polishing will level' },
+  ],
+);
+
+diagrams['pollen-tactics'] = twoColumn(
+  'Pollen season, done two ways',
+  'Rinsing often beats washing thoroughly and rarely',
+  [
+    { label: 'What works', color: C.good, bg: C.goodBg, lines: ['Frequent plain rinses between washes', 'Pre-rinse heavily before any contact', 'Replace the cabin filter in spring', 'Keep glass clear rather than smeared'] },
+    { label: 'What backfires', color: C.bad, bg: C.badBg, lines: ['Dry-wiping pollen off with a towel', 'Waiting for the fortnightly wash', 'Using recirculate with a clogged filter'] },
+  ],
+);
+
+diagrams['headlight-layers'] = twoColumn(
+  'Why restored headlights go yellow again',
+  'The factory coating is the part that was protecting them',
+  [
+    { label: 'Sanding and polishing only', color: C.bad, bg: C.badBg, lines: ['Removes the oxidised layer and the coating', 'Looks perfect for a few months', 'Bare polycarbonate yellows faster than before', 'Back to hazy within a year'] },
+    { label: 'Restore then re-coat', color: C.good, bg: C.goodBg, lines: ['Same correction, then a UV clear coat', 'The coating is doing the protecting', 'Lasts years rather than months', 'The step most kits leave out'] },
+  ],
+);
+
+diagrams['wiper-failure-signs'] = ladder(
+  'When a wiper blade is finished',
+  'Judge by what it leaves behind, not by age',
+  [
+    { label: 'Streaks in a repeating band', desc: 'The rubber edge has a nick or has taken a set — replace' },
+    { label: 'Chattering and juddering across the screen', desc: 'Often glass contamination, not the blade — clean first', highlight: true, note: 'Try cleaning' },
+    { label: 'Smearing a film over the whole sweep', desc: 'Usually a dirty screen or off-gassed interior film' },
+  ],
+);
+
+diagrams['rain-repellent-limits'] = twoColumn(
+  'Rain repellent: where it helps and where it does not',
+  'It changes how water behaves, not how clean the glass is',
+  [
+    { label: 'Genuinely better', color: C.good, bg: C.goodBg, lines: ['Water beads and clears at speed', 'Less wiper use on the motorway', 'Easier to remove bugs and grime later'] },
+    { label: 'Unchanged or worse', color: C.ink2, bg: C.bg, lines: ['Low-speed town driving still needs wipers', 'Can cause juddering on worn blades', 'Wears off and needs reapplying', 'Useless over a dirty or filmed screen'] },
+  ],
+);
+
+diagrams['battery-warning-signs'] = ladder(
+  'A battery about to fail usually says so',
+  'Three signals, in the order people notice them',
+  [
+    { label: 'Slow, laboured cranking on cold mornings', desc: 'The clearest early warning, and the easiest to ignore', highlight: true, note: 'Act here' },
+    { label: 'Lights dim noticeably at idle', desc: 'Capacity is dropping under load even when it starts' },
+    { label: 'Needs a jump more than once in a season', desc: 'Past warning — it is a replacement, not a charging issue' },
+  ],
+);
+
+diagrams['mount-placement-zones'] = twoColumn(
+  'Where a phone mount belongs',
+  'Sightline and airbag path decide this, not convenience',
+  [
+    { label: 'Poor positions', color: C.bad, bg: C.badBg, lines: ['Middle of the windscreen, in the sightline', 'Anywhere over an airbag panel', 'Low centre console, eyes fully off road', 'Blocking a demister vent'] },
+    { label: 'Better positions', color: C.good, bg: C.goodBg, lines: ['Low corner of the screen, out of the view', 'High on the centre dash near the stack', 'Where a glance needs no head movement'] },
+  ],
+);
+
+diagrams['footage-rescue-steps'] = steps(
+  'Saving dash cam footage after an incident',
+  'The loop is already overwriting what you want to keep',
+  [
+    { label: 'Stop the loop before anything else', desc: 'Press the emergency lock button if the camera has one, or power the camera down. Every minute it keeps running is footage closer to being overwritten.' },
+    { label: 'Take the card out rather than trusting the app', desc: 'Pulling files over wi-fi is slow and can fail partway. Removing the card and copying from a reader is the reliable route.' },
+    { label: 'Copy the original files, do not edit them', desc: 'Keep an untouched copy of the raw file. Metadata and timestamps in the original matter if the footage is ever used formally.' },
+    { label: 'Fit a spare card and keep recording', desc: 'The original card becomes evidence and stays out of the camera. This is the argument for owning a second card before you need one.' },
+  ],
+);
+
+diagrams['underbody-salt-traps'] = ladder(
+  'Where road salt actually sits',
+  'The places a top-down wash never reaches',
+  [
+    { label: 'Wheel arch liners and their edges', desc: 'Packed with salted slush that stays damp for days', highlight: true, note: 'Worst spot' },
+    { label: 'Sills, seams and subframe ledges', desc: 'Horizontal surfaces that hold residue rather than shed it' },
+    { label: 'Behind bumpers and under the boot floor', desc: 'Enclosed, unventilated, and never seen until it rusts' },
+  ],
+);
+
+diagrams['automatic-wash-types'] = twoColumn(
+  'Automatic washes: brush versus touchless',
+  'One risks your paint, the other risks your protection',
+  [
+    { label: 'Brush or cloth wash', color: C.bad, bg: C.badBg, lines: ['Media carries grit from the car before yours', 'Main cause of swirl marks on daily drivers', 'Fast and cheap, and it shows on dark paint'] },
+    { label: 'Touchless wash', color: C.good, bg: C.goodBg, lines: ['Nothing physically contacts the paint', 'Relies on strong alkaline chemistry instead', 'Strips wax faster than a pH-neutral wash', 'The right choice for a winter salt rinse'] },
+  ],
+);
+
+diagrams['black-paint-visibility'] = twoColumn(
+  'Why black paint looks worse, not wears worse',
+  'The same defects exist on silver — you simply cannot see them',
+  [
+    { label: 'Dark paint', color: C.ink2, bg: C.bg, lines: ['Scratches scatter light against a dark ground', 'Swirls show in any direct sunlight', 'Dust and water spots visible within a day'] },
+    { label: 'Light and metallic paint', color: C.brand, bg: C.brandLight, lines: ['Flake and brightness hide fine scratches', 'Same damage, far less contrast', 'Forgives technique that black exposes'] },
+  ],
+);
+
+diagrams['console-grime-order'] = steps(
+  'Cup holders and console, in the right order',
+  'Everything here is sticky rather than dusty, which changes the method',
+  [
+    { label: 'Lift out the removable liners first', desc: 'Most cup holders have a rubber or plastic insert that comes out and can be washed properly in a sink rather than cleaned in place.' },
+    { label: 'Loosen dried spills before wiping', desc: 'Sugary residue is bonded, not loose. A damp cloth held over it for a minute does more than scrubbing at it dry.' },
+    { label: 'Brush the corners while it is still damp', desc: 'A soft detail brush reaches the seams and stitch lines around the gear selector where a cloth simply bridges over the gap.' },
+    { label: 'Wipe out rather than pushing crumbs deeper', desc: 'Vacuum the loosened debris out rather than sweeping it toward the gaps around the shifter and handbrake surround.' },
+  ],
+);
+
+diagrams['odour-source-order'] = ladder(
+  'Finding a smell instead of masking it',
+  'Air fresheners fail because the source is still there',
+  [
+    { label: 'Remove the physical source first', desc: 'Spilled drink, food, damp carpet or a wet boot liner', highlight: true, note: 'Start here' },
+    { label: 'Then the cabin filter and the vents', desc: 'Smoke and mould settle into the ventilation path' },
+    { label: 'Then soft surfaces, which hold odour longest', desc: 'Headlining and fabric seats absorb and slowly release it' },
+    { label: 'Only then consider an odour treatment', desc: 'Effective on residue, useless while the source remains' },
+  ],
+);
+
+diagrams['decal-removal-steps'] = steps(
+  'Taking a decal off without marking the paint',
+  'Heat and patience, never a blade on a painted panel',
+  [
+    { label: 'Warm the decal until the adhesive softens', desc: 'A hairdryer at moderate heat is enough. The vinyl should feel warm and pliable rather than hot to the touch.' },
+    { label: 'Lift a corner and pull back on itself', desc: 'Pull slowly at a shallow angle against the panel rather than straight up, which tears the vinyl and leaves adhesive behind.' },
+    { label: 'Remove the remaining adhesive with a solvent', desc: 'A dedicated adhesive remover, worked with a cloth rather than a scraper. Plastic razor blades only on glass, never on paint.' },
+    { label: 'Wash and reprotect the exposed area', desc: 'The paint under a long-fitted decal has been shielded from the sun and has no wax on it. It needs washing and protecting.' },
+  ],
+);
+
 await mkdir(OUT, { recursive: true });
 for (const [name, svg] of Object.entries(diagrams)) {
   await sharp(Buffer.from(svg)).webp({ quality: 90 }).toFile(`${OUT}/${name}.webp`);

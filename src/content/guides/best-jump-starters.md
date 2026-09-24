@@ -11,6 +11,8 @@ related:
   - "reviews/noco-boost-gb40-jump-starter"
   - "guides/best-car-emergency-kit"
   - "guides/best-portable-power-stations"
+  - "blog/car-battery-when-to-replace"
+  - "how-to/how-to-prep-a-car-for-storage"
 comparisonNote: "Rated by real-world usability rather than the peak-amp number on the box."
 picks:
   - rank: 1
