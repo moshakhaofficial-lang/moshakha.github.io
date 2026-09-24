@@ -156,6 +156,11 @@ It doesn't replace the contact wash — bonded road film still needs a mitt. It
 substantially reduces how much grit that mitt encounters, which is exactly the goal of
 [the two-bucket method](/how-to/two-bucket-car-wash-method/).
 
+Our top pick is the one we've written up in full — the
+[Sun Joe SPX3000 review](/reviews/sun-joe-spx3000-pressure-washer/) covers what the
+included foam cannon actually changes about a wash, and where 1.1 GPM becomes the
+limiting factor.
+
 ## How we chose
 
 Specification analysis — motor rating, flow rate, nozzle set, and included accessories

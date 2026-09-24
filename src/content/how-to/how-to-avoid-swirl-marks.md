@@ -63,9 +63,11 @@ with gritty water.
 genuinely dusty panel, drags every particle across the paint with no lubrication at all.
 This does an extraordinary amount of damage for how harmless it feels.
 
-**Drying badly.** A dropped towel, a towel washed with fabric softener, or a saturated
-towel being rubbed rather than pulled. Drying is the second-highest-risk step after
-washing.
+**Drying badly.** A dropped towel, a
+[towel washed with fabric softener](/blog/microfibre-care-101/), or a saturated towel
+being rubbed rather than pulled. Drying is the second-highest-risk step after washing —
+and softener is the one that catches careful people out, because the towel looks fine and
+has quietly lost the ability to absorb.
 
 **Circular motion.** Doesn't create more scratches — makes the ones you create far more
 visible.

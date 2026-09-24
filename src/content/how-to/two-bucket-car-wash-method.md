@@ -118,3 +118,8 @@ paint by design.
 
 For specific picks, see our [wash mitt guide](/guides/best-car-wash-mitts/) and
 [drying towel guide](/guides/best-car-drying-towels/).
+
+The shampoo matters more than people assume, because the suds are the lubrication that
+lets grit slide off the paint rather than grind across it — our
+[car wash soap guide](/guides/best-car-wash-soap/) covers why pH-neutral matters and how
+little of a concentrate you actually need per bucket.

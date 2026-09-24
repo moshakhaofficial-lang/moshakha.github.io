@@ -151,9 +151,14 @@ registers, which is exactly why pick five is still on this list at a lower price
 
 Capacity tells you how long. **Output tells you whether it starts at all.**
 
-Anything with a motor or a compressor — a fridge, a tyre inflator, a power tool — draws a
-surge at startup far above its running wattage. A 300W unit will simply refuse, even if
-the appliance only draws 200W once spinning.
+Anything with a motor or a compressor — a fridge, a
+[tire inflator](/guides/best-tire-inflators/), a power tool — draws a surge at startup far
+above its running wattage. A 300W unit will simply refuse, even if the appliance only
+draws 200W once spinning.
+
+That's worth checking before you assume a power station covers roadside tyre duty: most
+12V inflators are designed to run off the car's own socket rather than an inverter, which
+is usually the simpler answer anyway.
 
 That's the real dividing line in this list: picks one through three are device-charging
 units, and pick four is the one that runs appliances.

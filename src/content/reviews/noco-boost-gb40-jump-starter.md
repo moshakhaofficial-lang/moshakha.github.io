@@ -71,9 +71,10 @@ instead if that's your vehicle.
 
 **No air compressor.** Some competitors bundle one in. NOCO doesn't, and on balance
 that's the right call: combination units compromise both functions and are heavier, so
-they get left at home. A dedicated GB40 plus a corded inflator like the one in our
-[car emergency kit guide](/guides/best-car-emergency-kit/) covers both failure modes
-without either one being a compromise.
+they get left at home. A dedicated GB40 plus a separate unit from
+[best tire inflators](/guides/best-tire-inflators/) covers both failure modes without
+either one being a compromise — and the two together are most of what our
+[car emergency kit guide](/guides/best-car-emergency-kit/) actually recommends carrying.
 
 **It costs more than no-name packs with bigger claimed numbers.** That premium buys the
 protection circuitry above, plus clamps and build quality that are visibly better than

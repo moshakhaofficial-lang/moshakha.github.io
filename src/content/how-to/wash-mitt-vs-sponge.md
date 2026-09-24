@@ -97,7 +97,9 @@ Assuming you're not buying anything today:
 - Bin any sponge that has touched the ground.
 
 This reduces the risk. It does not remove it, because the flat face still has nowhere to
-put the grit. A mitt costs less than a single bottle of decent shampoo.
+put the grit. A mitt costs less than a single bottle of
+[decent shampoo](/guides/best-car-wash-soap/) — and the shampoo is doing half the
+protecting either way, since the suds are what keeps grit sliding rather than dragging.
 
 ## Doing it properly
 
