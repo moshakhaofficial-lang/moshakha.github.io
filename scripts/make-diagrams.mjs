@@ -1009,6 +1009,112 @@ diagrams['decal-removal-steps'] = steps(
   ],
 );
 
+
+/* ---------- Batch: Oct 2026 articles ---------- */
+diagrams['sunlight-wash-rules'] = steps(
+  'Washing in the sun: what to do differently',
+  'The heat in the panel causes the trouble, not the sunlight itself',
+  [
+    { label: 'Test the panel with the back of your hand', desc: 'If it feels uncomfortably warm, soap and water will dry before you can rinse. Shade or wait.' },
+    { label: 'Pre-wet each panel before you touch it', desc: 'Soap should never meet a dry, hot surface. Keep the section wet the whole time you work on it.' },
+    { label: 'Wash and rinse one panel at a time', desc: 'Start with the roof, the hottest surface, and rinse each section straight away instead of soaping the whole car.' },
+    { label: 'Dry immediately while the panel is still wet', desc: 'A large soft towel, straight after rinsing. Letting it air-dry in the sun is what bakes the spots on.' },
+  ],
+);
+
+diagrams['nozzle-angles'] = ladder(
+  'Pressure washer tips, by spray angle',
+  'Same water, different concentration. Narrower means harder on a smaller area',
+  [
+    { label: '0° (red): never on a car', desc: 'A pinpoint jet that can cut rubber and lift paint at chips. Leave it in the box', note: 'Avoid' },
+    { label: '15° (yellow): not on paint', desc: 'Still too aggressive for clear coat. Suited to concrete and hard surfaces', note: 'Avoid' },
+    { label: '25° (green) and 40° (white): rinsing', desc: 'The wide tips for rinsing paint, held a foot or more from the panel', highlight: true, note: 'Use' },
+    { label: '65° (black): soap only', desc: 'Low pressure so the machine can draw detergent. Applies soap, does not rinse', note: 'Soap' },
+  ],
+);
+
+diagrams['soap-dilution'] = twoColumn(
+  'Soap per bucket: too much vs too little',
+  'The bottle label is the only reliable number, because concentration differs between brands',
+  [
+    { label: 'Too much soap', color: C.bad, bg: C.badBg, lines: ['Suds are harder to rinse', 'Leaves a film on glass and dark paint', 'Strips wax and sealant faster'] },
+    { label: 'Too little soap', color: C.bad, bg: C.badBg, lines: ['Thin lubrication layer', 'Grit drags across the clear coat', 'The direct route to swirl marks'] },
+  ],
+);
+
+diagrams['edgeless-vs-edged'] = twoColumn(
+  'Edgeless vs edged microfiber',
+  'The border is the whole story: it is stiffer than the towel around it',
+  [
+    { label: 'Edgeless', color: C.good, bg: C.goodBg, lines: ['Clean-cut edge, no hard seam', 'Use on paint and glass', 'Worth paying a little more for'] },
+    { label: 'Edged (stitched or bound)', color: C.ink3, bg: '#f1f0ec', lines: ['Firm border can trap grit', 'Fine for wheels, jambs, engine bay', 'Buy cheap and treat as disposable'] },
+  ],
+);
+
+diagrams['jump-starter-storage'] = ladder(
+  'Where a lithium jump starter should live',
+  'Heat ages the battery, cold weakens it, and an empty one deteriorates',
+  [
+    { label: 'Shaded spot in the car', desc: 'Under a seat or in a boot compartment, out of direct sun', highlight: true, note: 'Best' },
+    { label: 'Indoors in a heatwave or hard freeze', desc: 'Take it inside, carry it out for long trips', note: 'Extremes' },
+    { label: 'Topped up every few months', desc: 'Check the manual for the recommended interval', note: 'Habit' },
+    { label: 'Not on the dash or rear shelf', desc: 'Direct sun through glass is the worst place for it', note: 'Avoid' },
+  ],
+);
+
+diagrams['dashcam-battery-drain'] = ladder(
+  'Three ways to power a dash cam',
+  'Only one of them can drain the battery, and it needs a voltage cut-off',
+  [
+    { label: '12V socket that cuts off with the ignition', desc: 'Runs only when the car runs, so no drain when parked', highlight: true, note: 'Zero risk' },
+    { label: '12V socket that stays live', desc: 'The camera keeps running with the car off and no protection', note: 'Can drain' },
+    { label: 'Hardwired to the fuse box', desc: 'Allows parking mode. Needs a voltage cut-off set conservatively', note: 'Needs cut-off' },
+    { label: 'Old or weak battery', desc: 'Skip parking mode, or replace the battery first', note: 'Caution' },
+  ],
+);
+
+diagrams['window-fog-fix'] = steps(
+  'Clearing interior fog, fastest first',
+  'Dry the air, do not just warm it',
+  [
+    { label: 'Turn the air conditioning on', desc: 'It dehumidifies the air, which clears condensation faster than heat alone, even in winter.' },
+    { label: 'Switch off recirculation', desc: 'Recirculating keeps the same damp breath inside. Draw in drier outside air instead.' },
+    { label: 'Point the airflow at the glass and warm it up', desc: 'Warm, dry air holds moisture and lifts it off the glass.' },
+    { label: 'Find the moisture if it keeps coming back', desc: 'Damp carpets, a clogged cabin filter, door seal leaks, or a film on the inside of the glass.' },
+  ],
+);
+
+diagrams['phone-heat-stack'] = ladder(
+  'Why a phone overheats on a car mount',
+  'Three heat sources stack up, and any one alone is usually fine',
+  [
+    { label: 'Direct sunlight on the dash or windscreen', desc: 'The biggest contributor on a summer day', note: 'Source 1' },
+    { label: 'Wireless charging', desc: 'Less efficient than a cable, so the difference is shed as warmth', note: 'Source 2' },
+    { label: 'Navigation, screen on, mobile data', desc: 'The phone is working hard while it charges', note: 'Source 3' },
+    { label: 'The fix: shade, airflow, a MagSafe-rated case', desc: 'Thick cases also weaken the magnet hold', highlight: true, note: 'Fix' },
+  ],
+);
+
+diagrams['vacuum-corded-vs-cordless'] = twoColumn(
+  'Corded vs cordless car vacuum',
+  'A proper interior takes longer than most small handhelds sustain at full suction',
+  [
+    { label: 'Corded', color: C.good, bg: C.goodBg, lines: ['Steady suction for the whole job', 'No charging schedule', 'Needs a 12V socket that stays live'] },
+    { label: 'Cordless', color: C.ink3, bg: '#f1f0ec', lines: ['Pleasant for light, quick jobs', 'Suction fades as the battery drains', 'Runs out around the second footwell'] },
+  ],
+);
+
+diagrams['pre-rinse-sequence'] = steps(
+  'The pre-rinse, done properly',
+  'It removes the loose grit that causes swirl marks before your mitt touches the paint',
+  [
+    { label: 'Start at the roof and work down', desc: 'Dirt flows away from the cleaner panels instead of back onto them.' },
+    { label: 'Spend longer on the lower half', desc: 'Sills, bumpers and behind the wheels are where the most grit collects.' },
+    { label: 'Keep going until the runoff looks mostly clear', desc: 'Not just until the car is wet. Use a wide tip or a hose, and do not blast.' },
+    { label: 'Then wash with a lubricated mitt', desc: 'The rinse does not remove traffic film. It only makes the contact wash safe.' },
+  ],
+);
+
 await mkdir(OUT, { recursive: true });
 for (const [name, svg] of Object.entries(diagrams)) {
   await sharp(Buffer.from(svg)).webp({ quality: 90 }).toFile(`${OUT}/${name}.webp`);
