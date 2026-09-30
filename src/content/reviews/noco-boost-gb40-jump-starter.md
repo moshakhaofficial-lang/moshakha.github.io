@@ -25,6 +25,7 @@ related:
   - "guides/best-jump-starters"
   - "how-to/how-to-jump-start-a-car"
   - "guides/best-car-emergency-kit"
+  - "blog/can-you-leave-a-jump-starter-in-a-hot-car"
 faq:
   - q: "Is 1000A enough for my car?"
     a: "For most petrol engines up to about 6.0L, yes. Diesels need substantially more cranking current because of higher compression, so a 1000A-class pack is undersized for a diesel — NOCO's own GB50 or GB70 are the right size there. Peak-amp figures aren't measured consistently across brands, so don't compare the GB40's 1000A directly against a competitor's larger claimed number."

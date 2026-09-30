@@ -25,6 +25,7 @@ related:
   - "guides/best-pressure-washers-for-cars"
   - "guides/best-car-wash-soap"
   - "how-to/how-to-avoid-swirl-marks"
+  - "blog/pressure-washer-nozzle-angles-for-cars"
 faq:
   - q: "Is 2200 PSI too much for a car's paint?"
     a: "Not with the correct nozzle and distance — a wide fan tip held at a sensible distance is safe on modern automotive paint. The risk with any pressure washer is a narrow, concentrated nozzle held too close, which can damage trim, lift decals, or force water past seals. 2200 PSI with the right technique is capable without being reckless."

@@ -24,6 +24,7 @@ related:
   - "guides/best-car-wash-soap"
   - "how-to/two-bucket-car-wash-method"
   - "how-to/how-to-avoid-swirl-marks"
+  - "blog/how-much-car-wash-soap-per-bucket"
 faq:
   - q: "Why do suds matter for washing a car?"
     a: "Suds aren't cosmetic — they're lubrication between the wash mitt and the paint. Grit sitting on paint scratches it when dragged across dry or under-lubricated; a thick, slick suds layer lets that grit slide off instead. A soap that doesn't suds well is doing less to actually protect your paint during the wash, regardless of how well it cleans."

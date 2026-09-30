@@ -30,6 +30,7 @@ related:
   - "guides/best-car-drying-towels"
   - "how-to/how-to-use-a-clay-bar"
   - "blog/drying-aid-explained"
+  - "blog/wash-a-car-in-direct-sunlight"
 faq:
   - q: "How do I know if a water spot is fresh or etched?"
     a: "Run a fingernail lightly across the dry spot. Smooth with only a visible mark means it's likely a fresh mineral deposit sitting on the surface. Any textured feel or a slight ring you can detect by touch means the clear coat has likely already been etched — a fundamentally different, harder-to-fix problem than surface residue."

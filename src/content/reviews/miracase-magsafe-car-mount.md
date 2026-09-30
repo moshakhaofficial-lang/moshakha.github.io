@@ -25,6 +25,7 @@ related:
   - "guides/best-car-phone-mounts"
   - "guides/best-dash-cams"
   - "blog/perfect-interior-detail"
+  - "blog/magsafe-car-mounts-and-phone-heat"
 faq:
   - q: "Does it work with any phone?"
     a: "Only phones with MagSafe built in, or any phone with a stick-on magnetic ring fitted. Without one or the other, there's nothing for the mount to grip — check compatibility before buying rather than assuming a magnetic mount works with any phone."

@@ -29,6 +29,7 @@ related:
   - "blog/perfect-interior-detail"
   - "how-to/how-to-clean-car-floor-mats"
   - "how-to/how-to-remove-pet-hair-from-car"
+  - "blog/corded-vs-cordless-car-vacuum"
 faq:
   - q: "Is the ThisWorx car vacuum powerful enough?"
     a: "For loose dust, crumbs, sand and surface debris, yes. For embedded pet hair or grit ground into carpet pile, no — you will need a rubber pet-hair brush to lift the material first, or a household vacuum with a beater bar. Judge it as a detailing tool, not a replacement for a proper vacuum."

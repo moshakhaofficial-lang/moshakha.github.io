@@ -36,7 +36,9 @@ const cleanPath = rawPath === '/' ? '/' : rawPath.replace(/\/+$/, '') + '/';
 const canonicalUrl = new URL(cleanPath, site.url).href;
 const imageUrl = new URL(image, site.url).href;
 
-const fullTitle = title.includes(site.name) ? title : `${title} | ${site.name}`;
+// Google truncates around 60 chars, so only append the brand when it fits.
+const branded = `${title} | ${site.name}`;
+const fullTitle = title.includes(site.name) || branded.length > 60 ? title : branded;
 ---
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />

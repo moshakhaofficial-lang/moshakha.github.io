@@ -10,6 +10,7 @@ related:
   - "how-to/how-to-avoid-swirl-marks"
   - "reviews/sun-joe-spx3000-pressure-washer"
   - "how-to/foam-cannon-guide"
+  - "blog/pressure-washer-nozzle-angles-for-cars"
 comparisonNote: "Chosen for car use specifically — the highest-PSI machine is the wrong machine here."
 picks:
   - rank: 1

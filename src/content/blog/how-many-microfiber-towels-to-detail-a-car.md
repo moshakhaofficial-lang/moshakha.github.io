@@ -10,6 +10,7 @@ related:
   - "guides/best-microfiber-towels-for-cars"
   - "blog/microfibre-care-101"
   - "how-to/two-bucket-car-wash-method"
+  - "blog/edgeless-vs-edged-microfiber-towels"
 faq:
   - q: "How many microfibre towels do I need to wash a car?"
     a: "For a straightforward maintenance wash, six to eight: one or two drying towels, two low-pile towels for glass and interior, two general-purpose towels, and one dedicated to wheels. A full detail with wax or sealant needs closer to twelve."

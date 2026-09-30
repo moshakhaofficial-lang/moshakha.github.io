@@ -11,6 +11,7 @@ related:
   - "how-to/how-to-install-a-dash-cam"
   - "guides/dash-cam-memory-cards"
   - "blog/dash-cam-footage-after-an-incident"
+  - "blog/will-a-dash-cam-drain-your-car-battery"
 comparisonNote: "Every pick here uses a supercapacitor rather than a lithium battery — see why below."
 picks:
   - rank: 1

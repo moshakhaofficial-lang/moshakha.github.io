@@ -14,6 +14,8 @@ related:
   - "blog/when-to-replace-windshield-wipers"
   - "blog/rain-repellent-windshield-coatings"
   - "how-to/how-to-deice-a-windshield-safely"
+  - "blog/edgeless-vs-edged-microfiber-towels"
+  - "blog/why-car-windows-fog-up-inside"
 faq:
   - q: "Why does my car glass streak no matter what cleaner I use?"
     a: "Because it is usually the towel, not the cleaner. A high-pile towel cannot make even contact with glass and smears the last film of moisture instead of lifting it. Switch to a 300-400 GSM low-pile or waffle weave towel and most streaking disappears without changing product."

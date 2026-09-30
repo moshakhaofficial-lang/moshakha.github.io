@@ -16,6 +16,7 @@ related:
   - "guides/best-car-detailing-brushes"
   - "how-to/how-to-clean-steering-wheel"
   - "blog/how-to-get-smoke-smell-out-of-a-car"
+  - "blog/corded-vs-cordless-car-vacuum"
 comparisonNote: "Organised by surface, because the wrong chemistry on a dashboard is permanent."
 picks:
   - rank: 1

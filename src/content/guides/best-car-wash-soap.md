@@ -12,6 +12,8 @@ related:
   - "how-to/foam-cannon-guide"
   - "blog/car-wash-soap-vs-dish-soap"
   - "blog/snow-foam-vs-car-shampoo"
+  - "blog/wash-a-car-in-direct-sunlight"
+  - "blog/how-much-car-wash-soap-per-bucket"
 comparisonNote: "All picks here are pH-neutral and safe over wax, sealant and ceramic coatings."
 picks:
   - rank: 1

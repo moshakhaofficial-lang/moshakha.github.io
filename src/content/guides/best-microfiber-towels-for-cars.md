@@ -12,6 +12,7 @@ related:
   - "guides/best-car-drying-towels"
   - "blog/microfibre-care-101"
   - "how-to/how-to-clean-door-jambs"
+  - "blog/edgeless-vs-edged-microfiber-towels"
 comparisonNote: "Organised by job rather than by ranking, because these towels are not competing with each other."
 picks:
   - rank: 1
