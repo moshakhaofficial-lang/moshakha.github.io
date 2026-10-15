@@ -9,6 +9,7 @@ related:
   - "how-to/how-to-clean-car-seats-fabric"
   - "how-to/leather-seat-care"
   - "guides/best-trunk-organizers"
+  - "reviews/motor-trend-spillguard-seat-covers"
 comparisonNote: "Grouped by the problem each type solves rather than by material. Prices move constantly, so we link out for live pricing rather than quoting figures that go stale."
 picks:
   - rank: 1

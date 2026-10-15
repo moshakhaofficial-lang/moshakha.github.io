@@ -32,6 +32,7 @@ related:
   - "guides/best-tire-inflators"
   - "guides/best-tire-shine"
   - "blog/wheel-rim-care"
+  - "reviews/astroai-airun-h-tire-inflator"
 faq:
   - q: "Should I use the pressure on the tire sidewall?"
     a: "No. The sidewall figure is the maximum pressure the tire can safely hold, not the pressure your car needs. Your target is on the placard in the driver's door jamb. Inflating to the sidewall number over-inflates most cars significantly, reducing grip and wearing the center of the tread."

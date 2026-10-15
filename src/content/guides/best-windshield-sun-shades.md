@@ -8,6 +8,7 @@ related:
   - "guides/best-car-floor-mats"
   - "blog/dashboard-dressing-glare"
   - "guides/best-car-interior-cleaning-products"
+  - "reviews/econour-windshield-sun-shade-umbrella"
 comparisonNote: "Three picks, because these are the three shapes worth choosing between — a longer list would be repeating one of them. Prices move constantly, so we link out for live pricing rather than quoting figures that go stale."
 picks:
   - rank: 1

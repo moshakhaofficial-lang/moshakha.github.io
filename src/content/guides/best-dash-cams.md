@@ -12,6 +12,8 @@ related:
   - "guides/dash-cam-memory-cards"
   - "blog/dash-cam-footage-after-an-incident"
   - "blog/will-a-dash-cam-drain-your-car-battery"
+  - "reviews/viofo-a129-plus-duo-dash-cam"
+  - "reviews/viofo-a119-mini-2-dash-cam"
 comparisonNote: "Every pick here uses a supercapacitor rather than a lithium battery — see why below."
 picks:
   - rank: 1

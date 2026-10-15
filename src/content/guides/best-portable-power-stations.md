@@ -9,6 +9,7 @@ related:
   - "guides/best-car-emergency-kit"
   - "guides/best-tire-inflators"
   - "blog/does-12v-socket-stay-on-with-ignition-off"
+  - "reviews/jackery-explorer-300-plus"
 comparisonNote: "Sorted by realistic delivered energy and battery chemistry rather than the headline watt-hour number. Prices move constantly, so we link out for live pricing rather than quoting figures that go stale."
 picks:
   - rank: 1
