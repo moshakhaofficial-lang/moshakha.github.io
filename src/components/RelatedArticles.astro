@@ -28,7 +28,11 @@ const fallback = all
   .filter((e) => !e.data.draft && e.ref !== currentId && !resolved.some((r) => r!.ref === e.ref))
   .sort((a, b) => +b.data.publishDate - +a.data.publishDate);
 
-const items = [...resolved, ...fallback].slice(0, 3);
+// Six, not three: at three, every related ref declared beyond the third was
+// silently dropped, which left ~a third of the site with no in-body inbound
+// links at all. Six fills two clean rows of the 3-column grid and surfaces the
+// cross-links the articles already declare.
+const items = [...resolved, ...fallback].slice(0, 6);
 ---
 {items.length > 0 && (
   <aside class="related" aria-labelledby="related-heading">
