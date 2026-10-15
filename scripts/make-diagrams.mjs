@@ -14,7 +14,7 @@ const OUT = 'src/assets/images';
 const W = 1200, H = 675;
 
 // Field Manual palette — mirrors src/styles/global.css so diagrams and page
-// share one set of colours.
+// share one set of colors.
 const C = {
   bg: '#f7f6f2', card: '#ffffff', ink: '#16181a', ink2: '#4a5157', ink3: '#6c737a',
   line: '#dcdad2', brand: '#c4451e', brandLight: '#fbede8', accent: '#a8792f',
@@ -97,7 +97,7 @@ const diagrams = {};
       <text x="${x + 24}" y="396" font-family="${F}" font-size="20" font-weight="600" fill="${C.ink}">${c.use}</text>
       ${wrap(c.note, x + 24, 434, 34, 16, C.ink2)}`;
   });
-  diagrams['weave-types'] = frame('Microfibre weave types', 'The spec that matters more than GSM — matched to the job each one actually does', body);
+  diagrams['weave-types'] = frame('Microfiber weave types', 'The spec that matters more than GSM — matched to the job each one actually does', body);
 }
 
 /* ---------- 2. GSM ladder ---------- */
@@ -183,7 +183,7 @@ const diagrams = {};
   diagrams['two-bucket-method'] = frame('The two-bucket method', 'The single highest-impact habit in the entire wash process', body);
 }
 
-/* ---------- 5. Microfibre laundry do / don't ---------- */
+/* ---------- 5. Microfiber laundry do / don't ---------- */
 {
   const item = (x, y, ok, text) => `
     <circle cx="${x + 18}" cy="${y - 6}" r="15" fill="${ok ? C.goodBg : C.badBg}" stroke="${ok ? C.good : C.bad}" stroke-width="2"/>
@@ -194,11 +194,11 @@ const diagrams = {};
     <text x="86" y="196" font-family="${F}" font-size="23" font-weight="700" fill="${C.good}">Do</text>
     <rect x="614" y="150" width="530" height="400" rx="14" fill="${C.card}" stroke="${C.bad}" stroke-width="2.5"/>
     <text x="644" y="196" font-family="${F}" font-size="23" font-weight="700" fill="${C.bad}">Don't</text>`;
-  const dos = ['Wash cold or warm, max 40°C', 'Air dry, or tumble on low heat', 'Wash microfibre alone', 'Separate glass, paint, wax, wheels', 'Use plain detergent, sparingly', 'Strip wash with white vinegar'];
-  const donts = ['Wash hot — it melts split fibres', 'Tumble dry on high heat', 'Mix with cotton — lint transfers', 'Wash all towel types together', 'Use fabric softener, ever', 'Use dryer sheets'];
+  const dos = ['Wash cold or warm, max 40°C', 'Air dry, or tumble on low heat', 'Wash microfiber alone', 'Separate glass, paint, wax, wheels', 'Use plain detergent, sparingly', 'Strip wash with white vinegar'];
+  const donts = ['Wash hot — it melts split fibers', 'Tumble dry on high heat', 'Mix with cotton — lint transfers', 'Wash all towel types together', 'Use fabric softener, ever', 'Use dryer sheets'];
   dos.forEach((t, i) => { body += item(86, 250 + i * 50, true, t); });
   donts.forEach((t, i) => { body += item(644, 250 + i * 50, false, t); });
-  diagrams['microfibre-laundry'] = frame('Microfibre laundry rules', 'Laundering habits affect towel life more than what you paid for the towel', body);
+  diagrams['microfiber-laundry'] = frame('Microfiber laundry rules', 'Laundering habits affect towel life more than what you paid for the towel', body);
 }
 
 /* ---------- 6. 500 vs 800 GSM ---------- */
@@ -428,7 +428,7 @@ diagrams['sidewall-vs-placard'] = twoColumn(
   'Sidewall max vs door placard',
   'One of these is your target pressure. The other is a warning label.',
   [
-    { label: 'Tyre sidewall', color: C.ink3, bg: '#f1f0ec', lines: ['The tyre’s maximum safe pressure', 'Not specific to your car', 'Inflating to this over-inflates most cars'] },
+    { label: 'Tire sidewall', color: C.ink3, bg: '#f1f0ec', lines: ['The tire’s maximum safe pressure', 'Not specific to your car', 'Inflating to this over-inflates most cars'] },
     { label: 'Door jamb placard', color: C.brand, bg: C.brandLight, lines: ['Set by the manufacturer for this car', 'Often differs front to rear', 'This is the number to use, checked cold'] },
   ],
 );
@@ -549,7 +549,7 @@ diagrams['pet-hair-sequence'] = steps(
   'Removing pet hair, in the order that works',
   'Vacuuming first fails — hair is woven into the pile, not sitting on it',
   [
-    { label: 'Agitate the hair loose first', desc: 'A rubber brush, pumice block or gloved hand rolls woven hair up out of the pile. Suction alone cannot lift what is wrapped around the fibres.' },
+    { label: 'Agitate the hair loose first', desc: 'A rubber brush, pumice block or gloved hand rolls woven hair up out of the pile. Suction alone cannot lift what is wrapped around the fibers.' },
     { label: 'Work in one direction', desc: 'Sweeping back and forth re-embeds what you just lifted. Pull consistently toward one edge so the hair gathers into a removable clump.' },
     { label: 'Collect the clumps by hand', desc: 'Lift the gathered piles out before vacuuming — they will otherwise clog a small handheld vacuum immediately.' },
     { label: 'Then vacuum the remainder', desc: 'Now the vacuum is picking up loose hair and grit rather than fighting the carpet, which is what it is actually good at.' },
@@ -562,7 +562,7 @@ diagrams['iron-fallout-mechanism'] = steps(
   [
     { label: 'Hot metal particles land on the surface', desc: 'Brake dust and rail dust embed into paint and wheel finishes while still hot enough to bond.' },
     { label: 'They rust in place', desc: 'Embedded iron oxidises, expands slightly and locks itself into the clear coat — washing cannot lift it.' },
-    { label: 'The remover dissolves the iron', desc: 'A chelating agent reacts with the iron and turns visibly purple as it does. The colour is the reaction, not a dye for show.' },
+    { label: 'The remover dissolves the iron', desc: 'A chelating agent reacts with the iron and turns visibly purple as it does. The color is the reaction, not a dye for show.' },
     { label: 'Rinse before it dries', desc: 'Left to dry, the dissolved iron simply redeposits. This is the step people skip.' },
   ],
 );
@@ -573,13 +573,13 @@ diagrams['fabric-seat-sequence'] = steps(
   [
     { label: 'Vacuum thoroughly first', desc: 'Any liquid applied before vacuuming turns loose grit into mud and works it deeper into the weave.' },
     { label: 'Mist the cleaner onto the brush, not the seat', desc: 'This is the whole trick. It puts cleaner where the agitation happens without soaking the foam beneath the fabric.' },
-    { label: 'Agitate, then extract immediately', desc: 'A dry microfibre towel pressed firmly pulls the suspended dirt back out. Waiting lets it dry back into the fibres.' },
+    { label: 'Agitate, then extract immediately', desc: 'A dry microfiber towel pressed firmly pulls the suspended dirt back out. Waiting lets it dry back into the fibers.' },
     { label: 'Ventilate until fully dry', desc: 'Doors open, or a fan. Fabric that stays damp inside a closed car is exactly how interiors start to smell.' },
   ],
 );
 
 diagrams['dashboard-glare-finish'] = twoColumn(
-  'Why dressed dashboards cause windscreen glare',
+  'Why dressed dashboards cause windshield glare',
   'Finish matters more than the product category',
   [
     { label: 'Glossy dressing', color: C.bad, bg: C.badBg, lines: ['Reflects sunlight up into the glass', 'Worst in low winter sun', 'Also attracts and shows dust faster', 'Looks wet rather than new'] },
@@ -600,7 +600,7 @@ diagrams['bug-tar-sequence'] = steps(
   'Bugs and tar: soften, never scrub',
   'Both are bonded deposits — pressure is what causes the damage',
   [
-    { label: 'Soak, do not attack', desc: 'A soaked microfibre laid over the area for several minutes softens bug residue far more safely than any amount of rubbing.' },
+    { label: 'Soak, do not attack', desc: 'A soaked microfiber laid over the area for several minutes softens bug residue far more safely than any amount of rubbing.' },
     { label: 'Use a dedicated solvent for tar', desc: 'Tar is petroleum-based and needs a solvent to release. Shampoo will not touch it and scrubbing just grinds it in.' },
     { label: 'Let dwell time do the work', desc: 'Apply, wait, then wipe with almost no pressure. If it needs force, it has not dwelled long enough.' },
     { label: 'Rewash and reprotect the area', desc: 'Solvents strip wax and sealant locally. That patch is now bare and needs protection back on it.' },
@@ -628,10 +628,10 @@ diagrams['wheel-cleaner-ph'] = ladder(
 );
 
 diagrams['tire-dressing-types'] = twoColumn(
-  'Do tyre dressings damage tyres?',
+  'Do tire dressings damage tires?',
   'The carrier matters — the dressing category does not',
   [
-    { label: 'Solvent-based', color: C.bad, bg: C.badBg, lines: ['Can strip the tyre\'s own antiozonants', 'Those additives resist cracking', 'Repeated use may accelerate browning', 'The high-gloss "wet look" tier'] },
+    { label: 'Solvent-based', color: C.bad, bg: C.badBg, lines: ['Can strip the tire\'s own antiozonants', 'Those additives resist cracking', 'Repeated use may accelerate browning', 'The high-gloss "wet look" tier'] },
     { label: 'Water-based', color: C.good, bg: C.goodBg, lines: ['Leaves the rubber\'s own protection intact', 'Satin finish rather than wet gloss', 'Safe to use as often as you like', 'What most reputable brands now sell'] },
   ],
 );
@@ -698,21 +698,21 @@ diagrams['wash-frequency-drivers'] = ladder(
 
 diagrams['absorbency-recovery'] = steps(
   'Restoring a towel that stopped absorbing',
-  'Almost always residue on the fibres, not worn-out fibres',
+  'Almost always residue on the fibers, not worn-out fibers',
   [
-    { label: 'Confirm it is residue, not wear', desc: 'Water beading or sliding off a towel that used to soak it up points at a coating, not damaged fibres.' },
+    { label: 'Confirm it is residue, not wear', desc: 'Water beading or sliding off a towel that used to soak it up points at a coating, not damaged fibers.' },
     { label: 'Wash hot with no detergent at all', desc: 'No softener, no dryer sheet, no additives. You are removing a coating, not adding a different one.' },
     { label: 'Check absorbency once dry', desc: 'A towel that was simply coated will noticeably recover. If it does not, the pile is genuinely worn out.' },
-    { label: 'Keep softener away from it permanently', desc: 'Fabric softener is designed to coat fibres — that is the exact mechanism that caused the problem.' },
+    { label: 'Keep softener away from it permanently', desc: 'Fabric softener is designed to coat fibers — that is the exact mechanism that caused the problem.' },
   ],
 );
 
 diagrams['chamois-vs-microfiber'] = twoColumn(
-  'Microfibre vs chamois for drying',
-  'Chamois holds more water. Microfibre fails more gently',
+  'Microfiber vs chamois for drying',
+  'Chamois holds more water. Microfiber fails more gently',
   [
     { label: 'Chamois', color: C.ink2, bg: C.bg, lines: ['Holds a large volume of water', 'Smooth sheet — no pile', 'Trapped grit is pressed into the paint', 'Still good on glass and flat surfaces'] },
-    { label: 'Microfibre', color: C.brand, bg: C.brandLight, lines: ['Raised pile lifts grit off the surface', 'More forgiving when something goes wrong', 'Safer on contours and edges', 'The reason it became the default'] },
+    { label: 'Microfiber', color: C.brand, bg: C.brandLight, lines: ['Raised pile lifts grit off the surface', 'More forgiving when something goes wrong', 'Safer on contours and edges', 'The reason it became the default'] },
   ],
 );
 
@@ -764,7 +764,7 @@ diagrams['cabin-filter-steps'] = steps(
   'Replacing a cabin air filter',
   'A ten-minute job on most cars, and usually years overdue',
   [
-    { label: 'Find the housing, usually behind the glovebox', desc: 'Most cars put it there. Some use the dash or the cowl below the windscreen. The manual says which, and it is worth checking before dismantling anything.' },
+    { label: 'Find the housing, usually behind the glovebox', desc: 'Most cars put it there. Some use the dash or the cowl below the windshield. The manual says which, and it is worth checking before dismantling anything.' },
     { label: 'Empty and release the glovebox', desc: 'Damper arm off, side stops squeezed in, and the box swings down far enough to reach the cover. No tools on most vehicles.' },
     { label: 'Note the airflow arrow before removing the old one', desc: 'The filter is directional. Photograph it in place — fitting a new one backwards reduces airflow and shortens its life.' },
     { label: 'Slide the new one in, arrow matching', desc: 'Expect the old one to be far dirtier than you assumed. Leaves and grit in the housing come out by hand before the new filter goes in.' },
@@ -776,7 +776,7 @@ diagrams['engine-bay-protect'] = twoColumn(
   'Modern bays tolerate water badly in a few specific places',
   [
     { label: 'Cover these first', color: C.bad, bg: C.badBg, lines: ['Alternator and its air openings', 'Exposed electrical connectors', 'Air intake and filter housing', 'Fuse box lids and battery terminals'] },
-    { label: 'Safe to wet and wipe', color: C.good, bg: C.goodBg, lines: ['Painted metal and plastic covers', 'Inner wing panels and slam panel', 'Hoses and coolant reservoirs', 'Underside of the bonnet'] },
+    { label: 'Safe to wet and wipe', color: C.good, bg: C.goodBg, lines: ['Painted metal and plastic covers', 'Inner wing panels and slam panel', 'Hoses and coolant reservoirs', 'Underside of the hood'] },
   ],
 );
 
@@ -805,8 +805,8 @@ diagrams['trim-restore-tiers'] = ladder(
   'Faded black trim: three different fixes',
   'Match the fix to how far gone the plastic actually is',
   [
-    { label: 'Grey and dusty, colour returns when wet', desc: 'Surface oxidation — a dressing genuinely restores this' },
-    { label: 'Chalky, wiping leaves grey on the cloth', desc: 'Needs cleaning back to sound plastic before any dressing' },
+    { label: 'Gray and dusty, color returns when wet', desc: 'Surface oxidation — a dressing genuinely restores this' },
+    { label: 'Chalky, wiping leaves gray on the cloth', desc: 'Needs cleaning back to sound plastic before any dressing' },
     { label: 'Faded through, no change when wet', desc: 'Pigment is gone — only a dye or trim restorer brings it back', highlight: true, note: 'Dye, not dressing' },
   ],
 );
@@ -834,7 +834,7 @@ diagrams['salt-stain-steps'] = steps(
   'Lifting winter salt stains out of carpet',
   'Salt is dissolved and extracted, never brushed away dry',
   [
-    { label: 'Vacuum every loose crystal first', desc: 'Dry salt dragged across carpet fibres is abrasive, and wetting it before vacuuming turns it into a paste that sinks deeper.' },
+    { label: 'Vacuum every loose crystal first', desc: 'Dry salt dragged across carpet fibers is abrasive, and wetting it before vacuuming turns it into a paste that sinks deeper.' },
     { label: 'Dissolve with warm water, applied to the brush', desc: 'Salt is water-soluble, so it needs very little chemistry. What it needs is enough moisture to dissolve and somewhere to go.' },
     { label: 'Extract immediately by pressing a dry towel', desc: 'This is the step that removes the salt. Left to dry in place it recrystallises and the white ring returns within a day.' },
     { label: 'Repeat rather than soaking once', desc: 'Two light passes with extraction beat one heavy soak, which drives salt into the foam backing where you cannot reach it.' },
@@ -843,10 +843,10 @@ diagrams['salt-stain-steps'] = steps(
 
 diagrams['deice-dos-donts'] = twoColumn(
   'De-icing without wrecking the glass',
-  'Most windscreen damage in winter is self-inflicted',
+  'Most windshield damage in winter is self-inflicted',
   [
     { label: 'Never do this', color: C.bad, bg: C.badBg, lines: ['Hot or boiling water on cold glass', 'Metal scrapers or kitchen implements', 'Running wipers over a frozen screen', 'Scraping a chip you already had'] },
-    { label: 'Do this instead', color: C.good, bg: C.goodBg, lines: ['Engine on, demist to windscreen, wait', 'Plastic scraper with firm even strokes', 'De-icer fluid on stubborn edges', 'Clear the whole screen, not a porthole'] },
+    { label: 'Do this instead', color: C.good, bg: C.goodBg, lines: ['Engine on, demist to windshield, wait', 'Plastic scraper with firm even strokes', 'De-icer fluid on stubborn edges', 'Clear the whole screen, not a porthole'] },
   ],
 );
 
@@ -855,7 +855,7 @@ diagrams['storage-checklist'] = ladder(
   'Ordered by what actually fails while a car sits still',
   [
     { label: 'Battery on a maintainer, or disconnected', desc: 'A flat battery is the single most common storage failure', highlight: true, note: 'First' },
-    { label: 'Tyres up to pressure, car moved if possible', desc: 'Standing on one spot for months risks flat-spotting' },
+    { label: 'Tires up to pressure, car moved if possible', desc: 'Standing on one spot for months risks flat-spotting' },
     { label: 'Interior dry and food removed', desc: 'Damp and crumbs are how a stored car ends up smelling' },
     { label: 'Washed and protected before it sits', desc: 'Contamination left on paint has months to etch in' },
   ],
@@ -932,8 +932,8 @@ diagrams['mount-placement-zones'] = twoColumn(
   'Where a phone mount belongs',
   'Sightline and airbag path decide this, not convenience',
   [
-    { label: 'Poor positions', color: C.bad, bg: C.badBg, lines: ['Middle of the windscreen, in the sightline', 'Anywhere over an airbag panel', 'Low centre console, eyes fully off road', 'Blocking a demister vent'] },
-    { label: 'Better positions', color: C.good, bg: C.goodBg, lines: ['Low corner of the screen, out of the view', 'High on the centre dash near the stack', 'Where a glance needs no head movement'] },
+    { label: 'Poor positions', color: C.bad, bg: C.badBg, lines: ['Middle of the windshield, in the sightline', 'Anywhere over an airbag panel', 'Low center console, eyes fully off road', 'Blocking a demister vent'] },
+    { label: 'Better positions', color: C.good, bg: C.goodBg, lines: ['Low corner of the screen, out of the view', 'High on the center dash near the stack', 'Where a glance needs no head movement'] },
   ],
 );
 
@@ -1088,7 +1088,7 @@ diagrams['phone-heat-stack'] = ladder(
   'Why a phone overheats on a car mount',
   'Three heat sources stack up, and any one alone is usually fine',
   [
-    { label: 'Direct sunlight on the dash or windscreen', desc: 'The biggest contributor on a summer day', note: 'Source 1' },
+    { label: 'Direct sunlight on the dash or windshield', desc: 'The biggest contributor on a summer day', note: 'Source 1' },
     { label: 'Wireless charging', desc: 'Less efficient than a cable, so the difference is shed as warmth', note: 'Source 2' },
     { label: 'Navigation, screen on, mobile data', desc: 'The phone is working hard while it charges', note: 'Source 3' },
     { label: 'The fix: shade, airflow, a MagSafe-rated case', desc: 'Thick cases also weaken the magnet hold', highlight: true, note: 'Fix' },

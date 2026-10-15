@@ -19,7 +19,7 @@ faq:
   - q: "Should I buy one large towel or two medium ones?"
     a: "Two medium towels, for most people. You can swap to a completely dry towel partway through, they wring and launder far more easily, and if one hits the ground you still have a clean one. One large towel is better only when drying a big vehicle in a single continuous pass."
   - q: "How do I use a large drying towel properly?"
-    a: "Lay it flat on the panel and pull it toward you rather than rubbing in circles. On roofs and bonnets you can drape it and draw it across the whole surface. Never bunch it up and scrub — that concentrates pressure and any trapped grit."
+    a: "Lay it flat on the panel and pull it toward you rather than rubbing in circles. On roofs and hoods you can drape it and draw it across the whole surface. Never bunch it up and scrub — that concentrates pressure and any trapped grit."
 ---
 
 "Bigger dries faster" is intuitive, and true up to a point. Past that point, size starts
@@ -28,7 +28,7 @@ soaking twelve-hundred-gram sheet.
 
 ## Where a large towel genuinely wins
 
-**Roofs and bonnets.** Drape it flat and pull it across in one motion. On a large flat
+**Roofs and hoods.** Drape it flat and pull it across in one motion. On a large flat
 surface this is fast and puts almost no pressure on the paint.
 
 **Large vehicles.** On an SUV, van or truck, a small towel means constant wringing — and
@@ -67,7 +67,7 @@ However large your towel:
 
 - **Lay it flat and pull.** Don't rub, and don't work in circles.
 - **Let it do the work.** No pressure. A good drying towel needs contact, not force.
-- **Start at the top.** Roof, glass, bonnet, then downward.
+- **Start at the top.** Roof, glass, hood, then downward.
 - **Use a separate low-pile towel for glass.** No drying towel of any size will leave
   glass streak-free.
 - **Drop it, retire it.** A towel that's touched the ground carries grit.

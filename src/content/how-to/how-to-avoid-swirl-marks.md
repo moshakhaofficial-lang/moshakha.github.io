@@ -24,7 +24,7 @@ faq:
   - q: "Do wax and glaze remove swirl marks?"
     a: "No. They fill and mask them temporarily, which looks like removal for a few weeks until the filler washes out. This is not dishonest as long as you know that is what you are buying — it is a cosmetic fix, not a correction."
   - q: "Is a machine polisher safe for a beginner?"
-    a: "A dual-action polisher is broadly beginner-safe because its oscillating motion resists generating enough heat to burn through paint. A rotary polisher is not — it can strike through clear coat quickly. Start with a dual action, the least aggressive pad and compound, and practise on a lower panel."
+    a: "A dual-action polisher is broadly beginner-safe because its oscillating motion resists generating enough heat to burn through paint. A rotary polisher is not — it can strike through clear coat quickly. Start with a dual action, the least aggressive pad and compound, and practice on a lower panel."
   - q: "How do I stop getting new swirls after correcting the paint?"
     a: "The habits, not the products: two buckets with grit guards, a mitt rather than a sponge, wash top to bottom, straight lines only, dry immediately with a clean high-GSM towel, and never touch a dry dusty car. Correction without changing method just resets a clock."
 ---
@@ -115,7 +115,7 @@ If you're doing it yourself:
   seconds in inexperienced hands.
 - **Start with the least aggressive combination** — finishing pad, finishing polish — and
   step up only if that isn't enough. You cannot put clear coat back.
-- **Test on a lower panel**, not the bonnet.
+- **Test on a lower panel**, not the hood.
 - **The paint must be perfectly clean and decontaminated first.** Polishing a panel with
   grit still on it grinds that grit in under power.
 

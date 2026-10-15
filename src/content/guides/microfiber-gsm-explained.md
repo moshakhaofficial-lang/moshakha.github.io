@@ -1,27 +1,27 @@
 ---
-title: "Microfibre GSM Explained: What the Number Actually Means"
+title: "Microfiber GSM Explained: What the Number Actually Means"
 description: "GSM measures density, not quality. Here's what the number really tells you, the right GSM for each detailing job, and when high GSM is the wrong choice."
 targetKeyword: "microfiber gsm explained"
 publishDate: 2026-08-24
 author: "Moshakha Editorial"
 image: "../../assets/images/gsm-scale.webp"
-imageAlt: "Chart mapping microfibre GSM ranges to the jobs each is right and wrong for"
+imageAlt: "Chart mapping microfiber GSM ranges to the jobs each is right and wrong for"
 featured: true
 related:
   - "guides/best-car-drying-towels"
   - "blog/500-gsm-vs-800-gsm"
   - "blog/microfibre-care-101"
 faq:
-  - q: "What does GSM mean on a microfibre towel?"
-    a: "GSM stands for grams per square metre — the weight of one square metre of the fabric. It tells you how much fibre is packed into the cloth, which correlates with pile depth and water capacity. It says nothing about fibre quality, blend ratio, weave type or edge construction."
-  - q: "Is a higher GSM microfibre towel always better?"
+  - q: "What does GSM mean on a microfiber towel?"
+    a: "GSM stands for grams per square meter — the weight of one square meter of the fabric. It tells you how much fiber is packed into the cloth, which correlates with pile depth and water capacity. It says nothing about fiber quality, blend ratio, weave type or edge construction."
+  - q: "Is a higher GSM microfiber towel always better?"
     a: "No. Higher GSM means more absorbency but also more weight, slower air-drying and less control on tight areas. A 1600 GSM towel is excellent for drying a truck and actively bad for cleaning glass. The right GSM depends entirely on the job — matching GSM to task matters far more than maximising it."
   - q: "What GSM is best for glass?"
     a: "300-400 GSM. Low-pile, tightly woven towels leave glass streak-free because they lift the final film of moisture rather than smearing it. High-pile towels above about 800 GSM are the most common cause of streaky windows."
-  - q: "What is the difference between 70/30 and 80/20 microfibre?"
+  - q: "What is the difference between 70/30 and 80/20 microfiber?"
     a: "That ratio is polyester to polyamide. Polyamide is the more absorbent, more expensive component, so a 70/30 blend absorbs more and feels softer than an 80/20 blend at the same GSM. Blend ratio is often a better quality signal than GSM, and it is far less frequently advertised."
   - q: "Does GSM tell you how long a towel will last?"
-    a: "Not directly. Longevity depends more on fibre quality, blend ratio, edge construction and how you launder it. A 1200 GSM towel washed with fabric softener will underperform a well-maintained 500 GSM towel within a few cycles."
+    a: "Not directly. Longevity depends more on fiber quality, blend ratio, edge construction and how you launder it. A 1200 GSM towel washed with fabric softener will underperform a well-maintained 500 GSM towel within a few cycles."
   - q: "What GSM should I buy if I can only buy one towel?"
     a: "Around 500 GSM in an edgeless design is the most versatile single choice — usable for interiors, light drying, product removal and general work. But one towel is a compromise: a 500 GSM towel dries a car slowly, and pairing it with a dedicated drying towel costs little and works far better."
 ---
@@ -34,13 +34,13 @@ it does and doesn't tell you, a lot of detailing marketing stops working on you.
 
 ## What GSM actually measures
 
-GSM is grams per square metre: take one square metre of the fabric, weigh it, and that's
+GSM is grams per square meter: take one square meter of the fabric, weigh it, and that's
 the number. That's the whole definition.
 
-More grams means more fibre packed into the same area, which generally means a deeper
+More grams means more fiber packed into the same area, which generally means a deeper
 pile and more water capacity. Useful — but notice what GSM does **not** describe:
 
-- **Fibre quality.** Cheap and premium fibres weigh the same.
+- **Fiber quality.** Cheap and premium fibers weigh the same.
 - **Blend ratio.** The polyester/polyamide split drives absorbency, and GSM ignores it.
 - **Weave type.** Twisted loop, plush and waffle can all hit the same GSM and behave
   completely differently.
@@ -54,7 +54,7 @@ buying signal — and why it's the number retailers advertise most.
 
 ### Blend ratio (70/30 vs 80/20)
 
-Microfibre is polyester and polyamide. Polyester does the scrubbing; **polyamide does
+Microfiber is polyester and polyamide. Polyester does the scrubbing; **polyamide does
 the absorbing**, and costs more.
 
 - **80/20** — 20% polyamide. The budget standard. Perfectly serviceable.
@@ -66,7 +66,7 @@ than GSM — which should tell you something.
 
 ### Weave
 
-- **Twisted loop** — long twisted fibres that pull water up into the pile. The correct
+- **Twisted loop** — long twisted fibers that pull water up into the pile. The correct
   weave for drying a vehicle.
 - **Plush / high pile** — soft and deep, holds product well. Best for wax and sealant
   removal.
@@ -94,7 +94,7 @@ This is the table the "higher is better" crowd never publishes.
 
 Three cases where reaching for the biggest number makes your results worse:
 
-**Glass.** A 1200 GSM towel on a windscreen is the number one cause of streaking. Deep
+**Glass.** A 1200 GSM towel on a windshield is the number one cause of streaking. Deep
 pile can't make consistent contact with a perfectly smooth surface, so it smears the
 last film of moisture rather than lifting it. Drop to 300-400 GSM and the problem
 disappears — no product change needed.
@@ -125,5 +125,5 @@ sentence a shop can afford to write.
   applies this directly, matched to vehicle size.
 - Want a specific head-to-head? [500 GSM vs 800 GSM](/blog/500-gsm-vs-800-gsm/) covers the
   most common decision point.
-- Already own good towels? [Microfibre care](/blog/microfibre-care-101/) matters more than
+- Already own good towels? [Microfiber care](/blog/microfibre-care-101/) matters more than
   GSM — bad laundering ruins a premium towel in about three washes.

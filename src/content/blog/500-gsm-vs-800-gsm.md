@@ -1,12 +1,12 @@
 ---
-title: "500 GSM vs 800 GSM Microfibre: Which Should You Buy?"
-description: "A direct comparison of the two most common microfibre weights — what each is genuinely good at, where each fails, and which one to buy first."
+title: "500 GSM vs 800 GSM Microfiber: Which Should You Buy?"
+description: "A direct comparison of the two most common microfiber weights — what each is genuinely good at, where each fails, and which one to buy first."
 targetKeyword: "500 gsm vs 800 gsm microfiber"
 publishDate: 2026-02-04
 updatedDate: 2026-08-24
 author: "Moshakha Editorial"
 image: "../../assets/images/500-vs-800-gsm.webp"
-imageAlt: "Pile depth comparison between 500 GSM and 800 GSM microfibre with the jobs each suits"
+imageAlt: "Pile depth comparison between 500 GSM and 800 GSM microfiber with the jobs each suits"
 related:
   - "guides/microfiber-gsm-explained"
   - "guides/best-car-drying-towels"
@@ -98,7 +98,7 @@ towel** at 300–400 GSM. Those two fill the gaps that neither weight here cover
 
 GSM is only one of four specs that matter, and it's the least informative of them —
 blend ratio, weave and edge construction all affect performance more. Our full
-[breakdown of what microfibre GSM actually means](/guides/microfiber-gsm-explained/)
+[breakdown of what microfiber GSM actually means](/guides/microfiber-gsm-explained/)
 covers how to read a listing properly.
 
 And whichever you buy, [how you launder it](/blog/microfibre-care-101/) will affect its

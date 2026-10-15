@@ -1,6 +1,6 @@
 ---
 title: "Rag Company Cyclone Ultra Wash Mitt Review"
-description: "A foam-cored 70/30 microfibre wash mitt bundled with a flat wash pad. We look at whether the foam core and pad combination justify the price over chenille."
+description: "A foam-cored 70/30 microfiber wash mitt bundled with a flat wash pad. We look at whether the foam core and pad combination justify the price over chenille."
 targetKeyword: "rag company cyclone wash mitt review"
 publishDate: 2026-08-24
 author: "Moshakha Editorial"
@@ -8,13 +8,13 @@ productName: "Cyclone Ultra Wash Mitt + Wash Pad"
 brand: "The Rag Company"
 asin: "B09QD5LQRR"
 image: "../../assets/images/product-cyclone-mitt.jpg"
-imageAlt: "The Rag Company Cyclone Ultra microfibre wash mitt"
+imageAlt: "The Rag Company Cyclone Ultra microfiber wash mitt"
 rating: 4.7
 price: "$18–$26 (2-piece)"
 verdict: "The foam core is the reason to buy this over a cheaper chenille mitt — it spreads hand pressure so your fingertips aren't concentrating force into small points on the paint. The bundled flat pad is genuinely useful rather than filler, and the 70/30 blend releases trapped grit readily in the rinse bucket."
 pros:
   - "Foam core spreads pressure — fewer concentrated contact points"
-  - "70/30 Korean microfibre releases grit readily when rinsed"
+  - "70/30 Korean microfiber releases grit readily when rinsed"
   - "Bundled flat pad handles lower panels and rocker rails well"
   - "Works for rinseless and traditional bucket washes"
 cons:
@@ -60,7 +60,7 @@ A mitt that traps dirt and holds onto it through a rinse carries that dirt back 
 paint on the next panel. This is where cheap mitts genuinely underperform: chenille
 noodles tangle and hold grit deep in the pile.
 
-The 70/30 Korean microfibre here lets go readily when agitated against a grit guard.
+The 70/30 Korean microfiber here lets go readily when agitated against a grit guard.
 That's the whole point of the two-bucket method, and a mitt that defeats it undermines
 the entire wash.
 

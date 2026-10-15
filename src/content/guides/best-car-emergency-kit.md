@@ -59,13 +59,13 @@ picks:
     rating: 4.5
     price: "$25–$40"
     bestFor: "Keeping the jump starter and inflator anchored instead of rolling around loose"
-    summary: "A jump starter and inflator rattling around loose in the boot is how they get forgotten, damaged, or buried under groceries when you actually need them. The tie-down straps anchor the organizer so it — and what's in it — stays put when the car changes direction, and it collapses flat when you need the boot space back."
+    summary: "A jump starter and inflator rattling around loose in the trunk is how they get forgotten, damaged, or buried under groceries when you actually need them. The tie-down straps anchor the organizer so it — and what's in it — stays put when the car changes direction, and it collapses flat when you need the trunk space back."
     pros:
       - "Tie-down straps keep the kit from sliding around"
-      - "Collapses flat when the boot space is needed for something else"
+      - "Collapses flat when the trunk space is needed for something else"
       - "Compartments keep the jump starter and inflator separated and found quickly"
     cons:
-      - "Anchoring depends on your car having boot tie-down points"
+      - "Anchoring depends on your car having trunk tie-down points"
       - "It's storage, not a fourth emergency item — don't count it as one"
 faq:
   - q: "Are the pre-made emergency kit boxes worth buying?"

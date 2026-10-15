@@ -8,11 +8,11 @@ image: "../../assets/images/mitt-vs-sponge.webp"
 imageAlt: "Diagram contrasting a wash mitt lifting grit into its pile with a sponge trapping grit against paint"
 totalTime: "PT45M"
 supplies:
-  - "Microfibre or chenille wash mitt (not a sponge)"
+  - "Microfiber or chenille wash mitt (not a sponge)"
   - "Two buckets, ideally with a grit guard in each"
   - "pH-neutral car shampoo"
   - "Separate mitt or brush reserved for wheels"
-  - "Microfibre drying towel, 900 GSM or higher"
+  - "Microfiber drying towel, 900 GSM or higher"
   - "Low-pile towel for glass and door shuts"
 steps:
   - name: "Rinse the car thoroughly before touching it"
@@ -29,7 +29,7 @@ steps:
     text: "Move progressively down the vehicle, finishing with the lower doors, bumpers and rocker panels, which hold the most road grime. If you have a second mitt, switch to it for this lower section rather than carrying that grit upward."
   - name: "Rinse the whole car from the top down"
     text: "Sheet water over the panels rather than blasting them. A gentle open-hose flow helps water run off in sheets, leaving less to dry and fewer opportunities for water spots."
-  - name: "Dry immediately with a clean microfibre towel"
+  - name: "Dry immediately with a clean microfiber towel"
     text: "Do not let the car air-dry — that is what causes water spots. Use a twisted loop drying towel on panels, laying it flat and pulling rather than rubbing, then finish glass and door shuts with a separate low-pile towel."
 related:
   - "guides/best-car-wash-mitts"
@@ -44,8 +44,8 @@ faq:
     a: "You can reduce the risk by rinsing constantly and never pressing, but you cannot eliminate the structural problem: the flat face has nowhere to put the grit except against your paint. Given a mitt costs under $15, careful sponge use is a lot of effort to preserve a worse tool."
   - q: "What about the sponges at automatic car washes?"
     a: "Avoid them entirely. Communal brushes and sponges at coin-op bays have been used on hundreds of filthy vehicles and are loaded with embedded grit. They are among the most reliable ways to scratch your paint."
-  - q: "Is a microfibre or chenille mitt better?"
-    a: "Both are safe. Chenille noodle mitts hold more suds and are cheaper; 70/30 microfibre mitts release trapped dirt more readily in the rinse bucket and usually last longer. For most people the choice matters much less than using two buckets and washing top to bottom."
+  - q: "Is a microfiber or chenille mitt better?"
+    a: "Both are safe. Chenille noodle mitts hold more suds and are cheaper; 70/30 microfiber mitts release trapped dirt more readily in the rinse bucket and usually last longer. For most people the choice matters much less than using two buckets and washing top to bottom."
   - q: "What is the two-bucket method?"
     a: "One bucket holds soap solution, the other plain rinse water. After each panel you rinse the mitt in the plain water to release grit before reloading it with soap. It keeps your soap bucket clean, and it is the highest-impact habit in the entire wash process."
 ---
@@ -63,7 +63,7 @@ some grit — and then holds that grit in the thin gap between the sponge and yo
 There is nowhere else for the particles to go. Every subsequent pass drags them across
 the surface under the pressure of your hand.
 
-**A mitt has a deep pile.** Fibres or chenille noodles pull grit *up* into the pile,
+**A mitt has a deep pile.** Fibers or chenille noodles pull grit *up* into the pile,
 away from the contact surface, where it stays suspended until you rinse it out. The
 paint never sees most of it.
 

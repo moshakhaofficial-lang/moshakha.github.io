@@ -17,7 +17,7 @@ related:
   - "how-to/how-to-clean-steering-wheel"
   - "blog/how-to-get-smoke-smell-out-of-a-car"
   - "blog/corded-vs-cordless-car-vacuum"
-comparisonNote: "Organised by surface, because the wrong chemistry on a dashboard is permanent."
+comparisonNote: "Organized by surface, because the wrong chemistry on a dashboard is permanent."
 picks:
   - rank: 1
     name: "Car Vacuum 2.0"
@@ -49,9 +49,9 @@ picks:
     rating: 4.5
     price: "$12–$18"
     bestFor: "Dashboards, door cards, console and trim in a single pass"
-    summary: "One bottle that handles most hard interior surfaces without leaving the greasy silicone film that causes windscreen glare. That matters more than it sounds — a dashboard dressed with a heavy gloss product reflects into the glass and becomes a genuine visibility problem on a low sun."
+    summary: "One bottle that handles most hard interior surfaces without leaving the greasy silicone film that causes windshield glare. That matters more than it sounds — a dashboard dressed with a heavy gloss product reflects into the glass and becomes a genuine visibility problem on a low sun."
     pros:
-      - "Matte finish, so no reflection into the windscreen"
+      - "Matte finish, so no reflection into the windshield"
       - "Covers dash, door cards, console and most trim"
       - "Does not attract dust the way gloss dressings do"
     cons:
@@ -67,7 +67,7 @@ picks:
     imageAlt: "Chemical Guys leather cleaner and leather conditioner bottle pair"
     rating: 4.5
     price: "$22–$32 (2 × 16oz)"
-    bestFor: "Coated leather seats that have gone shiny and grey at the bolsters"
+    bestFor: "Coated leather seats that have gone shiny and gray at the bolsters"
     summary: "A two-step kit: clean first, condition second. The order matters — conditioning over trapped grime seals dirt into the grain. Most modern car 'leather' is heavily coated, so a pH-balanced cleaner is doing surface work rather than feeding the hide, whatever the marketing says."
     pros:
       - "Two-step approach actually removes soil before conditioning"
@@ -85,7 +85,7 @@ picks:
     imageAlt: "Invisible Glass premium aerosol glass cleaner, two 19oz cans"
     rating: 4.7
     price: "$14–$20 (2 × 19oz)"
-    bestFor: "The oily film on the inside of the windscreen that normal cleaner smears"
+    bestFor: "The oily film on the inside of the windshield that normal cleaner smears"
     summary: "Ammonia-free and tint-safe, which is the specification that matters — ammonia degrades aftermarket tint and interior plastics over time. The aerosol delivers a fine, even mist that cuts the plasticiser haze interior glass accumulates, and which pump sprays tend to push around."
     pros:
       - "Ammonia-free, so safe on tint and interior plastics"
@@ -103,21 +103,21 @@ picks:
     imageAlt: "WeatherTech TechCare FloorLiner cleaner and protector spray bottles"
     rating: 4.6
     price: "$18–$26"
-    bestFor: "Rubber and TPE floor liners that have gone chalky and grey"
+    bestFor: "Rubber and TPE floor liners that have gone chalky and gray"
     summary: "Rubber and thermoplastic liners need different chemistry from carpet, and household cleaners leave them either chalky or slick. Slick is the dangerous outcome — a glossy liner under the pedals is a real hazard. This is formulated to clean and protect without leaving a slippery finish."
     pros:
       - "Restores TPE and rubber without a slippery gloss"
-      - "Protector step slows the chalky grey return"
+      - "Protector step slows the chalky gray return"
       - "Works on cargo liners and trunk mats too"
     cons:
       - "Wrong product for carpet mats — buy a carpet cleaner for those"
       - "Priced as a branded kit; generic rubber cleaners cost less"
 faq:
   - q: "Can I use household cleaners inside my car?"
-    a: "Avoid them. Many contain ammonia or aggressive solvents that damage the UV coatings on automotive plastics, cause dashboards to become brittle or discoloured, and harm window tint. Car interiors sit in direct sun at high temperatures, so the coatings protecting them matter more than in a home."
+    a: "Avoid them. Many contain ammonia or aggressive solvents that damage the UV coatings on automotive plastics, cause dashboards to become brittle or discolored, and harm window tint. Car interiors sit in direct sun at high temperatures, so the coatings protecting them matter more than in a home."
   - q: "What order should I clean a car interior in?"
     a: "Dry before wet, top to bottom, glass last. Vacuum and dust from the headliner downward first, then hard surfaces, then fabric or leather, then interior glass. Cleaning glass first guarantees you will have to do it twice, because everything afterwards mists or splashes it."
-  - q: "Why does my dashboard cause windscreen glare?"
+  - q: "Why does my dashboard cause windshield glare?"
     a: "Silicone gloss dressings. They look impressive for a day, then reflect into the glass on low sun and become a genuine visibility problem, while attracting dust so the surface looks worse within a week. A matte interior cleaner avoids the whole issue."
   - q: "Do leather conditioners actually feed the leather?"
     a: "Not on most modern cars. Almost all automotive leather is heavily coated with a polyurethane finish, so a conditioner is working on that coating rather than on the hide beneath. It still improves appearance and slows wear on the coating, but the 'feeding' language is largely marketing."
@@ -127,13 +127,13 @@ faq:
     a: "Corded, for most people. Cordless units are more pleasant to handle but tend to fade partway through a full interior, which is exactly when you have reached the awkward areas. A 12V corded unit runs as long as you need, provided your car keeps the socket live with the ignition off."
 ---
 
-Microfibre is where we started, because it is the category where marketing drifts
+Microfiber is where we started, because it is the category where marketing drifts
 furthest from reality. Interiors are the category where getting it wrong is
 **permanent**.
 
 A towel used badly leaves a streak you can wipe away. An ammonia cleaner on a
 UV-coated dashboard, or a silicone dressing baked into vinyl over a summer, is not
-reversible. So this guide is organised by surface rather than by ranking — these
+reversible. So this guide is organized by surface rather than by ranking — these
 products are not competing with each other.
 
 ## How we chose

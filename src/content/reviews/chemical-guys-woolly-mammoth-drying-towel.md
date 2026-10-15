@@ -8,7 +8,7 @@ productName: "Woolly Mammoth Drying Towel (25x36in)"
 brand: "Chemical Guys"
 asin: "B086M83K76"
 image: "../../assets/images/product-woolly-mammoth.jpg"
-imageAlt: "Chemical Guys Woolly Mammoth microfibre drying towel"
+imageAlt: "Chemical Guys Woolly Mammoth microfiber drying towel"
 rating: 4.4
 price: "$20–$28"
 verdict: "A genuinely soft, large and forgiving towel that is easy to recommend to nervous beginners — and a slower drying tool than twisted loop alternatives at the same size. Buy it for softness and price, not for one-pass speed."
@@ -34,7 +34,7 @@ faq:
   - q: "Is it safe on soft paint?"
     a: "Yes — the deep, soft pile is one of the more forgiving options available, which is why it suits people who are nervous about marring. As always, the risk is grit in the towel rather than the towel itself."
   - q: "How should I store it?"
-    a: "Hung, with airflow, and completely dry. This towel takes a long time to air-dry because of its pile depth, and a damp microfibre towel stored folded will develop mildew that permanently affects both smell and absorbency."
+    a: "Hung, with airflow, and completely dry. This towel takes a long time to air-dry because of its pile depth, and a damp microfiber towel stored folded will develop mildew that permanently affects both smell and absorbency."
 ---
 
 The Woolly Mammoth is one of the most widely sold drying towels there is, and it earns
@@ -72,7 +72,7 @@ plush pile, and it settles.
 
 ## Drying time
 
-This towel takes a long time to air-dry, which matters more than it sounds. A microfibre
+This towel takes a long time to air-dry, which matters more than it sounds. A microfiber
 towel put away damp develops mildew, and mildew permanently affects both smell and
 absorbency. If you don't have somewhere to hang a large towel with airflow, that's a real
 argument for a thinner one.

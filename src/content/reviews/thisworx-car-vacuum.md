@@ -17,7 +17,7 @@ pros:
   - "Flexible nozzle and crevice tool reach seat rails and console gaps"
   - "Washable filters, so no ongoing consumable cost"
   - "Cheap enough that the expectations bar is easy to clear"
-  - "16ft cord genuinely reaches the boot on most cars"
+  - "16ft cord genuinely reaches the trunk on most cars"
 cons:
   - "Suction is modest next to a household canister vacuum"
   - "Needs a 12V socket that stays live with the ignition off — not all cars do"
@@ -51,7 +51,7 @@ much as about the product. It is worth being clear about what you're buying.
 **It is corded, and that is the correct decision.**
 
 Cordless handhelds are more pleasant to hold and consistently disappoint in this
-specific job. A proper interior — seats, rails, footwells, boot, console gaps — takes
+specific job. A proper interior — seats, rails, footwells, trunk, console gaps — takes
 longer than most cordless units sustain at full suction. They fade precisely when you
 reach the awkward parts, and there is no way to recharge mid-job without abandoning it.
 
@@ -61,7 +61,7 @@ consistency beats peak suction, and this is the design decision most reviews ski
 **The filters are washable.** No consumable cost, indefinitely. At this price that is a
 better decision than it needed to be.
 
-**The 16ft cord is honest.** It genuinely reaches the boot on most cars from the front
+**The 16ft cord is honest.** It genuinely reaches the trunk on most cars from the front
 socket, which is the actual requirement.
 
 ## Where it falls down
@@ -92,7 +92,7 @@ fault.
 The vacuum is the **first** step, always, and it is a dry step. Any liquid introduced
 before vacuuming turns dust into mud and works it deeper into the pile.
 
-- **Top down.** Headliner, seats, then footwells, then boot. Everything you dislodge
+- **Top down.** Headliner, seats, then footwells, then trunk. Everything you dislodge
   falls downward.
 - **Agitate first on carpet.** A stiff brush or rubber pet-hair brush lifts embedded
   material into the pile where suction can reach it. This does more for the result than
@@ -106,7 +106,7 @@ The full sequence is in our
 
 ## Should you buy it?
 
-**Yes, if** you want a dedicated car vacuum that lives in the boot, you have a 12V
+**Yes, if** you want a dedicated car vacuum that lives in the trunk, you have a 12V
 socket that stays live, and you understand it is a budget tool for loose debris.
 
 **No, if** you have pets that shed heavily, your car's socket dies with the ignition, or

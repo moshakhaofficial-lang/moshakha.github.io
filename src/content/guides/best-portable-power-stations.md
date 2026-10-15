@@ -75,7 +75,7 @@ picks:
     imageAlt: "Anker SOLIX C1000 Gen 2 portable power station with circular display"
     rating: 4.5
     bestFor: "Running things with motors and heating elements, and short home-outage cover"
-    skipIf: "This is going in a car boot for phone charging — it's several times the weight you need"
+    skipIf: "This is going in a car trunk for phone charging — it's several times the weight you need"
     summary: "1024Wh and 2000W output puts this in a different category from everything above it. The output figure is what unlocks appliances the smaller units simply refuse to start — anything with a compressor or a heating element draws a surge far above its running wattage, and a 300W unit trips instead of starting it."
     pros:
       - "2000W output actually starts motor and heating loads"
@@ -156,7 +156,7 @@ Anything with a motor or a compressor — a fridge, a
 above its running wattage. A 300W unit will simply refuse, even if the appliance only
 draws 200W once spinning.
 
-That's worth checking before you assume a power station covers roadside tyre duty: most
+That's worth checking before you assume a power station covers roadside tire duty: most
 12V inflators are designed to run off the car's own socket rather than an inverter, which
 is usually the simpler answer anyway.
 

@@ -65,7 +65,7 @@ picks:
     rating: 4.5
     price: "$110–$160"
     bestFor: "Doubling as a serious power bank for laptops and camping"
-    summary: "20,000mAh with 100W two-way fast charging, so it recharges quickly and can run a laptop. That matters more than it sounds: a jump pack you also use for something else gets checked and recharged regularly, whereas a single-purpose pack sits in the boot slowly self-discharging until the day it's flat."
+    summary: "20,000mAh with 100W two-way fast charging, so it recharges quickly and can run a laptop. That matters more than it sounds: a jump pack you also use for something else gets checked and recharged regularly, whereas a single-purpose pack sits in the trunk slowly self-discharging until the day it's flat."
     pros:
       - "100W two-way charging recharges the pack quickly"
       - "Genuinely useful as a laptop-capable power bank"
@@ -97,13 +97,13 @@ faq:
   - q: "Is a lithium jump starter better than jumper cables?"
     a: "For most people, yes — it works without a second car, which is the entire problem cables have. Cables are cheaper and never go flat, so carrying both is not unreasonable. The jump pack's real advantage is being able to help yourself in an empty car park at night."
   - q: "How often should I recharge a jump starter?"
-    a: "Every three to six months, even unused. Lithium packs self-discharge, and a pack sitting in a boot for two years will be flat exactly when you need it. Set a calendar reminder — this is the single reason jump starters fail their owners, and it has nothing to do with the product."
+    a: "Every three to six months, even unused. Lithium packs self-discharge, and a pack sitting in a trunk for two years will be flat exactly when you need it. Set a calendar reminder — this is the single reason jump starters fail their owners, and it has nothing to do with the product."
   - q: "What does reverse polarity protection actually do?"
     a: "It stops the unit delivering current if you connect the clamps the wrong way round. Without it, reversing the clamps can damage the pack, the car's electronics, or cause the battery to vent. Combined with spark-proof design, it removes most of the genuine risk from the procedure."
   - q: "Can a jump starter damage my car's electronics?"
     a: "A quality pack with proper protection is safe on modern vehicles. The risks come from cheap units without voltage regulation, reversed connections, or disconnecting under load. Follow the sequence — pack off, clamps on, pack on, start, pack off, clamps off — and modern electronics are not at risk."
   - q: "Should I get one with a built-in air compressor?"
-    a: "Only if boot space is tight. Combination units compromise on both functions and, because they are heavier and bulkier, tend to get left at home. Two dedicated devices generally work better, and a failure in one doesn't cost you the other."
+    a: "Only if trunk space is tight. Combination units compromise on both functions and, because they are heavier and bulkier, tend to get left at home. Two dedicated devices generally work better, and a failure in one doesn't cost you the other."
 ---
 
 A jump starter is insurance. The right way to buy it is to work out what failure you're
@@ -159,7 +159,7 @@ performance and charge retention after long storage. No lab testing, no paid pla
 
 **A jump starter you didn't charge is a brick.**
 
-Lithium packs self-discharge slowly. A pack put in the boot two years ago and forgotten
+Lithium packs self-discharge slowly. A pack put in the trunk two years ago and forgotten
 will be flat on the morning you need it, and you'll conclude the product was bad. It
 wasn't.
 

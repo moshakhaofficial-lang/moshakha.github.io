@@ -13,7 +13,7 @@ supplies:
   - "Carpet cleaner or all-purpose cleaner diluted (for carpet mats)"
   - "Hose or pressure washer"
   - "Wet/dry or car vacuum"
-  - "Microfibre towels"
+  - "Microfiber towels"
 steps:
   - name: "Take the mats out of the car"
     text: "Every time, without exception. Cleaning mats in situ pushes water and dirt into the carpet and underlay beneath them, which is one of the most common causes of a persistent damp smell that no air freshener will fix."
@@ -40,7 +40,7 @@ related:
 faq:
   - q: "Can I put car floor mats in the washing machine?"
     a: "Carpet mats, generally no — the rubber backing can crack, and the weight when soaked is hard on a domestic machine. Rubber and TPE liners should never go in. Hand cleaning takes about the same time and avoids damaging either the mat or the machine."
-  - q: "Why do my rubber mats go chalky and grey?"
+  - q: "Why do my rubber mats go chalky and gray?"
     a: "Two causes: UV exposure degrading the surface, and cleaner residue left in the tread channels drying white. Rinse far more thoroughly than feels necessary. A rubber-specific protector slows the UV component, but rinsing properly fixes most of what people blame on age."
   - q: "Should I use tire shine or dressing on rubber floor mats?"
     a: "No. A glossy mat under the pedals is a genuine safety hazard — your foot can slip off the brake at exactly the wrong moment. Use a matte rubber protector formulated for mats, or nothing at all. This is the one place in a car where shine is actively dangerous."
@@ -81,7 +81,7 @@ you soak a backing that takes a day to dry.
 
 ## The gloss warning
 
-**Never put tyre shine or a silicone dressing on a floor mat.**
+**Never put tire shine or a silicone dressing on a floor mat.**
 
 It looks good for a day. Then your foot slips off the brake pedal on a wet morning
 because the mat under it is slick. This is the one place in a car where shine is
@@ -91,7 +91,7 @@ marketing does not carry the warning.
 If you want protection, use a matte rubber protector formulated for mats. If you're not
 sure what a product will leave behind, use nothing.
 
-## Chalky grey liners
+## Chalky gray liners
 
 People assume this is age. Usually it is **cleaner left in the tread channels**, dried
 to a white residue.

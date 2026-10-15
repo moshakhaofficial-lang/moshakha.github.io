@@ -100,7 +100,7 @@ faq:
   - q: "How many washes do you get from a bottle of car shampoo?"
     a: "It depends entirely on concentration, which is why comparing bottle prices is misleading. Mr. Pink dilutes at 1 to 3 oz per five-gallon bucket, so at roughly 2 oz per wash a 64oz bottle gives about 32 washes and the 128oz jug about 64. Less concentrated shampoos need more per bucket, which closes most of the apparent price gap. Work out cost per wash rather than cost per bottle."
   - q: "What car wash soap should I use on a ceramic coated car?"
-    a: "A plain pH-neutral shampoo, and specifically not a wash-and-wax. pH-neutral matters more on a coated car because repeated alkaline washing degrades the coating's water behaviour faster than it should. Wash-and-wax products are the subtler mistake — the carnauba layer sits on top of the coating and masks the beading you paid for, which is commonly misread as the coating failing."
+    a: "A plain pH-neutral shampoo, and specifically not a wash-and-wax. pH-neutral matters more on a coated car because repeated alkaline washing degrades the coating's water behavior faster than it should. Wash-and-wax products are the subtler mistake — the carnauba layer sits on top of the coating and masks the beading you paid for, which is commonly misread as the coating failing."
   - q: "How much car shampoo should I put in the bucket?"
     a: "Follow the bottle's stated dilution, and if you're going to err, err toward more. Too much shampoo wastes money; too little removes the lubrication that lets grit slide across the paint instead of cutting into it. Under-dosing is a paint risk, over-dosing is only a cost — so the two mistakes are not equivalent."
 ---
@@ -164,10 +164,10 @@ Two things change, and the second one surprises people.
 
 **pH-neutral stops being a preference and becomes a requirement.** A coating is more
 chemically durable than wax, but repeatedly washing it with something alkaline degrades
-its hydrophobic behaviour faster than it should.
+its hydrophobic behavior faster than it should.
 
 **Skip the wash-and-wax.** Pick four is a good product and the wrong one here — the
-carnauba sits on top of the coating and masks the water behaviour you paid for. When that
+carnauba sits on top of the coating and masks the water behavior you paid for. When that
 layer wears unevenly, people read it as the coating failing and start troubleshooting a
 problem they created. Plain pH-neutral shampoo, and a coating-specific topper if you want
 one.
@@ -179,7 +179,7 @@ The wider durability comparison is in
 
 Being marketed for cars doesn't make something safe over your protection:
 
-- **Anything labelled a "bug and tar" or "heavy duty" wash.** These are deliberately
+- **Anything labeled a "bug and tar" or "heavy duty" wash.** These are deliberately
   alkaline to cut bonded contamination. Fine as a targeted pre-treatment, destructive as
   your weekly shampoo.
 - **Strip wash products**, which do exactly what the name says. Correct before applying

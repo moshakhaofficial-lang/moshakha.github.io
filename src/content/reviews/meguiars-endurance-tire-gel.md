@@ -26,7 +26,7 @@ faq:
   - q: "Is tire gel better than tire spray?"
     a: "For control, yes. A spray is faster but a share of it inevitably lands on the wheel face and brake disc rather than the tire — brake dust mixed with dressing overspray is a specific, avoidable mess. A gel applied with a foam applicator pad goes only where you put it, at the cost of taking longer to apply."
   - q: "How long does the Endurance finish actually last?"
-    a: "Through rain and typically a wash or two, which is unusual for a tire dressing — most sprays wash off in a single rinse. It won't survive indefinitely; reapply when the sidewall starts looking dry or grey rather than on a fixed schedule."
+    a: "Through rain and typically a wash or two, which is unusual for a tire dressing — most sprays wash off in a single rinse. It won't survive indefinitely; reapply when the sidewall starts looking dry or gray rather than on a fixed schedule."
   - q: "Does it leave a wet, glossy look or a satin finish?"
     a: "Satin — a deep black rather than the high-gloss, almost-wet look some dressings go for. That's a style preference; if you want maximum shine, a spray-on gloss dressing applied more frequently will get you there, at the cost of the overspray problem above."
   - q: "Can I use it on wheels or trim as well as tires?"

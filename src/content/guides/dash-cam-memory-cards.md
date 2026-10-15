@@ -57,10 +57,10 @@ picks:
     imageAlt: "SanDisk 256GB High Endurance microSDXC card, U3 V30 rated"
     rating: 4.5
     bestFor: "Staying on one brand across two cameras, or a longer single-channel loop"
-    summary: "The same endurance construction as pick one in double the capacity. Worth choosing over the Samsung purely if you already run SanDisk and want identical formatting behaviour across cameras — there is no meaningful performance argument between the two at this tier."
+    summary: "The same endurance construction as pick one in double the capacity. Worth choosing over the Samsung purely if you already run SanDisk and want identical formatting behavior across cameras — there is no meaningful performance argument between the two at this tier."
     pros:
       - "Identical endurance rating to the 128GB, double the loop length"
-      - "Consistent behaviour if your other cameras already run SanDisk"
+      - "Consistent behavior if your other cameras already run SanDisk"
     cons:
       - "No real advantage over the Samsung equivalent"
       - "Still fills fast with parking mode enabled on two channels"
@@ -154,7 +154,7 @@ This catches people out because the product names barely change between generati
 
 For a 1080p camera, U1 is genuinely adequate. For 2K, 4K, or anything recording at 60fps,
 it isn't — and the failure mode is dropped frames, which you won't see until you're
-looking for a number plate that only appeared in the frames that went missing.
+looking for a license plate that only appeared in the frames that went missing.
 
 Pick five below is a deliberate inclusion of the older U1 version, because it's still
 widely sold under a name almost identical to the current one. Check the card face, not

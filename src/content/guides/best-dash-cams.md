@@ -93,13 +93,13 @@ faq:
   - q: "Is 4K worth it in a dash cam?"
     a: "Usually not. Sensor quality and lens aperture determine whether a plate is readable in poor light, and that is where nearly all useful footage is shot. A 2K camera with a modern low-light sensor routinely outperforms a 4K camera with a weak one. 4K also fills cards faster and generates more heat."
   - q: "Supercapacitor or battery dash cam?"
-    a: "Supercapacitor, without question. A dash cam lives on a windscreen where summer interior temperatures can be extreme, and lithium batteries degrade badly under sustained heat — with a small but real swelling risk. Capacitors tolerate heat far better and last longer. Every pick here uses one."
+    a: "Supercapacitor, without question. A dash cam lives on a windshield where summer interior temperatures can be extreme, and lithium batteries degrade badly under sustained heat — with a small but real swelling risk. Capacitors tolerate heat far better and last longer. Every pick here uses one."
   - q: "Does parking mode drain my car battery?"
     a: "It can, which is why it should be hardwired through a fuse box with a voltage cut-off rather than run from the 12V socket. The cut-off stops recording when battery voltage drops below a threshold, protecting your ability to start the car. Without it, a few days parked can leave you stranded."
   - q: "What memory card should I use?"
     a: "A high-endurance card rated for continuous surveillance recording, not a standard photography card. Dash cams write constantly and overwrite in a loop, which destroys ordinary cards quickly. Format the card in the camera every month or two — card failure is the most common reason footage is missing when it matters."
-  - q: "Is it legal to have a dash cam on my windscreen?"
-    a: "Rules vary by state and country, both on windscreen obstruction and on recording audio of passengers. In most US states dash cams are legal with placement restrictions. Check your local rules on mounting position and on audio consent before fitting, particularly if you drive for a rideshare service."
+  - q: "Is it legal to have a dash cam on my windshield?"
+    a: "Rules vary by state and country, both on windshield obstruction and on recording audio of passengers. In most US states dash cams are legal with placement restrictions. Check your local rules on mounting position and on audio consent before fitting, particularly if you drive for a rideshare service."
   - q: "Where should I mount a dash cam?"
     a: "Behind the rear-view mirror, high and central. It stays out of your sightline, sits in the area the wipers clear, and is hard to see from outside the car. Clean the glass properly before fitting — the adhesive mount will not stick reliably to a screen with an oily interior film."
 ---
@@ -110,13 +110,13 @@ It is not the spec that determines whether the footage is any use.
 ## Resolution is oversold
 
 The moment that matters is almost always in poor conditions — dusk, rain, an unlit road,
-oncoming headlights. What determines whether a number plate is readable there is the
+oncoming headlights. What determines whether a license plate is readable there is the
 **sensor and lens aperture**, not the pixel count.
 
 A 4K camera with a weak sensor gives you more pixels of the same unreadable smear. A 2K
 camera with a modern low-light sensor gives you a legible plate.
 
-4K also fills memory cards faster, generates more heat on a hot windscreen, and produces
+4K also fills memory cards faster, generates more heat on a hot windshield, and produces
 files awkward enough that people stop pulling footage off.
 
 **2K with a good sensor is the sweet spot.** Above that you're paying for a number.
@@ -125,7 +125,7 @@ files awkward enough that people stop pulling footage off.
 
 This is a hard requirement, and it's why every pick here has one.
 
-A dash cam sits on a windscreen. Interior temperatures in summer sun get extreme.
+A dash cam sits on a windshield. Interior temperatures in summer sun get extreme.
 Lithium batteries degrade rapidly under sustained heat, lose the ability to close a file
 safely on shutdown, and carry a small but real swelling risk.
 
@@ -168,7 +168,7 @@ standard cards fast. Use a high-endurance surveillance-rated card, and reformat 
 the camera every month or two. Card failure is the most common reason footage is missing
 when someone finally needs it.
 
-**A dirty windscreen.** The camera shoots through your glass, and the interior
+**A dirty windshield.** The camera shoots through your glass, and the interior
 plasticiser film scatters light straight into the lens at night. Clean the inside of the
 screen properly — our [streak-free glass guide](/blog/glass-cleaning-mastery/) covers it,
 and it's also what makes the adhesive mount actually stick.

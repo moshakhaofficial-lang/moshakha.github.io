@@ -69,7 +69,7 @@ polished, anodised and bare metal, and repeated use dulls clear coat.
 
 **Iron-removing fallout cleaners** dissolve bonded brake dust chemically rather than
 through scrubbing. They're the right answer for wheels that look dirty no matter how hard
-you scrub, and they're gentle in use — the colour change as they react is iron
+you scrub, and they're gentle in use — the color change as they react is iron
 dissolving, not damage.
 
 **If you don't know the finish**, start pH-neutral. You can escalate; you can't
@@ -78,7 +78,7 @@ un-etch.
 ## Getting into the barrel
 
 The face is easy. The inner barrel holds most of the brake dust and is what makes wheels
-look grey from behind.
+look gray from behind.
 
 A long-handled soft brush or a small wheel mitt reaches it. Do this properly and wheels
 stay clean far longer, because the barrel is where contamination accumulates and
@@ -86,16 +86,16 @@ redistributes from.
 
 Lug nut recesses and around the valve stem need a small detailing brush.
 
-## Tyres and arches
+## Tires and arches
 
-Do these **after** the wheel face, not before — tyre cleaner splashed onto a clean wheel
+Do these **after** the wheel face, not before — tire cleaner splashed onto a clean wheel
 means redoing it.
 
-Scrub the tyre sidewall with a stiff brush and an all-purpose cleaner. Old dressing
+Scrub the tire sidewall with a stiff brush and an all-purpose cleaner. Old dressing
 builds up as a brown film that "browns" a few days after each application; removing that
 build-up is what makes a new dressing look right.
 
-Apply dressing to an applicator, not directly to the tyre, and wipe off the excess.
+Apply dressing to an applicator, not directly to the tire, and wipe off the excess.
 Overapplied dressing slings onto your clean paint the first time you drive.
 
 ## Protecting them

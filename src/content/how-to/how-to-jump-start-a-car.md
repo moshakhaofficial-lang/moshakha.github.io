@@ -19,7 +19,7 @@ steps:
   - name: "Turn everything off in both vehicles"
     text: "Ignition off, lights, climate control and audio off in both cars. This reduces the electrical load and the chance of a voltage spike reaching sensitive electronics when the connection is made or broken."
   - name: "Find the designated jump points"
-    text: "Many modern cars mount the battery in the boot or under a seat, with a remote positive terminal under the bonnet and a designated chassis earth point. Using those points rather than the battery terminals directly is what the manufacturer intends. Check the manual rather than guessing."
+    text: "Many modern cars mount the battery in the trunk or under a seat, with a remote positive terminal under the hood and a designated chassis earth point. Using those points rather than the battery terminals directly is what the manufacturer intends. Check the manual rather than guessing."
   - name: "Connect positive first, both ends"
     text: "Red clamp to the dead battery's positive terminal, then the other red clamp to the donor battery's positive or to the jump pack. Positive first, always, because the circuit is not yet complete and there is nothing to spark."
   - name: "Connect the negative to a chassis earth, not the battery"
@@ -90,8 +90,8 @@ box-ticking. Replace the battery instead.
 
 ## Modern cars often have designated jump points
 
-If the battery is in the boot or under a seat — increasingly common — the manufacturer
-has provided a remote positive terminal under the bonnet and a specific earth point.
+If the battery is in the trunk or under a seat — increasingly common — the manufacturer
+has provided a remote positive terminal under the hood and a specific earth point.
 
 Use them. They exist because the manufacturer has decided where it is safe to introduce
 current, and on some vehicles connecting elsewhere can trip protection circuitry.

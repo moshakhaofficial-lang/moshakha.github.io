@@ -20,7 +20,7 @@ pros:
 cons:
   - "Needs MagSafe or a stick-on magnetic ring — not universal"
   - "Magnetic hold weakens through thick or textured cases"
-  - "Suction cups fail on textured dashboards — mount to the windscreen instead"
+  - "Suction cups fail on textured dashboards — mount to the windshield instead"
 related:
   - "guides/best-car-phone-mounts"
   - "guides/best-dash-cams"
@@ -32,7 +32,7 @@ faq:
   - q: "Will it hold my phone with a thick case on?"
     a: "Weakly, if at all. Magnetic hold strength drops off sharply with distance, and a thick or textured case adds exactly the distance that weakens it. If you run a rugged case, expect to test the hold before trusting it on the road, or switch to a thinner MagSafe-compatible case."
   - q: "Suction cup or adhesive mount — which should I use?"
-    a: "Suction on glass (the windscreen), adhesive on the dashboard. Suction cups don't hold reliably on the textured, slightly grained plastic most dashboards use — that's not a defect in this mount, it's a property of suction cups generally. Use the windscreen mounting point if your dash is textured."
+    a: "Suction on glass (the windshield), adhesive on the dashboard. Suction cups don't hold reliably on the textured, slightly grained plastic most dashboards use — that's not a defect in this mount, it's a property of suction cups generally. Use the windshield mounting point if your dash is textured."
   - q: "Is one-handed attachment actually safer than a clamp mount?"
     a: "Yes, and it's the main reason to choose magnetic over clamp. A clamp mount needs two hands and a moment of visual attention to seat the phone correctly — exactly the kind of distraction you don't want while approaching a junction. A magnetic mount is a single motion with no need to look away from the road for long."
   - q: "Does the magnet interfere with wireless charging or NFC?"
@@ -58,7 +58,7 @@ arms to adjust for a case, and nothing to fumble while also watching traffic.
 a magnet doesn't degrade the same way.
 
 **Two mounting options.** The suction base and the adhesive backing cover both the
-windscreen and a smooth dashboard, which matters because suction cups don't hold on
+windshield and a smooth dashboard, which matters because suction cups don't hold on
 textured plastic — more on that below.
 
 ## Where it falls short
@@ -73,7 +73,7 @@ case adds distance. Test the hold with your actual case before trusting it on a 
 drive, particularly over rough roads.
 
 **Suction cups need glass, not textured dash plastic.** This is true of suction cups
-generally, not a flaw specific to this mount — use the windscreen mounting point if your
+generally, not a flaw specific to this mount — use the windshield mounting point if your
 dashboard has any grain or texture to it.
 
 ## Should you buy it?

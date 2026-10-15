@@ -14,8 +14,8 @@ related:
 faq:
   - q: "Is 1200 GSM twisted loop good for drying a car?"
     a: "It is the standard spec for a serious drying towel, and it suits most vehicles from a sedan upward. The twisted loop weave matters more than the 1200 figure — loops pull water up into the pile so the towel glides rather than drags."
-  - q: "What is twisted loop microfibre?"
-    a: "Long fibres twisted together into loops rather than left as loose plush pile. The twist creates channels that draw water up and away from the contact surface, which is why twisted loop towels keep gliding when plush towels of the same weight have started to smear."
+  - q: "What is twisted loop microfiber?"
+    a: "Long fibers twisted together into loops rather than left as loose plush pile. The twist creates channels that draw water up and away from the contact surface, which is why twisted loop towels keep gliding when plush towels of the same weight have started to smear."
   - q: "Is 1200 GSM too much for a small car?"
     a: "Often, yes. On a hatchback a 1200 GSM towel is heavy, slow to air-dry and awkward around mirrors and badges, and you will never use its full capacity. Around 900 GSM in a smaller panel size is easier to work with and dries a small car just as well."
   - q: "How long does a 1200 GSM towel take to dry out?"
@@ -27,10 +27,10 @@ understanding why that combination in particular.
 
 ## The weave is the important half
 
-**GSM tells you density. The weave tells you behaviour.** Of the two, weave matters more
+**GSM tells you density. The weave tells you behavior.** Of the two, weave matters more
 here, and it's the half that gets less attention.
 
-Twisted loop means the fibres are twisted together into loops rather than standing as
+Twisted loop means the fibers are twisted together into loops rather than standing as
 loose plush pile. Those loops create channels that draw water **up into the body of the
 towel**, away from the surface in contact with your paint.
 
@@ -61,7 +61,7 @@ smears the final film of moisture. Glass wants 300–400 GSM — this is true of
 drying towel and is not a fault of this one.
 
 **If you have nowhere to hang it.** A 1200 GSM towel can take a full day to air-dry
-properly. Stored damp, microfibre develops mildew that permanently affects absorbency.
+properly. Stored damp, microfiber develops mildew that permanently affects absorbency.
 
 ## Two mid-weight towels vs one heavy one
 

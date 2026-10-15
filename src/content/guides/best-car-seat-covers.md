@@ -17,7 +17,7 @@ picks:
     award: "Best overall"
     asin: "B0823GT5RS"
     image: "../../assets/images/product-motortrend-spillguard.jpg"
-    imageAlt: "Motor Trend SpillGuard waterproof neoprene seat cover full set in black and grey"
+    imageAlt: "Motor Trend SpillGuard waterproof neoprene seat cover full set in black and gray"
     rating: 4.5
     bestFor: "Kids, dogs, wet gear — anything where liquid reaching the foam is the real fear"
     skipIf: "You want the seats to look factory; neoprene reads as a cover, not upholstery"
@@ -36,7 +36,7 @@ picks:
     award: "Best appearance"
     asin: "B00FYX2WEU"
     image: "../../assets/images/product-fhgroup-pu-leather.jpg"
-    imageAlt: "FH Group PU002114 premium PU leather seat cover full set in grey"
+    imageAlt: "FH Group PU002114 premium PU leather seat cover full set in gray"
     rating: 4.2
     bestFor: "Tidying worn cloth seats without the look of an obvious cover"
     skipIf: "Your car bakes in the sun — PU leather gets hot and can crack over years"
@@ -58,14 +58,14 @@ picks:
     imageAlt: "FH Group Travel Master full seat cover set with split rear bench design"
     rating: 4.2
     bestFor: "Cars with side airbags in the seat, which is most of them since the mid-2000s"
-    skipIf: "You want a specific colour — this listing's variants differ significantly"
+    skipIf: "You want a specific color — this listing's variants differ significantly"
     summary: "Side airbags fire out of a seam in the outer seat bolster, and a cover that blocks that seam is a genuine safety problem rather than a fitment nuisance. Covers designed for it use a deliberately weakened seam that tears under deployment. This is the box worth checking before any other feature."
     pros:
       - "Designed with a tear-away seam for seat-mounted side airbags"
       - "Split rear bench accommodates folding seats properly"
       - "Full set covers front and rear in one purchase"
     cons:
-      - "Colour variants under this listing vary a lot — check what you're ordering"
+      - "Color variants under this listing vary a lot — check what you're ordering"
       - "Universal cut still leaves loose areas on sculpted seats"
   - rank: 4
     name: "3D Air Mesh front set"
@@ -102,7 +102,7 @@ picks:
       - "Easy one-person fitting"
     cons:
       - "Front and rear won't match if the rear is left bare"
-      - "Colour options are bolder than most interiors want"
+      - "Color options are bolder than most interiors want"
 faq:
   - q: "Why do universal seat covers fit so badly?"
     a: "Because 'universal' means cut for an averaged seat shape that no manufacturer actually builds. Seat bolster depth, headrest post spacing, backrest curvature and base width all vary between models, so a cover sized to fit everything is loose in some places and strained in others. Sculpted or heavily bolstered sport seats are where the gap between universal and acceptable is widest."
@@ -145,7 +145,7 @@ A cover that blocks that seam can prevent or misdirect deployment. Covers design
 airbag-equipped seats use a deliberately weakened seam that tears open under deployment
 force — that's what "airbag compatible" actually describes.
 
-**Check this before anything else.** Colour, material and price are all preferences. This
+**Check this before anything else.** Color, material and price are all preferences. This
 one isn't.
 
 ## Choose by the problem, not the material
@@ -179,7 +179,7 @@ moisture where it can't evaporate.
 ## How we chose
 
 Specification analysis — airbag seam compatibility, split-bench support, material
-behaviour in heat and under liquid, and attachment method — plus aggregated long-term
+behavior in heat and under liquid, and attachment method — plus aggregated long-term
 owner feedback weighted toward whether covers stay put after a few months of use. No lab
 testing, no paid placement.
 

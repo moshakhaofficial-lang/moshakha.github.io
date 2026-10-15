@@ -19,11 +19,11 @@ picks:
     award: "Best overall"
     asin: "B01BNKW4M2"
     image: "../../assets/images/product-weathertech-mats.jpg"
-    imageAlt: "WeatherTech Trim-to-Fit rear floor mats installed in a car, tan colour with raised ridged tread pattern"
+    imageAlt: "WeatherTech Trim-to-Fit rear floor mats installed in a car, tan color with raised ridged tread pattern"
     rating: 4.4
     price: "$60–$95"
     bestFor: "Most cars, when laser-measured liners aren't available or affordable"
-    summary: "Semi-universal mats you trim to your footwell along moulded guide lines. Trim-to-fit sits between cheap universal mats and expensive custom liners, and the trimming is the point — a mat cut to your car's footwell doesn't slide, and sliding is the actual safety issue with universal mats."
+    summary: "Semi-universal mats you trim to your footwell along molded guide lines. Trim-to-fit sits between cheap universal mats and expensive custom liners, and the trimming is the point — a mat cut to your car's footwell doesn't slide, and sliding is the actual safety issue with universal mats."
     pros:
       - "Trims to a genuine fit rather than approximating one"
       - "Raised edges contain water, slush and grit"
@@ -31,7 +31,7 @@ picks:
       - "Far cheaper than laser-measured liners"
     cons:
       - "Trimming is permanent — measure carefully"
-      - "Not the exact coverage of a custom-moulded liner"
+      - "Not the exact coverage of a custom-molded liner"
       - "Three-piece set may not cover a third row"
   - rank: 2
     name: "Semi-Universal All-Weather Mats, 4-Piece (Black)"
@@ -47,7 +47,7 @@ picks:
     pros:
       - "Covers rear footwells, which usually get worse abuse"
       - "Same TPE compound and raised-edge design"
-      - "Black hides wear better than lighter colours"
+      - "Black hides wear better than lighter colors"
     cons:
       - "Rear mats are generic in shape and fit less precisely"
       - "More expensive than a front-only set"
@@ -60,11 +60,11 @@ picks:
     imageAlt: "WeatherTech TechCare FloorLiner cleaner and protector spray bottles"
     rating: 4.6
     price: "$18–$26"
-    bestFor: "Stopping TPE and rubber liners going chalky grey"
+    bestFor: "Stopping TPE and rubber liners going chalky gray"
     summary: "Rubber and TPE need different chemistry from carpet, and household cleaners leave them either chalky or slick. Slick is the dangerous outcome. This cleans and protects without a gloss finish, which is the specification that matters for anything under your pedals."
     pros:
       - "Cleans without leaving a slippery finish"
-      - "Protector step slows UV-driven chalky greying"
+      - "Protector step slows UV-driven chalky graying"
       - "Also works on cargo liners and trunk mats"
     cons:
       - "Wrong product for carpet mats"
@@ -73,15 +73,15 @@ faq:
   - q: "Are all-weather mats better than carpet mats?"
     a: "For containing water, road salt and grit, clearly yes — that is what they exist for, and they protect the carpet underneath, which is expensive to replace. Carpet mats look and sound better in a nicer interior. Many people run all-weather liners through winter and carpet in summer."
   - q: "Why are custom-fit floor liners so much more expensive?"
-    a: "They are laser-measured to a specific model and moulded individually, so tooling costs are spread over one vehicle rather than every car on the road. The practical benefit is coverage up the footwell sides and a fit that cannot slide. Trim-to-fit gets most of the way there for much less."
+    a: "They are laser-measured to a specific model and molded individually, so tooling costs are spread over one vehicle rather than every car on the road. The practical benefit is coverage up the footwell sides and a fit that cannot slide. Trim-to-fit gets most of the way there for much less."
   - q: "Can floor mats be dangerous?"
     a: "Yes, and this is the one genuine safety issue in the category. A mat that slides forward can trap the accelerator or block the brake. Never stack a new mat on top of an existing one, always use the factory retention hooks if your car has them, and replace any mat that no longer stays put."
   - q: "Do I need the retention clips?"
     a: "If your car has factory anchor points, use them without exception. They exist specifically to stop mats migrating toward the pedals. A mat that only stays in place through friction will eventually move, and the moment it matters is the moment you brake hard."
-  - q: "How do I stop rubber mats going chalky and grey?"
+  - q: "How do I stop rubber mats going chalky and gray?"
     a: "Rinse far more thoroughly than feels necessary — most of what looks like permanent degradation is dried cleaner residue in the tread channels. UV exposure causes the rest, which a rubber-specific protector slows. Never use a silicone gloss dressing; a shiny mat under the pedals is a hazard."
   - q: "Can I cut trim-to-fit mats myself?"
-    a: "Yes, and they are designed for it — moulded guide lines show where to cut. Use sharp heavy scissors or a utility knife, cut on the conservative side of the line, and test fit repeatedly. You can always remove more material, and the cut is permanent."
+    a: "Yes, and they are designed for it — molded guide lines show where to cut. Use sharp heavy scissors or a utility knife, cut on the conservative side of the line, and test fit repeatedly. You can always remove more material, and the cut is permanent."
 ---
 
 Floor mats are one of the few interior accessories that do a genuinely protective job:
@@ -113,9 +113,9 @@ than no mat at all.
 |---|---|---|
 | **Universal** | One shape, all cars | Cheapest; slides, poor coverage |
 | **Trim-to-fit** | Semi-universal, cut to your footwell | Good fit for moderate money |
-| **Laser-measured** | Moulded per model | Best coverage, highest price |
+| **Laser-measured** | Molded per model | Best coverage, highest price |
 
-**Trim-to-fit is the value sweet spot** for most people. Cutting along the moulded guide
+**Trim-to-fit is the value sweet spot** for most people. Cutting along the molded guide
 lines gives you a mat that actually sits in your footwell and doesn't move — which is
 most of what the expensive liners buy you.
 
@@ -133,7 +133,7 @@ underneath. This is the mat that saves you money.
 until it's saturated, at which point it holds moisture against the floor and causes the
 musty smell people blame on the car being old.
 
-## The chalky grey problem
+## The chalky gray problem
 
 Rubber and TPE liners go chalky, and people assume it's age. Usually it's **cleaner
 residue dried in the tread channels**, plus UV.
@@ -141,7 +141,7 @@ residue dried in the tread channels**, plus UV.
 Rinse standing on edge, from the top down, for longer than feels necessary. A
 rubber-specific protector slows the UV component.
 
-**Never use tyre shine or a silicone dressing on a mat.** A glossy mat under the pedals
+**Never use tire shine or a silicone dressing on a mat.** A glossy mat under the pedals
 is exactly the hazard described above, arriving by a different route. This is the one
 place in a car where shine is actively dangerous.
 

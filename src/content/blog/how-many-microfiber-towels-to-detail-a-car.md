@@ -1,18 +1,18 @@
 ---
-title: "How Many Microfibre Towels Do You Need to Detail a Car?"
+title: "How Many Microfiber Towels Do You Need to Detail a Car?"
 description: "A realistic count by job, why running out mid-wash causes swirl marks, and the minimum viable kit if you are not buying a professional-sized stack."
 targetKeyword: "how many microfiber towels to detail a car"
 publishDate: 2026-08-24
 author: "Moshakha Editorial"
 image: "../../assets/images/towel-count-by-job.webp"
-imageAlt: "Chart showing how many microfibre towels are needed per detailing job"
+imageAlt: "Chart showing how many microfiber towels are needed per detailing job"
 related:
   - "guides/best-microfiber-towels-for-cars"
   - "blog/microfibre-care-101"
   - "how-to/two-bucket-car-wash-method"
   - "blog/edgeless-vs-edged-microfiber-towels"
 faq:
-  - q: "How many microfibre towels do I need to wash a car?"
+  - q: "How many microfiber towels do I need to wash a car?"
     a: "For a straightforward maintenance wash, six to eight: one or two drying towels, two low-pile towels for glass and interior, two general-purpose towels, and one dedicated to wheels. A full detail with wax or sealant needs closer to twelve."
   - q: "Why not just use two or three?"
     a: "Because a saturated or dirty towel stops working and starts causing damage. Once a drying towel is full of water it smears rather than lifts, and a towel that has picked up grit drags it across the next panel. Running out mid-job is when people start reusing towels they shouldn't."
@@ -21,7 +21,7 @@ faq:
   - q: "Is it cheaper to buy multipacks?"
     a: "Yes, substantially, for the general-purpose 300-500 GSM towels you use most. Buy those in packs of six or twelve. Drying towels are worth buying individually and choosing carefully, since one good one outperforms three mediocre ones."
   - q: "How do I keep track of which towel is for what?"
-    a: "Colour-code by job and never deviate — one colour for glass, one for paint, one for wheels. Snip a corner off towels you have retired to dirty duty so they cannot drift back into the paint pile."
+    a: "Color-code by job and never deviate — one color for glass, one for paint, one for wheels. Snip a corner off towels you have retired to dirty duty so they cannot drift back into the paint pile."
 ---
 
 The honest answer is more than you think, and the reason isn't fussiness — it's that a
@@ -85,8 +85,8 @@ The economics split neatly:
 
 ## Keeping them straight
 
-Colour-code by job and hold the line. One colour for glass, one for paint, one for
-wheels. The colour does nothing on its own — the discipline does.
+Color-code by job and hold the line. One color for glass, one for paint, one for
+wheels. The color does nothing on its own — the discipline does.
 
 When a towel gets retired to dirty duty, snip a corner off it. It's a permanent mark that
 survives laundering and stops a wheel towel quietly reappearing in the paint pile six

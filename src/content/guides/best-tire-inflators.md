@@ -21,7 +21,7 @@ picks:
     imageAlt: "AstroAI portable tire inflator with digital pressure gauge"
     rating: 4.5
     price: "$30–$45"
-    bestFor: "Topping up four tyres without worrying about battery charge"
+    bestFor: "Topping up four tires without worrying about battery charge"
     summary: "A 12V corded unit with auto shut-off at a preset pressure, a digital gauge and a 9.8ft cord. Auto shut-off is the feature that matters: you set the target pressure, walk away, and it stops. Manually watching a gauge while a compressor runs is how people end up over-inflating."
     pros:
       - "Auto shut-off at a preset pressure — set it and stop watching"
@@ -31,7 +31,7 @@ picks:
     cons:
       - "Needs a 12V socket that stays live with the ignition off"
       - "9.8ft cord is tight on a long wheelbase — check it reaches all four"
-      - "Loud, and slow on a fully flat tyre"
+      - "Loud, and slow on a fully flat tire"
   - rank: 2
     name: "Cordless Tire Inflator 160PSI"
     brand: "AstroAI"
@@ -46,7 +46,7 @@ picks:
     pros:
       - "Works away from the car entirely"
       - "Dual power — falls back to 12V when the battery is down"
-      - "160 PSI covers light truck and trailer tyres"
+      - "160 PSI covers light truck and trailer tires"
     cons:
       - "Battery self-discharges — check it periodically or it's flat when needed"
       - "More expensive than corded for the same output"
@@ -60,7 +60,7 @@ picks:
     imageAlt: "AstroAI tire inflator with both 12V DC and 120V AC power plugs"
     rating: 4.4
     price: "$45–$65"
-    bestFor: "One unit that lives in the garage and travels in the boot"
+    bestFor: "One unit that lives in the garage and travels in the trunk"
     summary: "Dual metal motors and a mains plug as well as 12V. The mains option is the useful part — inflating from mains in the garage is much faster than from a 12V socket, because a cigarette-lighter circuit is fused low and limits the current the compressor can draw."
     pros:
       - "Mains power is substantially faster than 12V"
@@ -72,14 +72,14 @@ picks:
   - rank: 4
     name: "Tire Inflator with Integrated Storage"
     brand: "AstroAI"
-    award: "Best for the boot"
+    award: "Best for the trunk"
     asin: "B097B6X669"
     image: "../../assets/images/product-astroai-storage.jpg"
     imageAlt: "AstroAI tire inflator with integrated storage compartment and nozzles"
     rating: 4.4
     price: "$28–$40"
-    bestFor: "Living permanently in the boot without a tangle of cable"
-    summary: "The same core 12V design with the cord and nozzles stored in the body. That sounds trivial and isn't: an inflator you can grab and use in thirty seconds gets used, and one that means untangling a cable in the rain in the dark stays in the boot while you drive on a soft tyre."
+    bestFor: "Living permanently in the trunk without a tangle of cable"
+    summary: "The same core 12V design with the cord and nozzles stored in the body. That sounds trivial and isn't: an inflator you can grab and use in thirty seconds gets used, and one that means untangling a cable in the rain in the dark stays in the trunk while you drive on a soft tire."
     pros:
       - "Everything stored in the unit — nothing loose to lose"
       - "Fast to deploy, which is the whole point of carrying one"
@@ -91,13 +91,13 @@ faq:
   - q: "Will a tire inflator work if my car's 12V socket turns off with the ignition?"
     a: "No, and this is the most common disappointment with any corded 12V accessory. Many modern cars cut power to the socket with the ignition off. You can run the engine, which is fine outdoors but unsafe in a closed garage, or buy a cordless unit. Check your car before you buy."
   - q: "How long should it take to inflate a tire?"
-    a: "Topping a car tyre up by a few PSI should take one to two minutes. Inflating from genuinely flat takes far longer — often ten minutes or more — and small 12V compressors get hot doing it. Most have a duty cycle; running them continuously past it shortens their life considerably."
+    a: "Topping a car tire up by a few PSI should take one to two minutes. Inflating from genuinely flat takes far longer — often ten minutes or more — and small 12V compressors get hot doing it. Most have a duty cycle; running them continuously past it shortens their life considerably."
   - q: "Are digital gauges more accurate than dial gauges?"
-    a: "Not inherently, but they are much easier to read correctly, which matters more in practice. The bigger accuracy issue with any built-in gauge is that it reads pressure at the compressor rather than in the tyre. For a precise figure, check with a separate gauge after the compressor stops."
+    a: "Not inherently, but they are much easier to read correctly, which matters more in practice. The bigger accuracy issue with any built-in gauge is that it reads pressure at the compressor rather than in the tire. For a precise figure, check with a separate gauge after the compressor stops."
   - q: "Can I use a tire inflator to seat a tubeless tire bead?"
-    a: "No. Seating a bead needs a large, sudden volume of air, which is a completely different requirement from the slow steady flow these produce. That job needs a tank or a workshop compressor. A portable inflator maintains pressure; it does not mount tyres."
+    a: "No. Seating a bead needs a large, sudden volume of air, which is a completely different requirement from the slow steady flow these produce. That job needs a tank or a workshop compressor. A portable inflator maintains pressure; it does not mount tires."
   - q: "What tire pressure should I use?"
-    a: "The figure on the placard in your driver's door jamb or fuel flap, not the number moulded into the tyre sidewall. The sidewall figure is the tyre's maximum safe pressure, not the correct pressure for your vehicle. Check when the tyres are cold — driving raises pressure by several PSI."
+    a: "The figure on the placard in your driver's door jamb or fuel flap, not the number molded into the tire sidewall. The sidewall figure is the tire's maximum safe pressure, not the correct pressure for your vehicle. Check when the tires are cold — driving raises pressure by several PSI."
   - q: "Do I need one if my car has a spare?"
     a: "Yes, arguably more than a spare. Most punctures are slow leaks from a nail rather than blowouts, and an inflator lets you reinflate and drive to a garage rather than changing a wheel at the roadside. Many new cars ship with no spare at all — only a sealant kit."
 ---
@@ -125,7 +125,7 @@ category, and almost no roundup mentions it.
 
 ## How we chose
 
-Specification analysis — duty cycle, stated max pressure, auto shut-off behaviour, gauge
+Specification analysis — duty cycle, stated max pressure, auto shut-off behavior, gauge
 type and power options — plus aggregated long-term owner feedback with attention to
 failure patterns after the first year. We have not lab-tested inflation times. No brand
 paid for a place here.
@@ -135,14 +135,14 @@ paid for a place here.
 Set the target pressure and the compressor stops there by itself.
 
 Without it you are watching a small gauge on a vibrating, noisy device and guessing when
-to stop — which is how tyres end up over-inflated. Over-inflation reduces the contact
-patch, hurts wet grip and wears the centre of the tread.
+to stop — which is how tires end up over-inflated. Over-inflation reduces the contact
+patch, hurts wet grip and wears the center of the tread.
 
 Every pick here has it. Treat it as a requirement rather than a feature.
 
 ## Where the built-in gauge misleads you
 
-Every inflator's gauge reads pressure **at the compressor**, not inside the tyre. Hose
+Every inflator's gauge reads pressure **at the compressor**, not inside the tire. Hose
 length and fitting resistance mean the two differ, usually by a couple of PSI.
 
 For topping up, that's fine. If you want an accurate figure, let the compressor stop,
@@ -151,15 +151,15 @@ and both be working correctly.
 
 ## What pressure to actually use
 
-**The placard in the driver's door jamb**, not the number on the tyre sidewall.
+**The placard in the driver's door jamb**, not the number on the tire sidewall.
 
-The sidewall figure is the tyre's *maximum safe* pressure. Inflating to it is a common
+The sidewall figure is the tire's *maximum safe* pressure. Inflating to it is a common
 and consequential mistake. The correct pressure for your car is on the placard, and it
 differs front to rear on many vehicles.
 
 Check cold — driving heats the air and raises the reading by several PSI.
 
-[How to check tyre pressure properly](/how-to/how-to-check-tire-pressure/) covers the
+[How to check tire pressure properly](/how-to/how-to-check-tire-pressure/) covers the
 full routine.
 
 ## What to carry alongside it

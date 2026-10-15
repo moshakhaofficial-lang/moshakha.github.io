@@ -32,7 +32,7 @@ faq:
   - q: "Why does the GB40 rank above packs with higher peak-amp claims?"
     a: "Because the number that actually prevents injury is whether the clamps are spark-proof and reverse-polarity protected, not how big the peak-amp figure printed on the box is. A discharged battery can vent hydrogen, and a spark at the terminal is the ignition source — that's the real risk in jump starting, and it's what the GB40's protection circuitry is built to remove."
   - q: "How long does the GB40 hold its charge?"
-    a: "Well, by lithium jump-starter standards — but not indefinitely. Every lithium pack self-discharges, and one left untouched in a boot for a year or two will be flat exactly when it's needed. Recharge it every three to six months regardless of use; that single habit is what determines whether it works on the day that matters."
+    a: "Well, by lithium jump-starter standards — but not indefinitely. Every lithium pack self-discharges, and one left untouched in a trunk for a year or two will be flat exactly when it's needed. Recharge it every three to six months regardless of use; that single habit is what determines whether it works on the day that matters."
   - q: "Does the GB40 include an air compressor?"
     a: "No. NOCO sells the GB40 as a dedicated jump starter, not a combination unit. Combination jump-starter/inflator devices compromise on both functions and tend to get left at home because they're bulkier — a dedicated GB40 plus a separate corded inflator generally serves better, and a failure in one doesn't take out the other."
   - q: "What size NOCO should I buy instead of the GB40?"
@@ -85,7 +85,7 @@ about it again for years.
 ## The failure that isn't the product's fault
 
 A jump starter that isn't charged is a brick, and lithium packs self-discharge slowly
-enough that a forgotten one goes flat over a year or two sitting in a boot. Recharge the
+enough that a forgotten one goes flat over a year or two sitting in a trunk. Recharge the
 GB40 every three to six months on a calendar reminder — this is the single most common
 reason jump starters disappoint their owners, and it has nothing to do with build
 quality.

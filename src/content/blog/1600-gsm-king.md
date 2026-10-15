@@ -6,7 +6,7 @@ publishDate: 2026-02-04
 updatedDate: 2026-08-24
 author: "Moshakha Editorial"
 image: "../../assets/images/gsm-by-vehicle.webp"
-imageAlt: "Chart matching vehicle size to the right microfibre GSM tier, from hatchback to large SUV"
+imageAlt: "Chart matching vehicle size to the right microfiber GSM tier, from hatchback to large SUV"
 related:
   - "guides/microfiber-gsm-explained"
   - "guides/best-car-drying-towels"
@@ -60,7 +60,7 @@ insulates your hand from what you're doing.
 A 1600 GSM towel holds an enormous amount of water and takes a long time to release it.
 In practice that means a full day hung somewhere with real airflow.
 
-Stored damp — folded in a boot, or in a bucket — microfibre develops mildew. That's not
+Stored damp — folded in a trunk, or in a bucket — microfiber develops mildew. That's not
 just a smell problem: it permanently affects absorbency, and washing doesn't reliably fix
 it.
 

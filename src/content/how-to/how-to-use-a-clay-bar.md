@@ -11,7 +11,7 @@ supplies:
   - "Detailing clay bar, 100g (medium or fine grade)"
   - "Clay lubricant or quick detailer — never plain water"
   - "Two buckets, shampoo, wash mitt"
-  - "Two clean low-pile microfibre towels"
+  - "Two clean low-pile microfiber towels"
   - "Optional: iron fallout remover for bonded brake dust"
 steps:
   - name: "Wash and dry the car completely first"
@@ -31,7 +31,7 @@ steps:
   - name: "Inspect the bar and bin it if it is dropped"
     text: "Look at the clay face regularly. Visible dark specks mean it is loaded and needs folding. If the clay touches the ground even once, throw that piece away without exception — it has picked up sharp grit and will scratch every panel it touches afterwards."
   - name: "Wipe the panel and protect immediately"
-    text: "Wipe residual lubricant off with a clean microfibre towel. Claying strips any existing wax or sealant, so the paint is now unprotected and must be waxed, sealed or coated the same day. Bare clear coat left exposed will spot and bond contamination quickly."
+    text: "Wipe residual lubricant off with a clean microfiber towel. Claying strips any existing wax or sealant, so the paint is now unprotected and must be waxed, sealed or coated the same day. Bare clear coat left exposed will spot and bond contamination quickly."
 related:
   - "blog/ceramic-coating-guide"
   - "how-to/how-to-avoid-swirl-marks"
@@ -47,7 +47,7 @@ faq:
   - q: "Can I use water instead of clay lubricant?"
     a: "No. Plain water has almost no lubricity and lets the clay grab at the paint, which is how marring happens. A dedicated clay lubricant or a quick detailer is inexpensive, and it is the component actually protecting your clear coat during the process."
   - q: "Do I need to polish after claying?"
-    a: "Not always, but often. Claying leaves very light marring that is visible under direct sun on dark paint. A light finishing polish removes it. On lighter colours, or if you are not chasing perfection, you can go straight to protection."
+    a: "Not always, but often. Claying leaves very light marring that is visible under direct sun on dark paint. A light finishing polish removes it. On lighter colors, or if you are not chasing perfection, you can go straight to protection."
   - q: "What grade of clay should I use?"
     a: "Fine or medium for a maintained car. Aggressive or heavy-grade clay removes more contamination faster and marrs correspondingly more, so it is for neglected paint that you intend to machine polish afterwards. When unsure, start fine — you can always step up."
   - q: "Do I have to wax after claying?"

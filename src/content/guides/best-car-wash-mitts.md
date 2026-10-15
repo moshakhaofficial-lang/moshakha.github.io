@@ -1,6 +1,6 @@
 ---
 title: "Best Car Wash Mitts 2026: Safest Picks for Your Paint"
-description: "The wash mitt decides whether you add swirl marks or avoid them. Our picks across microfibre, chenille and wheel-specific mitts, with what each is good at."
+description: "The wash mitt decides whether you add swirl marks or avoid them. Our picks across microfiber, chenille and wheel-specific mitts, with what each is good at."
 targetKeyword: "best car wash mitt"
 publishDate: 2026-08-24
 author: "Moshakha Editorial"
@@ -19,11 +19,11 @@ picks:
     award: "Best overall"
     asin: "B09QD5LQRR"
     image: "../../assets/images/product-cyclone-mitt.jpg"
-    imageAlt: "The Rag Company Cyclone Ultra microfibre wash mitt"
+    imageAlt: "The Rag Company Cyclone Ultra microfiber wash mitt"
     rating: 4.7
     price: "$18–$26 (2-piece)"
     bestFor: "Anyone who wants one mitt that handles a normal two-bucket wash properly"
-    summary: "A 70/30 Korean microfibre mitt with foam padding, bundled with a 10x10in wash pad. The foam core is what separates this from cheap mitts — it keeps the fibres standing up and stops your hand pressing grit directly into the panel. The included flat pad is genuinely useful for lower panels and rocker rails where a mitt is clumsy."
+    summary: "A 70/30 Korean microfiber mitt with foam padding, bundled with a 10x10in wash pad. The foam core is what separates this from cheap mitts — it keeps the fibers standing up and stops your hand pressing grit directly into the panel. The included flat pad is genuinely useful for lower panels and rocker rails where a mitt is clumsy."
     pros:
       - "Foam padding keeps pressure off the paint"
       - "70/30 blend releases dirt readily in the rinse bucket"
@@ -41,7 +41,7 @@ picks:
     imageAlt: "Chemical Guys chenille microfiber wash mitt in green with packaging"
     rating: 4.4
     price: "$8–$14"
-    bestFor: "First proper mitt, or a cheap spare to keep in the boot"
+    bestFor: "First proper mitt, or a cheap spare to keep in the trunk"
     summary: "The chenille 'noodle' mitt most people start with, and a legitimate choice rather than just a cheap one. The long noodles hold a lot of suds and keep grit suspended away from the paint surface. It is widely stocked, cheap enough to replace without hesitation, and considerably safer than any sponge."
     pros:
       - "Cheap enough to retire the moment it hits the ground"
@@ -50,7 +50,7 @@ picks:
     cons:
       - "No foam core — easier to press too hard"
       - "Noodles tangle and mat over time"
-      - "Slower to release trapped grit than a 70/30 microfibre mitt"
+      - "Slower to release trapped grit than a 70/30 microfiber mitt"
   - rank: 3
     name: "Microfibre Dual Wash Mitt"
     brand: "Adam's Polishes"
@@ -75,7 +75,7 @@ picks:
     award: "Best for wheels"
     asin: "B0BTK98JJ4"
     image: "../../assets/images/product-cyclone-wheel-mitt.jpg"
-    imageAlt: "The Rag Company Cyclone Ultra wheel mitt in grey chenille"
+    imageAlt: "The Rag Company Cyclone Ultra wheel mitt in gray chenille"
     rating: 4.5
     price: "$12–$18 (2-pack)"
     bestFor: "Wheels, grilles and tight areas — and keeping brake dust away from paint"
@@ -107,13 +107,13 @@ picks:
       - "Chenille noodles mat with age"
 faq:
   - q: "Is a wash mitt really safer than a sponge?"
-    a: "Yes, and the reason is structural. A sponge has a flat, closed surface that traps grit between the foam and your paint, then drags it along the panel. A mitt's fibres or noodles lift grit up and away from the contact surface, where it stays suspended until you rinse. We cover this in detail in our wash mitt vs sponge comparison."
+    a: "Yes, and the reason is structural. A sponge has a flat, closed surface that traps grit between the foam and your paint, then drags it along the panel. A mitt's fibers or noodles lift grit up and away from the contact surface, where it stays suspended until you rinse. We cover this in detail in our wash mitt vs sponge comparison."
   - q: "How often should I replace a wash mitt?"
     a: "Replace it when the pile mats down and stops feeling plush, when the noodles tangle permanently, or immediately if it hits the ground and you cannot fully launder it before the next wash. For a mitt used fortnightly and washed properly, a year is a reasonable expectation."
   - q: "Do I need a separate mitt for wheels?"
     a: "Yes. This is the one piece of gear separation that genuinely is not optional. Brake dust contains hard metallic particles that will scratch paint on contact. A wheel mitt should never touch a painted panel, and a paint mitt should never touch a wheel."
   - q: "Can I wash a wash mitt in the washing machine?"
-    a: "Yes — wash it separately from cotton, with no fabric softener and no dryer sheets, on a warm or cold cycle. Fabric softener coats the fibres and destroys their ability to lift and hold grit, which is the entire reason a mitt is safer than a sponge."
+    a: "Yes — wash it separately from cotton, with no fabric softener and no dryer sheets, on a warm or cold cycle. Fabric softener coats the fibers and destroys their ability to lift and hold grit, which is the entire reason a mitt is safer than a sponge."
   - q: "How many mitts do I need for one car?"
     a: "Two is the practical answer: one for the upper half of the vehicle and a second for the lower panels, which carry far more road grime. Add a third dedicated wheel mitt. Splitting upper and lower is a bigger safety improvement than upgrading to a more expensive single mitt."
 ---
@@ -122,7 +122,7 @@ Your wash mitt spends more time in contact with your paint than any other tool y
 It is also the cheapest thing in the process to get right — and the most common reason a
 carefully washed car ends up covered in fine swirl marks under direct sunlight.
 
-The good news: almost any decent microfibre or chenille mitt is dramatically safer than
+The good news: almost any decent microfiber or chenille mitt is dramatically safer than
 the sponge it replaces. The differences between the mitts below are about **which job
 each suits**, not about which is "safe".
 
@@ -137,7 +137,7 @@ No brand paid for placement, and none can.
 
 ## What actually makes a mitt safe
 
-**It lifts grit away from the contact surface.** This is the whole game. Fibres and
+**It lifts grit away from the contact surface.** This is the whole game. Fibers and
 chenille noodles suspend dirt up in the pile, away from your paint. A sponge's flat face
 holds that same grit pressed directly against the panel.
 
@@ -169,7 +169,7 @@ result than the cheapest mitt used well.
 ## Which one should you buy?
 
 - **One mitt, done properly:** pick 1.
-- **Tight budget, or a spare for the boot:** pick 2.
+- **Tight budget, or a spare for the trunk:** pick 2.
 - **Bug-covered front end every summer:** pick 3.
 - **You don't yet have a wheel-only mitt:** pick 4, and treat it as mandatory.
 - **You want to split upper and lower panels, or wash two cars:** pick 5.

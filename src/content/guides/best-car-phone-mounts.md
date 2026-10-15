@@ -32,7 +32,7 @@ picks:
     cons:
       - "Needs MagSafe or a stick-on magnetic ring"
       - "Magnetic hold weakens through thick or textured cases"
-      - "Suction cups fail on textured dashboards — use the windscreen"
+      - "Suction cups fail on textured dashboards — use the windshield"
   - rank: 2
     name: "3-in-1 Car Phone Holder"
     brand: "Miracase"
@@ -43,7 +43,7 @@ picks:
     rating: 4.4
     price: "$15–$25"
     bestFor: "Not knowing which mounting point works in your car until you try"
-    summary: "Dashboard, windscreen and air vent in one box. That sounds like a compromise and is genuinely useful, because which mounting point works is dictated by your specific car's dash texture, vent design and screen rake — and you cannot know that until the thing is in your hands."
+    summary: "Dashboard, windshield and air vent in one box. That sounds like a compromise and is genuinely useful, because which mounting point works is dictated by your specific car's dash texture, vent design and screen rake — and you cannot know that until the thing is in your hands."
     pros:
       - "Three mounting options — one will fit your car"
       - "Clamp fits phones with cases up to large sizes"
@@ -98,7 +98,7 @@ faq:
   - q: "Do magnetic mounts damage phones?"
     a: "No. Modern phones are not affected by mount magnets, and MagSafe is designed around exactly this. The old concern came from magnetic media and mechanical compasses. Credit cards are still worth keeping away, and a magnetic ring stuck to the phone can interfere with wireless charging alignment."
   - q: "Is it legal to mount a phone on the windshield?"
-    a: "It varies by state, and several restrict windscreen mounting to specific zones — typically a small area in a lower corner — to avoid obstructing the driver's view. Check your local rules before choosing a windscreen mount, because a legal-elsewhere position can be an offence where you live."
+    a: "It varies by state, and several restrict windshield mounting to specific zones — typically a small area in a lower corner — to avoid obstructing the driver's view. Check your local rules before choosing a windshield mount, because a legal-elsewhere position can be an offense where you live."
   - q: "Which mount type is most secure over rough roads?"
     a: "A short-armed vent or dashboard mount, because vibration scales with arm length. Long telescopic arms wobble on anything but smooth tarmac. If you use the phone to record video or navigate on poor surfaces, choose the shortest arm that still puts the screen where you can see it."
   - q: "Will a mount work with a thick phone case?"
@@ -118,7 +118,7 @@ control, which is a real problem — see below.
 needs a smooth non-porous surface, and almost every modern dashboard is textured. That
 mismatch is why so many suction mounts end up in the footwell.
 
-**Windscreen.** The only surface where suction genuinely works well, because it's smooth
+**Windshield.** The only surface where suction genuinely works well, because it's smooth
 glass. It's also the most likely to be legally restricted — several US states limit
 where on the screen you may mount anything at all.
 

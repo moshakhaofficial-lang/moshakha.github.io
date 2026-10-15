@@ -22,7 +22,7 @@ faq:
   - q: "What order should I clean a car interior in?"
     a: "Top down and dry before wet: remove everything loose, then dust and vacuum from the headliner downward, then clean hard surfaces, then fabric or leather, then interior glass last. Cleaning glass first guarantees you will have to do it twice."
   - q: "What should I use on a car dashboard?"
-    a: "A damp low-pile microfibre towel and a mild interior cleaner. Avoid greasy silicone dressings — they create glare on the windscreen, attract dust, and can become sticky in heat. A matte finish is both safer to drive with and easier to maintain."
+    a: "A damp low-pile microfiber towel and a mild interior cleaner. Avoid greasy silicone dressings — they create glare on the windshield, attract dust, and can become sticky in heat. A matte finish is both safer to drive with and easier to maintain."
   - q: "How do I clean piano-black trim without scratching it?"
     a: "Blow or brush the dust off first, never wipe it dry. Piano black is the most scratch-prone surface in a modern car, and wiping dry dust across it is exactly how it gets covered in fine scratches. Then use a clean, damp, plush low-pile towel with no pressure."
   - q: "Can I use household cleaners inside my car?"
@@ -67,11 +67,11 @@ Same principle as the exterior: dry contact plus grit equals scratches.
 
 ## What to use on the dashboard
 
-A damp low-pile microfibre towel and a mild interior cleaner covers almost everything.
+A damp low-pile microfiber towel and a mild interior cleaner covers almost everything.
 
 What to avoid: **greasy silicone dressings**. They look impressive for a day, then:
 
-- Create glare on the inside of the windscreen, which is a genuine visibility problem
+- Create glare on the inside of the windshield, which is a genuine visibility problem
 - Attract dust, so the surface looks worse within a week
 - Can go sticky in heat
 - Build up unevenly over repeated applications
@@ -90,7 +90,7 @@ control without pushing moisture into the electronics.
 ## Fabric and carpet
 
 Vacuum thoroughly *before* introducing any moisture. Wet dirt becomes mud and works
-deeper into the fibres.
+deeper into the fibers.
 
 For stains, work from the outside inward so you don't spread the edge, and blot rather
 than scrub. Use as little liquid as will do the job — over-wetting carpet means moisture
@@ -111,7 +111,7 @@ Keep interior towels separate from paint towels and from glass towels. An interi
 picks up dressings and cleaners that will streak glass immediately, and a towel that has
 been on carpet carries grit you don't want anywhere near piano black.
 
-[Microfibre care](/blog/microfibre-care-101/) covers the laundering categories, and
+[Microfiber care](/blog/microfibre-care-101/) covers the laundering categories, and
 [our towel guide](/guides/best-microfiber-towels-for-cars/) covers which pile depth suits
 which surface.
 

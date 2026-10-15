@@ -1,12 +1,12 @@
 ---
-title: "Microfibre Care 101: How to Wash Towels Without Ruining Them"
-description: "Fabric softener destroys microfibre. Here's the correct wash routine, why heat matters, how to sort towels by job, and how to revive absorbency."
+title: "Microfiber Care 101: How to Wash Towels Without Ruining Them"
+description: "Fabric softener destroys microfiber. Here's the correct wash routine, why heat matters, how to sort towels by job, and how to revive absorbency."
 targetKeyword: "how to wash microfiber towels"
 publishDate: 2026-02-07
 updatedDate: 2026-08-24
 author: "Moshakha Editorial"
-image: "../../assets/images/microfibre-laundry.webp"
-imageAlt: "Side-by-side list of microfibre laundry dos and donts"
+image: "../../assets/images/microfiber-laundry.webp"
+imageAlt: "Side-by-side list of microfiber laundry dos and donts"
 featured: true
 related:
   - "guides/microfiber-gsm-explained"
@@ -16,44 +16,44 @@ related:
   - "blog/how-often-to-replace-wash-mitt"
   - "blog/edgeless-vs-edged-microfiber-towels"
 faq:
-  - q: "Can you use fabric softener on microfibre towels?"
-    a: "No. This is the single most damaging thing you can do to microfibre. Softener works by depositing a waxy coating on fibres, which fills the microscopic gaps that make microfibre absorbent. A softened towel repels water instead of drinking it, and smears product instead of lifting it. The damage is cumulative and often permanent."
-  - q: "What temperature should I wash microfibre at?"
-    a: "Cold to warm, up to about 40°C. Microfibre is polyester and polyamide — both plastics. High heat melts and fuses the split fibre tips that do the actual cleaning, and once fused they never recover. Cold water also releases trapped grit better than hot."
-  - q: "Can I tumble dry microfibre towels?"
-    a: "Only on low or no heat, and air-drying is better. High dryer heat causes the same fibre fusion as a hot wash. Never use dryer sheets — they deposit the same waxy coating as fabric softener. Clean the lint trap first, or your microfibre will come out covered in cotton lint."
-  - q: "Why do my microfibre towels leave streaks?"
+  - q: "Can you use fabric softener on microfiber towels?"
+    a: "No. This is the single most damaging thing you can do to microfiber. Softener works by depositing a waxy coating on fibers, which fills the microscopic gaps that make microfiber absorbent. A softened towel repels water instead of drinking it, and smears product instead of lifting it. The damage is cumulative and often permanent."
+  - q: "What temperature should I wash microfiber at?"
+    a: "Cold to warm, up to about 40°C. Microfiber is polyester and polyamide — both plastics. High heat melts and fuses the split fiber tips that do the actual cleaning, and once fused they never recover. Cold water also releases trapped grit better than hot."
+  - q: "Can I tumble dry microfiber towels?"
+    a: "Only on low or no heat, and air-drying is better. High dryer heat causes the same fiber fusion as a hot wash. Never use dryer sheets — they deposit the same waxy coating as fabric softener. Clean the lint trap first, or your microfiber will come out covered in cotton lint."
+  - q: "Why do my microfiber towels leave streaks?"
     a: "Usually residue, not the towel. The three common causes are fabric softener contamination, product build-up from wax or dressings that was never washed out, and using a high-pile towel on glass. Try a hot-water strip wash first; if streaking persists on glass only, you need a low-pile towel rather than a cleaner one."
-  - q: "How do I restore absorbency to old microfibre towels?"
-    a: "Do a strip wash: run them alone with no detergent, adding a cup of white vinegar to the wash, then a second rinse cycle. Vinegar dissolves the waxy softener and mineral build-up that block the fibres. This recovers towels that are contaminated, but cannot repair fibres already melted by heat."
-  - q: "Should I wash microfibre with other laundry?"
-    a: "Never. Microfibre attracts and holds lint, so washing it with cotton produces towels covered in fibres that transfer straight onto your paint. Wash microfibre only with other microfibre, and keep the categories separated by job."
-  - q: "How long should microfibre towels last?"
+  - q: "How do I restore absorbency to old microfiber towels?"
+    a: "Do a strip wash: run them alone with no detergent, adding a cup of white vinegar to the wash, then a second rinse cycle. Vinegar dissolves the waxy softener and mineral build-up that block the fibers. This recovers towels that are contaminated, but cannot repair fibers already melted by heat."
+  - q: "Should I wash microfiber with other laundry?"
+    a: "Never. Microfiber attracts and holds lint, so washing it with cotton produces towels covered in fibers that transfer straight onto your paint. Wash microfiber only with other microfiber, and keep the categories separated by job."
+  - q: "How long should microfiber towels last?"
     a: "A quality towel that is laundered correctly should last 200 to 500 wash cycles. The same towel washed with softener and dried on high heat can be functionally dead within five. Laundering habits affect towel life far more than what you paid for it."
 ---
 
-Most microfibre towels don't wear out. They get **ruined** — usually in the washing
+Most microfiber towels don't wear out. They get **ruined** — usually in the washing
 machine, usually within the first few cycles, and usually by someone doing exactly what
 they'd do with bath towels.
 
 A well-made drying towel should survive several hundred washes. Put it through a hot
 cycle with fabric softener and it will be measurably worse after one, and close to
 useless after five. The price you paid makes very little difference to this. Laundering
-habits are the dominant factor in how long microfibre lasts, and they cost nothing to
+habits are the dominant factor in how long microfiber lasts, and they cost nothing to
 get right.
 
-## How microfibre actually works
+## How microfiber actually works
 
 This matters, because it explains every rule below.
 
-Microfibre is polyester and polyamide extruded into filaments finer than a human hair,
-then **split** — each fibre is divided into many smaller wedge-shaped strands. Those
+Microfiber is polyester and polyamide extruded into filaments finer than a human hair,
+then **split** — each fiber is divided into many smaller wedge-shaped strands. Those
 splits create an enormous surface area and thousands of tiny hooks that grab dirt and
 draw water up by capillary action.
 
 Two things destroy that structure:
 
-1. **Heat**, which melts the split tips and fuses them back together. A fused fibre is
+1. **Heat**, which melts the split tips and fuses them back together. A fused fiber is
    just plastic string. This is irreversible.
 2. **Coatings**, which fill the gaps between splits so water can't be drawn in. This is
    usually reversible — see the strip wash below.
@@ -65,7 +65,7 @@ Every rule that follows is one of those two problems.
 ### 1. Never use fabric softener
 
 The most important line on this page. Softener works by depositing a waxy film on
-fibres to make them feel soft. On cotton that's pleasant. On microfibre it fills the
+fibers to make them feel soft. On cotton that's pleasant. On microfiber it fills the
 capillary gaps that do the work.
 
 A softened drying towel pushes water around instead of absorbing it. A softened glass
@@ -85,20 +85,20 @@ worn-out towel — and it's usually fixable. See the strip wash below.
 Wash cold to warm, maximum 40°C. Air-dry where you can; tumble dry on low or no heat
 only.
 
-Hot water and hot dryers fuse split fibres. Unlike softener contamination, there is no
+Hot water and hot dryers fuse split fibers. Unlike softener contamination, there is no
 recovery from this — the towel is permanently less effective.
 
 Cold water also releases embedded grit more readily than hot, which is what you actually
 want from a wash.
 
-### 3. Wash microfibre alone
+### 3. Wash microfiber alone
 
-Microfibre attracts lint aggressively. Wash it with cotton and it will come out coated
-in fibres that transfer directly onto your paint and glass on the next use.
+Microfiber attracts lint aggressively. Wash it with cotton and it will come out coated
+in fibers that transfer directly onto your paint and glass on the next use.
 
-Microfibre with microfibre. Nothing else, ever.
+Microfiber with microfiber. Nothing else, ever.
 
-### 4. Sort by job, not by colour
+### 4. Sort by job, not by color
 
 This is the step most people skip, and it causes more streaking complaints than anything
 except softener. Wash these categories **separately**:
@@ -115,7 +115,7 @@ isn't faulty; it's carrying someone else's product.
 ### 5. Use the right detergent, and less of it
 
 A plain liquid detergent with no softeners, no brighteners and no scent works fine — a
-dedicated microfibre detergent is better but not essential. Avoid powder, which doesn't
+dedicated microfiber detergent is better but not essential. Avoid powder, which doesn't
 fully dissolve at low temperatures and leaves gritty residue in the pile.
 
 Watch heavily scented and "ultra" detergents specifically — they often contain softening
@@ -143,7 +143,7 @@ dead. A **strip wash** often brings them back:
 The vinegar dissolves waxy softener residue and mineral deposits from hard water. Repeat
 once if the improvement is partial.
 
-**What this cannot fix:** fibres melted by heat. If a strip wash makes no difference and
+**What this cannot fix:** fibers melted by heat. If a strip wash makes no difference and
 the pile feels stiff or slightly crunchy rather than plush, the towel is finished.
 
 ## When to retire a towel
@@ -165,7 +165,7 @@ paint pile by accident.
 |---|---|
 | Wash cold or warm, max 40°C | Wash hot |
 | Air dry, or tumble on low/no heat | Tumble on high heat |
-| Wash microfibre alone | Mix with cotton |
+| Wash microfiber alone | Mix with cotton |
 | Separate by job — glass, paint, wax, wheels | Wash all towels together |
 | Use plain detergent, sparingly | Use softener or dryer sheets |
 | Strip wash with vinegar to restore | Assume a repellent towel is dead |

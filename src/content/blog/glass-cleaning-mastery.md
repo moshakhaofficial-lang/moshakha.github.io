@@ -23,14 +23,14 @@ faq:
     a: "Clean with one slightly damp low-pile towel, then immediately buff dry with a second completely dry low-pile towel. The first removes dirt, the second removes what the first left behind. It resolves almost all residual streaking."
   - q: "Should I spray cleaner on the glass or the towel?"
     a: "On the towel. Spraying directly onto glass causes overspray onto trim and paint, and encourages using far more product than needed. Excess cleaner is itself a common cause of streaking, because there is more residue to remove than the towel can lift."
-  - q: "Why is the inside of the windscreen so hard to clean?"
+  - q: "Why is the inside of the windshield so hard to clean?"
     a: "Because it accumulates an oily film from plastics off-gassing in heat, which ordinary glass cleaner struggles with. Clean it in two passes — one to cut the film, one to finish — and use a dedicated interior glass towel that has never touched wax or dressing."
   - q: "Can I use household glass cleaner on car windows?"
     a: "Avoid anything containing ammonia. It damages window tint over time and degrades rubber seals and some interior plastics. Use an ammonia-free automotive glass cleaner, or a dedicated interior-safe formula for tinted windows."
 ---
 
 Glass is where good detailing work most visibly falls apart. The paint looks perfect and
-then the sun hits the windscreen and shows every pass you made.
+then the sun hits the windshield and shows every pass you made.
 
 The fix is almost never a different cleaner.
 
@@ -38,7 +38,7 @@ The fix is almost never a different cleaner.
 
 The single most common cause of streaky glass is **using too much pile**.
 
-Glass is perfectly smooth. A deep, plush towel can't press evenly against it — the fibres
+Glass is perfectly smooth. A deep, plush towel can't press evenly against it — the fibers
 bridge across the surface rather than making flat contact, so the last thin film of
 moisture and cleaner gets moved around instead of lifted off.
 
@@ -66,7 +66,7 @@ If the glass is warm, the cleaner evaporates before you can buff it — and evap
 leaves behind every dissolved solid that was in the product and the dirt. Those deposits
 are the streaks.
 
-Work in shade, on cool glass. If the windscreen is hot, wait.
+Work in shade, on cool glass. If the windshield is hot, wait.
 
 ## Technique details that matter
 
@@ -79,7 +79,7 @@ Work in shade, on cool glass. If the windscreen is hot, wait.
 - **Do the top edge last.** Lower the window an inch and clean the strip that hides in
   the seal — it's the bit that reappears as a dirty line the first time you open it.
 
-## The inside of the windscreen
+## The inside of the windshield
 
 The hardest glass on the car, because it collects an oily film from interior plastics
 off-gassing in the heat. Ordinary cleaner smears it around rather than cutting it.
@@ -92,7 +92,7 @@ will deposit product onto the screen and make it worse than when you started.
 
 Ammonia-based household glass cleaner damages window tint over time and degrades rubber
 seals and some interior plastics. If the car has aftermarket tint, ammonia will
-eventually cause it to bubble and discolour.
+eventually cause it to bubble and discolor.
 
 Use an ammonia-free automotive formula. It's not a meaningful price difference.
 
@@ -100,6 +100,6 @@ Use an ammonia-free automotive formula. It's not a meaningful price difference.
 
 The towel itself may be contaminated — fabric softener residue or product carried over
 from wax towels. Our guide to
-[why microfibre towels leave streaks](/how-to/why-microfiber-towels-leave-streaks/)
+[why microfiber towels leave streaks](/how-to/why-microfiber-towels-leave-streaks/)
 covers the strip wash that fixes it, and
-[microfibre care](/blog/microfibre-care-101/) covers keeping it from happening again.
+[microfiber care](/blog/microfibre-care-101/) covers keeping it from happening again.

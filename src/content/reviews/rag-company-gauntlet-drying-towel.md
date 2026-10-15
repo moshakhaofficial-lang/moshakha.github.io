@@ -1,6 +1,6 @@
 ---
 title: "The Rag Company Gauntlet Review: Worth the Premium?"
-description: "A 900 GSM 70/30 Korean microfibre towel at a premium price. We look at whether the blend ratio and size justify costing three times a supermarket towel."
+description: "A 900 GSM 70/30 Korean microfiber towel at a premium price. We look at whether the blend ratio and size justify costing three times a supermarket towel."
 targetKeyword: "the rag company gauntlet review"
 publishDate: 2026-08-24
 author: "Moshakha Editorial"
@@ -8,7 +8,7 @@ productName: "The Gauntlet Drying Towel (900 GSM)"
 brand: "The Rag Company"
 asin: "B083KPZR9C"
 image: "../../assets/images/product-gauntlet-towel.jpg"
-imageAlt: "The Rag Company Gauntlet microfibre drying towel"
+imageAlt: "The Rag Company Gauntlet microfiber drying towel"
 rating: 4.7
 price: "$25–$35 (2-pack)"
 verdict: "The best default drying towel for a normal car. Its 15x24in size is the real feature — big enough to dry a panel in one pass, small enough to control one-handed — and the 70/30 blend out-absorbs cheaper 80/20 towels at higher GSM. It is not the right choice for a full-size SUV."
@@ -20,7 +20,7 @@ pros:
   - "Holds up well past 50 wash cycles when laundered correctly"
 cons:
   - "Needs wringing out on anything larger than a mid-size sedan"
-  - "Roughly three times the price of supermarket microfibre"
+  - "Roughly three times the price of supermarket microfiber"
   - "900 GSM is below the ideal range for one-pass truck drying"
 related:
   - "guides/best-car-drying-towels"
@@ -38,14 +38,14 @@ faq:
 ---
 
 The Gauntlet is the towel most detailing forums land on when someone asks what to buy
-first, and it costs roughly three times what a supermarket microfibre towel does. That
+first, and it costs roughly three times what a supermarket microfiber towel does. That
 gap is worth interrogating.
 
 ## What you're actually paying for
 
 Two things, and neither is the brand name.
 
-**The blend ratio.** Most budget microfibre is 80/20 polyester to polyamide. The
+**The blend ratio.** Most budget microfiber is 80/20 polyester to polyamide. The
 Gauntlet is 70/30. Polyamide is the component that actually absorbs, and it's the
 expensive one — which is why cheap towels use less of it. The practical effect is that
 this 900 GSM towel out-absorbs many 1100+ GSM budget towels, because density without
@@ -76,7 +76,7 @@ risk on soft paint. A suede or edgeless border removes that risk entirely.
 
 Reported longevity is good past 50 wash cycles, though this depends far more on
 laundering than on the towel. Fabric softener will ruin this towel just as fast as it
-ruins a cheap one — see our [microfibre care guide](/blog/microfibre-care-101/).
+ruins a cheap one — see our [microfiber care guide](/blog/microfibre-care-101/).
 
 ## Should you buy it?
 

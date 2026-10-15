@@ -4,11 +4,11 @@ description: "Semi-universal mats you trim along molded guide lines. The trimmin
 targetKeyword: "weathertech trim to fit mats review"
 publishDate: 2026-08-28
 author: "Moshakha Editorial"
-productName: "Trim-to-Fit Floor Mats, 3-Piece (Grey)"
+productName: "Trim-to-Fit Floor Mats, 3-Piece (Gray)"
 brand: "WeatherTech"
 asin: "B01BNKW4M2"
 image: "../../assets/images/product-weathertech-mats.jpg"
-imageAlt: "WeatherTech Trim-to-Fit rear floor mats installed in a car, tan colour with raised ridged tread pattern"
+imageAlt: "WeatherTech Trim-to-Fit rear floor mats installed in a car, tan color with raised ridged tread pattern"
 rating: 4.4
 price: "$60–$95"
 verdict: "Semi-universal mats trimmed to your car's footwell along molded guide lines, sitting between cheap universal mats and expensive laser-measured liners. The trimming is the actual point — a universal mat that isn't cut to fit slides underfoot, and a sliding mat near the pedals is a genuine safety issue, not just an untidy one. Cutting is permanent, so measure before you commit."
