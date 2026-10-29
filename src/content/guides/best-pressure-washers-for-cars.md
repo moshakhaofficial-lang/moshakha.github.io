@@ -5,6 +5,7 @@ targetKeyword: "best pressure washer for cars"
 publishDate: 2026-08-24
 author: "Moshakha Editorial"
 related:
+  - "guides/pressure-washer-psi-max-vs-rated"
   - "how-to/two-bucket-car-wash-method"
   - "guides/best-car-wash-soap"
   - "how-to/how-to-avoid-swirl-marks"

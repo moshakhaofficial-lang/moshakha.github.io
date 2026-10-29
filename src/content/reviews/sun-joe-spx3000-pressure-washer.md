@@ -22,6 +22,7 @@ cons:
   - "1.1 GPM is modest; flow matters more than pressure for rinsing large panels"
   - "Plastic fittings are the usual long-term weak point on electric units"
 related:
+  - "guides/pressure-washer-psi-max-vs-rated"
   - "guides/best-pressure-washers-for-cars"
   - "guides/best-car-wash-soap"
   - "how-to/how-to-avoid-swirl-marks"

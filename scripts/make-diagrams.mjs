@@ -354,6 +354,27 @@ diagrams['jump-starter-published-specs'] = ladder(
   ],
 );
 
+diagrams['psi-max-vs-rated'] = twoColumn(
+  'Two Sun Joe machines, two PSI bases',
+  'Headline figures 1.5% apart. Rated pressure 35% apart. Both quoted from Sun Joe\u2019s own listings, 29 October 2026',
+  [
+    { label: 'SPX3000 \u2014 \u201c2030 PSI\u201d', color: C.good, bg: C.goodBg, lines: [
+      'Headline figure: 2030 PSI',
+      'Stated basis: certified rated \u2014 the same number',
+      'Flow: 1.2 GPM, also certified rated',
+      'Both figures share one basis, so PSI \u00d7 GPM is meaningful',
+      'Listed at $169.00',
+    ] },
+    { label: 'GO \u2014 \u201c2000 PSI Max\u201d', color: C.bad, bg: C.badBg, lines: [
+      'Headline figure: 2000 PSI max',
+      'Rated pressure: 1500 PSI \u2014 25% lower',
+      'Flow: 1.7 GPM max; rated flow not published',
+      'Max pressure and max flow occur at different operating points',
+      'Listed at $229.99',
+    ] },
+  ],
+);
+
 diagrams['gsm-by-vehicle'] = ladder(
   'Matching GSM to vehicle size',
   '1600 GSM is correct for one of these and overkill for the other three',

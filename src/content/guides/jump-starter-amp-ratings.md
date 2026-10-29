@@ -8,6 +8,7 @@ image: "../../assets/images/jump-starter-published-specs.webp"
 imageAlt: "Chart showing that all 46 jump starters publish a headline amp figure, 30 publish engine size, 3 publish capacity, and none publish cranking amps"
 featured: true
 related:
+  - "guides/pressure-washer-psi-max-vs-rated"
   - "guides/best-jump-starters"
   - "reviews/noco-boost-gb40-jump-starter"
   - "reviews/gooloo-gp4000-jump-starter"
