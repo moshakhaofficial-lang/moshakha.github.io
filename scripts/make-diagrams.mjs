@@ -8,9 +8,10 @@
  * Run: node scripts/make-diagrams.mjs
  */
 import sharp from 'sharp';
-import { mkdir } from 'node:fs/promises';
+import { mkdir, writeFile } from 'node:fs/promises';
 
 const OUT = 'src/assets/images';
+const PUBLIC_OUT = 'public/diagrams';
 const W = 1200, H = 675;
 
 // Field Manual palette — mirrors src/styles/global.css so diagrams and page
@@ -1127,8 +1128,20 @@ diagrams['pre-rinse-sequence'] = steps(
 );
 
 await mkdir(OUT, { recursive: true });
+/**
+ * Diagrams are written twice. src/assets/images is what articles import, so Astro
+ * optimises and content-hashes it. public/diagrams is a byte copy at a permanent,
+ * unhashed URL, because /diagrams/ invites other sites to embed these: a hashed
+ * filename would break every third-party embed the next time this script runs.
+ */
+await mkdir(PUBLIC_OUT, { recursive: true });
+const titles = {};
 for (const [name, svg] of Object.entries(diagrams)) {
-  await sharp(Buffer.from(svg)).webp({ quality: 90 }).toFile(`${OUT}/${name}.webp`);
+  const buf = await sharp(Buffer.from(svg)).webp({ quality: 90 }).toBuffer();
+  await writeFile(`${OUT}/${name}.webp`, buf);
+  await writeFile(`${PUBLIC_OUT}/${name}.webp`, buf);
+  const m = svg.match(/<title>([^<]*)<\/title>/);
+  if (m) titles[name] = m[1];
   console.log(`  ${name}.webp`);
 }
-console.log(`\n${Object.keys(diagrams).length} diagrams written to ${OUT}`);
+console.log(`\n${Object.keys(diagrams).length} diagrams written to ${OUT} and ${PUBLIC_OUT}`);
