@@ -22,6 +22,7 @@ cons:
   - "Protection circuitry is competent but less proven than NOCO's"
   - "Overkill, and overweight, for a four-cylinder commuter car"
 related:
+  - "guides/jump-starter-amp-ratings"
   - "guides/best-jump-starters"
   - "how-to/how-to-jump-start-a-car"
   - "blog/can-you-leave-a-jump-starter-in-a-hot-car"

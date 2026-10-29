@@ -5,6 +5,7 @@ targetKeyword: "best jump starter"
 publishDate: 2026-08-24
 author: "Moshakha Editorial"
 related:
+  - "guides/jump-starter-amp-ratings"
   - "reviews/gooloo-gp4000-jump-starter"
   - "how-to/how-to-jump-start-a-car"
   - "guides/best-tire-inflators"

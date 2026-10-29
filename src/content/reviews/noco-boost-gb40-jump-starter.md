@@ -22,6 +22,7 @@ cons:
   - "1000A is not enough for large diesels — that's a GB50 or GB70 job"
   - "No built-in air compressor, so pair it with a separate inflator"
 related:
+  - "guides/jump-starter-amp-ratings"
   - "guides/best-jump-starters"
   - "how-to/how-to-jump-start-a-car"
   - "guides/best-car-emergency-kit"
