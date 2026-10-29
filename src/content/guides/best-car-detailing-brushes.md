@@ -5,6 +5,8 @@ targetKeyword: "best car detailing brush set"
 publishDate: 2026-09-11
 author: "Moshakha Editorial"
 related:
+  - "reviews/brush-hero-wheel-brush"
+  - "reviews/drill-brush-automotive-cleaning-kit"
   - "how-to/how-to-use-a-clay-bar"
   - "blog/wheel-rim-care"
   - "how-to/how-to-clean-wheel-wells"

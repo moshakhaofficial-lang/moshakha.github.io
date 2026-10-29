@@ -6,6 +6,7 @@ publishDate: 2026-08-24
 updatedDate: 2026-10-15
 author: "Moshakha Editorial"
 related:
+  - "reviews/chemical-guys-extreme-bodywash-wax"
   - "reviews/meguiars-gold-class-car-wash"
   - "how-to/two-bucket-car-wash-method"
   - "guides/best-car-wash-mitts"

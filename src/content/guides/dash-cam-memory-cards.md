@@ -5,6 +5,7 @@ targetKeyword: "best dash cam memory card"
 publishDate: 2026-09-11
 author: "Moshakha Editorial"
 related:
+  - "reviews/samsung-pro-endurance-256gb"
   - "guides/best-dash-cams"
   - "how-to/how-to-install-a-dash-cam"
   - "blog/does-12v-socket-stay-on-with-ignition-off"

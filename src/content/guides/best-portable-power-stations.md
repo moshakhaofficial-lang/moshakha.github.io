@@ -5,6 +5,7 @@ targetKeyword: "best portable power station for car"
 publishDate: 2026-09-11
 author: "Moshakha Editorial"
 related:
+  - "reviews/anker-solix-c300-dc"
   - "reviews/ecoflow-river-2-max"
   - "guides/best-jump-starters"
   - "guides/best-car-emergency-kit"

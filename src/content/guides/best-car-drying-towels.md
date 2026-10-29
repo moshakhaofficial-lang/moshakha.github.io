@@ -8,6 +8,7 @@ image: "../../assets/images/weave-types.webp"
 imageAlt: "Cross-sections of twisted loop, plush and waffle weave microfiber, each labeled with the job it suits"
 featured: true
 related:
+  - "reviews/rag-company-liquid8r-drying-towel"
   - "guides/microfiber-gsm-explained"
   - "blog/microfibre-care-101"
   - "guides/best-car-wash-mitts"
