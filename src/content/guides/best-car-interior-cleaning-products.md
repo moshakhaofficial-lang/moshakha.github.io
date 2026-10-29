@@ -6,6 +6,9 @@ publishDate: 2026-08-24
 author: "Moshakha Editorial"
 featured: true
 related:
+  - "reviews/chemical-guys-total-interior-cleaner"
+  - "reviews/invisible-glass-aerosol-cleaner"
+  - "reviews/chemical-guys-leather-cleaner-kit"
   - "blog/perfect-interior-detail"
   - "reviews/thisworx-car-vacuum"
   - "how-to/how-to-clean-car-floor-mats"
@@ -17,9 +20,6 @@ related:
   - "how-to/how-to-clean-steering-wheel"
   - "blog/how-to-get-smoke-smell-out-of-a-car"
   - "blog/corded-vs-cordless-car-vacuum"
-  - "reviews/chemical-guys-total-interior-cleaner"
-  - "reviews/invisible-glass-aerosol-cleaner"
-  - "reviews/chemical-guys-leather-cleaner-kit"
 comparisonNote: "Organized by surface, because the wrong chemistry on a dashboard is permanent."
 picks:
   - rank: 1

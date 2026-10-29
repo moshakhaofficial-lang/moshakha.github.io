@@ -6,6 +6,7 @@ publishDate: 2026-08-24
 updatedDate: 2026-10-15
 author: "Moshakha Editorial"
 related:
+  - "reviews/meguiars-gold-class-car-wash"
   - "how-to/two-bucket-car-wash-method"
   - "guides/best-car-wash-mitts"
   - "how-to/how-to-avoid-swirl-marks"
@@ -15,7 +16,6 @@ related:
   - "blog/snow-foam-vs-car-shampoo"
   - "blog/wash-a-car-in-direct-sunlight"
   - "blog/how-much-car-wash-soap-per-bucket"
-  - "reviews/meguiars-gold-class-car-wash"
 comparisonNote: "All picks here are pH-neutral and safe over wax, sealant and ceramic coatings. Prices move constantly, so we link out for live pricing rather than quoting figures that go stale."
 picks:
   - rank: 1

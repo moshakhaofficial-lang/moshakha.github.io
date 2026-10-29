@@ -5,12 +5,12 @@ targetKeyword: "best portable power station for car"
 publishDate: 2026-09-11
 author: "Moshakha Editorial"
 related:
+  - "reviews/ecoflow-river-2-max"
   - "guides/best-jump-starters"
   - "guides/best-car-emergency-kit"
   - "guides/best-tire-inflators"
   - "blog/does-12v-socket-stay-on-with-ignition-off"
   - "reviews/jackery-explorer-300-plus"
-  - "reviews/ecoflow-river-2-max"
 comparisonNote: "Sorted by realistic delivered energy and battery chemistry rather than the headline watt-hour number. Prices move constantly, so we link out for live pricing rather than quoting figures that go stale."
 picks:
   - rank: 1

@@ -5,12 +5,12 @@ targetKeyword: "best tire shine"
 publishDate: 2026-08-24
 author: "Moshakha Editorial"
 related:
+  - "reviews/chemical-guys-tire-kicker"
   - "blog/wheel-rim-care"
   - "how-to/two-bucket-car-wash-method"
   - "guides/best-car-wash-soap"
   - "reviews/meguiars-endurance-tire-gel"
   - "blog/do-tire-dressings-damage-tires"
-  - "reviews/chemical-guys-tire-kicker"
 comparisonNote: "Three picks, because these are the three worth recommending — a longer list would be padding."
 picks:
   - rank: 1
