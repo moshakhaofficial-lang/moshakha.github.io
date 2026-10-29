@@ -11,6 +11,7 @@ related:
   - "reviews/miracase-magsafe-car-mount"
   - "blog/phone-mount-placement-and-sightlines"
   - "blog/magsafe-car-mounts-and-phone-heat"
+  - "reviews/miracase-3-in-1-phone-holder"
 comparisonNote: "Sorted by mounting method, because that is the decision — brand is secondary."
 picks:
   - rank: 1
@@ -159,7 +160,7 @@ suction failure in heat and cold, and clip breakage. No lab testing. No paid pla
 ## Before you fit anything
 
 **Clean the surface properly.** Both suction cups and adhesive pads fail on the oily
-plasticiser film that builds up on interior glass and dashboards. Most "the mount won't
+plasticizer film that builds up on interior glass and dashboards. Most "the mount won't
 stick" complaints are a cleaning problem, not a product problem.
 
 An alcohol-based interior cleaner or a proper glass cleaner, then let it dry fully. Our

@@ -33,7 +33,7 @@ picks:
       - "More expensive than a basic chenille mitt"
       - "The pad has no wrist cuff, so it can slip when soapy"
   - rank: 2
-    name: "Chenille Microfibre Wash Mitt"
+    name: "Chenille Microfiber Wash Mitt"
     brand: "Chemical Guys"
     award: "Best budget"
     asin: "B003TTL0TE"
@@ -52,7 +52,7 @@ picks:
       - "Noodles tangle and mat over time"
       - "Slower to release trapped grit than a 70/30 microfiber mitt"
   - rank: 3
-    name: "Microfibre Dual Wash Mitt"
+    name: "Microfiber Dual Wash Mitt"
     brand: "Adam's Polishes"
     award: "Best for bugs and tar"
     asin: "B07BH439BF"

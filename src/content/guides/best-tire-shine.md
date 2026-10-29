@@ -10,6 +10,7 @@ related:
   - "guides/best-car-wash-soap"
   - "reviews/meguiars-endurance-tire-gel"
   - "blog/do-tire-dressings-damage-tires"
+  - "reviews/chemical-guys-tire-kicker"
 comparisonNote: "Three picks, because these are the three worth recommending — a longer list would be padding."
 picks:
   - rank: 1
@@ -61,7 +62,7 @@ picks:
     rating: 4.3
     price: "$8–$14"
     bestFor: "Stripping old dressing before you apply new — the reason your tires go brown"
-    summary: "Not a shine product, and the most important thing on this page. Dressing applied over old dressing is why tires turn brown a few days later: the build-up oxidises. Scrub the sidewall back to clean rubber first and any dressing performs better and lasts longer."
+    summary: "Not a shine product, and the most important thing on this page. Dressing applied over old dressing is why tires turn brown a few days later: the build-up oxidizes. Scrub the sidewall back to clean rubber first and any dressing performs better and lasts longer."
     pros:
       - "Removes old dressing build-up, which is the actual cause of browning"
       - "Foaming formula clings to vertical sidewalls"
@@ -71,7 +72,7 @@ picks:
       - "Check compatibility before using on the wheel face"
 faq:
   - q: "Why do my tires turn brown a few days after applying tire shine?"
-    a: "Because you dressed over old dressing. The build-up oxidises and goes brown, and each new coat traps more of it. The fix is not a better dressing — it is scrubbing the sidewall back to clean rubber with a dedicated tire cleaner and a stiff brush before applying anything."
+    a: "Because you dressed over old dressing. The build-up oxidizes and goes brown, and each new coat traps more of it. The fix is not a better dressing — it is scrubbing the sidewall back to clean rubber with a dedicated tire cleaner and a stiff brush before applying anything."
   - q: "Gel or spray tire shine — which is better?"
     a: "Gel lasts longer and does not sling onto your paint, but has to be worked in with an applicator pad. Spray is much faster and more versatile across trim, but flings onto paint and brake discs unless you spray it onto a pad rather than the tire. For a car you care about, gel."
   - q: "What causes tire shine to sling onto my paint?"
@@ -91,7 +92,7 @@ one people most reliably get wrong, in two specific ways.
 
 This is why tires go brown.
 
-Old dressing does not simply wear away. It builds up, oxidises, and turns a dull brown
+Old dressing does not simply wear away. It builds up, oxidizes, and turns a dull brown
 that shows through everything applied on top of it. Each new coat traps another layer.
 People blame the product and buy a different one, which then browns the same way.
 

@@ -17,6 +17,9 @@ related:
   - "how-to/how-to-clean-steering-wheel"
   - "blog/how-to-get-smoke-smell-out-of-a-car"
   - "blog/corded-vs-cordless-car-vacuum"
+  - "reviews/chemical-guys-total-interior-cleaner"
+  - "reviews/invisible-glass-aerosol-cleaner"
+  - "reviews/chemical-guys-leather-cleaner-kit"
 comparisonNote: "Organized by surface, because the wrong chemistry on a dashboard is permanent."
 picks:
   - rank: 1
@@ -86,10 +89,10 @@ picks:
     rating: 4.7
     price: "$14–$20 (2 × 19oz)"
     bestFor: "The oily film on the inside of the windshield that normal cleaner smears"
-    summary: "Ammonia-free and tint-safe, which is the specification that matters — ammonia degrades aftermarket tint and interior plastics over time. The aerosol delivers a fine, even mist that cuts the plasticiser haze interior glass accumulates, and which pump sprays tend to push around."
+    summary: "Ammonia-free and tint-safe, which is the specification that matters — ammonia degrades aftermarket tint and interior plastics over time. The aerosol delivers a fine, even mist that cuts the plasticizer haze interior glass accumulates, and which pump sprays tend to push around."
     pros:
       - "Ammonia-free, so safe on tint and interior plastics"
-      - "Cuts the interior plasticiser film most cleaners smear"
+      - "Cuts the interior plasticizer film most cleaners smear"
       - "Fine aerosol mist gives even coverage"
     cons:
       - "Aerosol overspray reaches trim — mask or spray onto the towel"
