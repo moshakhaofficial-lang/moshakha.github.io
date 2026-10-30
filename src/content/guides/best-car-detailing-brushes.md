@@ -4,6 +4,8 @@ description: "Boar bristle and synthetic do different jobs, and drill brushes ar
 targetKeyword: "best car detailing brush set"
 publishDate: 2026-09-11
 author: "Moshakha Editorial"
+image: "../../assets/images/contamination-chain.webp"
+imageAlt: "Why brushes used on wheels must never touch paint afterwards"
 related:
   - "reviews/brush-hero-wheel-brush"
   - "reviews/drill-brush-automotive-cleaning-kit"

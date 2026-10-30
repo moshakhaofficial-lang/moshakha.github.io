@@ -4,6 +4,8 @@ description: "Pre-made emergency kit boxes are mostly filler. The three things t
 targetKeyword: "best car emergency kit"
 publishDate: 2026-08-25
 author: "Moshakha Editorial"
+image: "../../assets/images/jump-starter-storage.webp"
+imageAlt: "Where a lithium jump starter should be stored in a car"
 related:
   - "guides/best-jump-starters"
   - "guides/best-tire-inflators"

@@ -4,6 +4,8 @@ description: "Tire shine fails for two reasons — skipped prep and product slin
 targetKeyword: "best tire shine"
 publishDate: 2026-08-24
 author: "Moshakha Editorial"
+image: "../../assets/images/tire-dressing-types.webp"
+imageAlt: "Whether tire dressings damage tires, by dressing type"
 related:
   - "reviews/armor-all-extreme-wheel-tire-cleaner"
   - "reviews/chemical-guys-tire-kicker"

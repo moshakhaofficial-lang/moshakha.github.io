@@ -10,6 +10,7 @@ asin: "B001TJ3HUG"
 image: "../../assets/images/product-cg-leather-kit.jpg"
 imageAlt: "Chemical Guys leather cleaner and leather conditioner bottle pair"
 rating: 4.5
+price: "$22–$32 (2 × 16oz)"
 verdict: "The two-step structure is the reason to buy this rather than a combined clean-and-condition spray. Conditioning over trapped grime seals dirt into the grain, and no single bottle avoids that. It is pH-balanced and safe on coated automotive leather, and it leaves a non-greasy finish — which matters because a slippery seat is genuinely unpleasant to drive on. Manage your expectations on what conditioner does to coated leather: appearance, not restoration."
 pros:
   - "Two-step approach removes soil before sealing anything in"

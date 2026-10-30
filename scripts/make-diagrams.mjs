@@ -12,6 +12,7 @@ import { mkdir, writeFile } from 'node:fs/promises';
 
 const OUT = 'src/assets/images';
 const PUBLIC_OUT = 'public/diagrams';
+const DATA_DIR = 'src/data';
 const W = 1200, H = 675;
 
 // Field Manual palette — mirrors src/styles/global.css so diagrams and page
@@ -25,7 +26,8 @@ const C = {
 const F = `-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif`;
 
 const frame = (title, sub, body) => `
-<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">
+<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img">
+  <title>${title}</title><desc>${sub}</desc>
   <rect width="${W}" height="${H}" fill="${C.bg}"/>
   <rect x="0" y="0" width="${W}" height="6" fill="${C.brand}"/>
   <text x="56" y="74" font-family="${F}" font-size="34" font-weight="700" fill="${C.ink}">${title}</text>
@@ -347,7 +349,7 @@ diagrams['jump-starter-published-specs'] = ladder(
   'What jump starter makers publish',
   '46 products, 4 brands, checked 29 October 2026 on each maker\u2019s own product pages',
   [
-    { label: 'Headline amp figure', desc: 'On every product \u2014 but labelled four different ways across four brands', note: '46 of 46', highlight: true },
+    { label: 'Headline amp figure', desc: 'On every product \u2014 but labeled four different ways across four brands', note: '46 of 46', highlight: true },
     { label: 'Rated engine size', desc: 'Liters of gas and diesel the unit claims to start. The figure you can actually compare', note: '30 of 46' },
     { label: 'Battery capacity (Wh or mAh)', desc: 'Stored energy \u2014 the number that would make packs comparable', note: '3 of 46' },
     { label: 'Cranking amps (SAE)', desc: 'The one standardised measurement. Published by nobody', note: '0 of 46', highlight: true },
@@ -372,6 +374,38 @@ diagrams['psi-max-vs-rated'] = twoColumn(
       'Max pressure and max flow occur at different operating points',
       'Listed at $229.99',
     ] },
+  ],
+);
+
+diagrams['loose-cargo-braking'] = twoColumn(
+  'Why trunk cargo gets secured',
+  'An object in a moving car is traveling at the car\u2019s speed. Braking changes the car\u2019s speed, not the object\u2019s',
+  [
+    { label: 'Loose in the load area', color: C.bad, bg: C.badBg, lines: [
+      'Keeps moving forward when the car slows',
+      'Travels until something stops it \u2014 seat back, or the cabin',
+      'A full shopping bag carries real momentum',
+      'Slides and tips on every corner in normal driving',
+      'Noise is the symptom people notice; it is not the problem',
+    ] },
+    { label: 'Contained and anchored', color: C.good, bg: C.goodBg, lines: [
+      'Compartments stop items sliding into each other',
+      'Anchor straps or hooks tie the load to the car',
+      'Heavy items belong low and forward, against the seat back',
+      'Nothing above the seat line on a hatchback or SUV',
+      'Tidiness is the side benefit, not the reason',
+    ] },
+  ],
+);
+
+diagrams['cabin-heat-sources'] = ladder(
+  'What a windshield shade actually blocks',
+  'Sunlight through glass is absorbed by interior surfaces, which then heat the air. The dashboard is the biggest target',
+  [
+    { label: 'Direct sun onto the dashboard', desc: 'The largest dark surface in the sun\u2019s path, and the one a windshield shade covers', note: 'What a shade blocks', highlight: true },
+    { label: 'Sun through the side and rear glass', desc: 'Heats seats, door cards and the parcel shelf. A windshield shade does nothing here', note: 'Not covered' },
+    { label: 'Heat already stored in the structure', desc: 'Metal, trim and seat foam release heat for a long time after the sun moves off', note: 'Not covered' },
+    { label: 'Air with nowhere to go', desc: 'A sealed cabin traps what the surfaces give off. Cracking windows matters as much as shading', note: 'Not covered' },
   ],
 );
 
@@ -1151,7 +1185,7 @@ diagrams['pre-rinse-sequence'] = steps(
 await mkdir(OUT, { recursive: true });
 /**
  * Diagrams are written twice. src/assets/images is what articles import, so Astro
- * optimises and content-hashes it. public/diagrams is a byte copy at a permanent,
+ * optimizes and content-hashes it. public/diagrams is a byte copy at a permanent,
  * unhashed URL, because /diagrams/ invites other sites to embed these: a hashed
  * filename would break every third-party embed the next time this script runs.
  */
@@ -1161,8 +1195,21 @@ for (const [name, svg] of Object.entries(diagrams)) {
   const buf = await sharp(Buffer.from(svg)).webp({ quality: 90 }).toBuffer();
   await writeFile(`${OUT}/${name}.webp`, buf);
   await writeFile(`${PUBLIC_OUT}/${name}.webp`, buf);
-  const m = svg.match(/<title>([^<]*)<\/title>/);
-  if (m) titles[name] = m[1];
+  titles[name] = {
+    title: (svg.match(/<title>([^<]*)<\/title>/) || [, name])[1],
+    sub: (svg.match(/<desc>([^<]*)<\/desc>/) || [, ''])[1],
+  };
   console.log(`  ${name}.webp`);
 }
+
+/**
+ * The site reads this file in two places: /diagrams/ lists every diagram from it,
+ * and ArticleLayout uses its keys to decide whether a hero image is one of ours
+ * and so may carry the reuse offer. It is written here, from the same objects that
+ * produced the images, so it cannot fall out of step with what was actually drawn.
+ */
+await mkdir(DATA_DIR, { recursive: true });
+await writeFile(`${DATA_DIR}/diagrams.json`, JSON.stringify(titles, null, 1) + '\n');
+
 console.log(`\n${Object.keys(diagrams).length} diagrams written to ${OUT} and ${PUBLIC_OUT}`);
+console.log(`${Object.keys(titles).length} titles written to ${DATA_DIR}/diagrams.json`);

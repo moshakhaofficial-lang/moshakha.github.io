@@ -4,6 +4,8 @@ description: "An ordinary microSD card in a dash cam doesn't announce its failur
 targetKeyword: "best dash cam memory card"
 publishDate: 2026-09-11
 author: "Moshakha Editorial"
+image: "../../assets/images/footage-rescue-steps.webp"
+imageAlt: "Steps to save dash cam footage after an incident"
 related:
   - "reviews/samsung-pro-endurance-256gb"
   - "guides/best-dash-cams"

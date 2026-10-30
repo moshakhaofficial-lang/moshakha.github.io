@@ -4,6 +4,8 @@ description: "A portable inflator is the cheapest safety item you can carry. Our
 targetKeyword: "best tire inflator"
 publishDate: 2026-08-24
 author: "Moshakha Editorial"
+image: "../../assets/images/sidewall-vs-placard.webp"
+imageAlt: "Tire sidewall maximum pressure against the door placard figure"
 related:
   - "how-to/how-to-check-tire-pressure"
   - "guides/best-jump-starters"

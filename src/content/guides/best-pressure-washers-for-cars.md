@@ -4,6 +4,8 @@ description: "High PSI damages paint and trim. Why GPM and nozzle choice matter 
 targetKeyword: "best pressure washer for cars"
 publishDate: 2026-08-24
 author: "Moshakha Editorial"
+image: "../../assets/images/nozzle-angles.webp"
+imageAlt: "Pressure washer nozzle tips compared by spray angle"
 related:
   - "guides/pressure-washer-psi-max-vs-rated"
   - "how-to/two-bucket-car-wash-method"
@@ -108,7 +110,7 @@ faq:
 A pressure washer is genuinely useful for washing a car, and the specification everyone
 buys on is the one most likely to damage the paint.
 
-## PSI is the wrong number to optimise
+## PSI is the wrong number to optimize
 
 Listings lead with PSI because it's a big number that sounds like capability. For car
 washing it is closer to a risk rating.

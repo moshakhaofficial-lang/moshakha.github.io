@@ -4,6 +4,8 @@ description: "The wash mitt decides whether you add swirl marks or avoid them. O
 targetKeyword: "best car wash mitt"
 publishDate: 2026-08-24
 author: "Moshakha Editorial"
+image: "../../assets/images/mitt-replacement-signs.webp"
+imageAlt: "Signs a car wash mitt should be retired"
 related:
   - "reviews/adams-microfiber-dual-wash-mitt"
   - "reviews/chemical-guys-chenille-wash-mitt"

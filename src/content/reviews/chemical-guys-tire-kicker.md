@@ -10,6 +10,7 @@ asin: "B01N51MWNZ"
 image: "../../assets/images/product-cg-tire-kicker.jpg"
 imageAlt: "Chemical Guys Tire Kicker extra glossy tire shine spray bottle"
 rating: 4.4
+price: "$12–$18"
 verdict: "A fast, high-gloss sprayable dressing that also covers rubber trim and plastic bumpers, which makes it more useful than a tire-only gel. The trade-offs are real and both are in the format rather than the formula: spray dressings overspray onto brake discs and paint, and they wash off faster through rain than a gel does. Spray it onto an applicator pad rather than the tire and the first problem disappears entirely."
 pros:
   - "Fast across four tires — the main reason to choose a spray"

@@ -10,6 +10,7 @@ asin: "B08DV51H2X"
 image: "../../assets/images/product-viofo-dashcam.jpg"
 imageAlt: "VIOFO A129 Plus Duo dash cam with front and rear camera units"
 rating: 4.4
+price: "$180–$240"
 verdict: "The rear channel is the whole argument. A large share of contested incidents are rear-end collisions, and a front-only camera gives you nothing there — so the second channel covers a failure no amount of front resolution can. 2K front reads a plate at sensible distance, it uses a supercapacitor rather than a lithium battery, and buffered parking mode captures the seconds before an impact. Budget an afternoon for the install, because running cable to the tailgate is the real cost."
 pros:
   - "Front and rear coverage — the actual gap in most setups"

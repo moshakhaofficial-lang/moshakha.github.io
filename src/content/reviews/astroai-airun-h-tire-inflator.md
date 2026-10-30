@@ -10,6 +10,7 @@ asin: "B07QR4Q42L"
 image: "../../assets/images/product-astroai-inflator.jpg"
 imageAlt: "AstroAI portable tire inflator with digital pressure gauge"
 rating: 4.5
+price: "$30–$45"
 verdict: "Auto shut-off at a preset pressure is the feature that matters, and it's the one people underrate. You set the target, walk away, and it stops — rather than standing over a running compressor watching a gauge, which is how tires end up over-inflated. Corded means no battery state to manage, which is the right trade for something that lives in the trunk unused for months. Check your car's 12V socket stays live with the ignition off before buying."
 pros:
   - "Auto shut-off at a preset pressure — set it and stop watching"

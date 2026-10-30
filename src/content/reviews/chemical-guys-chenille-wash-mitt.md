@@ -10,6 +10,7 @@ asin: "B003TTL0TE"
 image: "../../assets/images/product-cg-chenille-mitt.jpg"
 imageAlt: "Chemical Guys chenille microfiber wash mitt in green with packaging"
 rating: 4.4
+price: "$8–$14"
 verdict: "The entry-level chenille mitt, and a legitimate choice rather than merely a cheap one. The long noodles hold a lot of suds and keep grit suspended away from the paint, and it is dramatically safer than any sponge. Its best property is one nobody lists as a feature: it costs little enough that you will actually throw it away when it hits the driveway, instead of rinsing it and carrying on. That decision protects more paint than a foam core does."
 pros:
   - "Cheap enough to retire the instant it touches the ground"

@@ -4,6 +4,8 @@ description: "Trim-to-fit or laser-measured, rubber or carpet — what each actu
 targetKeyword: "best car floor mats"
 publishDate: 2026-08-24
 author: "Moshakha Editorial"
+image: "../../assets/images/mat-material-contrast.webp"
+imageAlt: "Rubber and carpet floor mats need opposite cleaning treatment"
 related:
   - "reviews/weathertech-techcare-floorliner-cleaner"
   - "how-to/how-to-clean-car-floor-mats"

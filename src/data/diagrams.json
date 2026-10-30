@@ -1,27 +1,215 @@
 {
+ "weave-types": {
+  "title": "Microfiber weave types",
+  "sub": "The spec that matters more than GSM — matched to the job each one actually does"
+ },
+ "gsm-scale": {
+  "title": "What GSM is actually for",
+  "sub": "GSM measures density, not quality — the right number depends entirely on the task"
+ },
+ "mitt-vs-sponge": {
+  "title": "Why a sponge causes swirl marks",
+  "sub": "The difference is structural — not a matter of being careful enough"
+ },
+ "two-bucket-method": {
+  "title": "The two-bucket method",
+  "sub": "The single highest-impact habit in the entire wash process"
+ },
+ "microfiber-laundry": {
+  "title": "Microfiber laundry rules",
+  "sub": "Laundering habits affect towel life more than what you paid for the towel"
+ },
  "500-vs-800-gsm": {
   "title": "500 GSM vs 800 GSM",
   "sub": "Different tools — not better and worse"
+ },
+ "swirl-marks": {
+  "title": "How swirl marks form",
+  "sub": "Thousands of microscopic scratches, all catching light from a single point source"
+ },
+ "towel-task-map": {
+  "title": "One towel per job",
+  "sub": "Matching the towel to the task beats buying a more expensive towel"
+ },
+ "weave-vs-weight": {
+  "title": "Weave vs weight, same GSM",
+  "sub": "Twisted loop at 1200 GSM outperforms plush pile at the same weight — the weave decides how it releases water"
+ },
+ "jump-starter-published-specs": {
+  "title": "What jump starter makers publish",
+  "sub": "46 products, 4 brands, checked 29 October 2026 on each maker’s own product pages"
+ },
+ "psi-max-vs-rated": {
+  "title": "Two Sun Joe machines, two PSI bases",
+  "sub": "Headline figures 1.5% apart. Rated pressure 35% apart. Both quoted from Sun Joe’s own listings, 29 October 2026"
+ },
+ "loose-cargo-braking": {
+  "title": "Why trunk cargo gets secured",
+  "sub": "An object in a moving car is traveling at the car’s speed. Braking changes the car’s speed, not the object’s"
+ },
+ "cabin-heat-sources": {
+  "title": "What a windshield shade actually blocks",
+  "sub": "Sunlight through glass is absorbed by interior surfaces, which then heat the air. The dashboard is the biggest target"
+ },
+ "gsm-by-vehicle": {
+  "title": "Matching GSM to vehicle size",
+  "sub": "1600 GSM is correct for one of these and overkill for the other three"
+ },
+ "saturation-mechanic": {
+  "title": "One large towel vs two medium",
+  "sub": "A large towel saturates as a single unit — once full, the whole thing is out of service"
+ },
+ "coating-scope": {
+  "title": "What a ceramic coating actually protects",
+  "sub": "A layer measured in microns changes how dirt releases — it does not toughen the paint underneath"
+ },
+ "two-towel-glass": {
+  "title": "The two-towel method for glass",
+  "sub": "Almost all residual streaking disappears at step two"
+ },
+ "towel-count-by-job": {
+  "title": "How many towels, by job",
+  "sub": "Running out mid-wash is when people start reusing towels they should not"
+ },
+ "interior-order": {
+  "title": "Cleaning a car interior in order",
+  "sub": "Doing this out of order means redoing the surfaces you already finished"
+ },
+ "waterless-vs-rinseless": {
+  "title": "How dirty is too dirty for waterless",
+  "sub": "The honest test: run a finger across a panel — visible dirt means rinse the car instead"
+ },
+ "contamination-chain": {
+  "title": "Why wheel tools never touch paint",
+  "sub": "Brake dust is metallic — this is not a rinsing problem, it is a permanent separation rule"
+ },
+ "sidewall-vs-placard": {
+  "title": "Sidewall max vs door placard",
+  "sub": "One of these is your target pressure. The other is a warning label."
+ },
+ "mat-material-contrast": {
+  "title": "Rubber and carpet need opposite treatment",
+  "sub": "Cleaning a rubber liner like carpet leaves it chalky; soaking a carpet mat like rubber saturates it"
+ },
+ "jump-start-sequence": {
+  "title": "Jump start connection order",
+  "sub": "The last connection is the one that can spark — make it away from the battery"
+ },
+ "clay-lubrication": {
+  "title": "The lubrication rule for claying",
+  "sub": "Being sparing with lubricant is the single most common cause of clay marring"
+ },
+ "streak-diagnosis": {
+  "title": "Diagnosing a streaking towel",
+  "sub": "Three causes account for nearly all of it — check in this order"
+ },
+ "leather-vs-vinyl-test": {
+  "title": "Most \"leather\" seats are coated vinyl",
+  "sub": "The water-drop test tells you which product you actually need"
+ },
+ "winter-paint-priorities": {
+  "title": "Winter paint protection, in order of return",
+  "sub": "Rinsing frequency beats every product decision you can make"
+ },
+ "cold-weather-drying": {
+  "title": "Why cars refreeze after a winter wash",
+  "sub": "The water that causes trouble is not on the paint"
+ },
+ "quick-detailer-limits": {
+  "title": "Quick detailer: the dry-panel warning",
+  "sub": "The same spray is safe or abrasive depending on what is under it"
+ },
+ "wheel-coating-payoff": {
+  "title": "Coating wheels returns more than coating paint",
+  "sub": "Same product, very different amount of work saved"
+ },
+ "interior-cleaner-strength": {
+  "title": "Match cleaner strength to the surface",
+  "sub": "All-purpose cleaner is the usual cause of a ruined dashboard"
+ },
+ "third-bucket-value": {
+  "title": "Is a third wash bucket worth it?",
+  "sub": "What each bucket you add actually removes from the paint"
+ },
+ "pet-hair-sequence": {
+  "title": "Removing pet hair, in the order that works",
+  "sub": "Vacuuming first fails — hair is woven into the pile, not sitting on it"
+ },
+ "iron-fallout-mechanism": {
+  "title": "What iron fallout remover actually does",
+  "sub": "The purple bleed is a chemical reaction, not a marketing effect"
+ },
+ "fabric-seat-sequence": {
+  "title": "Cleaning fabric seats without a wet seat for days",
+  "sub": "Over-wetting is the mistake — foam pads underneath hold water for a week"
+ },
+ "dashboard-glare-finish": {
+  "title": "Why dressed dashboards cause windshield glare",
+  "sub": "Finish matters more than the product category"
+ },
+ "dish-soap-damage": {
+  "title": "Dish soap vs car shampoo",
+  "sub": "Both clean. Only one is designed to be safe on paint"
+ },
+ "bug-tar-sequence": {
+  "title": "Bugs and tar: soften, never scrub",
+  "sub": "Both are bonded deposits — pressure is what causes the damage"
+ },
+ "tree-sap-timing": {
+  "title": "Tree sap: how long it has been there decides the fix",
+  "sub": "Sap hardens and then etches — the window matters"
+ },
+ "wheel-cleaner-ph": {
+  "title": "Wheel cleaner pH, and what it is safe on",
+  "sub": "Acidic cleaners work fastest and ruin finishes fastest"
+ },
+ "tire-dressing-types": {
+  "title": "Do tire dressings damage tires?",
+  "sub": "The carrier matters — the dressing category does not"
+ },
+ "snow-foam-vs-shampoo": {
+  "title": "Snow foam and car shampoo are different jobs",
+  "sub": "One removes grit before contact, the other lubricates contact"
+ },
+ "wheel-well-sequence": {
+  "title": "Cleaning wheel arches without spreading the mess",
+  "sub": "Arches are the dirtiest part of the car — order prevents rework"
+ },
+ "mitt-replacement-signs": {
+  "title": "When to retire a wash mitt",
+  "sub": "A mitt that has picked up grit is no longer a paint-safe tool"
+ },
+ "drying-aid-mechanism": {
+  "title": "Why professionals spray before drying",
+  "sub": "A drying aid is lubrication for the highest-risk step of the wash"
+ },
+ "socket-power-test": {
+  "title": "Does your 12V socket stay live?",
+  "sub": "Test it before buying anything corded — it varies by car and by socket"
+ },
+ "wash-frequency-drivers": {
+  "title": "What actually sets your wash interval",
+  "sub": "Contamination urgency, not a calendar number"
  },
  "absorbency-recovery": {
   "title": "Restoring a towel that stopped absorbing",
   "sub": "Almost always residue on the fibers, not worn-out fibers"
  },
- "automatic-wash-types": {
-  "title": "Automatic washes: brush versus touchless",
-  "sub": "One risks your paint, the other risks your protection"
+ "chamois-vs-microfiber": {
+  "title": "Microfiber vs chamois for drying",
+  "sub": "Chamois holds more water. Microfiber fails more gently"
  },
- "battery-warning-signs": {
-  "title": "A battery about to fail usually says so",
-  "sub": "Three signals, in the order people notice them"
+ "foam-cannon-sequence": {
+  "title": "Foam cannon: what it replaces and what it does not",
+  "sub": "Pre-foaming reduces contact risk — it is not a touchless wash"
  },
- "black-paint-visibility": {
-  "title": "Why black paint looks worse, not wears worse",
-  "sub": "The same defects exist on silver — you simply cannot see them"
+ "water-spot-types": {
+  "title": "Fresh deposit or etched? Check before you start",
+  "sub": "The fingernail test decides which fix you actually need"
  },
- "bug-tar-sequence": {
-  "title": "Bugs and tar: soften, never scrub",
-  "sub": "Both are bonded deposits — pressure is what causes the damage"
+ "dashcam-power-paths": {
+  "title": "Dash cam power: 12V socket or hardwire",
+  "sub": "This choice decides whether parking mode is possible at all"
  },
  "cabin-air-order": {
   "title": "Car air quality, in order of what actually works",
@@ -31,320 +219,140 @@
   "title": "Replacing a cabin air filter",
   "sub": "A ten-minute job on most cars, and usually years overdue"
  },
- "chamois-vs-microfiber": {
-  "title": "Microfiber vs chamois for drying",
-  "sub": "Chamois holds more water. Microfiber fails more gently"
- },
- "clay-lubrication": {
-  "title": "The lubrication rule for claying",
-  "sub": "Being sparing with lubricant is the single most common cause of clay marring"
- },
- "coating-scope": {
-  "title": "What a ceramic coating actually protects",
-  "sub": "A layer measured in microns changes how dirt releases — it does not toughen the paint underneath"
- },
- "cold-weather-drying": {
-  "title": "Why cars refreeze after a winter wash",
-  "sub": "The water that causes trouble is not on the paint"
- },
- "console-grime-order": {
-  "title": "Cup holders and console, in the right order",
-  "sub": "Everything here is sticky rather than dusty, which changes the method"
- },
- "contamination-chain": {
-  "title": "Why wheel tools never touch paint",
-  "sub": "Brake dust is metallic — this is not a rinsing problem, it is a permanent separation rule"
- },
- "dashboard-glare-finish": {
-  "title": "Why dressed dashboards cause windshield glare",
-  "sub": "Finish matters more than the product category"
- },
- "dashcam-battery-drain": {
-  "title": "Three ways to power a dash cam",
-  "sub": "Only one of them can drain the battery, and it needs a voltage cut-off"
- },
- "dashcam-power-paths": {
-  "title": "Dash cam power: 12V socket or hardwire",
-  "sub": "This choice decides whether parking mode is possible at all"
- },
- "decal-removal-steps": {
-  "title": "Taking a decal off without marking the paint",
-  "sub": "Heat and patience, never a blade on a painted panel"
- },
- "deice-dos-donts": {
-  "title": "De-icing without wrecking the glass",
-  "sub": "Most windshield damage in winter is self-inflicted"
- },
- "dish-soap-damage": {
-  "title": "Dish soap vs car shampoo",
-  "sub": "Both clean. Only one is designed to be safe on paint"
- },
- "door-jamb-order": {
-  "title": "Door jambs: the bit that gives the car away",
-  "sub": "Clean paint with dirty shuts still reads as a dirty car"
- },
- "dropping-timeline": {
-  "title": "Bird droppings: why hours matter",
-  "sub": "The damage is acid etching, and heat accelerates it"
- },
- "drying-aid-mechanism": {
-  "title": "Why professionals spray before drying",
-  "sub": "A drying aid is lubrication for the highest-risk step of the wash"
- },
- "edgeless-vs-edged": {
-  "title": "Edgeless vs edged microfiber",
-  "sub": "The border is the whole story: it is stiffer than the towel around it"
- },
  "engine-bay-protect": {
   "title": "Engine bay: cover before you spray",
   "sub": "Modern bays tolerate water badly in a few specific places"
- },
- "exhaust-tip-material": {
-  "title": "Exhaust tips: know the material first",
-  "sub": "The same pad that polishes one finish ruins the other"
- },
- "fabric-seat-sequence": {
-  "title": "Cleaning fabric seats without a wet seat for days",
-  "sub": "Over-wetting is the mistake — foam pads underneath hold water for a week"
- },
- "foam-cannon-sequence": {
-  "title": "Foam cannon: what it replaces and what it does not",
-  "sub": "Pre-foaming reduces contact risk — it is not a touchless wash"
- },
- "footage-rescue-steps": {
-  "title": "Saving dash cam footage after an incident",
-  "sub": "The loop is already overwriting what you want to keep"
- },
- "gsm-by-vehicle": {
-  "title": "Matching GSM to vehicle size",
-  "sub": "1600 GSM is correct for one of these and overkill for the other three"
- },
- "gsm-scale": {
-  "title": "What GSM is actually for",
-  "sub": "GSM measures density, not quality — the right number depends entirely on the task"
- },
- "headlight-layers": {
-  "title": "Why restored headlights go yellow again",
-  "sub": "The factory coating is the part that was protecting them"
- },
- "interior-cleaner-strength": {
-  "title": "Match cleaner strength to the surface",
-  "sub": "All-purpose cleaner is the usual cause of a ruined dashboard"
- },
- "interior-order": {
-  "title": "Cleaning a car interior in order",
-  "sub": "Doing this out of order means redoing the surfaces you already finished"
- },
- "iron-fallout-mechanism": {
-  "title": "What iron fallout remover actually does",
-  "sub": "The purple bleed is a chemical reaction, not a marketing effect"
- },
- "jump-start-sequence": {
-  "title": "Jump start connection order",
-  "sub": "The last connection is the one that can spark — make it away from the battery"
- },
- "jump-starter-published-specs": {
-  "title": "What jump starter makers publish",
-  "sub": "46 products, 4 brands, checked 29 October 2026 on each maker’s own product pages"
- },
- "jump-starter-storage": {
-  "title": "Where a lithium jump starter should live",
-  "sub": "Heat ages the battery, cold weakens it, and an empty one deteriorates"
- },
- "leather-vs-vinyl-test": {
-  "title": "Most \"leather\" seats are coated vinyl",
-  "sub": "The water-drop test tells you which product you actually need"
- },
- "mat-material-contrast": {
-  "title": "Rubber and carpet need opposite treatment",
-  "sub": "Cleaning a rubber liner like carpet leaves it chalky; soaking a carpet mat like rubber saturates it"
- },
- "microfiber-laundry": {
-  "title": "Microfiber laundry rules",
-  "sub": "Laundering habits affect towel life more than what you paid for the towel"
- },
- "mitt-replacement-signs": {
-  "title": "When to retire a wash mitt",
-  "sub": "A mitt that has picked up grit is no longer a paint-safe tool"
- },
- "mitt-vs-sponge": {
-  "title": "Why a sponge causes swirl marks",
-  "sub": "The difference is structural — not a matter of being careful enough"
- },
- "mount-placement-zones": {
-  "title": "Where a phone mount belongs",
-  "sub": "Sightline and airbag path decide this, not convenience"
- },
- "nozzle-angles": {
-  "title": "Pressure washer tips, by spray angle",
-  "sub": "Same water, different concentration. Narrower means harder on a smaller area"
- },
- "odour-source-order": {
-  "title": "Finding a smell instead of masking it",
-  "sub": "Air fresheners fail because the source is still there"
- },
- "pet-hair-sequence": {
-  "title": "Removing pet hair, in the order that works",
-  "sub": "Vacuuming first fails — hair is woven into the pile, not sitting on it"
- },
- "phone-heat-stack": {
-  "title": "Why a phone overheats on a car mount",
-  "sub": "Three heat sources stack up, and any one alone is usually fine"
- },
- "pollen-tactics": {
-  "title": "Pollen season, done two ways",
-  "sub": "Rinsing often beats washing thoroughly and rarely"
- },
- "pre-rinse-sequence": {
-  "title": "The pre-rinse, done properly",
-  "sub": "It removes the loose grit that causes swirl marks before your mitt touches the paint"
- },
- "protection-tiers": {
-  "title": "Wax, sealant, coating: what actually differs",
-  "sub": "Durability and effort, not how shiny the result is"
- },
- "psi-max-vs-rated": {
-  "title": "Two Sun Joe machines, two PSI bases",
-  "sub": "Headline figures 1.5% apart. Rated pressure 35% apart. Both quoted from Sun Joe’s own listings, 29 October 2026"
- },
- "quick-detailer-limits": {
-  "title": "Quick detailer: the dry-panel warning",
-  "sub": "The same spray is safe or abrasive depending on what is under it"
- },
- "rain-repellent-limits": {
-  "title": "Rain repellent: where it helps and where it does not",
-  "sub": "It changes how water behaves, not how clean the glass is"
- },
- "salt-stain-steps": {
-  "title": "Lifting winter salt stains out of carpet",
-  "sub": "Salt is dissolved and extracted, never brushed away dry"
- },
- "saturation-mechanic": {
-  "title": "One large towel vs two medium",
-  "sub": "A large towel saturates as a single unit — once full, the whole thing is out of service"
- },
- "sidewall-vs-placard": {
-  "title": "Sidewall max vs door placard",
-  "sub": "One of these is your target pressure. The other is a warning label."
- },
- "snow-foam-vs-shampoo": {
-  "title": "Snow foam and car shampoo are different jobs",
-  "sub": "One removes grit before contact, the other lubricates contact"
- },
- "soap-dilution": {
-  "title": "Soap per bucket: too much vs too little",
-  "sub": "The bottle label is the only reliable number, because concentration differs between brands"
- },
- "socket-power-test": {
-  "title": "Does your 12V socket stay live?",
-  "sub": "Test it before buying anything corded — it varies by car and by socket"
- },
- "storage-checklist": {
-  "title": "Laying a car up for months",
-  "sub": "Ordered by what actually fails while a car sits still"
- },
- "streak-diagnosis": {
-  "title": "Diagnosing a streaking towel",
-  "sub": "Three causes account for nearly all of it — check in this order"
- },
- "sunlight-wash-rules": {
-  "title": "Washing in the sun: what to do differently",
-  "sub": "The heat in the panel causes the trouble, not the sunlight itself"
- },
- "swirl-marks": {
-  "title": "How swirl marks form",
-  "sub": "Thousands of microscopic scratches, all catching light from a single point source"
- },
- "third-bucket-value": {
-  "title": "Is a third wash bucket worth it?",
-  "sub": "What each bucket you add actually removes from the paint"
- },
- "tire-dressing-types": {
-  "title": "Do tire dressings damage tires?",
-  "sub": "The carrier matters — the dressing category does not"
- },
- "towel-count-by-job": {
-  "title": "How many towels, by job",
-  "sub": "Running out mid-wash is when people start reusing towels they should not"
- },
- "towel-task-map": {
-  "title": "One towel per job",
-  "sub": "Matching the towel to the task beats buying a more expensive towel"
- },
- "tree-sap-timing": {
-  "title": "Tree sap: how long it has been there decides the fix",
-  "sub": "Sap hardens and then etches — the window matters"
- },
- "trim-restore-tiers": {
-  "title": "Faded black trim: three different fixes",
-  "sub": "Match the fix to how far gone the plastic actually is"
- },
- "two-bucket-method": {
-  "title": "The two-bucket method",
-  "sub": "The single highest-impact habit in the entire wash process"
- },
- "two-towel-glass": {
-  "title": "The two-towel method for glass",
-  "sub": "Almost all residual streaking disappears at step two"
- },
- "underbody-salt-traps": {
-  "title": "Where road salt actually sits",
-  "sub": "The places a top-down wash never reaches"
- },
- "vacuum-corded-vs-cordless": {
-  "title": "Corded vs cordless car vacuum",
-  "sub": "A proper interior takes longer than most small handhelds sustain at full suction"
  },
  "vent-cleaning-order": {
   "title": "Getting dust out of air vents, not deeper in",
   "sub": "Blowing first sends it into the cabin you are about to clean"
  },
- "wash-frequency-drivers": {
-  "title": "What actually sets your wash interval",
-  "sub": "Contamination urgency, not a calendar number"
- },
- "water-spot-types": {
-  "title": "Fresh deposit or etched? Check before you start",
-  "sub": "The fingernail test decides which fix you actually need"
- },
- "waterless-vs-rinseless": {
-  "title": "How dirty is too dirty for waterless",
-  "sub": "The honest test: run a finger across a panel — visible dirt means rinse the car instead"
- },
- "weave-types": {
-  "title": "Microfiber weave types",
-  "sub": "The spec that matters more than GSM — matched to the job each one actually does"
- },
- "weave-vs-weight": {
-  "title": "Weave vs weight, same GSM",
-  "sub": "Twisted loop at 1200 GSM outperforms plush pile at the same weight — the weave decides how it releases water"
- },
- "wheel-cleaner-ph": {
-  "title": "Wheel cleaner pH, and what it is safe on",
-  "sub": "Acidic cleaners work fastest and ruin finishes fastest"
- },
- "wheel-coating-payoff": {
-  "title": "Coating wheels returns more than coating paint",
-  "sub": "Same product, very different amount of work saved"
- },
  "wheel-grip-wear": {
   "title": "Why steering wheels get shiny and sticky",
   "sub": "It is skin oil and hand cream, not dirt in the usual sense"
  },
- "wheel-well-sequence": {
-  "title": "Cleaning wheel arches without spreading the mess",
-  "sub": "Arches are the dirtiest part of the car — order prevents rework"
+ "trim-restore-tiers": {
+  "title": "Faded black trim: three different fixes",
+  "sub": "Match the fix to how far gone the plastic actually is"
+ },
+ "exhaust-tip-material": {
+  "title": "Exhaust tips: know the material first",
+  "sub": "The same pad that polishes one finish ruins the other"
+ },
+ "door-jamb-order": {
+  "title": "Door jambs: the bit that gives the car away",
+  "sub": "Clean paint with dirty shuts still reads as a dirty car"
+ },
+ "salt-stain-steps": {
+  "title": "Lifting winter salt stains out of carpet",
+  "sub": "Salt is dissolved and extracted, never brushed away dry"
+ },
+ "deice-dos-donts": {
+  "title": "De-icing without wrecking the glass",
+  "sub": "Most windshield damage in winter is self-inflicted"
+ },
+ "storage-checklist": {
+  "title": "Laying a car up for months",
+  "sub": "Ordered by what actually fails while a car sits still"
+ },
+ "protection-tiers": {
+  "title": "Wax, sealant, coating: what actually differs",
+  "sub": "Durability and effort, not how shiny the result is"
+ },
+ "dropping-timeline": {
+  "title": "Bird droppings: why hours matter",
+  "sub": "The damage is acid etching, and heat accelerates it"
+ },
+ "pollen-tactics": {
+  "title": "Pollen season, done two ways",
+  "sub": "Rinsing often beats washing thoroughly and rarely"
+ },
+ "headlight-layers": {
+  "title": "Why restored headlights go yellow again",
+  "sub": "The factory coating is the part that was protecting them"
+ },
+ "wiper-failure-signs": {
+  "title": "When a wiper blade is finished",
+  "sub": "Judge by what it leaves behind, not by age"
+ },
+ "rain-repellent-limits": {
+  "title": "Rain repellent: where it helps and where it does not",
+  "sub": "It changes how water behaves, not how clean the glass is"
+ },
+ "battery-warning-signs": {
+  "title": "A battery about to fail usually says so",
+  "sub": "Three signals, in the order people notice them"
+ },
+ "mount-placement-zones": {
+  "title": "Where a phone mount belongs",
+  "sub": "Sightline and airbag path decide this, not convenience"
+ },
+ "footage-rescue-steps": {
+  "title": "Saving dash cam footage after an incident",
+  "sub": "The loop is already overwriting what you want to keep"
+ },
+ "underbody-salt-traps": {
+  "title": "Where road salt actually sits",
+  "sub": "The places a top-down wash never reaches"
+ },
+ "automatic-wash-types": {
+  "title": "Automatic washes: brush versus touchless",
+  "sub": "One risks your paint, the other risks your protection"
+ },
+ "black-paint-visibility": {
+  "title": "Why black paint looks worse, not wears worse",
+  "sub": "The same defects exist on silver — you simply cannot see them"
+ },
+ "console-grime-order": {
+  "title": "Cup holders and console, in the right order",
+  "sub": "Everything here is sticky rather than dusty, which changes the method"
+ },
+ "odour-source-order": {
+  "title": "Finding a smell instead of masking it",
+  "sub": "Air fresheners fail because the source is still there"
+ },
+ "decal-removal-steps": {
+  "title": "Taking a decal off without marking the paint",
+  "sub": "Heat and patience, never a blade on a painted panel"
+ },
+ "sunlight-wash-rules": {
+  "title": "Washing in the sun: what to do differently",
+  "sub": "The heat in the panel causes the trouble, not the sunlight itself"
+ },
+ "nozzle-angles": {
+  "title": "Pressure washer tips, by spray angle",
+  "sub": "Same water, different concentration. Narrower means harder on a smaller area"
+ },
+ "soap-dilution": {
+  "title": "Soap per bucket: too much vs too little",
+  "sub": "The bottle label is the only reliable number, because concentration differs between brands"
+ },
+ "edgeless-vs-edged": {
+  "title": "Edgeless vs edged microfiber",
+  "sub": "The border is the whole story: it is stiffer than the towel around it"
+ },
+ "jump-starter-storage": {
+  "title": "Where a lithium jump starter should live",
+  "sub": "Heat ages the battery, cold weakens it, and an empty one deteriorates"
+ },
+ "dashcam-battery-drain": {
+  "title": "Three ways to power a dash cam",
+  "sub": "Only one of them can drain the battery, and it needs a voltage cut-off"
  },
  "window-fog-fix": {
   "title": "Clearing interior fog, fastest first",
   "sub": "Dry the air, do not just warm it"
  },
- "winter-paint-priorities": {
-  "title": "Winter paint protection, in order of return",
-  "sub": "Rinsing frequency beats every product decision you can make"
+ "phone-heat-stack": {
+  "title": "Why a phone overheats on a car mount",
+  "sub": "Three heat sources stack up, and any one alone is usually fine"
  },
- "wiper-failure-signs": {
-  "title": "When a wiper blade is finished",
-  "sub": "Judge by what it leaves behind, not by age"
+ "vacuum-corded-vs-cordless": {
+  "title": "Corded vs cordless car vacuum",
+  "sub": "A proper interior takes longer than most small handhelds sustain at full suction"
+ },
+ "pre-rinse-sequence": {
+  "title": "The pre-rinse, done properly",
+  "sub": "It removes the loose grit that causes swirl marks before your mitt touches the paint"
  }
 }

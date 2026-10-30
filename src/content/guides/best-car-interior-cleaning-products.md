@@ -4,6 +4,8 @@ description: "Dashboards, leather, glass, carpet and mats all want different che
 targetKeyword: "best car interior cleaning products"
 publishDate: 2026-08-24
 author: "Moshakha Editorial"
+image: "../../assets/images/interior-cleaner-strength.webp"
+imageAlt: "Matching interior cleaner strength to each surface in a car"
 featured: true
 related:
   - "reviews/chemical-guys-total-interior-cleaner"

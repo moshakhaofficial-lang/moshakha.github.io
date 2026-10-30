@@ -4,6 +4,8 @@ description: "A loose bag in a trunk is a projectile in a crash. Our picks for c
 targetKeyword: "best trunk organizer"
 publishDate: 2026-08-24
 author: "Moshakha Editorial"
+image: "../../assets/images/loose-cargo-braking.webp"
+imageAlt: "Why loose trunk cargo keeps moving when a car brakes"
 related:
   - "guides/best-car-floor-mats"
   - "blog/perfect-interior-detail"

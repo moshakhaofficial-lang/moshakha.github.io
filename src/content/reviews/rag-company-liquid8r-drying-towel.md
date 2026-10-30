@@ -10,6 +10,7 @@ asin: "B088P7GHCM"
 image: "../../assets/images/product-liquid8r-1100.jpg"
 imageAlt: "The Rag Company Liquid8r 1100 GSM twisted loop drying towel in teal"
 rating: 4.6
+price: "$30–$40"
 verdict: "Twisted loop construction across a 25x36in sheet, and both of those matter more than the 1100 GSM number on the label. Twisted loop is the correct weave for bulk water removal because the loops lift water up into the pile rather than pushing it along the panel. The sheet size is what makes it the right towel for a full-size SUV or truck, where a 15x24in panel means wringing out constantly. On a hatchback it is more towel, and more money, than the job needs."
 pros:
   - "Holds enough water to dry a large vehicle without wringing out"

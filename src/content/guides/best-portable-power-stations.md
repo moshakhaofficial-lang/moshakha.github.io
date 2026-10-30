@@ -4,6 +4,8 @@ description: "The watt-hour figure on the box is not what you'll get out of it. 
 targetKeyword: "best portable power station for car"
 publishDate: 2026-09-11
 author: "Moshakha Editorial"
+image: "../../assets/images/socket-power-test.webp"
+imageAlt: "How to test whether a car 12V socket stays live with the ignition off"
 related:
   - "reviews/anker-solix-c300-dc"
   - "reviews/ecoflow-river-2-max"

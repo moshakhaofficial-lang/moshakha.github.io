@@ -173,7 +173,7 @@ nozzle. Everything here is what the manufacturers publish about themselves.
 makers do not publish structured product data we could read, so this is a documented
 practice at two brands rather than a survey of the category.
 
-**We cannot say whether Greenworks' unlabelled figures are max or rated.** If they are
+**We cannot say whether Greenworks' unlabeled figures are max or rated.** If they are
 rated, their machines are stronger than a like-for-like comparison with Sun Joe's max
 figures would suggest. If they are max, the reverse. The absence of the label is the whole
 problem and we are not going to guess past it.

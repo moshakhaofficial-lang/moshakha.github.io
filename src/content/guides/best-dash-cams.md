@@ -4,6 +4,8 @@ description: "Resolution is oversold and night performance is undersold. Our das
 targetKeyword: "best dash cam"
 publishDate: 2026-08-24
 author: "Moshakha Editorial"
+image: "../../assets/images/dashcam-power-paths.webp"
+imageAlt: "Dash cam power options, 12V socket against a hardwire kit"
 related:
   - "guides/best-car-phone-mounts"
   - "guides/best-jump-starters"

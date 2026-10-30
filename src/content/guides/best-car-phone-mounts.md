@@ -4,6 +4,8 @@ description: "The mount type matters more than the brand. Where each one fails, 
 targetKeyword: "best car phone mount"
 publishDate: 2026-08-24
 author: "Moshakha Editorial"
+image: "../../assets/images/mount-placement-zones.webp"
+imageAlt: "Where a car phone mount belongs relative to the driver sightline"
 related:
   - "reviews/miracase-3-in-1-phone-holder"
   - "guides/best-dash-cams"

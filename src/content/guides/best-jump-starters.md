@@ -4,6 +4,8 @@ description: "Peak amp claims are close to meaningless. What actually matters in
 targetKeyword: "best jump starter"
 publishDate: 2026-08-24
 author: "Moshakha Editorial"
+image: "../../assets/images/jump-start-sequence.webp"
+imageAlt: "The correct connection order for jump starting a car"
 related:
   - "guides/jump-starter-amp-ratings"
   - "reviews/gooloo-gp4000-jump-starter"

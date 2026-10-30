@@ -4,6 +4,8 @@ description: "Universal covers are cut for an average seat nobody owns. What act
 targetKeyword: "best car seat covers"
 publishDate: 2026-09-11
 author: "Moshakha Editorial"
+image: "../../assets/images/leather-vs-vinyl-test.webp"
+imageAlt: "How to tell coated vinyl seats from genuine leather"
 related:
   - "guides/best-car-floor-mats"
   - "how-to/how-to-clean-car-seats-fabric"

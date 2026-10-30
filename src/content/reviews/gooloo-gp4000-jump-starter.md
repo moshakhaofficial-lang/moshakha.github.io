@@ -10,6 +10,7 @@ asin: "B0D2HH3BDN"
 image: "../../assets/images/product-gooloo-gp4000.jpg"
 imageAlt: "GOOLOO GP4000 jump starter in red with clamps and carry case"
 rating: 4.5
+price: "$90–$140"
 verdict: "Considerably more cranking headroom than the compact units most people buy, which genuinely matters on a cold diesel — those draw far more current than a small gas engine and are where undersized jump starters fail. The 4000A peak figure is not a number you can compare across brands, because nobody measures it the same way; treat it as 'a lot of margin' rather than a spec. The costs are bulk, weight, and protection circuitry that is good but less proven than NOCO's."
 pros:
   - "Real cranking headroom for diesels and large-displacement gas engines"

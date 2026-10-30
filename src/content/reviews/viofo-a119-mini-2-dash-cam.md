@@ -10,6 +10,7 @@ asin: "B0C5MVB7NX"
 image: "../../assets/images/product-viofo-a119mini2.jpg"
 imageAlt: "VIOFO A119 Mini 2 dash cam with STARVIS 2 sensor and phone app view"
 rating: 4.5
+price: "$120–$160"
 verdict: "The STARVIS 2 sensor is the reason to buy this. Nearly all footage that ends up mattering is shot in poor light — dusk, rain, unlit roads — and sensor quality, not pixel count, decides whether a plate is readable there. It's genuinely tiny, hides behind the mirror, and 60fps helps freeze plates on oncoming cars. The limitation is simple and absolute: it's front-only."
 pros:
   - "STARVIS 2 sensor — the spec that actually improves usable footage"

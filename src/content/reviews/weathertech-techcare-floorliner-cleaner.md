@@ -10,6 +10,7 @@ asin: "B07KCN435L"
 image: "../../assets/images/product-weathertech-techcare.jpg"
 imageAlt: "WeatherTech TechCare FloorLiner cleaner and protector spray bottles"
 rating: 4.6
+price: "$18–$26"
 verdict: "A two-part kit for rubber and TPE liners, and the reason it exists is that household cleaners leave those materials either chalky or slick. Slick is the outcome that matters, because a slippery mat under your pedals is a real hazard rather than an aesthetic one. This cleans without a gloss finish and the protector step slows the UV-driven graying that makes liners look old. It is branded pricing for a job generic rubber cleaners also do, and it is the wrong product for carpet."
 pros:
   - "Cleans without leaving a slippery finish — the specification that matters"

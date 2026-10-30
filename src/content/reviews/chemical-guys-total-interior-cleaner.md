@@ -10,6 +10,7 @@ asin: "B071ZTPRJL"
 image: "../../assets/images/product-cg-total-interior.jpg"
 imageAlt: "Chemical Guys Total Interior Cleaner and Protectant spray bottle"
 rating: 4.5
+price: "$12–$18"
 verdict: "One bottle for dashboards, door cards, console and most trim, and the reason to pick it over a cheaper all-purpose cleaner is the finish rather than the cleaning. It dries matte, so it does not throw reflections into the windshield on a low sun — which is a visibility problem, not an aesthetic preference. It is not a leather conditioner, whatever the label implies, and heavy soiling needs a second pass."
 pros:
   - "Matte finish, so no reflection into the windshield"

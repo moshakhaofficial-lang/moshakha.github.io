@@ -5,6 +5,8 @@ targetKeyword: "best car wash soap"
 publishDate: 2026-08-24
 updatedDate: 2026-10-15
 author: "Moshakha Editorial"
+image: "../../assets/images/soap-dilution.webp"
+imageAlt: "Car wash soap per bucket, too much against too little"
 related:
   - "reviews/chemical-guys-extreme-bodywash-wax"
   - "reviews/meguiars-gold-class-car-wash"

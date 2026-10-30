@@ -10,6 +10,7 @@ asin: "B0009PCPHW"
 image: "../../assets/images/product-armorall-wheel.jpg"
 imageAlt: "Armor All Extreme wheel and tire cleaner spray bottle"
 rating: 4.3
+price: "$8–$14"
 verdict: "This is not a tire shine and it is the most useful bottle in the category. Almost every complaint about dressing going brown, patchy or short-lived traces back to applying it over old dressing that has oxidized, and no better dressing fixes that — only stripping the sidewall back to clean rubber does. The foaming formula clings to a vertical sidewall long enough to work. It still needs a stiff brush and genuine effort, which is why this is the step people skip."
 pros:
   - "Removes the dressing build-up that actually causes browning"

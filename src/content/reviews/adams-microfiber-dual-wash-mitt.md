@@ -10,6 +10,7 @@ asin: "B07BH439BF"
 image: "../../assets/images/product-adams-dual-mitt.jpg"
 imageAlt: "Adam's Polishes microfiber dual wash mitt in red chenille"
 rating: 4.3
+price: "$12–$18"
 verdict: "A competent chenille mitt with a scrubbing side for the deposits that normal washing will not shift — baked-on bugs, tree sap, road tar on a front bumper. One tool covering both jobs is genuinely convenient on a front end. The risk is built into the design: when the mitt is soapy and in your hand, the two sides are easy to confuse, and the scrub side on a door panel is not something you undo. Use it deliberately and only where you intend to."
 pros:
   - "Scrub side handles bugs and sap without a separate bug sponge"

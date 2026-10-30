@@ -4,6 +4,8 @@ description: "Percentage heat-reduction claims are unverifiable marketing. What 
 targetKeyword: "best windshield sun shade"
 publishDate: 2026-09-11
 author: "Moshakha Editorial"
+image: "../../assets/images/cabin-heat-sources.webp"
+imageAlt: "Which sources of cabin heat a windshield sun shade blocks"
 related:
   - "guides/best-car-floor-mats"
   - "blog/dashboard-dressing-glare"
@@ -122,7 +124,7 @@ stop using them, because folding one in a hot car park with an armful of shoppin
 genuinely annoying. An umbrella shade that collapses one-handed in three seconds gets used
 every time.
 
-If you've owned a shade before and stopped using it, that's the variable to optimise for,
+If you've owned a shade before and stopped using it, that's the variable to optimize for,
 and it's why pick one leads this list despite having a mechanism that can eventually fail.
 
 ## Reflective side out, but don't agonise

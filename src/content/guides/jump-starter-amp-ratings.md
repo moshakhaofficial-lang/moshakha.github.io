@@ -94,7 +94,7 @@ The measurement that would allow comparison is the measurement nobody states.
 
 The brands do not even agree on what to call the headline figure.
 
-| Brand | How the amp figure is labelled |
+| Brand | How the amp figure is labeled |
 |---|---|
 | NOCO | "RATED AT 1000A" — no qualifier at all |
 | Schumacher | "peak amps" (14 of 21 products) |

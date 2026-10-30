@@ -10,6 +10,7 @@ asin: "B07B4QDZHQ"
 image: "../../assets/images/product-invisible-glass.jpg"
 imageAlt: "Invisible Glass premium aerosol glass cleaner, two 19oz cans"
 rating: 4.7
+price: "$14–$20 (2 × 19oz)"
 verdict: "Ammonia-free and tint-safe is the specification that matters here, because ammonia attacks aftermarket window film and degrades interior plastics over time. The aerosol delivery is the second reason to choose it: a fine even mist cuts the plasticizer haze that builds on the inside of a windshield, where pump sprays tend to push the film around rather than dissolve it. The cost is overspray, which you solve by spraying the towel instead."
 pros:
   - "Ammonia-free, so safe on aftermarket tint and interior plastics"

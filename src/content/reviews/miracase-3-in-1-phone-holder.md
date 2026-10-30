@@ -10,6 +10,7 @@ asin: "B08D39B6TB"
 image: "../../assets/images/product-miracase-3in1.jpg"
 imageAlt: "Miracase 3-in-1 car phone holder mounted on a dashboard"
 rating: 4.4
+price: "$15–$25"
 verdict: "Three mounting options in one box, which reads as a jack-of-all-trades compromise and is actually the right purchase for a specific and common situation: you cannot know which mounting point works in your car until you try it. Dash texture, vent design and windshield rake decide that, and they vary enormously between cars. A dedicated mount is more solid once you know what you need. This is how you find out, cheaply."
 pros:
   - "Three mounting options means one of them will work in your car"
