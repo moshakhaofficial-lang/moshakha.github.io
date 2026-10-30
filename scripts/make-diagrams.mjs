@@ -348,7 +348,7 @@ diagrams['jump-starter-published-specs'] = ladder(
   '46 products, 4 brands, checked 29 October 2026 on each maker\u2019s own product pages',
   [
     { label: 'Headline amp figure', desc: 'On every product \u2014 but labelled four different ways across four brands', note: '46 of 46', highlight: true },
-    { label: 'Rated engine size', desc: 'Litres of gas and diesel the unit claims to start. The figure you can actually compare', note: '30 of 46' },
+    { label: 'Rated engine size', desc: 'Liters of gas and diesel the unit claims to start. The figure you can actually compare', note: '30 of 46' },
     { label: 'Battery capacity (Wh or mAh)', desc: 'Stored energy \u2014 the number that would make packs comparable', note: '3 of 46' },
     { label: 'Cranking amps (SAE)', desc: 'The one standardised measurement. Published by nobody', note: '0 of 46', highlight: true },
   ],

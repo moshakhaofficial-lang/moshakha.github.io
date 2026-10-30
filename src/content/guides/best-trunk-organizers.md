@@ -90,7 +90,7 @@ picks:
       - "Not suitable behind a seat with a rear airbag — check the manual"
 faq:
   - q: "Do I really need a trunk organizer?"
-    a: "If loose items roll around your trunk, yes — and not only for tidiness. Unsecured objects become projectiles under heavy braking or in a collision. A loaded shopping bag has real momentum, and containing and anchoring it is a genuine safety improvement, not just organisation."
+    a: "If loose items roll around your trunk, yes — and not only for tidiness. Unsecured objects become projectiles under heavy braking or in a collision. A loaded shopping bag has real momentum, and containing and anchoring it is a genuine safety improvement, not just organization."
   - q: "What should I look for in a trunk organizer?"
     a: "A tie-down or anchoring system first, rigidity second, pockets last. Most listings compete on compartment count, but an organizer that slides across the trunk floor has only made the loose items into one larger loose item. Anchoring is the feature that actually changes anything."
   - q: "Will a trunk organizer fit my car?"

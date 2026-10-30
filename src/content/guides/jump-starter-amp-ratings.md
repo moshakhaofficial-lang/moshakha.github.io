@@ -61,7 +61,7 @@ Specifically:
 - **Prices** are as published on those sites on 29 October 2026 and will have changed.
   Schumacher does not sell direct, so no prices are included for its products.
 - **Our own correction:** an earlier draft of this analysis reported that one brand claimed
-  roughly twice the amps per litre of rated engine capacity as the others. That was wrong.
+  roughly twice the amps per liter of rated engine capacity as the others. That was wrong.
   It compared one brand's diesel ratings against other brands' gas ratings. Corrected to a
   like-for-like basis, the difference disappears. We describe this in full under
   [what we did not find](#what-we-did-not-find), because the mistake is an easy one and
@@ -72,7 +72,7 @@ Specifically:
 | Published figure | Products stating it | Share |
 |---|---|---|
 | Headline amp figure | 46 of 46 | 100% |
-| Rated engine size (litres) | 30 of 46 | 65% |
+| Rated engine size (liters) | 30 of 46 | 65% |
 | Battery capacity (Wh or mAh) | 3 of 46 | 7% |
 | **Cranking amps (the standardized measure)** | **0 of 46** | **0%** |
 
@@ -177,7 +177,7 @@ wrong.**
 Dividing claimed amps by rated engine capacity gives a rough index of how aggressively a
 brand rates its hardware. On a like-for-like diesel basis:
 
-| Brand | Products | Amps per litre (diesel rating) |
+| Brand | Products | Amps per liter (diesel rating) |
 |---|---|---|
 | Schumacher | 16 | 167–375 |
 | Hulkman | 6 | 292–400 |
@@ -185,7 +185,7 @@ brand rates its hardware. On a like-for-like diesel basis:
 | GOOLOO | 2 | 400–500 |
 
 The ranges overlap. NOCO's GB150 sits at 429 A/L, between GOOLOO's two verifiable units at
-400 and 500. GOOLOO publishes a litre rating for only 2 of its 13 products, which is too
+400 and 500. GOOLOO publishes a liter rating for only 2 of its 13 products, which is too
 few to support any claim about the brand.
 
 So: **no defensible difference between these brands in how aggressively they rate.** The
