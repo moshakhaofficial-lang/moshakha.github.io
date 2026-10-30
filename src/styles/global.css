@@ -236,6 +236,14 @@ a:hover { color: var(--signal-dark); }
   background: var(--surface-2); padding: .12em .4em; border-radius: 5px;
 }
 .prose table { width: 100%; border-collapse: collapse; }
+/* On narrow screens a wide markdown table scrolls sideways instead of squeezing
+   its columns to unreadable widths. Most of this site's traffic is mobile and the
+   spec-survey pages carry six-column tables, so compressing loses more than a
+   swipe costs. width:auto + min-width:100% lets a wide table exceed the column
+   while a narrow one still fills it. */
+@media (max-width: 40rem) {
+  .prose table { display: block; width: auto; min-width: 100%; overflow-x: auto; }
+}
 
 /* ---------- Spec tables ---------- */
 .table-scroll {
