@@ -51,16 +51,11 @@ const { pick } = Astro.props;
 <style>
   .pick {
     border: 1px solid var(--rule); border-radius: var(--r);
-    padding: 1.5rem; margin-block: 2rem; scroll-margin-top: 1.5rem;
+    padding: 1.5rem; margin-block: 2rem; background: var(--surface); scroll-margin-top: 5rem;
   }
   .pick h3 { margin: .3rem 0 .6rem; }
   .pick-rank { color: var(--ink-3); }
   .pick-meta { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; }
-  .chip {
-    background: var(--paper-2); border: 1px solid var(--rule);
-    color: var(--ink-2); font-family: var(--mono); font-size: .7rem; font-weight: 500;
-    letter-spacing: .04em; padding: .18rem .45rem; border-radius: var(--r);
-  }
   .pick img { margin-block: 1.1rem; border-radius: var(--r); background: var(--paper-2); }
   .best-for { color: var(--ink-2); }
   .skip-if { color: var(--bad); font-size: .93rem; }

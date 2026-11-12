@@ -25,6 +25,8 @@ const base = ({ image }: SchemaContext) => ({
   /** "collection/slug" refs for the internal linking block. */
   related: z.array(z.string()).default([]),
   faq: z.array(z.object({ q: z.string(), a: z.string() })).default([]),
+  /** Optional product recommendation: "guides/<slug>" or "guides/<slug>#<rank>". */
+  recommended: z.string().optional(),
 });
 
 /** Fails the build if an image was set without alt text. */

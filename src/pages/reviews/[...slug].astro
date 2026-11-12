@@ -3,6 +3,7 @@ import { getCollection, render } from 'astro:content';
 import ArticleLayout from '../../layouts/ArticleLayout.astro';
 import ProsCons from '../../components/ProsCons.astro';
 import Rating from '../../components/Rating.astro';
+import StickyBuyBar from '../../components/StickyBuyBar.astro';
 import AffiliateButton from '../../components/AffiliateButton.astro';
 import { articleSchema, breadcrumbSchema, faqSchema, reviewSchema } from '../../lib/schema';
 
@@ -17,6 +18,14 @@ const { entry } = Astro.props;
 const { Content, remarkPluginFrontmatter } = await render(entry);
 const d = entry.data;
 const path = `/reviews/${entry.id}`;
+const guides = d.asin ? await getCollection('guides') : [];
+// Several guides can list the same product (e.g. a jump starter is in both the
+// jump-starter guide and the emergency-kit guide). Prefer the one this review
+// itself names in `related` — that is the product's home category.
+const withProduct = guides.filter((g) => !g.data.draft && g.data.picks.some((p) => p.asin === d.asin));
+const guide =
+  d.related.map((ref) => withProduct.find((g) => `guides/${g.id}` === ref)).find(Boolean) ?? withProduct[0];
+const guideHref = guide ? `/guides/${guide.id}/` : null;
 
 const schema = [
   articleSchema({ ...d, path, title: d.title, description: d.description, image: d.image?.src }),
@@ -57,16 +66,33 @@ const schema = [
     <p>{d.verdict}</p>
     {d.price && <p class="meta">Typical price: {d.price}</p>}
     <AffiliateButton asin={d.asin} productName={`${d.brand} ${d.productName}`} position="review-verdict" />
+    {guide && <p class="compare-link"><a href={guideHref}>See how it compares: {guide.data.title}</a></p>}
   </aside>
 
   {(d.pros.length > 0 || d.cons.length > 0) && <ProsCons pros={d.pros} cons={d.cons} />}
 
   <Content />
+
+  <aside class="verdict-box bottom-line">
+    <div class="verdict-head">
+      <div>
+        <p class="eyebrow">Bottom line</p>
+        <h2>{d.brand} {d.productName}</h2>
+      </div>
+      <Rating value={d.rating} />
+    </div>
+    {d.price && <p class="meta">Typical price: {d.price}</p>}
+    <AffiliateButton asin={d.asin} productName={`${d.brand} ${d.productName}`} position="review-bottom" />
+    {guide && <p class="compare-link"><a href={guideHref}>See how it compares: {guide.data.title}</a></p>}
+  </aside>
+  <StickyBuyBar slot="buybar" asin={d.asin} productName={`${d.brand} ${d.productName}`} price={d.price} />
 </ArticleLayout>
 
 <style>
-  .verdict-box { border: 2px solid var(--signal); border-radius: var(--r); padding: 1.4rem; background: var(--signal-tint); }
+  .verdict-box { border: 2px solid var(--signal); border-radius: 24px; padding: 1.5rem; background: var(--signal-tint); }
   .verdict-head { display: flex; flex-wrap: wrap; gap: .75rem; justify-content: space-between; align-items: flex-start; }
   .verdict-box h2 { margin: .25rem 0 0; font-size: 1.35rem; }
   .verdict-box p { margin-top: .85rem; }
+  .bottom-line { margin-top: 2.5rem; }
+  .compare-link { font-size: .93rem; }
 </style>

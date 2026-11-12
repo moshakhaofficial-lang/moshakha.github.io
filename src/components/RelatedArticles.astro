@@ -1,5 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
+import EntryCard from './EntryCard.astro';
+import { entryImage, COLLECTION_LABEL } from '../lib/entry-image';
 
 export interface Props {
   /** "collection/slug" references, e.g. 'guides/best-microfiber-towels'. */
@@ -37,12 +39,15 @@ const items = [...resolved, ...fallback].slice(0, 9);
 {items.length > 0 && (
   <aside class="related" aria-labelledby="related-heading">
     <h2 id="related-heading">Keep reading</h2>
-    <div class="grid grid--3" style="margin-top:1.25rem">
+    <div class="grid grid--3 related-grid">
       {items.map((e) => (
-        <article class="card card--link">
-          <p class="eyebrow">{e!.collection === 'how-to' ? 'How-To' : e!.collection === 'guides' ? 'Buying Guide' : e!.collection === 'reviews' ? 'Review' : 'Blog'}</p>
-          <h3><a href={`/${e!.ref}/`}>{e!.data.title}</a></h3>
-        </article>
+        <EntryCard
+          compact
+          href={`/${e!.ref}/`}
+          title={e!.data.title}
+          label={COLLECTION_LABEL[e!.collection]}
+          image={entryImage(e!)}
+        />
       ))}
     </div>
   </aside>
@@ -50,4 +55,15 @@ const items = [...resolved, ...fallback].slice(0, 9);
 
 <style>
   .related { margin-top: 3.5rem; padding-top: 2rem; border-top: 1px solid var(--rule); }
+  .related-grid { margin-top: 1.25rem; }
+  /* Phones: one swipeable row instead of nine stacked cards. */
+  @media (max-width: 46rem) {
+    .related-grid {
+      display: flex; gap: .9rem; overflow-x: auto; overscroll-behavior-x: contain;
+      scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;
+      margin-inline: -1.4rem; padding: .4rem 1.4rem 1rem; scroll-padding-inline: 1.4rem;
+      scrollbar-width: thin; scrollbar-color: var(--rule-hard) transparent;
+    }
+    .related-grid > :global(*) { flex: 0 0 76%; scroll-snap-align: start; }
+  }
 </style>

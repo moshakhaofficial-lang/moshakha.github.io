@@ -1,0 +1,91 @@
+---
+import Rating from './Rating.astro';
+import AffiliateButton from './AffiliateButton.astro';
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+
+export interface Props {
+  pick: {
+    rank: number; name: string; brand: string; award: string; asin: string | null;
+    image?: ImageMetadata; imageAlt?: string; rating: number; price?: string; bestFor: string;
+  };
+  total: number;
+  /** The other picks in the guide, linked to their in-page #pick-<rank> anchors. */
+  others?: { rank: number; name: string; brand: string; award: string }[];
+}
+const { pick, total, others = [] } = Astro.props;
+---
+<section class="top-pick" aria-label="Top pick">
+  {pick.image && (
+    <Image
+      src={pick.image}
+      alt={pick.imageAlt ?? `${pick.brand} ${pick.name}`}
+      widths={[320, 480]}
+      sizes="(max-width: 40rem) 100vw, 15rem"
+      format="webp"
+      loading="lazy"
+      decoding="async"
+    />
+  )}
+  <div class="tp-text">
+    <p class="eyebrow">{pick.award}</p>
+    <h2>{pick.brand} {pick.name}</h2>
+    <div class="tp-meta">
+      <Rating value={pick.rating} />
+      {pick.price && <span class="chip">{pick.price}</span>}
+    </div>
+    <p class="best-for"><strong>Best for:</strong> {pick.bestFor}</p>
+    <AffiliateButton asin={pick.asin} productName={`${pick.brand} ${pick.name}`} position="top-pick" />
+    <p class="all"><a href="#compare-heading">See all {total} picks compared</a></p>
+  </div>
+  {others.length > 0 && (
+    <nav class="also" aria-label="Also consider">
+      <p class="also-title">Also consider</p>
+      <ul class="also-list">
+        {others.map((o) => (
+          <li>
+            <a href={`#pick-${o.rank}`}>
+              <span class="also-award">{o.award}</span>
+              <span class="also-name">{o.brand} {o.name}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  )}
+</section>
+
+<style>
+  .top-pick {
+    display: grid; gap: 1.1rem; margin-block: 1.75rem;
+    padding: 1.4rem; border: 2px solid var(--signal); border-radius: 24px;
+    background: linear-gradient(180deg, var(--surface-2), var(--surface));
+    box-shadow: 0 24px 60px -30px var(--signal-glow);
+  }
+  .top-pick img { border-radius: var(--r); background: var(--paper-2); width: 100%; }
+  .top-pick h2 { margin: .3rem 0 .6rem; font-size: 1.35rem; }
+  .tp-meta { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; }
+  .best-for { color: var(--ink-2); margin: .8rem 0; }
+  .all { margin: .8rem 0 0; font-size: .95rem; }
+  .also { grid-column: 1 / -1; border-top: 1px solid var(--rule); padding-top: 1rem; }
+  .also-title { font-weight: 750; font-size: .95rem; margin-bottom: .6rem; }
+  .also-list {
+    list-style: none; padding: 0; display: flex; gap: .6rem; overflow-x: auto;
+    scroll-snap-type: x proximity; margin-inline: -1.4rem; padding-inline: 1.4rem; padding-bottom: .4rem;
+    scrollbar-width: thin;
+  }
+  .also-list li { flex: none; scroll-snap-align: start; }
+  .also-list a {
+    display: flex; flex-direction: column; gap: .1rem; min-height: 3.25rem; justify-content: center;
+    padding: .55rem 1rem; border: 1px solid var(--rule-hard); border-radius: 16px;
+    background: var(--paper-2); text-decoration: none; color: var(--ink); max-width: 15rem;
+    transition: border-color .15s ease, background-color .15s ease;
+  }
+  .also-list a:hover { border-color: var(--signal); background: var(--signal-tint); }
+  .also-award { font-size: .8rem; font-weight: 650; color: var(--signal); }
+  .also-name { font-size: .92rem; font-weight: 650; line-height: 1.25; }
+  @media (min-width: 40rem) { .also-list { margin-inline: 0; padding-inline: 0; flex-wrap: wrap; overflow: visible; } }
+  @media (min-width: 40rem) {
+    .top-pick:has(img) { grid-template-columns: 15rem 1fr; align-items: center; }
+  }
+</style>

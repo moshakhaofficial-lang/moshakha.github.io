@@ -74,6 +74,8 @@ const heroIsOurDiagram = Object.prototype.hasOwnProperty.call(diagramMeta, heroS
         </p>
       </header>
 
+      <slot name="after-head" />
+
       {hasAffiliateLinks && <DisclosureBanner />}
 
       {image && (
@@ -100,23 +102,24 @@ const heroIsOurDiagram = Object.prototype.hasOwnProperty.call(diagramMeta, heroS
         <slot />
       </div>
 
+      <slot name="after-prose" />
+
       <Faq items={faq} />
 
       <RelatedArticles related={related} currentId={currentId} />
     </div>
   </article>
+  <slot name="buybar" />
 </BaseLayout>
 
 <style>
   .article-head { margin-top: 1rem; }
   .article-head h1 { margin-top: .4rem; }
-  .standfirst { font-size: 1.18rem; color: var(--ink-2); margin-top: .9rem; }
+  .standfirst { font-size: 1.2rem; color: var(--ink-2); margin-top: .9rem; }
   .byline { margin-top: .9rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--rule); }
-    .hero-reuse {
+  .hero-reuse {
     margin: .6rem 0 0;
-    font-family: var(--mono);
-    font-size: .76rem;
-    letter-spacing: .04em;
+    font-size: .85rem;
     color: var(--ink-3);
   }
   .hero-reuse a { color: var(--ink-2); }

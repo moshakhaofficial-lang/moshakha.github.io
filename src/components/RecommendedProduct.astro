@@ -1,0 +1,55 @@
+---
+import Rating from './Rating.astro';
+import AffiliateButton from './AffiliateButton.astro';
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+
+export interface Props {
+  pick: {
+    rank: number; name: string; brand: string; asin: string | null;
+    image?: ImageMetadata; imageAlt?: string; rating: number; price?: string; bestFor: string;
+  };
+  guideHref: string;
+  guideTitle: string;
+}
+const { pick, guideHref, guideTitle } = Astro.props;
+---
+<aside class="rec" aria-labelledby="rec-heading">
+  <p class="eyebrow" id="rec-heading">What we'd use</p>
+  <div class="rec-body">
+    {pick.image && (
+      <Image
+        src={pick.image}
+        alt={pick.imageAlt ?? `${pick.brand} ${pick.name}`}
+        widths={[240, 400]}
+        sizes="(max-width: 40rem) 100vw, 12rem"
+        format="webp"
+        loading="lazy"
+        decoding="async"
+      />
+    )}
+    <div class="rec-text">
+      <h3>{pick.brand} {pick.name}</h3>
+      <div class="rec-meta">
+        <Rating value={pick.rating} />
+        {pick.price && <span class="chip">{pick.price}</span>}
+      </div>
+      <p class="best-for"><strong>Best for:</strong> {pick.bestFor}</p>
+      <AffiliateButton asin={pick.asin} productName={`${pick.brand} ${pick.name}`} position="article-rec" />
+      <p class="why"><a href={`${guideHref}#pick-${pick.rank}`}>Why we picked it: {guideTitle}</a></p>
+    </div>
+  </div>
+</aside>
+
+<style>
+  .rec { margin-block: 2.5rem; padding: 1.4rem; border: 1px solid var(--rule); border-radius: var(--r); background: var(--surface); }
+  .rec-body { display: grid; gap: 1.1rem; margin-top: .6rem; }
+  .rec img { border-radius: var(--r); background: var(--paper-2); width: 100%; }
+  .rec h3 { margin: 0 0 .5rem; }
+  .rec-meta { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; }
+  .best-for { color: var(--ink-2); margin: .8rem 0; }
+  .why { margin: .8rem 0 0; font-size: .93rem; }
+  @media (min-width: 40rem) {
+    .rec-body:has(img) { grid-template-columns: 12rem 1fr; align-items: start; }
+  }
+</style>

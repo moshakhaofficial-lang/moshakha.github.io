@@ -1,10 +1,14 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import Rating from '../components/Rating.astro';
+import EntryCard from '../components/EntryCard.astro';
+import { entryImage } from '../lib/entry-image';
 import { site } from '../config/site';
 
 const COLLECTIONS = ['guides', 'how-to', 'reviews', 'blog'] as const;
-const LABEL = { guides: 'Buying Guide', 'how-to': 'How-To', reviews: 'Review', blog: 'Blog' };
+const LABEL = { guides: 'Buying guide', 'how-to': 'How-to', reviews: 'Review', blog: 'Blog' };
 
 const all = (
   await Promise.all(
@@ -33,6 +37,17 @@ const featured = FEATURED.map((r) => byRef.get(r)).filter(Boolean);
 const latest = [...all]
   .sort((a, b) => +(b.data.updatedDate ?? b.data.publishDate) - +(a.data.updatedDate ?? a.data.publishDate))
   .slice(0, 8);
+
+/**
+ * "Top picks right now": one card per buying guide whose rank-1 pick has an
+ * image. Cards link to our own guide page — never to Amazon from the homepage.
+ */
+const topPicks = all
+  .filter((e) => e.collection === 'guides')
+  .map((g) => ({ guide: g, pick: (g.data as any).picks?.find((p: any) => p.rank === 1 && p.image) }))
+  .filter((x) => x.pick)
+  .sort((a, b) => +(b.guide.data.updatedDate ?? b.guide.data.publishDate) - +(a.guide.data.updatedDate ?? a.guide.data.publishDate))
+  .slice(0, 10);
 
 const counts = Object.fromEntries(
   COLLECTIONS.map((c) => [c, all.filter((e) => e.collection === c).length]),
@@ -134,7 +149,7 @@ const fmt = (d) => d.toLocaleDateString('en-US', { month: 'short', day: 'numeric
         </p>
         <div class="hero-cta">
           <a href="/guides/" class="btn btn--primary">Browse buying guides</a>
-          <a href="#find" class="btn btn--ghost">Find your answer</a>
+          <a href="/car-gear-finder/" class="btn btn--quiz">Take the 30-second gear quiz <span aria-hidden="true">&rarr;</span></a>
         </div>
       </div>
 
@@ -151,6 +166,44 @@ const fmt = (d) => d.toLocaleDateString('en-US', { month: 'short', day: 'numeric
       </aside>
     </div>
   </section>
+
+  {topPicks.length > 0 && (
+    <section class="section picks-section" aria-labelledby="picks-heading">
+      <div class="wrap">
+        <p class="eyebrow">Our rank-one picks</p>
+        <h2 id="picks-heading" style="margin-top:.9rem">Top picks right now</h2>
+      </div>
+      <div class="wrap">
+        <ul class="rail picks-rail" role="region" aria-label="Top picks, swipe for more" tabindex="0">
+          {topPicks.map(({ guide, pick }) => (
+            <li class="pcard">
+              <a href={`/guides/${guide.id}/`}>
+                <span class="pcard-img">
+                  <Image
+                    src={pick.image}
+                    alt={pick.imageAlt ?? `${pick.brand} ${pick.name}`}
+                    widths={[240, 360, 480]}
+                    sizes="(max-width: 46rem) 68vw, 17rem"
+                    format="webp"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </span>
+                <span class="pcard-body">
+                  <span class="pcard-cat">{guide.data.title}</span>
+                  <span class="pcard-name"><b>{pick.brand}</b> {pick.name}</span>
+                  <span class="pcard-meta">
+                    <Rating value={pick.rating} />
+                    {pick.price && <span class="chip">{pick.price}</span>}
+                  </span>
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )}
 
   <section class="trust">
     <div class="wrap">
@@ -205,11 +258,14 @@ const fmt = (d) => d.toLocaleDateString('en-US', { month: 'short', day: 'numeric
       <h2 style="margin-top:1rem">Where to start</h2>
       <div class="grid grid--3" style="margin-top:1.5rem">
         {featured.map((entry) => (
-          <article class="card card--link">
-            <p class="label">{LABEL[entry.collection]}</p>
-            <h3><a href={entry.href}>{entry.data.title}</a></h3>
-            <p>{entry.data.description}</p>
-          </article>
+          <EntryCard
+            reveal
+            href={entry.href}
+            title={entry.data.title}
+            description={entry.data.description}
+            label={LABEL[entry.collection]}
+            image={entryImage(entry)}
+          />
         ))}
       </div>
     </div>
@@ -228,17 +284,27 @@ const fmt = (d) => d.toLocaleDateString('en-US', { month: 'short', day: 'numeric
       </div>
 
       <ol class="latest">
-        {latest.map((e) => (
-          <li>
-            <a href={e.href}>
-              <span class="latest-label">{LABEL[e.collection]}</span>
-              <span class="latest-title">{e.data.title}</span>
+        {latest.map((e) => {
+          const img = entryImage(e);
+          return (
+          <li class="reveal">
+            <a href={e.href} class:list={{ 'has-thumb': !!img }}>
+              {img && (
+                <span class="latest-thumb">
+                  <Image src={img.src} alt={img.alt} widths={[96, 144, 192]} sizes="4.5rem" format="webp" loading="lazy" decoding="async" />
+                </span>
+              )}
+              <span class="latest-text">
+                <span class="latest-label">{LABEL[e.collection]}</span>
+                <span class="latest-title">{e.data.title}</span>
+              </span>
               <time class="latest-date tabular" datetime={(e.data.updatedDate ?? e.data.publishDate).toISOString()}>
                 {fmt(e.data.updatedDate ?? e.data.publishDate)}
               </time>
             </a>
           </li>
-        ))}
+          );
+        })}
       </ol>
 
       <p class="latest-more">
@@ -252,7 +318,7 @@ const fmt = (d) => d.toLocaleDateString('en-US', { month: 'short', day: 'numeric
 </BaseLayout>
 
 <style>
-  .hero { padding-block: clamp(3rem, 8vw, 6rem); position: relative; }
+  .hero { padding-block: clamp(2.5rem, 8vw, 6rem); position: relative; }
   .hero-grid {
     display: grid; gap: clamp(2rem, 5vw, 3.5rem);
     grid-template-columns: 1.1fr .9fr; align-items: center;
@@ -267,56 +333,82 @@ const fmt = (d) => d.toLocaleDateString('en-US', { month: 'short', day: 'numeric
     color: var(--ink-2); max-width: 44ch;
   }
   .hero-cta { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 2rem; }
+  .btn--quiz {
+    color: var(--signal); background: var(--signal-tint); border-color: rgba(255, 106, 43, .5);
+  }
+  .btn--quiz:hover { background: var(--signal); color: #140a05; border-color: var(--signal); transform: translateY(-1px); }
   .sec-lede { color: var(--ink-2); margin-top: .7rem; max-width: 54ch; }
 
   /* ---- hero spec panel (glass) ---- */
   .spec {
-    border: 1px solid var(--rule-hard); border-radius: 20px; overflow: hidden;
+    border: 1px solid var(--rule-hard); border-radius: 24px; overflow: hidden;
     background: linear-gradient(180deg, rgba(27,31,40,.85), rgba(17,19,25,.85));
     box-shadow: 0 30px 80px -30px rgba(255,106,43,.35), inset 0 1px 0 rgba(255,255,255,.05);
   }
   .spec-head {
     display: flex; justify-content: space-between; gap: 1rem;
     color: var(--ink-3); border-bottom: 1px solid var(--rule);
-    font-family: var(--mono); font-weight: 500; font-size: .64rem;
-    letter-spacing: .12em; text-transform: uppercase; padding: .8rem 1.05rem;
+    font-family: var(--mono); font-weight: 500; font-size: .7rem;
+    letter-spacing: .1em; text-transform: uppercase; padding: .8rem 1.1rem;
   }
   .spec-row {
     display: grid; grid-template-columns: 1fr auto auto; align-items: baseline;
-    gap: .5rem .8rem; padding: .8rem 1.05rem; border-bottom: 1px solid var(--rule-2);
+    gap: .5rem .8rem; padding: .85rem 1.1rem; border-bottom: 1px solid var(--rule-2);
     text-decoration: none; color: inherit; transition: background-color .15s ease;
   }
   .spec-row:last-of-type { border-bottom: 0; }
   .spec-row:hover { background: var(--signal-tint); }
-  .spec-cat { font-size: .88rem; color: var(--ink); font-weight: 600; }
+  .spec-cat { font-size: .92rem; color: var(--ink); font-weight: 650; }
   .spec-sold {
-    font-family: var(--mono); font-weight: 500; font-size: .76rem;
+    font-family: var(--mono); font-weight: 500; font-size: .8rem;
     color: var(--ink-3); text-decoration: line-through; text-decoration-color: var(--bad);
   }
   .spec-real {
-    font-family: var(--mono); font-size: .76rem; font-weight: 500;
+    font-family: var(--mono); font-size: .8rem; font-weight: 500;
     color: var(--signal); text-align: right; white-space: nowrap;
   }
   .spec-foot {
-    padding: .8rem 1.05rem; font-family: var(--mono); font-size: .66rem;
-    letter-spacing: .04em; color: var(--ink-3); background: rgba(0,0,0,.25);
+    padding: .8rem 1.1rem; font-family: var(--mono); font-size: .72rem;
+    letter-spacing: .02em; color: var(--ink-3); background: rgba(0,0,0,.25);
   }
+
+  /* ---- top picks carousel ---- */
+  .picks-section { padding-bottom: 1rem; }
+  .picks-rail { list-style: none; margin-top: 1rem; }
+  .pcard { width: min(72vw, 17rem); }
+  .pcard a {
+    display: flex; flex-direction: column; height: 100%; text-decoration: none; color: var(--ink);
+    background: linear-gradient(180deg, var(--surface), var(--paper-2));
+    border: 1px solid var(--rule); border-radius: var(--r); overflow: hidden;
+    transition: border-color .2s ease, transform .2s ease, box-shadow .2s ease;
+  }
+  .pcard a:hover {
+    border-color: rgba(255,106,43,.55); transform: translateY(-3px);
+    box-shadow: 0 18px 40px -18px var(--signal-glow); color: var(--ink);
+  }
+  .pcard-img { display: block; aspect-ratio: 1 / 1; background: #fff; }
+  .pcard-img :global(img) { width: 100%; height: 100%; object-fit: contain; border-radius: 0; padding: .6rem; }
+  .pcard-body { display: flex; flex-direction: column; gap: .4rem; padding: 1rem 1.15rem 1.2rem; flex: 1; }
+  .pcard-cat { font-size: .85rem; font-weight: 650; color: var(--signal); line-height: 1.25; }
+  .pcard-name { font-size: 1.05rem; font-weight: 700; line-height: 1.25; letter-spacing: -.015em; }
+  .pcard-name b { display: block; font-size: .85rem; font-weight: 600; color: var(--ink-3); letter-spacing: 0; }
+  .pcard-meta { display: flex; flex-wrap: wrap; gap: .4rem .7rem; align-items: center; margin-top: auto; padding-top: .3rem; }
 
   /* ---- trust bar ---- */
   .trust { border-block: 1px solid var(--rule); background: var(--paper-2); padding-block: 1.8rem; }
   .trust ul {
     list-style: none; padding: 0; margin: 0; display: grid; gap: 1.4rem;
     grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
-    font-size: .9rem; color: var(--ink-2);
+    font-size: .95rem; color: var(--ink-2);
   }
   .trust b {
-    display: block; color: var(--ink); font-family: var(--mono); font-weight: 500;
-    font-size: .7rem; letter-spacing: .1em; text-transform: uppercase; margin-bottom: .35rem;
+    display: block; color: var(--ink); font-weight: 750;
+    font-size: 1.05rem; letter-spacing: -.01em; margin-bottom: .3rem;
   }
   .trust li::before { content: ""; display: block; width: 1.6rem; height: 3px; border-radius: 9px; background: var(--signal); margin-bottom: .7rem; }
 
   /* ---- job router ---- */
-  .router { margin-top: 2rem; display: grid; gap: .7rem; }
+  .router { margin-top: 2rem; display: grid; gap: .75rem; }
   .job {
     border: 1px solid var(--rule); border-radius: var(--r);
     background: linear-gradient(180deg, var(--surface), var(--paper-2));
@@ -324,35 +416,32 @@ const fmt = (d) => d.toLocaleDateString('en-US', { month: 'short', day: 'numeric
   }
   .job:hover, .job[open] { border-color: rgba(255,106,43,.45); }
   .job summary {
-    display: flex; align-items: flex-start; gap: 1rem;
+    display: flex; align-items: center; gap: 1rem; min-height: 3.5rem;
     padding: 1.1rem 1.3rem; cursor: pointer; list-style: none;
   }
   .job summary::-webkit-details-marker { display: none; }
   .job-n {
-    font-family: var(--mono); font-size: .72rem; font-weight: 500;
-    color: var(--signal); padding-top: .28rem; flex: none;
+    display: grid; place-items: center; flex: none; width: 2.1rem; height: 2.1rem; border-radius: 12px;
+    background: var(--signal-tint); color: var(--signal); font-weight: 800; font-size: .9rem;
   }
   .job-text { display: flex; flex-direction: column; gap: .15rem; flex: 1; }
-  .job-q { font-weight: 700; font-size: 1.06rem; letter-spacing: -.015em; }
-  .job-hint { font-size: .86rem; color: var(--ink-3); }
+  .job-q { font-weight: 750; font-size: 1.1rem; letter-spacing: -.015em; line-height: 1.25; }
+  .job-hint { font-size: .9rem; color: var(--ink-3); }
   .job summary::after {
-    content: "+"; font-family: var(--mono); font-size: 1rem; line-height: 1;
-    color: var(--ink-2); flex: none; width: 1.8rem; height: 1.8rem;
+    content: "+"; font-family: var(--mono); font-size: 1.1rem; line-height: 1;
+    color: var(--ink-2); flex: none; width: 2.2rem; height: 2.2rem;
     display: grid; place-items: center; border: 1px solid var(--rule-hard); border-radius: 50%;
     transition: background-color .15s ease, color .15s ease;
   }
   .job[open] summary::after { content: "\2212"; background: var(--signal); color: #140a05; border-color: var(--signal); }
-  .job-links { list-style: none; margin: 0; padding: 0 1.3rem 1.2rem 3.4rem; }
+  .job-links { list-style: none; margin: 0; padding: 0 1.3rem 1.2rem 4.3rem; }
   .job-links a {
-    display: grid; grid-template-columns: 7.5rem 1fr; gap: .8rem; align-items: baseline;
-    padding: .55rem 0; text-decoration: none; color: var(--ink);
+    display: grid; grid-template-columns: 8rem 1fr; gap: .8rem; align-items: baseline;
+    min-height: 2.75rem; padding: .6rem 0; text-decoration: none; color: var(--ink);
     border-top: 1px solid var(--rule-2);
   }
-  .job-label {
-    font-family: var(--mono); font-size: .64rem; font-weight: 500;
-    letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3);
-  }
-  .job-title { font-size: .96rem; }
+  .job-label { font-size: .85rem; font-weight: 650; color: var(--signal); }
+  .job-title { font-size: 1rem; }
   .job-links a:hover .job-title { color: var(--signal); }
 
   /* ---- latest ---- */
@@ -360,28 +449,37 @@ const fmt = (d) => d.toLocaleDateString('en-US', { month: 'short', day: 'numeric
     display: flex; flex-wrap: wrap; gap: .6rem 1.5rem;
     align-items: flex-end; justify-content: space-between;
   }
-  .latest-count { font-family: var(--mono); font-size: .7rem; color: var(--ink-3); letter-spacing: .04em; }
-  .latest { list-style: none; margin: 1.6rem 0 0; padding: 0; display: grid; gap: .5rem; }
+  .latest-count { font-family: var(--mono); font-size: .76rem; color: var(--ink-3); letter-spacing: .02em; }
+  .latest { list-style: none; margin: 1.6rem 0 0; padding: 0; display: grid; gap: .6rem; }
   .latest a {
-    display: grid; grid-template-columns: 7.5rem 1fr auto; gap: .9rem; align-items: baseline;
-    padding: .9rem 1.1rem; border: 1px solid var(--rule); border-radius: var(--r-sm);
+    display: grid; grid-template-columns: 1fr auto; gap: .9rem; align-items: center;
+    min-height: 3.5rem; padding: .85rem 1.15rem; border: 1px solid var(--rule); border-radius: var(--r);
     background: var(--surface); text-decoration: none; color: var(--ink);
     transition: border-color .2s ease, transform .2s ease;
   }
+  .latest a.has-thumb { grid-template-columns: 4.5rem 1fr auto; padding: .65rem 1.15rem .65rem .65rem; }
   .latest a:hover { border-color: rgba(255,106,43,.55); transform: translateX(4px); }
   .latest a:hover .latest-title { color: var(--signal); }
-  .latest-label {
-    font-family: var(--mono); font-size: .64rem; font-weight: 500;
-    letter-spacing: .1em; text-transform: uppercase; color: var(--signal);
-  }
-  .latest-title { font-size: .98rem; font-weight: 600; }
-  .latest-date { font-family: var(--mono); font-size: .7rem; color: var(--ink-3); white-space: nowrap; }
-  .latest-more { margin-top: 1.4rem; font-size: .9rem; color: var(--ink-3); }
+  .latest-thumb { display: block; width: 4.5rem; aspect-ratio: 1; border-radius: 14px; overflow: hidden; background: var(--paper-2); }
+  .latest-thumb :global(img) { width: 100%; height: 100%; object-fit: cover; border-radius: 0; }
+  .latest-text { display: flex; flex-direction: column; gap: .1rem; min-width: 0; }
+  .latest-label { font-size: .85rem; font-weight: 650; color: var(--signal); }
+  .latest-title { font-size: 1.02rem; font-weight: 650; line-height: 1.3; }
+  .latest-date { font-family: var(--mono); font-size: .76rem; color: var(--ink-3); white-space: nowrap; }
+  .latest-more { margin-top: 1.4rem; font-size: .95rem; color: var(--ink-3); }
 
+  @media (min-width: 46rem) {
+    .picks-rail { margin-inline: 0; padding-inline: 0; scroll-padding-inline: 0; }
+    .pcard { width: 17rem; }
+  }
   @media (max-width: 46rem) {
     .hero-grid { grid-template-columns: 1fr; }
+    .hero-cta .btn { flex: 1 1 100%; }
     .job-links { padding-left: 1.3rem; }
-    .job-links a, .latest a { grid-template-columns: 1fr; gap: .15rem; }
-    .latest-date { grid-column: 1; }
+    .job-links a { grid-template-columns: 1fr; gap: .1rem; }
+    .latest a { grid-template-columns: 1fr; }
+    .latest a.has-thumb { grid-template-columns: 4.5rem 1fr; }
+    .latest-date { grid-column: 1 / -1; }
+    .latest a.has-thumb .latest-date { grid-column: 2; }
   }
 </style>

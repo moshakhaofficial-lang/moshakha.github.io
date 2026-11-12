@@ -14,6 +14,19 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 import { monetization } from '../config/site';
+import DisclosureBanner from '../components/DisclosureBanner.astro';
+
+const SIZES = [
+  { v: 'any', l: 'Not sure', h: 'Show everything' },
+  { v: 'small', l: 'Sedan or hatchback', h: 'Compact and mid-size cars' },
+  { v: 'large', l: 'SUV, truck or van', h: 'Bigger paint, bigger gear' },
+];
+const BUDGETS = [
+  { v: 'any', l: 'Any budget', h: 'Show everything' },
+  { v: 'budget', l: 'Budget', h: 'Under $20' },
+  { v: 'mid', l: 'Mid-range', h: '$20\u2013$60' },
+  { v: 'premium', l: 'Premium', h: '$60 and up' },
+];
 
 const allGuides = await getCollection('guides');
 const bySlug = new Map(allGuides.map((g) => [g.id, g]));
@@ -40,8 +53,8 @@ const tag = monetization.amazonTrackingId;
 const marketplace = monetization.amazonMarketplace;
 
 const sizeHint = (bestFor: string) => {
-  if (/\b(suv|truck|van|large)\b/i.test(bestFor)) return 'large';
-  if (/\b(sedan|hatchback|small|compact)\b/i.test(bestFor)) return 'small';
+  if (/\b(suvs?|trucks?|vans?|large)\b/i.test(bestFor)) return 'large';
+  if (/\b(sedans?|hatchbacks?|small|compact)\b/i.test(bestFor)) return 'small';
   return 'any';
 };
 const budgetTier = (price?: string) => {
@@ -106,52 +119,107 @@ const dataJson = JSON.stringify(results);
   description="Pick your goal, vehicle size and budget — get the real, already-vetted picks from our guides that fit, with nothing invented."
   canonical="/car-gear-finder"
 >
-  <div class="wrap section">
-    <p class="eyebrow">Interactive</p>
+  <div class="wrap section finder">
+    <p class="eyebrow">The 30-second quiz</p>
     <h1 style="margin-top:.7rem">Car Gear Finder</h1>
     <p class="lede">
-      Pick what you're trying to do. Every product below is a real pick from our own guides —
-      same specs, same pros and cons, same picture we'd give you if you read the whole article.
+      Answer a couple of quick questions. Every product you'll see is a real pick from our own guides &mdash;
+      same specs, same pros and cons we'd give you if you read the whole article.
       This just narrows it down faster.
     </p>
+    <DisclosureBanner />
+    <script is:inline>document.documentElement.classList.add('js');</script>
 
-    <form id="finder-form" class="finder-form">
-      <fieldset>
-        <legend>What are you trying to do?</legend>
-        <div class="goal-grid" role="radiogroup">
-          {GOALS.map((g, i) => (
-            <label class="goal-btn">
-              <input type="radio" name="goal" value={g.id} checked={i === 0} />
-              <span class="goal-label">{g.label}</span>
-              <span class="goal-hint">{g.hint}</span>
-            </label>
-          ))}
+    <div id="finder" class="quiz">
+      <div class="results-bar" id="results-bar">
+        <p class="results-summary" id="results-summary"></p>
+        <div class="results-actions">
+          <button type="button" class="btn btn--ghost" id="btn-edit">Change answers</button>
+          <button type="button" class="btn btn--primary" id="btn-copy">Copy link to these results</button>
+          <button type="button" class="btn btn--ghost" id="btn-restart">Start over</button>
         </div>
-      </fieldset>
-
-      <div class="finder-filters">
-        <fieldset>
-          <legend>Vehicle size</legend>
-          <label><input type="radio" name="size" value="any" checked /> Any</label>
-          <label><input type="radio" name="size" value="small" /> Sedan / hatchback</label>
-          <label><input type="radio" name="size" value="large" /> SUV / truck / van</label>
-        </fieldset>
-        <fieldset>
-          <legend>Budget</legend>
-          <label><input type="radio" name="budget" value="any" checked /> Any</label>
-          <label><input type="radio" name="budget" value="budget" /> Budget (under $20)</label>
-          <label><input type="radio" name="budget" value="mid" /> Mid-range ($20–$60)</label>
-          <label><input type="radio" name="budget" value="premium" /> Premium ($60+)</label>
-        </fieldset>
-        <fieldset>
-          <legend>Sort by</legend>
-          <label><input type="radio" name="sort" value="editorial" checked /> Our top pick first</label>
-          <label><input type="radio" name="sort" value="cheapest" /> Cheapest first</label>
-        </fieldset>
+        <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
       </div>
-    </form>
 
-    <div id="finder-results" class="finder-results" aria-live="polite"></div>
+      <form id="finder-form" class="finder-form" method="get" action="/car-gear-finder/">
+        <div class="quiz-top" id="quiz-top">
+          <p class="quiz-step-label" id="quiz-step-label">Step 1 of 3</p>
+          <div class="quiz-bar" aria-hidden="true"><i id="quiz-bar-fill"></i></div>
+        </div>
+
+        <fieldset class="step" data-step="goal" tabindex="-1">
+          <legend>What are you trying to do?</legend>
+          <div class="opt-grid">
+            {GOALS.map((g) => (
+              <label class="opt">
+                <input type="radio" name="goal" value={g.id} />
+                <span class="opt-label">{g.label}</span>
+                <span class="opt-hint">{g.hint}</span>
+              </label>
+            ))}
+          </div>
+        </fieldset>
+
+        <fieldset class="step" data-step="size" tabindex="-1">
+          <legend>What size is your vehicle?</legend>
+          <div class="opt-grid">
+            {SIZES.map((o) => (
+              <label class="opt">
+                <input type="radio" name="size" value={o.v} checked={o.v === 'any'} />
+                <span class="opt-label">{o.l}</span>
+                <span class="opt-hint">{o.h}</span>
+              </label>
+            ))}
+          </div>
+        </fieldset>
+
+        <fieldset class="step" data-step="budget" tabindex="-1">
+          <legend>What's your budget?</legend>
+          <div class="opt-grid">
+            {BUDGETS.map((o) => (
+              <label class="opt">
+                <input type="radio" name="budget" value={o.v} checked={o.v === 'any'} />
+                <span class="opt-label">{o.l}</span>
+                <span class="opt-hint">{o.h}</span>
+              </label>
+            ))}
+          </div>
+        </fieldset>
+
+        <fieldset class="step" data-step="sort">
+          <legend>Sort by</legend>
+          <div class="seg">
+            <label class="seg-opt"><input type="radio" name="sort" value="editorial" checked /><span>Our top pick first</span></label>
+            <label class="seg-opt"><input type="radio" name="sort" value="cheapest" /><span>Cheapest first</span></label>
+          </div>
+        </fieldset>
+
+        <button type="submit" class="btn btn--primary finder-submit">Show my picks</button>
+
+        <div class="quiz-nav" id="quiz-nav">
+          <button type="button" class="btn btn--ghost" id="btn-back">Back</button>
+          <button type="button" class="btn btn--primary" id="btn-next">Next</button>
+        </div>
+      </form>
+
+      <noscript>
+        <div class="nojs">
+          <p>The quiz needs JavaScript to filter picks. Without it, jump straight to the guide for what you're doing:</p>
+          <ul>
+            {GOALS.map((g) => (
+              <li>
+                <strong>{g.label}</strong>:
+                {[...g.guides.map((s) => ({ href: `/guides/${s}/`, t: bySlug.get(s)?.data.title })), ...(g.howTo ?? []).map((s) => ({ href: `/how-to/${s}/`, t: howToBySlug.get(s)?.data.title }))]
+                  .filter((x) => x.t)
+                  .map((x, i) => <> {i > 0 && '·'} <a href={x.href}>{x.t}</a></>)}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </noscript>
+
+      <div id="finder-results" class="finder-results" aria-live="polite"></div>
+    </div>
   </div>
 </BaseLayout>
 
@@ -167,22 +235,57 @@ const dataJson = JSON.stringify(results);
     id: string; label: string; hint: string; picks: Pick[];
     fallback: { href: string; title: string; description: string }[];
   };
+  type Step = 'goal' | 'size' | 'budget';
 
   const dataEl = document.getElementById('finder-data');
   const goals: Goal[] = JSON.parse(dataEl?.textContent ?? '[]');
+  const root = document.getElementById('finder') as HTMLElement;
   const form = document.getElementById('finder-form') as HTMLFormElement;
   const resultsEl = document.getElementById('finder-results') as HTMLElement;
+  const stepLabel = document.getElementById('quiz-step-label') as HTMLElement;
+  const barFill = document.getElementById('quiz-bar-fill') as HTMLElement;
+  const btnBack = document.getElementById('btn-back') as HTMLButtonElement;
+  const btnNext = document.getElementById('btn-next') as HTMLButtonElement;
+  const btnCopy = document.getElementById('btn-copy') as HTMLButtonElement;
+  const btnEdit = document.getElementById('btn-edit') as HTMLButtonElement;
+  const btnRestart = document.getElementById('btn-restart') as HTMLButtonElement;
+  const copyStatus = document.getElementById('copy-status') as HTMLElement;
+  const summaryEl = document.getElementById('results-summary') as HTMLElement;
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   function starString(rating: number): string {
     return '★'.repeat(Math.round(rating)) + '☆'.repeat(5 - Math.round(rating));
   }
 
+  const radios = (name: string) => Array.from(form.querySelectorAll<HTMLInputElement>(`input[name="${name}"]`));
+  const val = (name: string) => radios(name).find((r) => r.checked)?.value ?? '';
+  const setVal = (name: string, v: string) => {
+    const r = radios(name).find((x) => x.value === v);
+    if (r) r.checked = true;
+    return !!r;
+  };
+  const optText = (name: string) =>
+    radios(name).find((r) => r.checked)?.closest('label')?.querySelector('.opt-label')?.textContent ?? '';
+
+  /**
+   * Which questions matter for a goal, derived from the same filtering rules
+   * render() applies: a goal with only how-to fallbacks ignores size and
+   * budget; size/budget are asked only when at least one pick is tagged.
+   */
+  function stepsFor(goalId: string): Step[] {
+    const steps: Step[] = ['goal'];
+    const g = goals.find((x) => x.id === goalId);
+    if (!g || g.fallback.length > 0 || g.picks.length === 0) return steps;
+    if (g.picks.some((p) => p.size !== 'any')) steps.push('size');
+    if (g.picks.some((p) => p.budget !== 'any')) steps.push('budget');
+    return steps;
+  }
+
   function render() {
-    const fd = new FormData(form);
-    const goalId = fd.get('goal') as string;
-    const size = fd.get('size') as string;
-    const budget = fd.get('budget') as string;
-    const sort = fd.get('sort') as string;
+    const goalId = val('goal');
+    const size = val('size');
+    const budget = val('budget');
+    const sort = val('sort');
 
     const goal = goals.find((g) => g.id === goalId);
     resultsEl.textContent = '';
@@ -205,6 +308,8 @@ const dataJson = JSON.stringify(results);
 
     const heading = document.createElement('h2');
     heading.className = 'finder-heading';
+    heading.id = 'finder-heading';
+    heading.tabIndex = -1;
     heading.textContent = goal.label;
     resultsEl.appendChild(heading);
 
@@ -261,7 +366,16 @@ const dataJson = JSON.stringify(results);
 
       const meta = document.createElement('p');
       meta.className = 'finder-meta';
-      meta.textContent = `${starString(pick.rating)} ${pick.rating.toFixed(1)}${pick.price ? ' · ' + pick.price : ''}`;
+      const stars = document.createElement('span');
+      stars.className = 'finder-stars';
+      stars.textContent = `${starString(pick.rating)} ${pick.rating.toFixed(1)}`;
+      meta.appendChild(stars);
+      if (pick.price) {
+        const chip = document.createElement('span');
+        chip.className = 'chip';
+        chip.textContent = pick.price;
+        meta.appendChild(chip);
+      }
 
       const bestFor = document.createElement('p');
       bestFor.className = 'finder-bestfor';
@@ -299,55 +413,266 @@ const dataJson = JSON.stringify(results);
     resultsEl.appendChild(grid);
   }
 
-  form.addEventListener('change', render);
-  render();
+  /* ---------- quiz state, URL and navigation ---------- */
+  const base = location.pathname;
+  let view: Step | 'results' = 'goal';
+
+  function buildQuery(): URLSearchParams {
+    const g = val('goal');
+    const steps = stepsFor(g);
+    const q = new URLSearchParams();
+    q.set('goal', g);
+    if (steps.includes('size')) q.set('size', val('size'));
+    if (steps.includes('budget')) q.set('budget', val('budget'));
+    if (val('sort') === 'cheapest') q.set('sort', 'cheapest');
+    return q;
+  }
+
+  /** Restores answers from the query string. True when it names a real goal. */
+  function applyParams(): boolean {
+    const q = new URLSearchParams(location.search);
+    const g = q.get('goal');
+    if (!g || !goals.some((x) => x.id === g)) return false;
+    setVal('goal', g);
+    setVal('size', q.get('size') ?? 'any') || setVal('size', 'any');
+    setVal('budget', q.get('budget') ?? 'any') || setVal('budget', 'any');
+    setVal('sort', q.get('sort') === 'cheapest' ? 'cheapest' : 'editorial');
+    return true;
+  }
+
+  function updateNav() {
+    const steps = stepsFor(val('goal'));
+    if (view === 'results') return;
+    const idx = steps.indexOf(view);
+    const total = Math.max(steps.length, 1);
+    stepLabel.textContent = `Step ${idx + 1} of ${total}`;
+    barFill.style.width = `${((idx + 1) / total) * 100}%`;
+    btnBack.hidden = idx <= 0;
+    const last = idx >= steps.length - 1;
+    btnNext.textContent = last ? 'See my picks' : 'Next';
+    btnNext.disabled = view === 'goal' && !val('goal');
+  }
+
+  function focusSoon(el: HTMLElement | null) {
+    if (el) requestAnimationFrame(() => el.focus({ preventScroll: false }));
+  }
+
+  function showStep(step: Step, focus = true) {
+    view = step;
+    root.dataset.view = step;
+    updateNav();
+    if (focus) focusSoon(form.querySelector<HTMLElement>(`.step[data-step="${step}"]`));
+  }
+
+  function showResults(opts: { push: boolean; focus?: boolean }) {
+    view = 'results';
+    root.dataset.view = 'results';
+    render();
+    const parts = [optText('goal')];
+    const steps = stepsFor(val('goal'));
+    if (steps.includes('size') && val('size') !== 'any') parts.push(optText('size'));
+    if (steps.includes('budget') && val('budget') !== 'any') parts.push(optText('budget'));
+    summaryEl.textContent = parts.filter(Boolean).join(' · ');
+    copyStatus.textContent = '';
+    const url = `${base}?${buildQuery().toString()}`;
+    if (opts.push) history.pushState(null, '', url);
+    else history.replaceState(null, '', url);
+    if (opts.focus !== false) focusSoon(document.getElementById('finder-heading'));
+  }
+
+  function next() {
+    const steps = stepsFor(val('goal'));
+    if (view === 'results') return;
+    if (view === 'goal' && !val('goal')) return;
+    const idx = steps.indexOf(view);
+    if (idx < steps.length - 1) showStep(steps[idx + 1]);
+    else showResults({ push: true });
+  }
+
+  function back() {
+    const steps = stepsFor(val('goal'));
+    if (view === 'results') {
+      history.replaceState(null, '', base);
+      showStep(steps[steps.length - 1]);
+      return;
+    }
+    const idx = steps.indexOf(view);
+    if (idx > 0) showStep(steps[idx - 1]);
+  }
+
+  function restart() {
+    radios('goal').forEach((r) => (r.checked = false));
+    setVal('size', 'any');
+    setVal('budget', 'any');
+    setVal('sort', 'editorial');
+    history.replaceState(null, '', base);
+    showStep('goal');
+  }
+
+  btnNext.addEventListener('click', next);
+  btnBack.addEventListener('click', back);
+  btnEdit.addEventListener('click', back);
+  btnRestart.addEventListener('click', restart);
+
+  // Enter on a focused option submits the form: treat it as "Next".
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    next();
+  });
+
+  form.addEventListener('change', (e) => {
+    const t = e.target as HTMLInputElement;
+    if (t.name === 'sort' && view === 'results') showResults({ push: false, focus: false });
+    else updateNav();
+  });
+
+  // Pointer taps on an option card advance automatically; keyboard users
+  // (arrow keys / space) pick an option and press Next, so arrowing through
+  // the list never skips ahead. Real clicks have detail > 0.
+  form.addEventListener('click', (e) => {
+    const t = e.target as HTMLElement;
+    const label = t.closest('label.opt');
+    if (!label || t.tagName === 'INPUT' || (e as MouseEvent).detail === 0) return;
+    if (view === 'results') return;
+    window.setTimeout(next, reduceMotion ? 0 : 160);
+  });
+
+  btnCopy.addEventListener('click', async () => {
+    const url = location.href;
+    let ok = false;
+    try {
+      await navigator.clipboard.writeText(url);
+      ok = true;
+    } catch {
+      const ta = document.createElement('textarea');
+      ta.value = url;
+      ta.setAttribute('readonly', '');
+      ta.style.cssText = 'position:fixed;opacity:0;top:0;left:0';
+      document.body.appendChild(ta);
+      ta.select();
+      try { ok = document.execCommand('copy'); } catch { ok = false; }
+      ta.remove();
+    }
+    copyStatus.textContent = ok ? 'Copied ✓' : 'Could not copy — copy the address from your browser bar.';
+    copyStatus.classList.toggle('is-ok', ok);
+    window.setTimeout(() => { copyStatus.textContent = ''; }, 3500);
+  });
+
+  window.addEventListener('popstate', () => {
+    if (applyParams()) showResults({ push: false, focus: false });
+    else showStep(stepsFor(val('goal')).includes(view as Step) ? (view as Step) : 'goal', false);
+  });
+
+  // Initial state: a shared link goes straight to its results; otherwise the quiz
+  // starts with no goal chosen (the no-JS form has none checked either).
+  if (applyParams()) showResults({ push: false, focus: false });
+  else {
+    radios('goal').forEach((r) => (r.checked = false));
+    showStep('goal', false);
+  }
 </script>
 
-<style>
-  .lede { color: var(--ink-2); font-size: 1.1rem; max-width: 56ch; margin-top: .6rem; }
-  .finder-form { margin-top: 2rem; }
-  fieldset { border: none; padding: 0; margin: 0; }
-  legend {
-    font-family: var(--mono); font-size: .7rem; font-weight: 500; letter-spacing: .1em;
-    text-transform: uppercase; color: var(--ink-3); padding: 0 0 .6rem;
+<style is:global>
+  .finder .lede { color: var(--ink-2); font-size: 1.1rem; max-width: 56ch; margin-top: .6rem; }
+  .finder .finder-form { margin-top: 1.5rem; }
+  .finder fieldset { border: none; padding: 0; margin: 0; min-width: 0; }
+  .finder fieldset:focus { outline: none; }
+  .finder legend {
+    font-family: var(--display); font-weight: 800; letter-spacing: -.03em; line-height: 1.1;
+    font-size: clamp(1.6rem, 1.2rem + 1.8vw, 2.25rem); color: var(--ink); padding: 0 0 1.1rem;
   }
-  .goal-grid { display: grid; gap: .7rem; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); }
-  .goal-btn {
-    display: flex; flex-direction: column; gap: .2rem; padding: .85rem 1rem;
+  .finder .step[data-step="sort"] legend { font-size: .95rem; font-weight: 700; letter-spacing: 0; padding-bottom: .5rem; color: var(--ink-2); }
+
+  /* ----- step visibility: all shown with no JS; one at a time with it ----- */
+  .js .finder .step { display: none; }
+  .js #finder:not([data-view]) .step[data-step="goal"],
+  .js #finder[data-view="goal"] .step[data-step="goal"],
+  .js #finder[data-view="size"] .step[data-step="size"],
+  .js #finder[data-view="budget"] .step[data-step="budget"],
+  .js #finder[data-view="results"] .step[data-step="sort"] { display: block; }
+  .finder fieldset + fieldset { margin-top: 2rem; }
+  .js .finder-submit { display: none; }
+  .finder-submit { margin-top: 1.5rem; }
+
+  .quiz-top, .quiz-nav { display: none; }
+  .js .quiz-top { display: block; margin-bottom: 1.6rem; }
+  .js .quiz-nav { display: flex; gap: .75rem; margin-top: 1.6rem; }
+  .js .quiz-nav .btn { min-height: 3.25rem; }
+  .js .quiz-nav #btn-next { flex: 1; }
+  .quiz-nav [hidden] { display: none; }
+  .js #finder[data-view="results"] .quiz-top,
+  .js #finder[data-view="results"] .quiz-nav { display: none; }
+  .quiz-step-label { font-weight: 700; font-size: .9rem; color: var(--ink-2); margin-bottom: .5rem; }
+  .quiz-bar { height: 6px; border-radius: 99px; background: var(--rule); overflow: hidden; }
+  .quiz-bar i { display: block; height: 100%; width: 33%; border-radius: 99px; background: var(--signal); box-shadow: 0 0 12px var(--signal-glow); transition: width .3s ease; }
+
+  /* ----- big tappable option cards ----- */
+  .opt-grid { display: grid; gap: .75rem; grid-template-columns: 1fr; }
+  @media (min-width: 40rem) { .opt-grid { grid-template-columns: repeat(2, 1fr); } }
+  .opt {
+    position: relative; display: flex; flex-direction: column; justify-content: center; gap: .2rem;
+    min-height: 4.5rem; padding: 1rem 3.2rem 1rem 1.25rem;
     border: 2px solid var(--rule); border-radius: var(--r); cursor: pointer;
-    background: var(--surface); transition: border-color .12s ease;
+    background: linear-gradient(180deg, var(--surface), var(--paper-2));
+    transition: border-color .15s ease, background-color .15s ease, transform .15s ease;
   }
-  .goal-btn:has(input:checked) { border-color: var(--signal); background: var(--signal-tint); }
-  .goal-btn input { position: absolute; opacity: 0; pointer-events: none; }
-  .goal-label { font-weight: 700; }
-  .goal-hint { font-size: .82rem; color: var(--ink-3); }
+  .opt:hover { border-color: var(--rule-hard); transform: translateY(-2px); }
+  .opt::after {
+    content: ""; position: absolute; right: 1.1rem; top: 50%; translate: 0 -50%;
+    width: 1.5rem; height: 1.5rem; border-radius: 50%; border: 2px solid var(--rule-hard);
+    transition: background-color .15s ease, border-color .15s ease;
+  }
+  .opt:has(input:checked) { border-color: var(--signal); background: var(--signal-tint); }
+  .opt:has(input:checked)::after {
+    border-color: var(--signal);
+    background: var(--signal) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23140a05' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E") center / 70% no-repeat;
+  }
+  .opt:has(input:focus-visible) { outline: 2px solid var(--signal); outline-offset: 3px; }
+  .opt input { position: absolute; opacity: 0; pointer-events: none; }
+  .opt-label { font-weight: 750; font-size: 1.08rem; letter-spacing: -.01em; }
+  .opt-hint { font-size: .92rem; color: var(--ink-3); }
 
-  .finder-filters {
-    display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
-    margin-top: 1.75rem; padding-top: 1.5rem; border-top: 1px solid var(--rule);
-  }
-  .finder-filters label {
-    display: flex; align-items: center; gap: .5rem; font-size: .92rem; padding-block: .25rem; cursor: pointer;
-  }
+  /* sort control (results screen) */
+  .seg { display: inline-flex; padding: .25rem; gap: .25rem; background: var(--surface); border: 1px solid var(--rule); border-radius: 999px; }
+  .seg-opt { position: relative; cursor: pointer; }
+  .seg-opt input { position: absolute; opacity: 0; pointer-events: none; }
+  .seg-opt span { display: block; padding: .55rem 1rem; min-height: 2.5rem; border-radius: 999px; font-weight: 650; font-size: .92rem; color: var(--ink-2); }
+  .seg-opt:has(input:checked) span { background: var(--signal); color: #140a05; }
+  .seg-opt:has(input:focus-visible) { outline: 2px solid var(--signal); outline-offset: 2px; border-radius: 999px; }
 
-  .finder-results { margin-top: 2.5rem; padding-top: 2rem; border-top: 2px solid var(--rule-hard); }
+  /* ----- results ----- */
+  .results-bar { display: none; }
+  .js #finder[data-view="results"] .results-bar {
+    display: block; margin-top: 1.5rem; padding: 1.1rem 1.25rem; border-radius: var(--r);
+    background: var(--signal-tint); border: 1px solid rgba(255, 106, 43, .35);
+  }
+  .results-summary { font-weight: 750; font-size: 1.15rem; letter-spacing: -.01em; }
+  .results-actions { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: .9rem; }
+  .results-actions .btn { min-height: 2.75rem; padding: .55rem 1.1rem; font-size: .95rem; }
+  .copy-status { min-height: 1.4rem; margin-top: .6rem; font-weight: 700; font-size: .95rem; color: var(--ink-2); }
+  .copy-status.is-ok { color: var(--good); }
+  .finder #finder-results { margin-top: 1.5rem; }
+  .js #finder:not([data-view="results"]) #finder-results { display: none; }
+  .finder .finder-form + .nojs, .nojs { margin-top: 1.5rem; padding: 1rem 1.25rem; border: 1px dashed var(--rule-hard); border-radius: var(--r); color: var(--ink-2); font-size: .95rem; }
+  .nojs ul { list-style: none; padding: 0; margin-top: .6rem; display: grid; gap: .5rem; }
   .finder-heading { margin-bottom: 1.2rem; }
   .finder-note { color: var(--ink-2); margin-bottom: 1rem; }
   .finder-empty { color: var(--ink-3); padding: 2rem 0; }
 
-  .finder-grid { display: grid; gap: 1.2rem; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); }
+  .finder-grid { display: grid; gap: 1.2rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr)); }
   .finder-card {
-    border: 1px solid var(--rule); border-radius: var(--r); padding: 1.25rem;
-    display: flex; flex-direction: column; gap: .5rem; background: var(--surface);
+    border: 1px solid var(--rule); border-radius: var(--r); padding: 1.4rem;
+    display: flex; flex-direction: column; gap: .6rem;
+    background: linear-gradient(180deg, var(--surface), var(--paper-2));
   }
   .finder-award {
-    font-family: var(--mono); font-size: .66rem; font-weight: 500; letter-spacing: .06em;
-    text-transform: uppercase; color: var(--signal-dark); background: var(--signal-tint);
-    display: inline-block; padding: .2rem .5rem; border-radius: var(--r); width: fit-content;
+    font-size: .8rem; font-weight: 650; color: var(--signal-dark); background: var(--signal-tint);
+    display: inline-block; padding: .25rem .7rem; border-radius: 999px; width: fit-content;
   }
-  .finder-card h3 { font-size: 1.05rem; margin: 0; }
-  .finder-meta { font-family: var(--mono); font-size: .85rem; color: var(--ink-2); }
-  .finder-bestfor { font-size: .9rem; color: var(--ink-2); }
-  .finder-source { font-size: .82rem; }
-  .finder-card .btn--buy { margin-top: .3rem; }
+  .finder-card h3 { font-size: 1.15rem; margin: 0; }
+  .finder-meta { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem .75rem; font-size: .92rem; color: var(--ink-2); }
+  .finder-stars { color: var(--signal); font-weight: 600; }
+  .finder-bestfor { font-size: .95rem; color: var(--ink-2); }
+  .finder-source { font-size: .9rem; }
+  .finder-card .btn--buy { margin-top: .4rem; }
 </style>

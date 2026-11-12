@@ -2,7 +2,9 @@
 import { getCollection, render } from 'astro:content';
 import ArticleLayout from '../../layouts/ArticleLayout.astro';
 import ComparisonTable from '../../components/ComparisonTable.astro';
+import TopPick from '../../components/TopPick.astro';
 import PickCard from '../../components/PickCard.astro';
+import StickyBuyBar from '../../components/StickyBuyBar.astro';
 import { articleSchema, breadcrumbSchema, faqSchema, itemListSchema, readingTime } from '../../lib/schema';
 
 export async function getStaticPaths() {
@@ -16,6 +18,9 @@ const { entry } = Astro.props;
 const { Content, remarkPluginFrontmatter } = await render(entry);
 const d = entry.data;
 const path = `/guides/${entry.id}`;
+const topPick = [...d.picks].filter((p) => p.asin).sort((a, b) => a.rank - b.rank)[0];
+
+const others = [...d.picks].filter((p) => p !== topPick).sort((a, b) => a.rank - b.rank);
 
 const schema = [
   articleSchema({ ...d, path, title: d.title, description: d.description, image: d.image?.src }),
@@ -42,6 +47,7 @@ const schema = [
   currentId={`guides/${entry.id}`}
   hasAffiliateLinks={d.picks.length > 0}
 >
+  {topPick && <TopPick pick={topPick} total={d.picks.length} others={others} />}
   <ComparisonTable picks={d.picks} note={d.comparisonNote} />
   <Content />
   {d.picks.length > 0 && (
@@ -50,4 +56,5 @@ const schema = [
       {d.picks.map((pick) => <PickCard pick={pick} />)}
     </section>
   )}
+  {topPick && <StickyBuyBar slot="buybar" asin={topPick.asin} productName={`${topPick.brand} ${topPick.name}`} price={topPick.price} />}
 </ArticleLayout>

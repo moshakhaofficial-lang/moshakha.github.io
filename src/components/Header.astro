@@ -2,6 +2,11 @@
 import Logo from './Logo.astro';
 import { nav } from '../config/site';
 const path = Astro.url.pathname.replace(/\/$/, '') || '/';
+const isCurrent = (href: string) => {
+  const h = href.replace(/\/$/, '');
+  return path === h || path.startsWith(h + '/');
+};
+const finder = nav.find((n) => n.href === '/car-gear-finder/')!;
 ---
 <header class="site-header">
   <div class="wrap">
@@ -9,16 +14,39 @@ const path = Astro.url.pathname.replace(/\/$/, '') || '/';
       <Logo size={26} />
       <span>Moshakha</span>
     </a>
-    <nav class="site-nav" aria-label="Main">
+
+    <!-- Desktop: inline nav -->
+    <nav class="site-nav site-nav--desktop" aria-label="Main">
       <ul>
         {nav.map((item) => (
           <li>
-            <a href={item.href} aria-current={path === item.href || path.startsWith(item.href + '/') ? 'page' : undefined}>
-              {item.label}
-            </a>
+            <a href={item.href} aria-current={isCurrent(item.href) ? 'page' : undefined}>{item.label}</a>
           </li>
         ))}
       </ul>
     </nav>
+
+    <!-- Phones: one row — Gear Finder pill + CSS-only menu disclosure -->
+    <div class="bar-actions">
+      <a class="pill" href={finder.href} aria-current={isCurrent(finder.href) ? 'page' : undefined}>{finder.label}</a>
+      <details class="menu">
+        <summary aria-label="Menu">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path class="i-open" d="M4 7h16M4 12h16M4 17h16" />
+            <path class="i-close" d="M6 6l12 12M18 6L6 18" />
+          </svg>
+          <span class="menu-text">Menu</span>
+        </summary>
+        <nav class="menu-panel" aria-label="Mobile">
+          <ul>
+            {nav.map((item) => (
+              <li>
+                <a href={item.href} aria-current={isCurrent(item.href) ? 'page' : undefined}>{item.label}</a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </details>
+    </div>
   </div>
 </header>

@@ -1,6 +1,8 @@
 ---
 import { getCollection, render } from 'astro:content';
 import ArticleLayout from '../../layouts/ArticleLayout.astro';
+import RecommendedProduct from '../../components/RecommendedProduct.astro';
+import { resolveRecommendation } from '../../lib/recommend';
 import { articleSchema, breadcrumbSchema, faqSchema } from '../../lib/schema';
 
 export async function getStaticPaths() {
@@ -13,6 +15,7 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content, remarkPluginFrontmatter } = await render(entry);
 const d = entry.data;
+const rec = await resolveRecommendation(d);
 const path = `/blog/${entry.id}`;
 
 const schema = [
@@ -37,6 +40,8 @@ const schema = [
   faq={d.faq}
   related={d.related}
   currentId={`blog/${entry.id}`}
+  hasAffiliateLinks={!!rec || (entry.body ?? "").includes("<AffiliateButton")}
 >
   <Content />
+  {rec && <RecommendedProduct slot="after-prose" pick={rec.pick} guideHref={rec.guideHref} guideTitle={rec.guideTitle} />}
 </ArticleLayout>

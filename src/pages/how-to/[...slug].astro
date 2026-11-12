@@ -1,6 +1,8 @@
 ---
 import { getCollection, render } from 'astro:content';
 import ArticleLayout from '../../layouts/ArticleLayout.astro';
+import RecommendedProduct from '../../components/RecommendedProduct.astro';
+import { resolveRecommendation } from '../../lib/recommend';
 import { articleSchema, breadcrumbSchema, faqSchema, howToSchema } from '../../lib/schema';
 
 export async function getStaticPaths() {
@@ -13,7 +15,23 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content, remarkPluginFrontmatter } = await render(entry);
 const d = entry.data;
+const rec = await resolveRecommendation(d);
 const path = `/how-to/${entry.id}`;
+
+/** ISO 8601 duration (PT15M, PT2H, PT1H30M, P1D) -> "15 min", "2 hr", "1 hr 30 min". */
+function formatDuration(iso?: string): string | null {
+  const m = iso?.match(/^P(?:(\d+)D)?(?:T(?:(\d+)H)?(?:(\d+)M)?)?$/);
+  if (!m) return null;
+  const [days, hrs, mins] = [m[1], m[2], m[3]].map((x) => (x ? parseInt(x, 10) : 0));
+  const parts = [days && `${days} day${days > 1 ? 's' : ''}`, hrs && `${hrs} hr`, mins && `${mins} min`].filter(Boolean);
+  return parts.length ? parts.join(' ') : null;
+}
+const time = formatDuration(d.totalTime);
+const stats = [
+  time && { value: time, label: 'Total time' },
+  d.steps.length > 0 && { value: String(d.steps.length), label: d.steps.length === 1 ? 'Step' : 'Steps' },
+  d.supplies.length > 0 && { value: String(d.supplies.length), label: d.supplies.length === 1 ? 'Supply' : 'Supplies' },
+].filter(Boolean) as { value: string; label: string }[];
 
 const schema = [
   articleSchema({ ...d, path, title: d.title, description: d.description, image: d.image?.src }),
@@ -38,19 +56,38 @@ const schema = [
   faq={d.faq}
   related={d.related}
   currentId={`how-to/${entry.id}`}
+  hasAffiliateLinks={!!rec || (entry.body ?? "").includes("<AffiliateButton")}
 >
+  {stats.length > 0 && (
+    <ul class="quick-take" slot="after-head" aria-label="Quick take">
+      {stats.map((s) => (
+        <li><b>{s.value}</b><span>{s.label}</span></li>
+      ))}
+    </ul>
+  )}
   {d.supplies.length > 0 && (
     <aside class="supplies">
       <h2>What you'll need</h2>
-      {d.totalTime && <p class="meta">Time: {d.totalTime}</p>}
       <ul>{d.supplies.map((s) => <li>{s}</li>)}</ul>
     </aside>
   )}
   <Content />
+  {rec && <RecommendedProduct slot="after-prose" pick={rec.pick} guideHref={rec.guideHref} guideTitle={rec.guideTitle} />}
 </ArticleLayout>
 
 <style>
-  .supplies { background: var(--paper-2); border: 1px solid var(--rule); border-radius: var(--r); padding: 1.25rem 1.4rem; }
+  .quick-take {
+    list-style: none; padding: 0; margin: 1.4rem 0 0; display: grid; gap: .6rem;
+    grid-template-columns: repeat(auto-fit, minmax(6.5rem, 1fr));
+  }
+  .quick-take li {
+    display: flex; flex-direction: column; gap: .1rem; padding: .85rem 1rem;
+    background: linear-gradient(180deg, var(--surface-2), var(--surface));
+    border: 1px solid var(--rule-hard); border-radius: 18px;
+  }
+  .quick-take b { font-size: 1.4rem; font-weight: 800; letter-spacing: -.03em; line-height: 1.1; color: var(--signal); }
+  .quick-take span { font-size: .85rem; font-weight: 600; color: var(--ink-2); }
+  .supplies { background: var(--paper-2); border: 1px solid var(--rule); border-radius: var(--r); padding: 1.4rem 1.5rem; }
   .supplies h2 { margin-top: 0; font-size: 1.15rem; }
   .supplies ul { margin-top: .7rem; }
 </style>
